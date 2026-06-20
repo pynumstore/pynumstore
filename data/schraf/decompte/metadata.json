@@ -1,0 +1,9 @@
+{
+    "name": "decompte",
+    "creator": "schraf",
+    "created_at": "December 29, 2019",
+    "size": "1.14 KB",
+    "image": "data/schraf/decompte/schraf_decompte.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/hpeFV41P0Ys\" rel=\"nofollow\">Explications en vid\u00e9o ici</a><br></p> <p>31 d\u00e9cembre : D\u00e9compte des secondes jusqu\u2019\u00e0 minuit.</p> <p>S\u2019il est par exemple 17h29 \u00e0 votre montre, tapez go(17.30) sur la Numworks et attendez qu\u2019il soit exactement 17h30 sur votre montre pour appuyer sur EXE. Vous aurez alors le d\u00e9compte des secondes jusqu\u2019\u00e0 minuit.</p> <p>Id\u00e9es de variations : - Affichage plus sophistiqu\u00e9 : <a href=\"https://workshop.numworks.com/python/schraf/ten\" rel=\"nofollow\">Montre Tokyoflash TEN</a> ou <a href=\"https://workshop.numworks.com/python/schraf/stencil\" rel=\"nofollow\">STENCIL</a> - Ajout de neige : <a href=\"https://workshop.numworks.com/python/schraf/noelnw3\" rel=\"nofollow\">Exemple ici</a>. Il est possible que la m\u00e9moire de votre Numworks ne supporte pas les 200 flocons, dans ce cas diminuez le nombre.</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "ruin_lite",
+    "creator": "fime",
+    "created_at": "May 02, 2022",
+    "size": "8.62 KB",
+    "image": "data/fime/ruin_lite/fime_ruin_lite.png",
+    "tags": [],
+    "description": "<p>Lite version for Epsilon users.</p> <p>Controls : - arrows : move and directing the bullets - ok : jump (hold to jump higher) - toolbox : shot bullets - backspace : pause</p> <p></p>"
+}

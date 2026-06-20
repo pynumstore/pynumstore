@@ -1,0 +1,9 @@
+{
+    "name": "automate_n2",
+    "creator": "schraf",
+    "created_at": "September 10, 2018",
+    "size": "514 Bytes",
+    "image": "data/schraf/automate_n2/schraf_automate_n2.png",
+    "tags": [],
+    "description": "<p>Il faut avoir fait l\u2019activit\u00e9 <a href=\"https://workshop.numworks.com/python/schraf/automate_n1\" rel=\"nofollow\">automate_n1.py</a> avant de regarder celle-ci.<br></p> <h2>Automate n\u00b02 de l'activit\u00e9 n\u00b01</h2> <p><img width=\"600\" src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/134/images/auto1.png\"><br></p> <p>Imaginons que l\u2019alphabet de cet automate soit beaucoup plus grand (par exemple \u03a3 correspond \u00e0 toutes les lettres de l\u2019alphabet). Dans ce cas il devient quasi impossible de dessiner toutes les fl\u00e8ches. Ce que nous voulons est donc ( \u03a3 - a signifie \u201cToutes les lettres sauf le \u201ca\u201d)<br> <img width=\"600\" src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/134/images/auto3.png\"><br></p> <p>Pour cela nous allons tout simplement renseigner uniquement les transitions qui sont utiles et oublier toutes les autres (celles qui font rester sur place).<br> Finalement, l\u2019automate ci-dessus se r\u00e9duit \u00e0 <code>a2 = [{\"a\":1},{\"a\":0}]</code><br></p> <p>Comment s\u2019\u00e9crit la version simplifi\u00e9e de l\u2019automate n\u00b01 de l\u2019activit\u00e9 1 ?<br></p> <p>R\u00e9\u00e9crire les 2 fonctions <b>accepte</b> et <b>details</b> de l\u2019activit\u00e9 n\u00b01 pour qu\u2019elles acceptent ces automates simplifi\u00e9s en param\u00e8tres.</p> <p></p>"
+}

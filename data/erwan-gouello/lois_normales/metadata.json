@@ -1,0 +1,9 @@
+{
+    "name": "lois_normales",
+    "creator": "erwan-gouello",
+    "created_at": "May 08, 2019",
+    "size": "1.04 KB",
+    "image": "data/erwan-gouello/lois_normales/erwan-gouello_lois_normales.png",
+    "tags": [],
+    "description": "<p>Ensemble de fonctions de calculs des lois normales. On suppose que X suit une loi normale de param\u00e8tres mu et sigma</p> <p>*normalcdf(a,mu,sigma) calcule P(X&lt;a)</p> <p>*normalcdf2(a,b,mu,sigma) calcule P(a&lt;X&lt;b)</p> <p>*invnorm(area,mu,sigma) calcule t tel que P(X&lt;t)=area</p> <p>*invnormright(area,mu,sigma) calcule t tel que P(X&gt;t)=area</p> <p>*invnormcentral(area,mu,sigma) calcule les deux valeurs t1 et t2 centr\u00e9es autour de mu avec P(t1&lt;X&lt;t2)=area</p> <p></p>"
+}

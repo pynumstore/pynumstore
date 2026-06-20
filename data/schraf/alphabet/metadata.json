@@ -1,0 +1,9 @@
+{
+    "name": "alphabet",
+    "creator": "schraf",
+    "created_at": "April 03, 2023",
+    "size": "629 Bytes",
+    "image": "data/schraf/alphabet/schraf_alphabet.png",
+    "tags": [],
+    "description": "<p>La fonction <code>aff</code> affiche du texte (<code>txt</code>) \u00e0 la position <code>(x,y)</code>, de taille <code>t</code>, de couleur <code>fg</code> (ex : (255,0,0) pour du rouge). Les 3 derniers param\u00e8tres sont optionnels et permettent d\u2019ajouter une couleur de fond <code>bg</code>, d\u2019avoir des traits <b>verticaux</b> (<code>a=1,b=0</code>), <b>horizontaux</b> (<code>a=0,b=1</code>), <b>unis</b> (<code>a=0,b=0</code>) ou <b>carr\u00e9s</b> (<code>a=1,b=1</code>)</p> <p>Attention ! Le programme a besoin d\u2019utiliser les pixels entre (0,0) et (8,17), il ne faut donc rien afficher dans cette zone ou alors la d\u00e9placer (lignes 6 et 12)</p> <p>Vous pouvez donner d\u2019autres valeurs \u00e0 <code>a</code> et <code>b</code>, voici un exemple avec le r\u00e9sultat obtenu :</p> <pre>aff('Score',20, -5, 6, BL,GR,a=3,b=-2)\naff('0123456789',20,85,3,RE,a=2,b=2)\nfor i in range(26):\n  aff(chr(97+i),25+10*i,132,1,BL,GR,-2,0)\n  aff(chr(65+i),25+10*i,172+30*(i%2)-15,2,[BL,RE][i%2],a=-1,b=-2)</pre> <p><img src=\"http://schraf.chez-alice.fr/numworks/alphabet.png\"></p> <p></p>"
+}

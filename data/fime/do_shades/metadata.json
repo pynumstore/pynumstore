@@ -1,0 +1,9 @@
+{
+    "name": "do_shades",
+    "creator": "fime",
+    "created_at": "September 09, 2022",
+    "size": "1.27 KB",
+    "image": "data/fime/do_shades/fime_do_shades.png",
+    "tags": [],
+    "description": "<p>Programme qui dessine en boucle un \u201cshader\u201d en fonction d\u2019une formule pour la couleur du pixel. Adaptation de <a href=\"http://regis.toile-libre.org/fractals/MYOS/\" rel=\"nofollow\">do shades!</a> (allez voir c\u2019est plus simple pour comprendre).</p> <p>Fonctions : - <code>xp()</code> et <code>yp()</code> renvoient la position du pixel par rapport au centre, entre 0.0 et 1.0. - <code>d()</code>renvoie la distance du pixel par rapport au centre, entre 0.0 et 1.0.</p> <p>Vous pouvez aussi utiliser la variable <code>a</code>qui est modifiable en cours de trac\u00e9 avec <code>fl\u00e8che droite</code> (+0.1) ou <code>fl\u00e8che gauche</code> (-0.1).</p> <ul> <li>Vous pouvez changer le mode de couleur entre <code>RGB</code> (entrer trois formules : <code>formule=\"cos(d()),sin(d()),a\"</code>) et <code>greyscales</code> (entrer une seule formule : <code>sin(xp())</code>)</li> <li>La <code>prec</code>ision correspond \u00e0 la taille des pixels</li> </ul> <p></p>"
+}

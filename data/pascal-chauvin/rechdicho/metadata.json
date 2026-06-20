@@ -1,0 +1,9 @@
+{
+    "name": "rechdicho",
+    "creator": "pascal-chauvin",
+    "created_at": "June 25, 2019",
+    "size": "862 Bytes",
+    "image": "data/pascal-chauvin/rechdicho/pascal-chauvin_rechdicho.png",
+    "tags": [],
+    "description": "<p>Effectue une recherche dichotomique de x dans le tableau T.</p> <p></p>"
+}

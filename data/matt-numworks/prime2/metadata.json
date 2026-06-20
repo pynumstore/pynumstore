@@ -1,0 +1,9 @@
+{
+    "name": "prime2",
+    "creator": "matt-numworks",
+    "created_at": "February 20, 2024",
+    "size": "456 Bytes",
+    "image": "data/matt-numworks/prime2/matt-numworks_prime2.png",
+    "tags": [],
+    "description": "<p>This script determines if a whole number is prime or composite. Invalid inputs will be recognized.</p> <p></p>"
+}

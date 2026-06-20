@@ -1,0 +1,9 @@
+{
+    "name": "rpn_dev",
+    "creator": "garycmartin",
+    "created_at": "August 23, 2018",
+    "size": "2.7 KB",
+    "image": "data/garycmartin/rpn_dev/garycmartin_rpn_dev.png",
+    "tags": [],
+    "description": "<p>More powerful version of the RPN code in development, treat as unstable expect to use most of your available program memory. Additions over the simple RPN version are; str and rcl for storing and recalling a memory value; auto for standard format numbers; fix for setting fixed decimal notation (push a number to the stack first for the number of places, i.e. 2 fix for rounding to two decimal places); eng for engineering notation (where the exponent is in powers of a thousand); si for displaying International System units (G, M, k, m, u, n, etc).</p> <p></p>"
+}

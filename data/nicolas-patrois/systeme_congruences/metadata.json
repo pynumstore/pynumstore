@@ -1,0 +1,9 @@
+{
+    "name": "systeme_congruences",
+    "creator": "nicolas-patrois",
+    "created_at": "June 09, 2018",
+    "size": "500 Bytes",
+    "image": "data/nicolas-patrois/systeme_congruences/nicolas-patrois_systeme_congruences.png",
+    "tags": [],
+    "description": "<p>R\u00e9sout les syst\u00e8mes de congruences en utilisant le th\u00e9or\u00e8me des restes chinois.</p> <p>[[1,3],[0,25],[3,16]] &lt;=&gt; x=1[3], x=0[25] et x=3[16] de solution 1075</p> <p></p>"
+}

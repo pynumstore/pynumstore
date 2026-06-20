@@ -1,0 +1,9 @@
+{
+    "name": "moyenne",
+    "creator": "stimorol",
+    "created_at": "July 08, 2024",
+    "size": "6.51 KB",
+    "image": "data/stimorol/moyenne/stimorol_moyenne.png",
+    "tags": [],
+    "description": "<p>Programme de calcul de moyenne \u00e0 partir des notes entr\u00e9es par l\u2019utilisateur. L\u2019utilisateur peut entrer ses notes, class\u00e9es par mati\u00e8re. Il est possible de supprimer des notes ou des mati\u00e8res (avec la touche supprimer en haut a droite). Utiliser la touche maison pour revenir au menu principal. Enfin, le programme sauvegarde automatiquement les notes entr\u00e9es par l\u2019utilisateur.</p> <p></p>"
+}

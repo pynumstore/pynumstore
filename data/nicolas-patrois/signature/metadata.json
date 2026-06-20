@@ -1,0 +1,9 @@
+{
+    "name": "signature",
+    "creator": "nicolas-patrois",
+    "created_at": "June 09, 2018",
+    "size": "126 Bytes",
+    "image": "data/nicolas-patrois/signature/nicolas-patrois_signature.png",
+    "tags": [],
+    "description": "<p>Calculates the signature of a permutation. The permutation is written this way: (3,5,2,4,1) and it\u2019s not a 5-cycle but the permutation p whose image of 3 is 2. In a nutshell, s(1)=3, s(2)=5, s(3)=4 and s(5)=1.</p> <p></p>"
+}

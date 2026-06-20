@@ -1,0 +1,9 @@
+{
+    "name": "triplets_pythagoriciens",
+    "creator": "nicolas-patrois",
+    "created_at": "April 26, 2018",
+    "size": "348 Bytes",
+    "image": "data/nicolas-patrois/triplets_pythagoriciens/nicolas-patrois_triplets_pythagoriciens.png",
+    "tags": [],
+    "description": "<p>D\u00e9roule les triplets pythagoriciens primitifs jusqu\u2019\u00e0 la dimension de l\u2019hypot\u00e9nuse donn\u00e9e en entr\u00e9e.</p> <p></p>"
+}

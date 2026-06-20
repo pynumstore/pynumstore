@@ -1,0 +1,9 @@
+{
+    "name": "brainfuck2ascii",
+    "creator": "ciel",
+    "created_at": "June 02, 2021",
+    "size": "2.35 KB",
+    "image": "data/ciel/brainfuck2ascii/ciel_brainfuck2ascii.png",
+    "tags": [],
+    "description": "<p><br> ABOUT\u2661<br><br>Here\u2019s a little Brainfuck interpreter from Brainfuck to ASCII and Int.<br> If you don\u2019t know Brainfuck, I strongly advise you to go check this <a href=\"https://gist.github.com/roachhd/dce54bec8ba55fb17d3a\" rel=\"nofollow\">course</a><br> And if you want to improve the interpreter, here\u2019s the GitHub <a href=\"https://github.com/Ci3l/Brainfuck2Ascii\" rel=\"nofollow\">repo</a> <br><br>USAGE<br><br>BrainF(your lovely code, your gorgeous input) (the input is optional if you don\u2019t need it just doesn\u2019t write it)</p> <p></p>"
+}

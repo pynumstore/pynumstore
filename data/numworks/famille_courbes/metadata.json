@@ -1,0 +1,9 @@
+{
+    "name": "famille_courbes",
+    "creator": "numworks",
+    "created_at": "March 31, 2020",
+    "size": "225 Bytes",
+    "image": "data/numworks/famille_courbes/numworks_famille_courbes.png",
+    "tags": [],
+    "description": "<p>Trace la famille de courbes cos(nx), lancer draw(n) pour avoir le dessin.</p> <p></p>"
+}

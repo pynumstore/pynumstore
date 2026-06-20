@@ -1,0 +1,9 @@
+{
+    "name": "morpher",
+    "creator": "squarepoint",
+    "created_at": "March 30, 2022",
+    "size": "2.32 KB",
+    "image": "data/squarepoint/morpher/squarepoint_morpher.png",
+    "tags": [],
+    "description": "<p>This script draws a linear interpolation between two shapes. First you need to input the number of points you want your shapes to have, then you draw them using arrow keys and OK, and finally you change the value of the interpolation with left and right keys. Have fun!</p> <p></p>"
+}

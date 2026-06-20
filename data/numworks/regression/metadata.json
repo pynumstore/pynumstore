@@ -1,0 +1,9 @@
+{
+    "name": "regression",
+    "creator": "numworks",
+    "created_at": "March 31, 2020",
+    "size": "507 Bytes",
+    "image": "data/numworks/regression/numworks_regression.png",
+    "tags": [],
+    "description": "<p>Lancer reg(L1,L2) pour tracer la r\u00e9gression lin\u00e9aire \u00e0 partir des donn\u00e9es contenues dans les listes L1 et L2. Pour faire fonctionner l\u2019exemple, entrer reg().</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "jeu_de_la_vie",
+    "creator": "antarctus",
+    "created_at": "March 17, 2021",
+    "size": "2.73 KB",
+    "image": "data/antarctus/jeu_de_la_vie/antarctus_jeu_de_la_vie.png",
+    "tags": [],
+    "description": "<p>Jeu de la vie de John Conway (Une fois la simulation lanc\u00e9e. Appuyez sur OK pour modifier et une fois en mode modification d\u00e9placer le curseur avec les fl\u00e8ches et appuyer sur HOME pour cr\u00e9er une case vide et ONOFF pour la remplir. Appuyez sur SHIFT pour faire apparaitre un glisseur et ALPHA pour un Canon.)</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "conway_couleur",
+    "creator": "florian-allard",
+    "created_at": "March 10, 2021",
+    "size": "1006 Bytes",
+    "image": "data/florian-allard/conway_couleur/florian-allard_conway_couleur.png",
+    "tags": [],
+    "description": "<p>Suite \u00e0 la mise \u00e0 jour du simulateur en ligne, l\u2019espace entre 2 colonnes doit \u00eatre de 9 plut\u00f4t que 8, sinon une partie du symbole est effac\u00e9e.</p> <p></p>"
+}

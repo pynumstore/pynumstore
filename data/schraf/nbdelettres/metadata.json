@@ -1,0 +1,9 @@
+{
+    "name": "nbdelettres",
+    "creator": "schraf",
+    "created_at": "September 16, 2018",
+    "size": "526 Bytes",
+    "image": "data/schraf/nbdelettres/schraf_nbdelettres.png",
+    "tags": [],
+    "description": "<p>On part d\u2019un nombre, par exemple 235, que l\u2019on \u00e9crit en fran\u00e7ais chiffre par chiffre, ce qui donne \u201cdeuxtroiscinq\u201d. Ce mot fait 13 lettres qui, transform\u00e9 en fran\u00e7ais, fait \u201cuntrois\u201d. Ce mot lui-m\u00eame fait 7 lettres (\u201csept\u201d) d\u2019o\u00f9 4 lettres (\u201cquatre\u201d) puis 6 lettres (\u201csix\u201d) puis \u201ctrois\u201d, \u201ccinq\u201d et \u00e0 nouveau \u201cquatre\u201d.<br></p> <p>On s\u2019arr\u00eate lorsque l\u2019on retombe sur un nombre que l\u2019on a d\u00e9j\u00e0 obtenu. Donnons un autre exemple :<br></p> <p><code>&gt;&gt; nb(171)<br>\nunseptun<br>\nhuit<br>\nquatre<br>\nsix<br>\ntrois<br>\ncinq<br>\n'quatre'</code><br></p> <p></p>"
+}

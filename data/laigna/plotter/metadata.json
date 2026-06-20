@@ -1,0 +1,9 @@
+{
+    "name": "plotter",
+    "creator": "laigna",
+    "created_at": "March 14, 2026",
+    "size": "5.14 KB",
+    "image": "data/laigna/plotter/laigna_plotter.png",
+    "tags": [],
+    "description": "<p>11 functions with pixel-by-pixel plotting, auto-scaling Y axis, pan/zoom controls, grid and axes</p> <p></p>"
+}

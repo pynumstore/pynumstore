@@ -1,0 +1,9 @@
+{
+    "name": "cpong",
+    "creator": "aquaebm",
+    "created_at": "October 09, 2022",
+    "size": "1.56 KB",
+    "image": "data/aquaebm/cpong/aquaebm_cpong.png",
+    "tags": [],
+    "description": "<p>This script is heavily inspired by the android game circle pong, by manguildev <a href=\"github.com/manugildev/circle-pong-game\" rel=\"nofollow\"> (source)</a> and was made as part of a challenge to code an entire game WITHOUT USING A SINGLE \u201cif\u201d statement (turns out boolean arithmetic is pretty fun actually!). <br><br> REQUIRES util.py to be downloaded onto your calculator. <br><br> Use the ALPHA and TOOLBOX keys to rotate the pad clockwise or counterclockwise (respectively) to protect the ball from touching the red zone. <br><br> I\u2019ll add a score counter soon\u2026</p> <p></p>"
+}

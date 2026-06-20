@@ -1,0 +1,9 @@
+{
+    "name": "champernowne",
+    "creator": "nicolas-patrois",
+    "created_at": "February 16, 2020",
+    "size": "272 Bytes",
+    "image": "data/nicolas-patrois/champernowne/nicolas-patrois_champernowne.png",
+    "tags": [],
+    "description": "<p>Calcule la n-i\u00e8me d\u00e9cimale du nombre de Champernowne (0,123456789101112131415\u2026) avec deux fonctions. brutale ne permet pas d\u2019aller trop loin, maline est plus rapide et plus \u00e9conome.</p> <p></p>"
+}

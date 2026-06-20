@@ -1,0 +1,9 @@
+{
+    "name": "batterie",
+    "creator": "antarctus",
+    "created_at": "February 27, 2022",
+    "size": "788 Bytes",
+    "image": "data/antarctus/batterie/antarctus_batterie.png",
+    "tags": [],
+    "description": "<p>Affichage graphique du niveau de la batterie.<br> Ne marche qu\u2019avec <a href=\"https://lolocomotive.github.io/Upsilon-website/\" rel=\"nofollow\">Upsilon, une autre version de l\u2019OS de la calculatrice</a>. <br> Montre \u00e9galement une estimation pr\u00e9cise tu temps d\u2019utilisation encore disponible et du temps de chargement restant.</p> <p></p>"
+}

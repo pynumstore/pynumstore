@@ -1,0 +1,9 @@
+{
+    "name": "visual_maze",
+    "creator": "antarctus",
+    "created_at": "May 08, 2023",
+    "size": "1.32 KB",
+    "image": "data/antarctus/visual_maze/antarctus_visual_maze.png",
+    "tags": [],
+    "description": "<p>D\u00e9monstration graphique de l\u2019algorithme de Kruskal.<br> Vous pouvez g\u00e9n\u00e9rer de tel labyrinthe avec <a href=\"https://my.numworks.com/python/antarctus/mod_maze\" rel=\"nofollow\">mod_maze</a>.<br> C\u2019est une telle technique qui est utilis\u00e9 par <a href=\"https://my.numworks.com/python/antarctus/ombre\" rel=\"nofollow\">mon jeu ombre</a></p> <p></p>"
+}

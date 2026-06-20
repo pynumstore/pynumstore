@@ -1,0 +1,9 @@
+{
+    "name": "spirographe2",
+    "creator": "schraf",
+    "created_at": "September 15, 2019",
+    "size": "428 Bytes",
+    "image": "data/schraf/spirographe2/schraf_spirographe2.png",
+    "tags": [],
+    "description": "<h1>Construction d'une hypocyclo\u00efde</h1> <p>Trajectoire d\u2019un point fix\u00e9 \u00e0 un cercle qui roule sans glisser sur un autre cercle dit directeur et \u00e0 l\u2019int\u00e9rieur de celui-ci. <br> <img src=\"https://upload.wikimedia.org/wikipedia/commons/6/6e/Hypocycloid1.gif\"><br> <a href=\"https://www.mathcurve.com/courbes2d/hypocycloid/hypocycloid.shtml\" rel=\"nofollow\">Autres courbes ici </a><br><br> <code>&gt;&gt; go(7,2)</code> (un tour ne suffit pas \u00e0 tout afficher)<br> <img src=\"http://schraf.chez-alice.fr/numworks/spiro7.jpg\"><br> <code>&gt;&gt; go(7,2,2)</code> (on fait faire 2 tour au petit cercle. Math\u00e9matiquement, il faut chercher le plus petit multiple commun entre 7 et 2, \u00e0 savoir 14, et diviser ce nombre par le premier param\u00e8tre (7) d\u2019o\u00f9 14/7 = 2 tours)<br> <img src=\"http://schraf.chez-alice.fr/numworks/spiro7b.jpg\"></p> <p></p>"
+}

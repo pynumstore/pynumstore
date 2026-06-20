@@ -1,0 +1,9 @@
+{
+    "name": "but_atteint",
+    "creator": "francoise-cavanne",
+    "created_at": "June 15, 2018",
+    "size": "390 Bytes",
+    "image": "data/francoise-cavanne/but_atteint/francoise-cavanne_but_atteint.png",
+    "tags": [],
+    "description": "<p>loi de probabilit\u00e9 non \u00e9quir\u00e9partie : cheminement d\u2019un pion d\u2019une case d\u00e9part \u201cA\u201d vers une case arriv\u00e9e \u201cE\u201d. Sur 4 lancers , on totalise le nombre de fois ou le jeton tombe sur 1 et on avance de ce total : on s\u2019int\u00e9resse \u00e0 la probabilit\u00e9 de la position finale du pion en \u201cA\u201d, \u201cB\u201d, \u201cC\u201d, \u201cD\u201d ou \u201cE\u201d.</p> <p></p>"
+}

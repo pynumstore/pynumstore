@@ -1,0 +1,9 @@
+{
+    "name": "binaryplot",
+    "creator": "schraf",
+    "created_at": "April 23, 2023",
+    "size": "206 Bytes",
+    "image": "data/schraf/binaryplot/schraf_binaryplot.png",
+    "tags": [],
+    "description": "<p>Repr\u00e9sentation binaire des puissances 1, 2 et 3 des entiers entre 0 et 160. On bas de l\u2019\u00e9cran on lit 1, 10, 11, 100\u2026 (1 = rectangle noir, 0 = rectangle blanc) qui correspondent aux entiers 1, 2, 3, 4\u2026 Au milieu de l\u2019\u00e9cran on lit 1, 100, 1001, 10000\u2026 qui donnent 1, 4, 9, 16\u2026 Et en haut les puissances 3 des entiers.</p> <p></p>"
+}

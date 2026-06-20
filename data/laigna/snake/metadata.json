@@ -1,0 +1,9 @@
+{
+    "name": "snake",
+    "creator": "laigna",
+    "created_at": "March 14, 2026",
+    "size": "1.61 KB",
+    "image": "data/laigna/snake/laigna_snake.png",
+    "tags": [],
+    "description": "<p>Arrow keys to steer, Back to exit. Wrapping edges, speed increases, extra food every 5 points.</p> <p></p>"
+}

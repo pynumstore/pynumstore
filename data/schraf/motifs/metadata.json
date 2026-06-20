@@ -1,0 +1,9 @@
+{
+    "name": "motifs",
+    "creator": "schraf",
+    "created_at": "September 07, 2019",
+    "size": "890 Bytes",
+    "image": "data/schraf/motifs/schraf_motifs.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/oCzQNm-y4Y8\" rel=\"nofollow\">Vid\u00e9o d\u2019explication</a><br><br></p> <p><b>Attention !</b> Depuis la derni\u00e8re mise \u00e0 jour de Numworks concernant la gestion des couleurs sous forme uniquement de tuples (par exemple (0,0,0) pour le noir et non plus un nombre), plusieurs programmes ne fonctionnent plus. Le programme ci-dessous fonctionnera sur votre calculatrice mais semble planter en ligne.</p> <p>Recherche d\u2019une s\u00e9quence d\u2019ADN en utilisant l\u2019algorithme na\u00eff (case apr\u00e8s case)<br> Le motif du haut de taille 5 est trouv\u00e9 sur le brin d\u2019ADN \u00e0 la 1511e case :<br> <img src=\"http://schraf.chez-alice.fr/numworks/motif1.png\"><br><br> La s\u00e9quence de taille 7 est absente du brin:<br> <img src=\"http://schraf.chez-alice.fr/numworks/motif2.png\"><br><br> La s\u00e9quence de taille 7 est pr\u00e9sente \u00e0 la 1870e place :<br> <img src=\"http://schraf.chez-alice.fr/numworks/motif3.png\"><br><br></p> <p>Algorithmes plus sophistiqu\u00e9s :</p> <ul> <li>Utilisation d\u2019une fonction de hachage : <a href=\"https://workshop.numworks.com/python/schraf/motifs2\" rel=\"nofollow\">voir par ici pour la numworks</a> </li> <li>Lien Wikip\u00e9dia : <a href=\"https://fr.wikipedia.org/wiki/Algorithme_de_Knuth-Morris-Pratt\" rel=\"nofollow\">voir par ici</a> </li> </ul> <p></p>"
+}

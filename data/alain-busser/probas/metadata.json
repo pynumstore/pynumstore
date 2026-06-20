@@ -1,0 +1,9 @@
+{
+    "name": "probas",
+    "creator": "alain-busser",
+    "created_at": "May 27, 2019",
+    "size": "173 Bytes",
+    "image": "data/alain-busser/probas/alain-busser_probas.png",
+    "tags": [],
+    "description": "<p>Calcul d\u2019un \u00e9v\u00e8nement puis de sa probabilit\u00e9. L\u2019univers doit \u00eatre une variable globale. Par exemple pour un d\u00e9 \u00e0 6 faces, U=set(range(1,7)). On note E.intersection(F) l\u2019intersection de E et F, et E.union(F) leur r\u00e9union. Le contraire de l\u2019\u00e9v\u00e8nement E s\u2019obtient par U.difference(E) o\u00f9 U est l\u2019univers.</p> <p></p>"
+}

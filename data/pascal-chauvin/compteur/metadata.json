@@ -1,0 +1,9 @@
+{
+    "name": "compteur",
+    "creator": "pascal-chauvin",
+    "created_at": "July 15, 2021",
+    "size": "1.53 KB",
+    "image": "data/pascal-chauvin/compteur/pascal-chauvin_compteur.png",
+    "tags": [],
+    "description": "<p>Ce programme permet de repr\u00e9senter sous d\u2019ascii-art (dans la console) un nombre entier naturel, en base n, sur m chiffres.</p> <p></p>"
+}

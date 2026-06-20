@@ -1,0 +1,9 @@
+{
+    "name": "degre2",
+    "creator": "smoofy",
+    "created_at": "September 21, 2020",
+    "size": "469 Bytes",
+    "image": "data/smoofy/degre2/smoofy_degre2.png",
+    "tags": [],
+    "description": "<p>Contient les fonctions discr(a,b,c), nb_sol(a,b,c) et sol(a,b,c).</p> <p></p>"
+}

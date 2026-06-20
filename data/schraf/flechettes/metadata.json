@@ -1,0 +1,9 @@
+{
+    "name": "flechettes",
+    "creator": "schraf",
+    "created_at": "September 18, 2018",
+    "size": "614 Bytes",
+    "image": "data/schraf/flechettes/schraf_flechettes.png",
+    "tags": [],
+    "description": "<p>Vous devez \u00e9crire une fonction <b>score</b> qui calcule le score \u00e0 un jeu de fl\u00e9chettes sachant que l\u2019on obtient :<br></p> <ul> <li>0 point si la fl\u00e9chette est \u00e0 plus de 10cm du centre</li> <li>5 points si la fl\u00e9chette est entre 5 et 10cm (inclus) du centre</li> <li>10 points si la fl\u00e9chette est \u00e0 moins de 5cm du centre<br> </li> </ul> <p>De plus, si tous les lancers sont \u00e0 moins de 5cm on gagne un bonus de 100 points.<br></p> <p>Les diff\u00e9rents lancers sont enregistr\u00e9s dans une liste que l\u2019on passera en param\u00e8tre \u00e0 la fonction.<br></p> <p><code>&gt;&gt; score([1, 5, 11])<br>\n15<br>\n&gt;&gt; score([15, 20, 30])<br>\n0<br>\n&gt;&gt; score([1, 2, 3, 4])<br>\n140</code><br></p> <p><a href=\"https://youtu.be/skTbOsXBwuI\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p></p>"
+}

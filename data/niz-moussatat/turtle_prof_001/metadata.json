@@ -1,0 +1,9 @@
+{
+    "name": "turtle_prof_001",
+    "creator": "niz-moussatat",
+    "created_at": "June 28, 2022",
+    "size": "260 Bytes",
+    "image": "data/niz-moussatat/turtle_prof_001/niz-moussatat_turtle_prof_001.png",
+    "tags": [],
+    "description": "<h3>Un premier exemple avec turtle.</h3> <p>Ici une simple rosace. Noter la commande color(r,g,b) \u00e0 la ligne 10, qui permet de d\u00e9finir la couleur en m\u00e9langeant 3 teintes : rouge+vert+bleu. Les teintes sont des nombres entiers compris entre 0 et 255.</p> <p></p>"
+}

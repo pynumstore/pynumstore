@@ -1,0 +1,9 @@
+{
+    "name": "pizza_fb",
+    "creator": "schraf",
+    "created_at": "January 03, 2022",
+    "size": "217 Bytes",
+    "image": "data/schraf/pizza_fb/schraf_pizza_fb.png",
+    "tags": [],
+    "description": "<p><a href=\"https://www.youtube.com/schraf\" rel=\"nofollow\">Ma chaine Youtube consacr\u00e9e aux maths, \u00e0 la programmation en Python, aux calculatrices, Excel, etc.</a></p> <h1>Version simple avec des cercles</h1> <pre>import turtle\n\nt = turtle\n\nfor [x,y] in [[-160,-97],[160,-97],[0,-207],[0,13]]:\n    t.penup()\n    t.goto(x,y)\n    t.pendown()\n    t.circle(97)\n\nt.hideturtle()</pre> <h1>Version avec de vrais demi-cercles</h1> <p>Voir programme ci-dessous</p> <p></p>"
+}

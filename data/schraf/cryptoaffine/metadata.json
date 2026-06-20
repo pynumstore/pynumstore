@@ -1,0 +1,9 @@
+{
+    "name": "cryptoaffine",
+    "creator": "schraf",
+    "created_at": "January 29, 2024",
+    "size": "738 Bytes",
+    "image": "data/schraf/cryptoaffine/schraf_cryptoaffine.png",
+    "tags": [],
+    "description": "<p><a href=\"https://twitter.com/NumWorksFR/status/1751919364326949125\" rel=\"nofollow\">Possibilit\u00e9 de r\u00e9ponse \u00e0 une activit\u00e9 propos\u00e9e par NumWorks</a></p> <pre>message = \"LOI SMPJOSMPQUWOI IGZP WZ OZIOSTLO HO AGZZMQIIMZAOI MTIPBMQPOI BOIWLPMZP HO BMQIGZZOSOZPI LGCQUWOI MNNLQUWOI M HOI GTXOPI HQDOBI OLI UWO LOI OZIOSTLOI SMPJOSMPQUWOI, LOI ZGSTBOI, LOI VGBSOI\u2026 SOBAQ KQEQNOHQM !\"\n# Codes ASCII de 'A' \u00e0 'Z'\nalphabet = range(65, 91)\n\ndef decode(txt):\n    # Stats sur les lettres\n    stats = []\n    for a in alphabet: stats.append(txt.count(chr(a)))\n    # On garde les 2 meilleurs scores\n    # qui devraient correspondre aux lettres 'E' et 'S'\n    best = sorted(enumerate(stats), key=lambda x:x[1], reverse = True)[:2]\n    # Substitutions probables pour 'E' et 'S'\n    # 0 pour 'A', 1 pour 'B'...\n    x,y = best[0][0], best[1][0]\n\n    # On cherche les transformations affines a*x+b\n    # qui envoient x vers 4 (lettre 'E') et y vers 18 (lettre 'S')\n    for a in range(27):\n      for b in range(27):\n         if (a * x + b) % 26 == 4 and (a * y + b) % 26 == 18:\n            # Si on trouve une transformation\n            # on traduit le texte en effectuant\n            # la m\u00eame transformation pour les autres lettres\n            s = ''\n            for c in txt:\n                 l = chr(65 + (a * (ord(c)-65) + b) % 26) if ord(c) in alphabet else c\n                 s += l\n            # Affichage du r\u00e9sultat\n            print('y={}x+{} mod 26\\n{}'.format(a,b,s)) </pre> <p></p>"
+}

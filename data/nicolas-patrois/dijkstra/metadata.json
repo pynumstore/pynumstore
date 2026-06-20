@@ -1,0 +1,9 @@
+{
+    "name": "dijkstra",
+    "creator": "nicolas-patrois",
+    "created_at": "June 16, 2018",
+    "size": "815 Bytes",
+    "image": "data/nicolas-patrois/dijkstra/nicolas-patrois_dijkstra.png",
+    "tags": [],
+    "description": "<p>L\u2019algorithme de Dijkstra donne un chemin le plus court dans un graphe et sa longueur (programme de TES sp\u00e9cialit\u00e9).</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "jeux_2048",
+    "creator": "archange",
+    "created_at": "June 28, 2024",
+    "size": "14.4 KB",
+    "image": "data/archange/jeux_2048/archange_jeux_2048.png",
+    "tags": [],
+    "description": "<p>This project is a simple version of the 2048 game.</p> <p>If you\u2019re curious, or just want to find out how it works or learn more, go to my github : https://github.com/Archange-py/2048-Game</p> <p></p>"
+}

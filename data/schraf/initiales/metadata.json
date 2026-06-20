@@ -1,0 +1,9 @@
+{
+    "name": "initiales",
+    "creator": "schraf",
+    "created_at": "September 14, 2018",
+    "size": "602 Bytes",
+    "image": "data/schraf/initiales/schraf_initiales.png",
+    "tags": [],
+    "description": "<p>\u00c9crire une fonction <b>initiales</b> qui admet en param\u00e8tre une phrase et affiche la premi\u00e8re lettre de chacun de ses mots en majuscule. Les mots peuvent \u00eatre s\u00e9par\u00e9s par un ou plusieurs espaces. Par exemple : <b>\u201cRentre avec tes pieds\u201d</b> donnera <b>RATP</b>.</p> <p>Conseils</p> <ul> <li>On aura une premi\u00e8re lettre si le caract\u00e8re n\u2019est pas un espace et si le pr\u00e9c\u00e9dent est un espace. Par exemple dans \u201c tes\u201d, le \u201ct\u201d est bien une initiale, par contre le \u201ce\u201d non puisqu\u2019il est pr\u00e9c\u00e9d\u00e9 d\u2019un \u201ct\u201d.</li> <li>On pourra m\u00e9moriser le caract\u00e8re pr\u00e9c\u00e9dent dans une variable nomm\u00e9e <code>preced</code> </li> <li>On ne peut pas comparer le 1er caract\u00e8re de la phrase avec le pr\u00e9c\u00e9dent puisqu\u2019il n\u2019y en a pas. L\u2019id\u00e9e est d\u2019initialiser <code>preced</code> avec un espace, ce qui revient \u00e0 dire que toutes nos phrases commencent par espace.</li> </ul> <p></p>"
+}

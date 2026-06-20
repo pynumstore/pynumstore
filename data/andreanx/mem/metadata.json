@@ -1,0 +1,9 @@
+{
+    "name": "mem",
+    "creator": "andreanx",
+    "created_at": "May 20, 2024",
+    "size": "1.04 KB",
+    "image": "data/andreanx/mem/andreanx_mem.png",
+    "tags": [],
+    "description": "<p>Tests and returns the maximum usable heap. By trying to allocate as many long strings as possible. More reliable if run directly after Python initialisation, or after running gc.collect() when available. Use : mem()</p> <p></p>"
+}

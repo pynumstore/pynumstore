@@ -1,0 +1,9 @@
+{
+    "name": "trash_dice",
+    "creator": "florian-allard",
+    "created_at": "July 29, 2025",
+    "size": "7.55 KB",
+    "image": "data/florian-allard/trash_dice/florian-allard_trash_dice.png",
+    "tags": [],
+    "description": "<p>Adaptation du jeu Trash Dice (D\u00e9 \u00e0 la poubelle).</p> <p>Chacun des deux joueurs commence la partie avec 20 d\u00e9s. \u00c0 tour de r\u00f4le, chaque joueur lance un d\u00e9 et le place dans la roue du plateau s\u2019il n\u2019y est pas d\u00e9j\u00e0, sinon il le jette \u00e0 la poubelle.</p> <p>Si un joueur vient de compl\u00e9ter la roue du plateau, alors il r\u00e9cup\u00e8re les 6 d\u00e9s qu\u2019elle contient.</p> <p>Le premier joueur qui n\u2019a plus de d\u00e9 a perdu.</p> <p></p>"
+}

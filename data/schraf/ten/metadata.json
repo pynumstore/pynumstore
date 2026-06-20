@@ -1,0 +1,9 @@
+{
+    "name": "ten",
+    "creator": "schraf",
+    "created_at": "November 05, 2021",
+    "size": "643 Bytes",
+    "image": "data/schraf/ten/schraf_ten.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/yx-j5JTHGUY\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p>R\u00e9alisation de la montre suivante sur la NumWorks : <a href=\"https://www.tokyoflash.com/en/kisai-tenmetsu\" rel=\"nofollow\">https://www.tokyoflash.com/en/kisai-tenmetsu</a><br></p> <p><code>&gt;&gt; go(17,29,30)</code> pour lancer la montre avec l\u2019heure 17h29m30s</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "flashcards",
+    "creator": "matt-numworks",
+    "created_at": "January 27, 2026",
+    "size": "1.31 KB",
+    "image": "data/matt-numworks/flashcards/matt-numworks_flashcards.png",
+    "tags": [],
+    "description": "<p>This script practices basic arithmetic until the user types \u201cquit\u201d to end their session.</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "monty_hall",
+    "creator": "nicolas-patrois",
+    "created_at": "June 02, 2018",
+    "size": "355 Bytes",
+    "image": "data/nicolas-patrois/monty_hall/nicolas-patrois_monty_hall.png",
+    "tags": [],
+    "description": "<p>Simulates the Mounty Hall problem. n is the number of simulations, change is True if the player changes and False if he keeps his first choice.</p> <p></p>"
+}

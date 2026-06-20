@@ -1,0 +1,9 @@
+{
+    "name": "ola",
+    "creator": "schraf",
+    "created_at": "September 16, 2018",
+    "size": "112 Bytes",
+    "image": "data/schraf/ola/schraf_ola.png",
+    "tags": [],
+    "description": "<p>\u00c9crire une fonction <b>ola</b> qui admet un mot en param\u00e8tre et le transforme en ola (Wikip\u00e9dia : Une ola, ou vague, est un mouvement de foule, semblable \u00e0 la houle, qui se manifeste principalement dans les stades lors de rencontres sportives, mais aussi dans des rassemblements importants.)<br></p> <p>Plus pr\u00e9cis\u00e9ment, supposons que le mot soit <b>foule</b>, on devra obtenir les lignes :<br> <code>&gt;&gt; ola(\"foule\")<br>\nFoule<br>\nfOuLe<br>\nfoUle<br>\nfouLe<br>\nfoulE</code><br> donnant l\u2019impression que les lettres se l\u00e8vent les unes apr\u00e8s les autres de la gauche vers la droite.</p> <p></p>"
+}

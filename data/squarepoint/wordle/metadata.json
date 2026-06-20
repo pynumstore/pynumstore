@@ -1,0 +1,9 @@
+{
+    "name": "wordle",
+    "creator": "squarepoint",
+    "created_at": "April 18, 2023",
+    "size": "1.45 KB",
+    "image": "data/squarepoint/wordle/squarepoint_wordle.png",
+    "tags": [],
+    "description": "<p>The game of wordle! Note: enter a 5 letter word at the start or it will crash.</p> <p></p>"
+}

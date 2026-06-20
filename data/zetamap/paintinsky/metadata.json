@@ -1,0 +1,9 @@
+{
+    "name": "paintinsky",
+    "creator": "zetamap",
+    "created_at": "March 18, 2024",
+    "size": "3.46 KB",
+    "image": "data/zetamap/paintinsky/zetamap_paintinsky.png",
+    "tags": [],
+    "description": "<p>This library add lot of draw methods for kandinsky library.</p> <p><strong>Go to <a href=\"https://github.com/ZetaMap/paintinsky\" rel=\"nofollow\">GitHub page</a> to read doc about avalaible methods</strong></p> <p><strong>Note:</strong> if you read the code you risk not understanding anything, it\u2019s normal the library has been designed to be as optimized and small as possible, hence this somewhat strange syntax.</p> <p></p>"
+}

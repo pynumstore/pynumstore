@@ -1,0 +1,9 @@
+{
+    "name": "nageurs_simul_de",
+    "creator": "schraf",
+    "created_at": "July 20, 2023",
+    "size": "997 Bytes",
+    "image": "data/schraf/nageurs_simul_de/schraf_nageurs_simul_de.png",
+    "tags": [],
+    "description": "<p>Faites vos jeux et devinez qui finira premier de cette course de natation !<br> Vous pouvez vous servir de ce programme pour d\u00e9terminer dans quel ordre des personnes devront participer \u00e0 une activit\u00e9.<br></p> <p><a href=\"https://youtu.be/BI6SbyaFrBU\" rel=\"nofollow\">Explications en vid\u00e9o</a><br></p> <p>Si vous voulez mettre le rang du joueur \u00e0 droite plut\u00f4t que l\u2019ordre d\u2019arriv\u00e9e, il suffit de remplacer la ligne :<br> <code>draw_string(str(i+1),300,19+35*rg)</code><br> par celle-ci :<br> <code>draw_string(str(rg+1),300,19+35*i)</code></p> <p></p>"
+}

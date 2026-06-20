@@ -1,0 +1,9 @@
+{
+    "name": "motscroissants",
+    "creator": "schraf",
+    "created_at": "September 15, 2018",
+    "size": "626 Bytes",
+    "image": "data/schraf/motscroissants/schraf_motscroissants.png",
+    "tags": [],
+    "description": "<p>Il existe 31 mots de 5 lettres et plus dont les lettres sont en ordre croissant. Vous pourrez v\u00e9rifier que la liste ci-dessous contient 32 mots, il y a donc un mot en trop ! Le retrouver en cr\u00e9ant une fonction <b>intrus</b>, pour cela on pourra pour chacun des mots mettre r\u00e9ellement les lettres par ordre croissant et comparer si on a bien le mot d\u2019origine. Par exemple avec le mot \u00ab sac \u00bb : \u00ab sac \u00bb tri\u00e9 donne \u00ab acs \u00bb qui est diff\u00e9rent de \u00ab sac \u00bb<br></p> <p><code>mots = \"abces,abdos,abers,adent,agios,ainou,alors,bijou,ceins,ceint,chiot,chips,chops,choux,defis,defit,delot,demos,dents,dentu,dhikr,filmo,films,filos,filou,flops,horst,bijoux,chintz,dehors,dhikrs,filmos\"</code></p> <p></p>"
+}

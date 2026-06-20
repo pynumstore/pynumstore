@@ -1,0 +1,9 @@
+{
+    "name": "roulette",
+    "creator": "antarctus",
+    "created_at": "April 16, 2022",
+    "size": "4.37 KB",
+    "image": "data/antarctus/roulette/antarctus_roulette.png",
+    "tags": [],
+    "description": "<p>Vous avez h\u00e2te de dilapider votre argent ? Jouez \u00e0 la roulette !<br> <b>contr\u00f4les :</b></p> <li>Le curseur est la petite bordure bleu clair, bougez-la avec des fl\u00e8ches.</li> <li>Utilisez les touches + ou - pour parier ou retirer la mise d'une case.</li> <li>Faites Ok avec le curseur sur les deux points d'interrogation pour tirer.</li> <p><a href=\"https://my.numworks.com/python/numworks/saint_patrick\" rel=\"nofollow\"> Un autre jeu du casino NumWorks est disponible ici !</a><br> <em>Les jeux d\u2019argents sont destructifs sur tous les plans, n\u2019y jouez pas dans la vraie vie.</em></p> <p></p>"
+}

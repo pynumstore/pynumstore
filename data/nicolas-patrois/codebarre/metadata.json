@@ -1,0 +1,9 @@
+{
+    "name": "codebarre",
+    "creator": "nicolas-patrois",
+    "created_at": "August 29, 2019",
+    "size": "1.11 KB",
+    "image": "data/nicolas-patrois/codebarre/nicolas-patrois_codebarre.png",
+    "tags": [],
+    "description": "<p>codebarre(\u201c5011386029399\u201d) affiche le code \u00e0 barres EAN13 correspondant.</p> <p>Attention, un code \u00e0 barres erron\u00e9 est refus\u00e9.</p> <p></p>"
+}

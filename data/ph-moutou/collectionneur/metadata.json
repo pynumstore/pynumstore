@@ -1,0 +1,9 @@
+{
+    "name": "collectionneur",
+    "creator": "ph-moutou",
+    "created_at": "June 05, 2018",
+    "size": "510 Bytes",
+    "image": "data/ph-moutou/collectionneur/ph-moutou_collectionneur.png",
+    "tags": [],
+    "description": "<p>Ce programme effectue des tirages al\u00e9atoires parmi n objets jusqu\u2019\u00e0 obtenir la collection compl\u00e8te des objets. L\u2019affichage donne la premi\u00e8re et la derni\u00e8re occurrence ainsi que le nombre d\u2019objets de chaque sorte.</p> <p></p>"
+}

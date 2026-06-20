@@ -1,0 +1,9 @@
+{
+    "name": "fleur",
+    "creator": "andreanx",
+    "created_at": "February 03, 2019",
+    "size": "1.28 KB",
+    "image": "data/andreanx/fleur/andreanx_fleur.png",
+    "tags": [],
+    "description": "<p>Draws a flower. Requires version 10.0.0 or newer (turtle module). See example at the end of the script.</p> <p>Usage : fleur(n,k,l,f,c) with :</p> <p>n: number of petals</p> <p>k: number of leafs</p> <p>l: length of stalk (drawn with the current position and orientation of the turtle)</p> <p>f: a factor for the size of the leafs and petals, default is 1</p> <p>c: color of the petals</p> <p></p>"
+}

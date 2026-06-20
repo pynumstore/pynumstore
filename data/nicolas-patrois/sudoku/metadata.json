@@ -1,0 +1,9 @@
+{
+    "name": "sudoku",
+    "creator": "nicolas-patrois",
+    "created_at": "March 12, 2019",
+    "size": "1.76 KB",
+    "image": "data/nicolas-patrois/sudoku/nicolas-patrois_sudoku.png",
+    "tags": [],
+    "description": "<p>R\u00e9sout un sudoku.</p> <p>cp renvoie tous les chiffres possibles dans une case s\u2019il y en a case est la position de la case test\u00e9e dans le sudoku [ligne, colonne].</p> <p>ec signale si un sous-ensemble de la grille du sudoku contient un chiffre plus d\u2019une fois auquel cas la grille contient une contradiction.</p> <p></p>"
+}

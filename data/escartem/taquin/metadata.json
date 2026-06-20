@@ -1,0 +1,9 @@
+{
+    "name": "taquin",
+    "creator": "escartem",
+    "created_at": "December 01, 2021",
+    "size": "4.23 KB",
+    "image": "data/escartem/taquin/escartem_taquin.png",
+    "tags": [],
+    "description": "<p>Le jeu du taquin est compos\u00e9 d\u2019une grille de cases avec des chiffres, l\u2019objectif est de remettre ces chiffres dans le bon ordre c\u2019est a dire dans l\u2019ordre croissant en spirale dans le sens horaire</p> <p>Contr\u00f4les : - fl\u00e8ches directionnelles pour d\u00e9placer les cases dans cette direction</p> <p>Notes : * Les dimensions du niveau peuvent \u00eatre chang\u00e9es dans le programme en ligne 10. * Le nombre de mouvements effectu\u00e9s est affich\u00e9 en haut a droite de l\u2019\u00e9cran lors d\u2019une partie.</p> <p></p>"
+}

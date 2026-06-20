@@ -1,0 +1,9 @@
+{
+    "name": "comp_deux",
+    "creator": "pascal-chauvin",
+    "created_at": "September 24, 2020",
+    "size": "1.04 KB",
+    "image": "data/pascal-chauvin/comp_deux/pascal-chauvin_comp_deux.png",
+    "tags": [],
+    "description": "<p>Calcul du compl\u00e9ment \u00e0 2**n, sur n bits.</p> <p></p>"
+}

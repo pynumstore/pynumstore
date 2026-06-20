@@ -1,0 +1,9 @@
+{
+    "name": "basenegative",
+    "creator": "nicolas-patrois",
+    "created_at": "December 15, 2018",
+    "size": "170 Bytes",
+    "image": "data/nicolas-patrois/basenegative/nicolas-patrois_basenegative.png",
+    "tags": [],
+    "description": "<p>D\u00e9compose un nombre entier dans une base n\u00e9gative. Ainsi, 30=(-3)^4+2<em>(-3)^3+1</em>(-3)^2+2*(-3)+0 donc 30=12120 en base -3. Les chiffres sont s\u00e9par\u00e9s par | en pr\u00e9vision des bases&gt;10.</p> <p></p>"
+}

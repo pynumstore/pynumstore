@@ -1,0 +1,9 @@
+{
+    "name": "drone",
+    "creator": "schraf",
+    "created_at": "September 20, 2018",
+    "size": "632 Bytes",
+    "image": "data/schraf/drone/schraf_drone.png",
+    "tags": [],
+    "description": "<p>On vous donne une rang\u00e9e de lampes \u00e9teintes repr\u00e9sent\u00e9e par une s\u00e9rie de \u201cx\u201d (Par exemple \u201cxxxxxx\u201d pour 6 lampes \u00e9teintes) ainsi que la trajectoire d\u2019un drone \u201cT\u201d (Par exemple \u201c===T\u201d pour un drone se d\u00e9pla\u00e7ant vers la droite de 4 unit\u00e9s).<br> Lorsque le drone passe au-dessus d\u2019une lampe il l\u2019allume (symbole \u201co\u201d).<br> <code>&gt;&gt; drone(\"xxxxxx\", \"===T\")<br>\n\"ooooxx\"</code><br> Ce qui signifie que le drone a allum\u00e9 les 4 premi\u00e8res lampes. Voici 2 autres exemples :<br> <code>&gt;&gt; drone(\"xxx\", \"=========T\")<br>\n\"ooo\"  # le drone a allum\u00e9 toutes les lampes<br>\n&gt;&gt; drone(\"xxxx\", \"T\")<br>\n\"oxxx\"</code><br></p> <p>\u00c9crire la fonction <b>drone</b> qui admet en param\u00e8tres la rang\u00e9e de lampes \u00e9teintes ainsi que la trajectoire du drone et qui en sortie affiche l\u2019\u00e9tat des lampes.</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "menulib2",
+    "creator": "fime",
+    "created_at": "November 28, 2021",
+    "size": "1.6 KB",
+    "image": "data/fime/menulib2/fime_menulib2.png",
+    "tags": [],
+    "description": "<h5><strong>Menulib is a simple function that allow the developper to create a customizable interactive menu.</strong></h5> <h5><strong>Bug report or review <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdw_YQyVFAZ1aGYHgwbAhjgHOFtuieCalm8qZLS267tAGvdTA/viewform?usp=sf_link\" rel=\"nofollow\">here</a></strong></h5> <h5><strong>Documentation <a href=\"https://nsi42.net/extra/fime/numworks/menulib/Menulib%20doc.html\" rel=\"nofollow\">here</a></strong></h5> <h5><strong>Exemple <a href=\"https://workshop.numworks.com/python/fime/menulib_exemple\" rel=\"nofollow\">here</a></strong></h5> <p></p>"
+}

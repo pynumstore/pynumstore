@@ -1,0 +1,9 @@
+{
+    "name": "bob",
+    "creator": "stimorol",
+    "created_at": "October 14, 2022",
+    "size": "1.14 KB",
+    "image": "data/stimorol/bob/stimorol_bob.png",
+    "tags": [],
+    "description": "<p>Petit programme qui dessine un point qui se d\u00e9place al\u00e9atoirement (il est pas terrible, mais j\u2019avais bien aim\u00e9 le faire). Il s\u2019affiche rouge si il monte, noir si il descend, vert si il va vers la gauche et bleu vers la droite.</p> <p></p>"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "maze_generator_v1",
+    "creator": "gradient01",
+    "created_at": "March 02, 2026",
+    "size": "7.14 KB",
+    "image": "data/gradient01/maze_generator_v1/gradient01_maze_generator_v1.png",
+    "tags": [
+        "game",
+        "maze"
+    ],
+    "description": "<p>This is a random maze generator that uses Kruskal\u2019s algorithm. You can change its size by modifying the \u201csize\u201d variable in the \u201c<strong>main.py</strong>\u201d script. Generating the size 2 maze takes about 1 minute and 30 seconds. After generation, the script will find the two furthest points and place the start and finish at these locations. After that, you can solve it! Once you have found the exit, the solution will be calculated and displayed.</p> <p>You can also check out <a href=\"https://my.numworks.com/python/gradient01/maze_generator_v2\" rel=\"nofollow\">maze_generator_v2</a>, which uses depth-first search algorithm.</p> <p>Good luck!</p> <div class=\"#game #maze\"></div> <p></p>"
+}

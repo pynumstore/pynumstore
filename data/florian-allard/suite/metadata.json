@@ -1,0 +1,9 @@
+{
+    "name": "suite",
+    "creator": "florian-allard",
+    "created_at": "May 02, 2018",
+    "size": "232 Bytes",
+    "image": "data/florian-allard/suite/florian-allard_suite.png",
+    "tags": [],
+    "description": "<p>Pour un nombre donn\u00e9 en entr\u00e9e, calcule la somme des carr\u00e9s des chiffres qui le composent et affiche cette somme. R\u00e9p\u00e8te l\u2019op\u00e9ration avec cette nouvelle somme comme nombre d\u2019entr\u00e9e.</p> <p></p>"
+}

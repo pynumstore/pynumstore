@@ -1,0 +1,11 @@
+{
+    "name": "mod_maze",
+    "creator": "antarctus",
+    "created_at": "May 08, 2023",
+    "size": "1.11 KB",
+    "image": "data/antarctus/mod_maze/antarctus_mod_maze.png",
+    "tags": [
+        "Randomized_Kruskal"
+    ],
+    "description": "<p>Module permettant de cr\u00e9er des labyrinthes de toutes dimensions, en utilisant <a href=\"https://en.wikipedia.org/wiki/Maze_generation_algorithm#Randomized_Kruskal's_algorithm\" rel=\"nofollow\">l\u2019algorithme de Kruskal</a>. <br></p> <p>Contient deux fonctions, une <code>maze(WIDTH,HEIGHT)</code> qui renvoit une liste \u00e0 deux dimensions avec la taille sp\u00e9cifi\u00e9 (bien penser \u00e0 mettre deux nombres impairs) et <code>draw_laby(map_)</code> qui trace le labyrinthe fourni.<br> Vous pouvez comprendre de mani\u00e8re tr\u00e8s claire cet algorithme avec <a href=\"https://my.numworks.com/python/antarctus/visual_maze\" rel=\"nofollow\">visual maze</a></p> <p></p>"
+}

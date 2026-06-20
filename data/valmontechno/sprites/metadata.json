@@ -1,0 +1,9 @@
+{
+    "name": "sprites",
+    "creator": "valmontechno",
+    "created_at": "April 19, 2025",
+    "size": "1.05 KB",
+    "image": "data/valmontechno/sprites/valmontechno_sprites.png",
+    "tags": [],
+    "description": "<p>This module allows you to display images on the Numworks calculator. You can convert any image with the <a href=\"https://github.com/valmontechno/Sprites-Numworks/blob/main/sprite_converter.py\" rel=\"nofollow\">sprite converter</a> then display it on the calculator with the <a href=\"https://github.com/valmontechno/Sprites-Numworks/blob/main/sprites.py\" rel=\"nofollow\">sprites module</a>.</p> <h4>View <a href=\"https://github.com/valmontechno/Sprites-Numworks\" rel=\"nofollow\">GitHub documentation </a> </h4> <p></p>"
+}

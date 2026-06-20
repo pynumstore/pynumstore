@@ -1,0 +1,9 @@
+{
+    "name": "ocean",
+    "creator": "schraf",
+    "created_at": "April 10, 2023",
+    "size": "492 Bytes",
+    "image": "data/schraf/ocean/schraf_ocean.png",
+    "tags": [],
+    "description": "<p>Version plus g\u00e9n\u00e9rale :</p> <pre>import turtle\nfrom random import *\n\nt = turtle.Turtle()\nt.speed(0)\nt.hideturtle()\np = 3\n\nw, h = 400, 300\nwn = turtle.Screen()\nwn.setup(2 * w, 2 * h)\nwn.colormode(255)\nwn.tracer(0)\n\nc = -w\nc1, c2 = (60,200,230), (30,) *3\nrvb = [0,0,0]\nt.speed(0)\n\ndef T(u,a1,a2,b1,b2): return int((b2-b1)/(a2-a1)*(u-a1)+b1)\n\nwhile c &lt; w:\n  l = -h\n  t.pensize(1)\n  for i in range(3): rvb[i] = T(c,-w,w,c1[i],c2[i])\n  t.pencolor((rvb[0],rvb[1],rvb[2]))  \n  while l &lt; 1.1 * h:\n    t.penup()\n    t.goto(c,l)\n    t.pendown()\n    t.setheading(choice((randint(-60,-30),randint(-150,-120))))\n    t.fd(p*1.414)\n    l += 3\n  p += 1\n  c += 5 \n\nwn.update()</pre> <p></p>"
+}

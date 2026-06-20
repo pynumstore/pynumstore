@@ -1,0 +1,9 @@
+{
+    "name": "rubik222",
+    "creator": "schraf",
+    "created_at": "June 05, 2021",
+    "size": "1.41 KB",
+    "image": "data/schraf/rubik222/schraf_rubik222.png",
+    "tags": [],
+    "description": "<p>Am\u00e9lioration du programme Rubik avec visualisation \u00e9clat\u00e9e du cube 2x2x2<br><br> Vous pouvez tester par exemple avec <code>&gt;&gt; ordre(\"FR\")</code><br> <img src=\"http://schraf.chez-alice.fr/numworks/cube222.jpg\"></p> <p></p>"
+}

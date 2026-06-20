@@ -1,0 +1,9 @@
+{
+    "name": "pythagore",
+    "creator": "numworks",
+    "created_at": "April 13, 2018",
+    "size": "161 Bytes",
+    "image": "data/numworks/pythagore/numworks_pythagore.png",
+    "tags": [],
+    "description": "<p>Ce script contient deux fonctions. La fonction <code>hypotenuse(a,b)</code> renvoie la longueur de l\u2019hypot\u00e9nuse d\u2019un triangle rectangle de petits c\u00f4t\u00e9s <strong>a</strong> et <strong>b</strong>. La fonction <code>pythagore(a,b,c)</code> teste si le triplet d\u2019entiers <strong>(a,b,c)</strong> est pythagoricien, c\u2019est-\u00e0-dire renvoie True si <code>a**2+b**2=c**2</code> et False sinon.</p> <p></p>"
+}

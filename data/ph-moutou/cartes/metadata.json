@@ -1,0 +1,9 @@
+{
+    "name": "cartes",
+    "creator": "ph-moutou",
+    "created_at": "April 21, 2018",
+    "size": "890 Bytes",
+    "image": "data/ph-moutou/cartes/ph-moutou_cartes.png",
+    "tags": [],
+    "description": "<p>Ce programme distribue n cartes d\u2019un paquet de 32 (fonction cartes1(n)) ou bien n cartes \u00e0 p joueurs (fonction cartes2(n,p)).</p> <p></p>"
+}

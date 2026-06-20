@@ -1,0 +1,9 @@
+{
+    "name": "epic3d",
+    "creator": "squarepoint",
+    "created_at": "December 09, 2022",
+    "size": "2.67 KB",
+    "image": "data/squarepoint/epic3d/squarepoint_epic3d.png",
+    "tags": [],
+    "description": "<p>A full 3d wireframe engine! It lags quite a bit though :/ Move with sin-cos-tan-ln, turn with 6-*-/-(</p> <p></p>"
+}

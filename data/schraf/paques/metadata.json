@@ -1,0 +1,9 @@
+{
+    "name": "paques",
+    "creator": "schraf",
+    "created_at": "March 13, 2025",
+    "size": "108 Bytes",
+    "image": "data/schraf/paques/schraf_paques.png",
+    "tags": [],
+    "description": "<p>Traduction en Python de la formule Excel <code>=FLOOR(DATE(year,3,MOD(18.37*MOD(year,19)-6,29)),7)+29</code> permettant de trouver la date du dimanche de P\u00e2ques pour une ann\u00e9e quelconque entre 1900 et 2099.</p> <pre>&gt;&gt;&gt; easter(2025)\n(20, 4, 2025)     # 20 avril 2025</pre> <p></p>"
+}

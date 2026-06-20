@@ -1,0 +1,9 @@
+{
+    "name": "cycles",
+    "creator": "schraf",
+    "created_at": "September 08, 2018",
+    "size": "333 Bytes",
+    "image": "data/schraf/cycles/schraf_cycles.png",
+    "tags": [],
+    "description": "<p>On consid\u00e8re une suite x<sub>n+1</sub>=f(x<sub>n</sub> ) avec une valeur initiale x<sub>0</sub>. Lorsqu\u2019il existe i\u2260j tels que x<sub>i</sub>=x<sub>j</sub> la suite est p\u00e9riodique. <br> Par exemple dans la suite : <br> <code>2, 0, 6, 3, 1, 6, 3, 1, 6, 3, 1, ...</code><br> le cycle est 6, 3, 1 et se r\u00e9p\u00e9tera forc\u00e9ment puisque f(1)=6, f(6)=3 et f(3)=1.<br></p> <p>Ecrire une fonction <b>cycle</b> qui admet en param\u00e8tre la liste des premiers \u00e9l\u00e9ments de la suite et donne en sortie la valeur du premier terme qui se r\u00e9p\u00e8te ainsi que la longueur du cycle ou alors \u201cPas de cycle\u201d si aucun cycle n\u2019est apparent.<br></p> <p><code>&gt;&gt; cycle([2,3,4,2,3,4])<br>\n[2,3]<br>\n# En effet 2,3,4 est le cycle qui se r\u00e9p\u00e8te donc le 1er terme est 2 et la longueur du cycle = 3<br>\n&gt;&gt; cycle([1,2,3,4])<br>\n'Pas de cycle'<br>\n&gt;&gt; cycle([1,2,3,4,7,3,4,7,3])<br>\n[3,3]<br>\n# 3,4,7 est le cycle de 1er terme 3 et de longueur 3</code></p> <p></p>"
+}

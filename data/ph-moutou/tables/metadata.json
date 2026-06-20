@@ -1,0 +1,9 @@
+{
+    "name": "tables",
+    "creator": "ph-moutou",
+    "created_at": "June 07, 2018",
+    "size": "850 Bytes",
+    "image": "data/ph-moutou/tables/ph-moutou_tables.png",
+    "tags": [],
+    "description": "<p>Pour s\u2019entra\u00eener aux tables de multiplications, on peut fixer les bornes de a et b (les multiplicandes) par d\u00e9faut a=2 et b=10. Le programme pose des questions jusqu\u2019\u00e0 ce que le taux de bonnes r\u00e9ponses soit sup\u00e9rieur ou \u00e9gal \u00e0 un tau param\u00e9trable, par d\u00e9faut \u00e9gal \u00e0 90%. Pour \u00e9viter d\u2019avoir toujours la m\u00eame s\u00e9rie de questions, changer la graine du g\u00e9n\u00e9rateur al\u00e9atoire (s)</p> <p></p>"
+}

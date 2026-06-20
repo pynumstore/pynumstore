@@ -1,0 +1,9 @@
+{
+    "name": "rule110",
+    "creator": "alain-busser",
+    "created_at": "April 26, 2018",
+    "size": "525 Bytes",
+    "image": "data/alain-busser/rule110/alain-busser_rule110.png",
+    "tags": [],
+    "description": "<p>rule 110 (in Wolfram\u2019s notation) for a one dimensional cellular automaton . Proved to be Turing-complete by Matthew Cook. To run an experiment, just init(); screen()</p> <p></p>"
+}

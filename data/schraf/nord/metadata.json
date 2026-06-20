@@ -1,0 +1,9 @@
+{
+    "name": "nord",
+    "creator": "schraf",
+    "created_at": "July 21, 2024",
+    "size": "542 Bytes",
+    "image": "data/schraf/nord/schraf_nord.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/M3GNgQoAbDQ\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <h1>Version avec kandinsky</h1> <p>Ce programme permet de retrouver (approximativement) le Nord et le Sud \u00e0 l\u2019aide de la calculatrice. Il suffit pour de pr\u00e9ciser l\u2019heure actuelle, si nous sommes en heure d\u2019\u00e9t\u00e9 ou d\u2019hiver puis d\u2019orienter la machine horizontalement vers le soleil\u2026</p> <h1>Version avec turtle</h1> <p>En rouge la direction du nord et en vert le sud</p> <pre>from turtle import *\n\ndef trait(a, c):\n  pensize(8)\n  color(c)\n  penup()\n  goto(0,0)\n  pendown()\n  setheading(a)\n  forward(100)\n    \ndef nord():\n  hm = input(\"hh.mm ? \")\n  he = input(\"Heure hiver (o/n) ? \")\n  [h,m] = [int(v) for v in hm.split(\".\")]\n  v = h + m / 60 - 1\n  if he.upper() == \"N\" or he == \"8\": v -= 1\n  angle = 15 * v - 90\n  trait(90, \"black\")\n  trait(angle, \"green\")\n  trait(angle + 180, \"red\")\n  hideturtle()</pre> <p></p>"
+}

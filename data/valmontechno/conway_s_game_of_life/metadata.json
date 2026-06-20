@@ -1,0 +1,9 @@
+{
+    "name": "conway_s_game_of_life",
+    "creator": "valmontechno",
+    "created_at": "June 09, 2024",
+    "size": "1.38 KB",
+    "image": "data/valmontechno/conway_s_game_of_life/valmontechno_conway_s_game_of_life.png",
+    "tags": [],
+    "description": "<p>Le <a href=\"https://fr.wikipedia.org/wiki/Jeu_de_la_vie\" rel=\"nofollow\">jeu de la Vie</a> (Game of Life) est un <a href=\"https://fr.wikipedia.org/wiki/Automate_cellulaire\" rel=\"nofollow\">automate cellulaire</a> imagin\u00e9 par <a href=\"https://fr.wikipedia.org/wiki/John_Horton_Conway\" rel=\"nofollow\">John Horton Conway</a> en 1970. Malgr\u00e9 des r\u00e8gles tr\u00e8s simples, il est <a href=\"https://fr.wikipedia.org/wiki/Turing-complet\" rel=\"nofollow\">Turing-complet</a>.</p> <p><img src=\"https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif?uselang=fr\" alt=\"\"></p> <p>\u00c0 chaque it\u00e9ration, l\u2019\u00e9tat d\u2019une cellule est enti\u00e8rement d\u00e9termin\u00e9 par l\u2019\u00e9tat de ses huit cellules voisines, selon les r\u00e8gles suivantes :<br> \u2022 Une cellule morte poss\u00e9dant exactement <strong>trois cellules voisines</strong> vivantes <strong>devient vivante</strong> (elle na\u00eet).<br> \u2022 Une cellule vivante poss\u00e9dant <strong>deux ou trois cellules voisines</strong> vivantes le <strong>reste</strong>, sinon elle meurt.</p> <p></p>"
+}

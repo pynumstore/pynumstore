@@ -1,0 +1,9 @@
+{
+    "name": "bin2dec",
+    "creator": "pascal-chauvin",
+    "created_at": "June 16, 2019",
+    "size": "696 Bytes",
+    "image": "data/pascal-chauvin/bin2dec/pascal-chauvin_bin2dec.png",
+    "tags": [],
+    "description": "<p>Donne la repr\u00e9sentation d\u2019une s\u00e9rie de bits (cha\u00eene alphanum\u00e9rique ou liste) en entier positif.</p> <p></p>"
+}

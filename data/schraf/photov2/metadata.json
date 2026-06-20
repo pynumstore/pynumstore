@@ -1,0 +1,9 @@
+{
+    "name": "photov2",
+    "creator": "schraf",
+    "created_at": "July 30, 2021",
+    "size": "3.02 KB",
+    "image": "data/schraf/photov2/schraf_photov2.png",
+    "tags": [],
+    "description": "<p>Vous pouvez tester le script dans l\u2019\u00e9mulateur en tapant <br><code>&gt;&gt; dess()</code><br> <img src=\"http://schraf.chez-alice.fr/numworks/iron.jpg\"><br></p> <p>Version am\u00e9lior\u00e9e du script <a href=\"https://workshop.numworks.com/python/schraf/gimpnumworks\" rel=\"nofollow\">gimpnumworks.py</a> dans le sens o\u00f9 l\u2019on compresse les donn\u00e9es de l\u2019image.<br> Par exemple <code>im=\"A7B3CD3\"</code> signifie 7 fois le caract\u00e8re \u201cA\u201d, 3 fois le \u201cB\u201d, 1 fois le \u201cC\u201d et 3 fois le \u201cD\u201d ce qui est plus court en m\u00e9moire que <code>im=\"AAAAAAABBBCDDD\"</code><br></p> <pre><code>\ndef nw():\n    lett=\"ABCDEFGHIJKLMNOP\"\n    img=gimp.image_list()[0]\n    pdb.gimp_image_scale(img, 80, 55)\n    drw = pdb.gimp_image_active_drawable(img)\n    if not(pdb.gimp_drawable_is_indexed(drw)):\n      pdb.gimp_convert_indexed(img, 0, 0, 16, 0, 1, 0)\n    im=\"\"\n    pal=[]\n    c=0\n    for i in range(4400):\n      v=list(pdb.gimp_image_pick_color(img,drw,i%80,i//80,1,0,0))[:-1]\n      if v not in pal: pal.append(v)\n      cour = pal.index(v)  \n      if i==0 : prec = cour      \n      if prec != cour and i&gt;0:\n        im+=lett[prec]\n        if c&gt;1: im+=str(c)\n        c=1\n        prec = cour\n      else:\n        c+=1\n    print \"pal=\"+str(pal)    \n    print \"im=\\\"\"+im+\"\\\"\"\n</code></pre> <p></p>"
+}

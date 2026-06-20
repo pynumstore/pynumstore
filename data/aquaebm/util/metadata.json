@@ -1,0 +1,9 @@
+{
+    "name": "util",
+    "creator": "aquaebm",
+    "created_at": "October 09, 2022",
+    "size": "2.17 KB",
+    "image": "data/aquaebm/util/aquaebm_util.png",
+    "tags": [],
+    "description": "<p>Utility classes, functions and a decorator for simple game programming on your numworks\u2026<br><br> Note that all my other scripts depend on this one, so you might want to load this onto your calculator first (and not modify it\u2019s name or contents).</p> <p></p>"
+}

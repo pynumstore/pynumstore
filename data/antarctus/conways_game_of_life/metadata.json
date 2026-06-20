@@ -1,0 +1,9 @@
+{
+    "name": "conways_game_of_life",
+    "creator": "antarctus",
+    "created_at": "December 12, 2021",
+    "size": "4.49 KB",
+    "image": "data/antarctus/conways_game_of_life/antarctus_conways_game_of_life.png",
+    "tags": [],
+    "description": "<p>Voici le jeu de la vie de conway ! <br> (<a href=\"https://fr.wikipedia.org/wiki/Jeu_de_la_vie\" rel=\"nofollow\">Page wikip\u00e9dia du jeu</a>), (<a href=\"https://www.youtube.com/watch?v=S-W0NX97DB0\" rel=\"nofollow\">Voici une vid\u00e9o sur le sujet</a>). <br> Pour le menu d\u2019\u00e9dition c\u2019est <code>EXE</code> pour le quitter, <code>Paste</code> and <code>Clear</code> pour changer le plan, et <code>Xnt</code> et <code>Var</code> pour retourner/ faire la sym\u00e9trie du plan. <br> Vous pouvez changez la r\u00e9solution et la vitesse du jeu \u00e0 la ligne 7 : <code>puissance=3</code>. N\u2019h\u00e9sitez pas \u00e0 tester <code>puissance=2</code> voir m\u00eame <code>puissance=1</code>.</p> <p></p>"
+}

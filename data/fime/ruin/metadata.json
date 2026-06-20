@@ -1,0 +1,9 @@
+{
+    "name": "ruin",
+    "creator": "fime",
+    "created_at": "December 17, 2022",
+    "size": "9.46 KB",
+    "image": "data/fime/ruin/fime_ruin.png",
+    "tags": [],
+    "description": "<h3><strong>R U I N</strong></h3> <p>\u201c<em>It\u2019s a piece of art btw</em>\u201d - Lauryy06</p> <p><em>Here\u2019s my new creation. It\u2019s a platform game.</em> Escape from the ruins as soon as possible! Run, jump from a platform to an other - and push the enemies into the void - until you reach the stairs that lead to the next level.</p> <p>Fix: Added an autosave (not working on Epsilon) (21/09/2020)</p> <hr> <p>Jump with [OK] (hold to jump higher), move with the [arrows], shoot some bullets with [toolbox] and pause the game with [backspace] . As usual, don\u2019t press [back] or you will stop the execution.</p> <hr> <h3> <strong>Level Maker</strong> <a href=\"https://my.numworks.com/python/fime/ruin_lvl_maker\" rel=\"nofollow\">here</a> </h3> <p>After creating a level, copy it\u2019s code and past it on the end of the <code>levels()</code> function (at the end of the program) : <code>else : return [] #insert your lvl code here</code></p> <h3><strong>Disclaimer</strong></h3> <p><strong>GOOD NEWS</strong> ! This game is now compatible with Epsilon 18, even the progression save will unfortunatly not work. To access this feature, please install Omega <a href=\"https://getomega.dev/install/latest\" rel=\"nofollow\">here</a></p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "chapitre11euler01",
+    "creator": "niz-moussatat",
+    "created_at": "March 23, 2025",
+    "size": "278 Bytes",
+    "image": "data/niz-moussatat/chapitre11euler01/niz-moussatat_chapitre11euler01.png",
+    "tags": [],
+    "description": "<p>M\u00e9thode d\u2019Euler pour repr\u00e9senter la solution de l\u2019\u00e9quation diff\u00e9rentielle y\u2019=1-2xy avec y(0)=0</p> <p></p>"
+}

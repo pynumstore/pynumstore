@@ -1,0 +1,9 @@
+{
+    "name": "justeprix",
+    "creator": "stimorol",
+    "created_at": "November 16, 2023",
+    "size": "494 Bytes",
+    "image": "data/stimorol/justeprix/stimorol_justeprix.png",
+    "tags": [],
+    "description": "<p>L\u2019utilisateur doit trouver un nombre entre 0 et 1000. A chaque tentative, l\u2019utilisateur est averti si le nombre entr\u00e9 est plus grand ou plus petit que le nombre a trouver. Il est conseill\u00e9 d\u2019utiliser la petite police de python pour utiliser ce script.</p> <p></p>"
+}

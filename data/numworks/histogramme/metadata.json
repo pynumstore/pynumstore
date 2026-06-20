@@ -1,0 +1,9 @@
+{
+    "name": "histogramme",
+    "creator": "numworks",
+    "created_at": "March 31, 2020",
+    "size": "178 Bytes",
+    "image": "data/numworks/histogramme/numworks_histogramme.png",
+    "tags": [],
+    "description": "<p>Trace un histogramme avec les valeurs de la liste x et les classes [0,5[, [5,10[, [10,12[, [12,14[, [14,16[, [18,20[.</p> <p></p>"
+}

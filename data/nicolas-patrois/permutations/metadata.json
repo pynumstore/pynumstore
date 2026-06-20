@@ -1,0 +1,9 @@
+{
+    "name": "permutations",
+    "creator": "nicolas-patrois",
+    "created_at": "May 28, 2018",
+    "size": "552 Bytes",
+    "image": "data/nicolas-patrois/permutations/nicolas-patrois_permutations.png",
+    "tags": [],
+    "description": "<p>Calcule le produit de permutations comme (1 2)(1 3 2) et qui vaut (1 3). usage : permutations(\u201c(1 2)(1 3 2)\u201d) If you want to calculate a power of a permutation, do permutations(\u201c(1 6 4 3)(2 5)(7 8 10)\u201d*5).</p> <p></p>"
+}

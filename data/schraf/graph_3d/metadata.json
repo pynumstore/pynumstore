@@ -1,0 +1,9 @@
+{
+    "name": "graph_3d",
+    "creator": "schraf",
+    "created_at": "April 07, 2023",
+    "size": "526 Bytes",
+    "image": "data/schraf/graph_3d/schraf_graph_3d.png",
+    "tags": [],
+    "description": "<p>Repr\u00e9sentation isom\u00e9trique de surfaces<br></p> <h2>Exemple 1</h2> <p><code>f(x,y) = cos(x*x+y*y)*exp(-x*x-y*y)<br>\nxmin,xmax,ymin,ymax=-2,2,-2,2<br>\nzmin,zmax=-0.5,0.8</code><br> <img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/152/images/cosexp.png\"></p> <p></p>"
+}

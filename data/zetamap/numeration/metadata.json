@@ -1,0 +1,9 @@
+{
+    "name": "numeration",
+    "creator": "zetamap",
+    "created_at": "November 11, 2022",
+    "size": "2.92 KB",
+    "image": "data/zetamap/numeration/zetamap_numeration.png",
+    "tags": [],
+    "description": "<p>Convert a text to Hexa, Binary or Decimal, and vice versa.</p> <p>Posibles conversion: 0- Text \u2192 Hexa<br> 1- Text \u2192 Decimal<br> 2- Text \u2192 Octal<br> 3- Text \u2192 Binary<br> 4- Hexa \u2192 Text<br> 5- Hexa \u2192 Decimal<br> 6- Hexa \u2192 Octal<br> 7- Hexa \u2192 Binary<br> 8- Decimal \u2192 Text<br> 9- Decimal \u2192 Hexa<br> 10-Decimal \u2192 Octal<br> 11-Decimal \u2192 Binary<br> 12-Octal \u2192 Text<br> 13-Octal \u2192 Hexa<br> 14-Octal \u2192 Decimal<br> 15-Octal \u2192 Binary<br> 16-Binary \u2192 Text<br> 17-Binary \u2192 Hexa<br> 18-Binary \u2192 Decimal<br> 19-Binary \u2192 Octal<br></p> <p><strong>Display of list may come out of the screen a little, because the script was designed with the small python font, but that does not interfere with its operation</strong></p> <p></p>"
+}

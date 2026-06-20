@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6FY6CRZ97G');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>PyNum Store - Creator {{ creator }} Page</title>
+  <link rel="icon" href='static/favicon.ico'>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/creator.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href='index.html' class="logo">PyNum<span>Store</span></a>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='search.html'>Search</a></li>
+        <li><a href='forcreators.html'>For creators</a></li>
+        <!--<li><a href='devtools.html'>Dev Tools</a></li>-->
+      </ul>
+    </div>
+  </nav>
+  
+  <section id="scripts">
+    <div class="section-inner">
+      <h2>Scripts of <span id="creator-name"></span></h2>
+      <div class="divider"></div>
+      <div id="scripts-grid" class="scripts-grid">
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2026 PyNum Store — By Gradient01 - Email: gradient01.dev@gmail.com</p>
+  </footer>
+
+  <script>
+    loadCreatorPage();
+  </script>
+
+</body>
+</html>

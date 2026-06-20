@@ -1,0 +1,9 @@
+{
+    "name": "suite_calculator",
+    "creator": "zetamap",
+    "created_at": "November 17, 2021",
+    "size": "5.39 KB",
+    "image": "data/zetamap/suite_calculator/zetamap_suite_calculator.png",
+    "tags": [],
+    "description": "<p>Ce programme permet de calculer la raison et u_0 d\u2019une suite, arithm\u00e9tique ou g\u00e9om\u00e9trique, \u00e0 partir de 2 points donn\u00e9s, puis vous affiche le r\u00e9sultat proprement avec le calcul effectuer par la machine, pour vous aider. <br> Le programme vous proposera ensuite, si vous le voulez, de calculer des points sp\u00e9cifiques dans cette suite, et/ou si vous voulez en faire la somme des termes.</p> <p></p>"
+}

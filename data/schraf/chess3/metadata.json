@@ -1,0 +1,9 @@
+{
+    "name": "chess3",
+    "creator": "schraf",
+    "created_at": "January 28, 2021",
+    "size": "1.3 KB",
+    "image": "data/schraf/chess3/schraf_chess3.png",
+    "tags": [],
+    "description": "<p>D\u00e9placements possibles pour une pi\u00e8ce blanche sur un \u00e9chiquier vide. Par exemple :<br> <code>&gt;&gt; jeu(T,\"e4\")</code><br> <img src=\"http://schraf.chez-alice.fr/numworks/Te4.png\"><br> <code>&gt;&gt; jeu(D,\"g8\")</code><br> <img src=\"http://schraf.chez-alice.fr/numworks/Dg8.png\"><br> <code>&gt;&gt; jeu(C,\"a6\")</code><br> <img src=\"http://schraf.chez-alice.fr/numworks/Ca6.png\"><br></p> <p></p>"
+}

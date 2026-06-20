@@ -1,0 +1,9 @@
+{
+    "name": "ehrenfest",
+    "creator": "alain-busser",
+    "created_at": "April 26, 2018",
+    "size": "266 Bytes",
+    "image": "data/alain-busser/ehrenfest/alain-busser_ehrenfest.png",
+    "tags": [],
+    "description": "<p>Les urnes des \u00e9poux Ehrenfest.Les fr\u00e9quences des 1280 premiers tirages sont affich\u00e9s, et on constate que les fluctuations autour de la fr\u00e9quence \u201climite\u201d de 50% ne se stabilisent jamais vraiment. Chaque appel \u00e0 la fonction urnes() refait un dessin, ce qui fait que pour avoir 8 courbes superpos\u00e9es il suffit de faire for k in range(8): urnes()</p> <p></p>"
+}

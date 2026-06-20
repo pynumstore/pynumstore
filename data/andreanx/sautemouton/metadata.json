@@ -1,0 +1,9 @@
+{
+    "name": "sautemouton",
+    "creator": "andreanx",
+    "created_at": "July 11, 2020",
+    "size": "8.08 KB",
+    "image": "data/andreanx/sautemouton/andreanx_sautemouton.png",
+    "tags": [],
+    "description": "<p>A gauche n moutons maigres en bergerie, a droite n moutons gras au p\u00e2turage. Rentre les moutons gras en bergerie et sors les moutons maigres au p\u00e2turage. Les moutons ne sautent qu\u20191 mouton a la fois ni reculent.</p> <p>Appel : sm(n=3)</p> <p>Touches : [&lt;-][-&gt;] : choix du mouton [OK] : avancer ou sauter [clear] : quitter</p> <p></p>"
+}

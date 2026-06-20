@@ -1,0 +1,9 @@
+{
+    "name": "divisors",
+    "creator": "alain-busser",
+    "created_at": "April 30, 2018",
+    "size": "266 Bytes",
+    "image": "data/alain-busser/divisors/alain-busser_divisors.png",
+    "tags": [],
+    "description": "<p>Exemples d\u2019utilisation ici: http://irem.univ-reunion.fr/spip.php?article970</p> <p>divisors(n) yields the list of the divisors of an integer n;</p> <p>cd(a,b) (\u201ccommon divisors\u201d) yields the lists of the common divisors of a and b;</p> <p>gcd(a,b) yields the greatest of the common divisors</p> <p>and isPrime(n) is a test for the primality of the integer n.</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "conway_complet",
+    "creator": "florian-allard",
+    "created_at": "February 18, 2021",
+    "size": "7.71 KB",
+    "image": "data/florian-allard/conway_complet/florian-allard_conway_complet.png",
+    "tags": [],
+    "description": "<p>Cet automate cellulaire ou Jeu de la vie (Game of Life), dont le principe vient de John Horton Conway, simule l\u2019\u00e9volution d\u2019une colonie de cellules. Le plateau se comporte comme un tore, les bords se recollent. Le menu permet de choisir la forme des cellules, l\u2019espacement entre les cellules, un placement initial al\u00e9atoire ou au choix de l\u2019utilisateur, l\u2019affichage en couleur du vieillissement des cellules, le nombre de cycles \u00e0 effectuer et afficher, faire une pause \u00e0 la fin de chaque cycle\u2026 Il permet \u00e9galement de modifier (avec les fl\u00e8ches haut et bas) les r\u00e8gles de naissance et de survie.</p> <p></p>"
+}

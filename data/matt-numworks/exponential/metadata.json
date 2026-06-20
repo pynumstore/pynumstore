@@ -1,0 +1,9 @@
+{
+    "name": "exponential",
+    "creator": "matt-numworks",
+    "created_at": "February 20, 2026",
+    "size": "257 Bytes",
+    "image": "data/matt-numworks/exponential/matt-numworks_exponential.png",
+    "tags": [],
+    "description": "<p>Compares the value of (1+1/x)^x with e</p> <p></p>"
+}

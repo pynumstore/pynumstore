@@ -1,0 +1,9 @@
+{
+    "name": "bairstow",
+    "creator": "lebourhisgilles",
+    "created_at": "February 01, 2020",
+    "size": "1.64 KB",
+    "image": "data/lebourhisgilles/bairstow/lebourhisgilles_bairstow.png",
+    "tags": [],
+    "description": "<p>R\u00e9solution num\u00e9rique d\u2019\u00e9quations polynomiales \u00e0 coefficients r\u00e9els de degr\u00e9 arbitraire dans C par la m\u00e9thode de Bairstow (1920). La m\u00e9thode perd en efficacit\u00e9 lorsqu\u2019il existe des racines de multiplicit\u00e9 sup\u00e9rieure \u00e0 1.</p> <p>Solving polynomial equations by a numerical method using complex numbers, thanks to Bairstow\u2019s ideas (1920). It works fine except for the case of at least one root of multiplicity greater than 1.</p> <p></p>"
+}

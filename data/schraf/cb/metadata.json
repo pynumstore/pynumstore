@@ -1,0 +1,9 @@
+{
+    "name": "cb",
+    "creator": "schraf",
+    "created_at": "December 29, 2021",
+    "size": "751 Bytes",
+    "image": "data/schraf/cb/schraf_cb.png",
+    "tags": [],
+    "description": "<p>Depuis 2019 le logo est plus simple (pas de bandes \u00e0 l\u2019intersection), voici un exemple de code :</p> <pre>from kandinsky import *\n\nRO, OR, ROR, WH = (252,9,17), (254,167,0), (254,105,0), (255,255,255)\nR = 80 ** 2\n\nfor l in range(222):\n    for c in range(320):\n        rouge = (c - 100) ** 2 + (l - 111) ** 2 &lt; R\n        orange = (c - 216) ** 2 + (l - 111) ** 2 &lt; R\n        if rouge and orange: coul = ROR\n        elif rouge: coul = RO\n        elif orange: coul = OR   \n        if orange or rouge: set_pixel(c,l,coul)</pre> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "jeudemains2024",
+    "creator": "florian-allard",
+    "created_at": "August 04, 2024",
+    "size": "8.94 KB",
+    "image": "data/florian-allard/jeudemains2024/florian-allard_jeudemains2024.png",
+    "tags": [],
+    "description": "<p>R\u00e8gles : le joueur qui joue choisit une de ses deux mains puis choisit la main adverse \u00e0 attaquer. Ensuite, la main qui attaque \u201crefile\u201d son nombre de doigts \u00e0 la main attaqu\u00e9e qui a donc un plus grand nombre de doigts apr\u00e8s l\u2019attaque. Si le nombre de doigts atteint exactement 5, alors la main se referme et n\u2019est plus jouable (ni pour attaquer, ni pour \u00eatre attaqu\u00e9e). Si le nombre de doigts d\u00e9passe strictement 5, alors on soustrait 5 et le nombre restant donne le nombre de doigts restants. Si on a une main referm\u00e9e et un nombre pair de doigts sur l\u2019autre main, alors on peut jouer la main referm\u00e9e ce qui entra\u00eene un partage du nombre de doigts de l\u2019autre main en la moiti\u00e9 sur chaque main. Le but du jeu est de faire se refermer les deux mains de l\u2019adversaire (autrement dit : faire atteindre 5 doigts \u00e0 chacune des mains adverses).</p> <p></p>"
+}

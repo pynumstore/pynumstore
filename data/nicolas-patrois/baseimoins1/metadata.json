@@ -1,0 +1,9 @@
+{
+    "name": "baseimoins1",
+    "creator": "nicolas-patrois",
+    "created_at": "December 15, 2018",
+    "size": "295 Bytes",
+    "image": "data/nicolas-patrois/baseimoins1/nicolas-patrois_baseimoins1.png",
+    "tags": [],
+    "description": "<p>D\u00e9compose un nombre dans la base i-1. Comme 5=(i-1)^8+(i-1)^7+(i-1)^6+(i-1)^4+1, on \u00e9crit que 5=111010001 dans la base i-1.</p> <p></p>"
+}

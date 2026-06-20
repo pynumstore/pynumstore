@@ -1,0 +1,9 @@
+{
+    "name": "probleme_8_dames",
+    "creator": "florian-allard",
+    "created_at": "July 15, 2025",
+    "size": "5.99 KB",
+    "image": "data/florian-allard/probleme_8_dames/florian-allard_probleme_8_dames.png",
+    "tags": [],
+    "description": "<p>Le probl\u00e8me des 8 dames consiste \u00e0 placer 8 dames sur un \u00e9chiquier sans qu\u2019elles ne se menacent mutuellement. Chaque dame menace toute dame qui est sur la m\u00eame ligne ou sur la m\u00eame colonne ou sur la m\u00eame diagonale.</p> <p>Dans la premi\u00e8re phase du jeu, on place une dame dans chaque colonne. Dans la seconde phase, on d\u00e9place les dames dans leur colonne respective, pour trouver la solution.</p> <p></p>"
+}

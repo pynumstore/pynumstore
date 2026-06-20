@@ -1,0 +1,9 @@
+{
+    "name": "mobile",
+    "creator": "schraf",
+    "created_at": "September 15, 2018",
+    "size": "442 Bytes",
+    "image": "data/schraf/mobile/schraf_mobile.png",
+    "tags": [],
+    "description": "<p>Vous souvenez-vous des anciens claviers des mobiles ? Vous souvenez-vous \u00e9galement de l\u2019inconv\u00e9nient pour \u00e9crire ? Ici, vous devez calculer le nombre de touches que vous devez taper pour \u00e9crire un mot sp\u00e9cifique. Voici la disposition :<br></p> <p><img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/131/images/mobile.png\"></p> <p>Exemples<br> <code>&gt;&gt; taper(\"123\") <br>\n3<br>\n&gt;&gt; taper(\"abc\") <br>\n9 (2+3+4)<br> \n# Taper 2 fois pour obtenir \"a\", 3 fois pour obtenir \"b\", 4 fois pour \"c\"<br>\n&gt;&gt; taper(\"baccalaureat\")  <br>\n35\n</code></p> <p>On ne tiendra pas compte ici des touches sp\u00e9ciales * et #.<br></p> <p>\u00c9crire une fonction <b>taper</b> qui admet en param\u00e8tre la le mot \u00e0 afficher et qui en sortie donne le nombre de touches qu\u2019il faudra taper.</p> <p></p>"
+}

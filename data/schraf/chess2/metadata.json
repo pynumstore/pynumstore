@@ -1,0 +1,9 @@
+{
+    "name": "chess2",
+    "creator": "schraf",
+    "created_at": "September 15, 2022",
+    "size": "1.81 KB",
+    "image": "data/schraf/chess2/schraf_chess2.png",
+    "tags": [],
+    "description": "<p>La variable <b>part</b> contient la partie \u00e0 jouer.</p> <p>Am\u00e9lioration possible : Appuie d\u2019une touche pour passer au coup suivant</p> <p><a href=\"https://www.youtube.com/playlist?list=PLIz4PfDd5D2_4Or-TCQA_XtO-r4_8vJ5_\" rel=\"nofollow\">Playlist Youtube sur la NUMWORKS (jeux, programmation Python\u2026)</a></p> <p></p>"
+}

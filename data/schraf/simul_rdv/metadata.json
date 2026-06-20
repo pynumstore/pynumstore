@@ -1,0 +1,9 @@
+{
+    "name": "simul_rdv",
+    "creator": "schraf",
+    "created_at": "September 20, 2018",
+    "size": "255 Bytes",
+    "image": "data/schraf/simul_rdv/schraf_simul_rdv.png",
+    "tags": [],
+    "description": "<p>Deux personnes se donnent rendez-vous entre 12h et 13h. Quel sera en moyenne le temps d\u2019attente de la premi\u00e8re personne arriv\u00e9e ?<br></p> <ul> <li>R\u00e9p\u00e9ter un certain nombre de fois l\u2019exp\u00e9rience (\ud835\udc5b = 5000 par exemple)<br> </li> <li>Chaque exp\u00e9rience donnera un r\u00e9sultat (Temps d\u2019attente en minutes, nombre d\u2019allumettes etc.)<br> </li> <li>Faire la moyenne de ces r\u00e9sultats (Somme des r\u00e9sultats divis\u00e9 par le nombre de simulations)</li> <li>On obtient une estimation ponctuelle de la moyenne (not\u00e9e \ud835\udc5a<sub>\ud835\udc52</sub>)<br> </li> </ul> <p>Explications du programme en vid\u00e9o : <a href=\"https://youtu.be/YOBwrrTIHe0\" rel=\"nofollow\">https://youtu.be/YOBwrrTIHe0</a><br></p> <p>La valeur th\u00e9orique que l\u2019on peut trouver apr\u00e8s calculs est de 20 minutes.<br></p> <p>Modifiez le programme pour savoir quel sera le temps d\u2019attente de la premi\u00e8re personne lorsque le rendez-vous est pr\u00e9vu entre 16h et 16h30.<br></p> <p><a href=\"https://youtu.be/YOBwrrTIHe0\" rel=\"nofollow\">Explications en vid\u00e9o des exercices de simulation</a><br></p> <p>Aller plus loin et trouver un intervalle de confiance :<br></p> <p>La moyenne est dans l\u2019intervalle [mini ; maxi] avec 95% de chance<br></p> <p>\ud835\udc3c=[ \ud835\udc5a<sub>\ud835\udc52</sub> \u2212 (1,96 \ud835\udf0e<sub>\ud835\udc52</sub>) / \u221a\ud835\udc5b ; \ud835\udc5a<sub>\ud835\udc52</sub> + (1,96 \ud835\udf0e<sub>\ud835\udc52</sub>) / \u221a\ud835\udc5b ] o\u00f9 \ud835\udf0e<sub>\ud835\udc52</sub> est l\u2019\u00e9cart-type observ\u00e9</p> <p></p>"
+}

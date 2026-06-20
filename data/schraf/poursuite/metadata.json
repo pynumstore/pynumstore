@@ -1,0 +1,9 @@
+{
+    "name": "poursuite",
+    "creator": "schraf",
+    "created_at": "October 08, 2018",
+    "size": "1.61 KB",
+    "image": "data/schraf/poursuite/schraf_poursuite.png",
+    "tags": [],
+    "description": "<p>Le but est d\u2019amener votre avion \u00e0 la position (200,200,0)<br> La difficult\u00e9 est que nous sommes dans un espace \u00e0 3 dimensions et qu\u2019un missile vous poursuit\u2026<br> Touche 7 et 1 pour augmenter ou diminuer la vitesse sur l\u2019axe des \u201cX\u201d<br> Touche 8 et 2 pour augmenter ou diminuer la vitesse sur l\u2019axe des \u201cY\u201d<br> Touche 9 et 3 pour augmenter ou diminuer la vitesse sur l\u2019axe des \u201cZ\u201d<br> Au d\u00e9but du jeu votre avion est en X=0, Y=0, Z=255 (point blanc en haut \u00e0 gauche de l\u2019\u00e9cran)<br> Le missile est noir et \u00e0 la position X=200, Y=200 et Z=0 (l\u00e0 o\u00f9 vous devez aller)<br> Attention \u00e0 ne pas sortir de l\u2019\u00e9cran ou de vous faire rattraper par le missile sinon votre avion explose !<br> Vous pouvez r\u00e9gler la difficult\u00e9 en modifiant la valeur de <b>diff</b>. Mettre par exemple 0.4<br> <img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/151/images/pours1.jpg\"><br> Notre avion a explos\u00e9 !<br> Remarquez que la couleur de l\u2019avion passe du blanc (loin, par exemple Z = 255) au magenta (proche, par exemple Z = 0)</p> <p></p>"
+}

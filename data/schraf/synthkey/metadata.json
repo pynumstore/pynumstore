@@ -1,0 +1,9 @@
+{
+    "name": "synthkey",
+    "creator": "schraf",
+    "created_at": "January 10, 2023",
+    "size": "1.08 KB",
+    "image": "data/schraf/synthkey/schraf_synthkey.png",
+    "tags": [],
+    "description": "<p><a href=\"https://www.youtube.com/schraf\" rel=\"nofollow\">D\u00e9couvrez ma chaine YouTube (Python, JavaScript, calculatrices\u2026)</a></p> <p>Le principe est tr\u00e8s simple, en une minute vous devez r\u00e9aliser le score le plus \u00e9lev\u00e9 possible. Pour cela appuyez sur les touches <code>0</code>, <code>.</code>, <code>x10^x</code>,<code>Ans</code> ou <code>EXE</code> en fonction des rectangles bleus qui apparaissent en bas de l\u2019\u00e9cran.</p> <p>OK = Nombre d\u2019appuis r\u00e9ussis et KO = Nombre d\u2019appuis rat\u00e9s.</p> <p></p>"
+}

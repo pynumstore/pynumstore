@@ -1,0 +1,9 @@
+{
+    "name": "bagh_chal",
+    "creator": "florian-allard",
+    "created_at": "July 25, 2025",
+    "size": "14.8 KB",
+    "image": "data/florian-allard/bagh_chal/florian-allard_bagh_chal.png",
+    "tags": [],
+    "description": "<p>Adaptation du jeu Bagh Chal (Tactique du tigre ou Tigres et ch\u00e8vres).</p> <p>Un des joueurs dirige les 4 tigres et doit manger 5 ch\u00e8vres pour gagner. Il perd si les 4 tigres sont bloqu\u00e9s. L\u2019autre joueur place puis d\u00e9place 20 ch\u00e8vres et doit bloquer les 4 tigres pour gagner. Il perd si 5 ch\u00e8vres sont mang\u00e9es.</p> <p>On joue avec les fl\u00e8ches et la touche OK (pour s\u00e9lectionner un pion ou pour valider un d\u00e9placement).</p> <p></p>"
+}

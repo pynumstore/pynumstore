@@ -1,0 +1,9 @@
+{
+    "name": "gensudoku",
+    "creator": "dan-wallez",
+    "created_at": "August 08, 2020",
+    "size": "6.36 KB",
+    "image": "data/dan-wallez/gensudoku/dan-wallez_gensudoku.png",
+    "tags": [],
+    "description": "<p>Programme exclusif premi\u00e8re version. Fonction gensudoku(). Cette fonction g\u00e9n\u00e8re de mani\u00e8re al\u00e9atoire une grille de sudoku case par case (le temps est assez long) environ 5 min en cas de blocage il y a un retour en arri\u00e8re voire m\u00eame un TIME OUT qui se d\u00e9clenche au bout de 60 s, cela est indiqu\u00e9 lors du d\u00e9roulement du programme. A la fin la grille solution est indiqu\u00e9e (il faut remonter pour la voir) suivi de la grille \u00e0 r\u00e9soudre correspondante. Mettre la police python en grand dans param\u00e8tres pour plus de confort</p> <p></p>"
+}

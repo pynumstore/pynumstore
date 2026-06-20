@@ -1,0 +1,9 @@
+{
+    "name": "braille",
+    "creator": "schraf",
+    "created_at": "August 05, 2020",
+    "size": "1.62 KB",
+    "image": "data/schraf/braille/schraf_braille.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/_ZCrjkkMCR4\" rel=\"nofollow\">Vid\u00e9o d\u2019explication</a></p> <p>Programme pour apprendre les lettres de l\u2019alphabet Braille (sans les accents)</p> <p>Dans le menu qui s\u2019affiche, choisir 1 si vous voulez lire des mots \u00e9crits en braille (tapez le mot pour v\u00e9rifier ou simplement touche EXE), choisir 2 pour \u00e9crire en braille (touches 1-2-4-5-7-8 du clavier) des lettres de l\u2019alphabet tir\u00e9es au hasard et 3 pour que la machine \u00e9crive en braille le mot que vous taperez.</p> <p></p>"
+}

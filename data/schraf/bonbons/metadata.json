@@ -1,0 +1,9 @@
+{
+    "name": "bonbons",
+    "creator": "schraf",
+    "created_at": "September 30, 2018",
+    "size": "613 Bytes",
+    "image": "data/schraf/bonbons/schraf_bonbons.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/CqcnEANnQoo\" rel=\"nofollow\">Toutes les explications en vid\u00e9o ici</a><br></p> <p>\u00c0 la maternelle, l\u2019instituteur a donn\u00e9 des bonbons aux enfants. Le nombre de bonbons que chaque enfant re\u00e7oit n\u2019est pas toujours le m\u00eame. Voici par exemple une distribution possible : <code>[10,2,8,22,16,4,10,6,14,20]</code><br></p> <p>L\u2019instituteur a demand\u00e9 aux enfants de faire un cercle et de jouer \u00e0 un jeu : chaque enfant donne la moiti\u00e9 de ses bonbons \u00e0 l\u2019enfant sur sa droite (en m\u00eame temps). Si le nombre de bonbons est un nombre impair, l\u2019enseignant lui donne un bonbon suppl\u00e9mentaire pour que le partage tombe juste.</p> <p>On r\u00e9p\u00e8te cette proc\u00e9dure jusqu\u2019\u00e0 ce que les enfants aient le m\u00eame nombre de bonbons. <br></p> <p>Vous devez cr\u00e9er une fonction <b>distrib</b> qui, \u00e0 partir de la distribution initiale de l\u2019instituteur, affiche les diff\u00e9rentes \u00e9tapes jusqu\u2019\u00e0 ce que tous les enfants aient le m\u00eame nombre de bonbons.<br></p> <p><code>&gt;&gt; distrib([ 1,2,3,4,5 ])<br>\n[ 4,2,3,4,5 ]  <br>\n#  Le 1er enfant qui n'a qu'un bonbon re\u00e7oit de l'instit un autre bonbon qu'il donne au 2e<br>\n# Le dernier qui en a 5 re\u00e7oit de l'instit un autre bonbon et donne donc 6/2 = 3 au premier enfant<br>\n# L'enfant n\u00b01 a donc bien 1+3 = 4 bonbons \u00e0 la premi\u00e8re \u00e9tape<br>\n[ 5,3,3,4,5 ]<br>\n[ 6,5,4,4,5 ]<br>\n[ 6,6,5,4,5 ]<br>\n[ 6,6,6,5,5 ]<br>\n[ 6,6,6,6,6 ]</code><br></p> <p>Dans cet exemple ont voit que tous les enfants auront 6 bonbons \u00e0 la fin du jeu.</p> <p></p>"
+}

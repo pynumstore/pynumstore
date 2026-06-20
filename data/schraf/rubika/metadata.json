@@ -1,0 +1,9 @@
+{
+    "name": "rubika",
+    "creator": "schraf",
+    "created_at": "January 18, 2021",
+    "size": "1.48 KB",
+    "image": "data/schraf/rubika/schraf_rubika.png",
+    "tags": [],
+    "description": "<p><a href=\"\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p>Pour lancer le jeu, faire go() tout seul ou go avec un param\u00e8tre pour augmenter ou diminuer la difficult\u00e9, par exemple go(2) pour avoir un jeu dont la solution est possible en 2 coups.</p> <p><a href=\"https://ia801500.us.archive.org/18/items/mr-04/MicroRevueHP/MicroRevueHP/MICROREVUE10.pdf\" rel=\"nofollow\">Le jeu d\u2019origine pour la HP 41</a></p> <p></p>"
+}

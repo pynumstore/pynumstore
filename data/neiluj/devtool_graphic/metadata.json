@@ -1,0 +1,9 @@
+{
+    "name": "devtool_graphic",
+    "creator": "neiluj",
+    "created_at": "December 29, 2023",
+    "size": "2.36 KB",
+    "image": "data/neiluj/devtool_graphic/neiluj_devtool_graphic.png",
+    "tags": [],
+    "description": "<p>helps devs to create a graphic interfance using fill_rects</p> <ul> <li>[Var] to create a square [Ok] to place it</li> <li>Move with arrow keys</li> <li>Extend lenght or with by pressing arrow keys + [toolbox]</li> <li>[Ans] : choose new rgb color : key backspace to erase the old one, use number keys . EXE at the end</li> <li>EXE when you are done then OK and copy outputs</li> </ul> <p></p>"
+}

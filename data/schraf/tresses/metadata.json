@@ -1,0 +1,9 @@
+{
+    "name": "tresses",
+    "creator": "schraf",
+    "created_at": "November 07, 2021",
+    "size": "1.01 KB",
+    "image": "data/schraf/tresses/schraf_tresses.png",
+    "tags": [],
+    "description": "<p>Ecrire une fonction <code>tresse</code> ayant en param\u00e8tres le nombre de colonnes et de lignes voulues (par exemple <code>tresse(5,7)</code> pour 5 colonnes et 7 lignes) et qui en sortie affiche un motif dont la partie en gauche est r\u00e9p\u00e9t\u00e9e sym\u00e9triquement \u00e0 droite et la partie haute est r\u00e9p\u00e9t\u00e9e sym\u00e9triquement en bas.</p> <p>Exemples :</p> <pre>&gt;&gt; tresse(5,4)\n<b>-o-</b>o-\n<b>ooo</b>oo\nooooo\n-o-o-</pre> <pre>&gt;&gt;tresse(8,5)\no------o\no-oooo-o\nooo--ooo\no-oooo-o\no------o</pre> <p>La version ci-dessous utilise les nombres binaires mais on peut imaginer plusieurs autres solutions.</p> <p></p>"
+}

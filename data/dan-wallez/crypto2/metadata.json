@@ -1,0 +1,9 @@
+{
+    "name": "crypto2",
+    "creator": "dan-wallez",
+    "created_at": "August 08, 2020",
+    "size": "3.7 KB",
+    "image": "data/dan-wallez/crypto2/dan-wallez_crypto2.png",
+    "tags": [],
+    "description": "<p>Pour plus de confort param\u00e9trer police python \u00e0 petit dans param\u00e8tres. Fonction codage_affine() saisir les param\u00e8tres a_c et b_c de la fonction affine de codage, le programme d\u00e9termine les param\u00e8tres a_d et b_d de la fonction affine d\u00e9codage. Seuls les lettres et espaces sont accept\u00e9s. Fonction codage_cesar() : saisir le param\u00e8tre de d\u00e9calage ainsi que le mot en MAJ \u00e0 coder. Fonction codage_vigenere() : Saisir le mot cl\u00e9 de codage ainsi que le mot \u00e0 coder (tout en MAJ).</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "cube_move",
+    "creator": "zetamap",
+    "created_at": "September 15, 2023",
+    "size": "4.23 KB",
+    "image": "data/zetamap/cube_move/zetamap_cube_move.png",
+    "tags": [],
+    "description": "<p>A start of a 3D engine. Use<code>OK</code> to display the faces or edges of cube and <code>\u2190\u2191\u2192\u2193+-</code> to move it.</p> <p><strong>NOTE</strong>: This script work better on Upsilon because <code>fill_polygon()</code> function doesn\u2019t exist in others OS. So we need to re-implement this and is consuming a lot of resources.</p> <p>This is an improvement of the <a href=\"https://my.numworks.com/python/antarctus/cube_move\" rel=\"nofollow\">infarctus\u2019s</a> script, so thanks to it. =)</p> <p></p>"
+}

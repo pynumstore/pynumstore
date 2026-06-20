@@ -1,0 +1,9 @@
+{
+    "name": "base3equilibree",
+    "creator": "nicolas-patrois",
+    "created_at": "December 15, 2018",
+    "size": "382 Bytes",
+    "image": "data/nicolas-patrois/base3equilibree/nicolas-patrois_base3equilibree.png",
+    "tags": [],
+    "description": "<p>D\u00e9compose un nombre en base 3 o\u00f9 les chiffres sont 1, 0 et \u22121 (not\u00e9 T). Comme 100=3^4+3^3-3^2+3^0, on note 100=11T01 en base 3 \u00e9quilibr\u00e9e.</p> <p></p>"
+}

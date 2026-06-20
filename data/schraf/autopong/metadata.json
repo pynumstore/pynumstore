@@ -1,0 +1,9 @@
+{
+    "name": "autopong",
+    "creator": "schraf",
+    "created_at": "February 01, 2024",
+    "size": "1.37 KB",
+    "image": "data/schraf/autopong/schraf_autopong.png",
+    "tags": [],
+    "description": "<p><a href=\"https://www.youtube.com/watch?v=EgpTxBl9Yx4&amp;list=PLIz4PfDd5D2_4Or-TCQA_XtO-r4_8vJ5_\" rel=\"nofollow\">Playlist NUMWORKS de ma chaine Youtube</a></p> <p><a href=\"https://www.tiktok.com/@schraf/video/7328082242809416992?lang=fr\" rel=\"nofollow\">Version TikTok</a></p> <p><a href=\"https://jsfiddle.net/9t2ac0mb/96/\" rel=\"nofollow\">Version en JavaScript de Maxime Richard</a></p> <p>Vous pouvez effacer la derni\u00e8re ligne \u201csleep(0.01)\u201d pour que l\u2019animation aille beaucoup plus vite sur votre calculatrice.</p> <p></p>"
+}

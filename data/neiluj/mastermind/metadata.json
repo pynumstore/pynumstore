@@ -1,0 +1,9 @@
+{
+    "name": "mastermind",
+    "creator": "neiluj",
+    "created_at": "April 08, 2023",
+    "size": "5.54 KB",
+    "image": "data/neiluj/mastermind/neiluj_mastermind.png",
+    "tags": [],
+    "description": "<p>[FR] &amp; [EN] :</p> <p>[FR] : L\u2019objectif est de trouver un code couleur al\u00e9atoire de 4 couleurs (toutes diff\u00e9rentes) . Pour s\u00e9lectionner une couleur, d\u00e9placez la plateforme jaune avec les touche [HAUT] et [BAS] puis une fois sur la bonne couleur appuyez sur [OK] pour choisir cette couleur, si vous vous trompez de couleurs, vous pouvez les effacer avec la touche [SUPR]. Une fois que vous avez les 4 couleurs souhait\u00e9s appuyez sur [EXE] : Le chiffre de gauche correspond au nombre de couleurs en commun avec le code mais \u00e0 la mauvaises place et \u00e0 droite les couleurs \u00e0 la bonne place.</p> <p>[EN] : The goal is to find a random color code of 4 colors (all different). To select a color, move the yellow platform with the [UP] and [DOWN] keys then once on the right color press [OK] to choose this color, in case if you missclicked you can erase the colors with key [BACKSPACE]. Once you have the 4 colors you want press [EXE]: The number on the left is the number of colors in common with the code but in the wrong place and on the right the colors in the right place.</p> <p></p>"
+}

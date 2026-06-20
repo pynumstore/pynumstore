@@ -1,0 +1,9 @@
+{
+    "name": "rac_annee",
+    "creator": "schraf",
+    "created_at": "July 01, 2022",
+    "size": "176 Bytes",
+    "image": "data/schraf/rac_annee/schraf_rac_annee.png",
+    "tags": [],
+    "description": "<p>Suite au Tweet de <a href=\"https://twitter.com/nsi_xyz/status/1542745313525604352\" rel=\"nofollow\">nsi.xyz</a>, voici un petit programme qui recherche les nombres <code>n</code> se terminant par l\u2019ann\u00e9e voulue et tels que rac(n + rac(n + rac( n + \u2026))) donne un entier. Par exemple <code>n = 1722</code> correspond au 1er juillet 2022 (1.7.22) et rac(1722 + rac(1722 + rac(1722 + \u2026))) = 42 qui est un entier.</p> <ul> <li>Lancez le programme et tapez <code>22</code> pour l\u2019ann\u00e9e 2022. Remarquez que certaines solutions ne sont pas de vraies dates</li> <li>En quelle ann\u00e9e aurons-nous \u00e0 nouveau des dates donnant des entiers en appliquant la succession infinie de racines carr\u00e9es ?</li> </ul> <p></p>"
+}

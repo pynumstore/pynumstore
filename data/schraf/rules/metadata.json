@@ -1,0 +1,9 @@
+{
+    "name": "rules",
+    "creator": "schraf",
+    "created_at": "June 16, 2023",
+    "size": "415 Bytes",
+    "image": "data/schraf/rules/schraf_rules.png",
+    "tags": [],
+    "description": "<h2>Automate cellulaire \u00e0 une dimension</h2> <ul> <li> <a href=\"https://mathworld.wolfram.com/Rule182.html\" rel=\"nofollow\">https://mathworld.wolfram.com/Rule182.html</a><br><br> </li> <li><a href=\"https://fr.wikipedia.org/wiki/Automate_cellulaire\" rel=\"nofollow\">Page Wikipedia consacr\u00e9e aux automates cellulaires</a></li> </ul> <p>Tapez par exemple <code>&gt;&gt;&gt; go()</code> ou <code>go(30)</code>, le nombre devant \u00eatre entre 0 et 255</p> <p></p>"
+}

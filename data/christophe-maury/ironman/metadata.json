@@ -1,0 +1,9 @@
+{
+    "name": "ironman",
+    "creator": "christophe-maury",
+    "created_at": "June 02, 2019",
+    "size": "2.02 KB",
+    "image": "data/christophe-maury/ironman/christophe-maury_ironman.png",
+    "tags": [],
+    "description": "<p>Ce script permet d\u2019aborder la notion d\u2019image bitmap. Il utilise la matrice contenant la couleur de chaque point pour r\u00e9aliser une image du personnage Iron Man de Marvel. Note : Le code couleur est \u00e9crit en hexad\u00e9cimal, chaque composante de couleur est repr\u00e9sent\u00e9 sur 5 bits uniquement (de 0 \u00e0 31). Pour obtenir la valeur hexad\u00e9cimale \u00e0 partir des composantes RVB sur 8 bits, utiliser la console python de la calculatrice comme l\u2019exemple qui suit : from kandinsky import * hex(color(255,0,0)) # Le r\u00e9sultat sera la valeur hexad\u00e9cimale de la couleur rouge</p> <p></p>"
+}

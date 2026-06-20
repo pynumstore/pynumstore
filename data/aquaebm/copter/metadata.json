@@ -1,0 +1,9 @@
+{
+    "name": "copter",
+    "creator": "aquaebm",
+    "created_at": "October 09, 2022",
+    "size": "862 Bytes",
+    "image": "data/aquaebm/copter/aquaebm_copter.png",
+    "tags": [],
+    "description": "<p>Very simple horizontal-swingcopter-like game. <br><br> Use the VAR key to switch gravity in mid-air to avoid the obstacles and go as far as possible. <br><br> You lose when you touch an obstacle or when you go too far outside of the screen.</p> <p></p>"
+}

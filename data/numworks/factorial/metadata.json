@@ -1,0 +1,9 @@
+{
+    "name": "factorial",
+    "creator": "numworks",
+    "created_at": "April 11, 2018",
+    "size": "98 Bytes",
+    "image": "data/numworks/factorial/numworks_factorial.png",
+    "tags": [],
+    "description": "<p>Ce script contient une fonction <code>factorial(n)</code> qui renvoie la factorielle de <strong>n</strong>.</p> <p></p>"
+}

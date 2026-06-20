@@ -1,0 +1,9 @@
+{
+    "name": "rvb",
+    "creator": "schraf",
+    "created_at": "August 19, 2021",
+    "size": "597 Bytes",
+    "image": "data/schraf/rvb/schraf_rvb.png",
+    "tags": [],
+    "description": "<pre><code>\nfrom math import *\nfrom kandinsky import set_pixel, fill_rect, get_pixel\n\n# Rayon (au carr\u00e9) des 3 disques\nR = 180*180\n# Pr\u00e9cision du trac\u00e9 (mettre 1 par exemple)\npas = 4\n\ndef synthese(sous = 1):\n  # Fond blanc si synth\u00e8se soustrative sinon noir\t\n  fill_rect(0,0,320,222,(255 * sous,) * 3)\n  # On dessine les 3 disques centr\u00e9s en (0,50), etc.\n  for i, m in enumerate([[0,50],[320,50],[160,290]]):\n    # On parcourt tous les pixels de l'\u00e9cran\n    for c in range(0,320,pas):\n      for l in range(0,222,pas):\n      \t# Distance au carr\u00e9 entre le point (c,l) et le centre du disque\n        d = (m[0] - c) ** 2 + (m[1] - l) ** 2\n        # On est dans le disque ?\n        if d &lt; R:  \n          # Couleur actuelle du pixel en (c,l)\n          # On transforme en liste car un tuple n'est pas modifiable\n          p = list(get_pixel(c,l))\n          # Synth\u00e8se soustractive\n          if sous:\n            p[i] = int(max(p[i] - 255 * sqrt(d / R), 0))  \n          # Synth\u00e8se additive\n          else:\n            p[i] = int(min(p[i] + 255 * sqrt(d / R), 255))  \n          # On dessine le rectangle avec la pr\u00e9cision voulue\n          fill_rect(c,l,pas,pas,tuple(p))\n</code></pre> <p></p>"
+}

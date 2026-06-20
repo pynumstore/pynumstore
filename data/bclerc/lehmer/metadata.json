@@ -1,0 +1,9 @@
+{
+    "name": "lehmer",
+    "creator": "bclerc",
+    "created_at": "June 09, 2018",
+    "size": "364 Bytes",
+    "image": "data/bclerc/lehmer/bclerc_lehmer.png",
+    "tags": [],
+    "description": "<p>Le g\u00e9n\u00e9rateur de nombres al\u00e9atoires des calculatrices Texas Instruments : Le programme suivant g\u00e9n\u00e8re les 5 premiers nombres, au-del\u00e0 cela d\u00e9passe les capacit\u00e9s de Micro-Python. On peut obtenir le n-i\u00e8me nombre al\u00e9atoire g\u00e9n\u00e9r\u00e9 par la calculatrice avec alea(n), sauf que l\u00e0 encore Micro-Python jette l\u2019\u00e9ponge au-del\u00e0 de n=8 \u2026 A noter qu\u2019il y a un bug dans l\u2019affichage de round(alea(2),10) qui affiche 16 chiffres apr\u00e8s la virgule \u2026</p> <p></p>"
+}

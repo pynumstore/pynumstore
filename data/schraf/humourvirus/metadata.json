@@ -1,0 +1,9 @@
+{
+    "name": "humourvirus",
+    "creator": "schraf",
+    "created_at": "January 12, 2022",
+    "size": "381 Bytes",
+    "image": "data/schraf/humourvirus/schraf_humourvirus.png",
+    "tags": [],
+    "description": "<h2>Exercice post\u00e9 sur \"Le coin boulot des profs de math\u00e9matiques\"</h2> <p><img width=\"700\" src=\"http://schraf.chez-alice.fr/youtube/virus.png\"></p> <p><a href=\"https://www.facebook.com/groups/lecoinboulotdesprofsdemathematiques/\" rel=\"nofollow\">Rejoindre ce groupe</a></p> <p><a href=\"https://www.youtube.com/schraf\" rel=\"nofollow\">Ma chaine Youtube consacr\u00e9e aux maths et \u00e0 l\u2019informatique</a></p> <h3>Explications du programme</h3> <ul> <li>On fait 10000 simulations, soit 10000 files d\u2019attente</li> <li>A chaque simulation on cr\u00e9e une file de personnes nomm\u00e9e <code>pers</code>, une personne ayant le virus (not\u00e9 1) avec une probabilit\u00e9 de 40% et saine sinon (not\u00e9 0)</li> <li>On duplique cette liste dans <code>fin</code> qui sera la file finale</li> <li>Pour chacune des personnes <code>v</code> de la file initiale, on regarde si elle a le virus : <code>v == 1</code> </li> <li>Si c\u2019est le cas, dans 20% des cas elle contamine la personne derri\u00e8re elle : <code>fin[i - 1] = 1</code> </li> <li>Et dans 20% des cas celle de devant</li> <li>On v\u00e9rifie avec <code>i &gt; 0</code> et <code>i &lt; 99</code> que l\u2019on ne sort pas de la file (la prochaine personne qui va \u00eatre test\u00e9e ne peut pas contamin\u00e9e celle qui est devant elle puisque c\u2019est la premi\u00e8re\u2026)</li> <li>En sortant de la boucle, on compte le nombre de personnes contamin\u00e9es et on l\u2019additionne aux valeurs trouv\u00e9es dans les autres simulations</li> <li>On affiche la moyenne (ou mieux, un intervalle de confiance)</li> </ul> <p></p>"
+}

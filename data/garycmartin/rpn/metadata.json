@@ -1,0 +1,9 @@
+{
+    "name": "rpn",
+    "creator": "garycmartin",
+    "created_at": "August 22, 2018",
+    "size": "2.16 KB",
+    "image": "data/garycmartin/rpn/garycmartin_rpn.png",
+    "tags": [],
+    "description": "<p>A simple RPN calculator (V0.3). Supports pi, e, rnd, !, *, +, -, /, acos, asin, atan, cos, deg, log, log10, pow, rad, recip, sin, sqr, sqrt and tan. Type ? for a list of operators, clr to clear the stack, swap to swap the two most recent stack items, roll to roll the stack, drop to drop the last stack item, and q to quit.</p> <p>Example:</p> <pre><code>&gt; 3 sqr 4 sqr + 5 sqr - 2 3 * 4 * / acos deg\n[90.0]\n&gt; 4 sqr 5 sqr + 3 sqr - 2 4 * 5 * / acos deg\n[90.0, 36.86989764584401]\n&gt; 5 sqr 3 sqr + 4 sqr - 2 5 * 3 * / acos deg\n[90.0, 36.86989764584401, 53.13010235415599]\n&gt; +\n[90.0, 90.0]\n&gt; +\n[180.0]\n</code></pre> <p></p>"
+}

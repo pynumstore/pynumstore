@@ -1,0 +1,9 @@
+{
+    "name": "complex_mapping",
+    "creator": "neiluj",
+    "created_at": "June 01, 2025",
+    "size": "2.34 KB",
+    "image": "data/neiluj/complex_mapping/neiluj_complex_mapping.png",
+    "tags": [],
+    "description": "<p>complex plane deformation, complex inequalities and parametric curves :</p> <ul> <li> <p>complex plane deformation : function of z returning another complex number, mode = 0 in main (main(1,12,0))</p> </li> <li> <p>inequalities : Ex : Re(z)&gt;=Im(z), abs(z)&lt;=80\u2026 , mode = 1 in main, (main(1,12,1))</p> </li> <li> <p>parametric curve : u(t) + v(t)*i where t = Re(z) or t=Im(z) , you choose u and v, Ex : cos(Re(z)) + isin(Re(z)), mode =0 in main</p> </li> <li>(+) / (-) : zoom</li> <li>up/down : increase zoom step</li> <li>(ok) : init zoom step to default</li> <li>left : add more complex numbers (better precision)</li> <li>right : remove some complex numbers (less precision)</li> </ul> <p></p>"
+}

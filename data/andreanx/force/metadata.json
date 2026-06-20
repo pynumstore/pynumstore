@@ -1,0 +1,9 @@
+{
+    "name": "force",
+    "creator": "andreanx",
+    "created_at": "September 19, 2018",
+    "size": "2.62 KB",
+    "image": "data/andreanx/force/andreanx_force.png",
+    "tags": [],
+    "description": "<p>Script de participation au d\u00e9fi Force/Python du concours TI-Plan\u00e8te-Casio de rentr\u00e9e 2018 : https://tiplanet.org/forum/viewtopic.php?p=235402</p> <p>30 potentiom\u00e8tres poussables de 0 \u00e0 1 permettent de contr\u00f4ler 252 lampes. Allumes-en un max tout en en grillant et gaspillant le moins possible !</p> <p>Appel : pot(k,v) avec : k, le num\u00e9ro de potentiom\u00e8tre de 0 a 29; v, sa valeur \u00e0 r\u00e9gler de 0 \u00e0 1</p> <p>Bonne chance !</p> <p></p>"
+}

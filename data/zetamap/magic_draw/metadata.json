@@ -1,0 +1,9 @@
+{
+    "name": "magic_draw",
+    "creator": "zetamap",
+    "created_at": "June 18, 2022",
+    "size": "3.17 KB",
+    "image": "data/zetamap/magic_draw/zetamap_magic_draw.png",
+    "tags": [],
+    "description": "<h3>Magic Draw</h3> <p>A small program based on maths equations, which shows you who draws equations in different forms, each one prettier than the next. <br> To add your own representation, add it to the \u2018_list\u2019 list in the form: (\u201cx calcul\u201d, \u201cy calcul\u201d). <br> There are two variables to use: p and i.</p> <h4>Examples of equations</h4> <p><img src=\"https://github.com/ZetaMap/magic_draw/blob/main/preview.gif?raw=true\" alt=\"preview\"></p> <p></p>"
+}

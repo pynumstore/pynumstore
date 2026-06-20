@@ -1,0 +1,9 @@
+{
+    "name": "demineur",
+    "creator": "schraf",
+    "created_at": "June 20, 2025",
+    "size": "1.29 KB",
+    "image": "data/schraf/demineur/schraf_demineur.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/LAzu7m9SF-E\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p>Ce jeu ne fonctionnera que sur votre calculatrice, pas sur l\u2019\u00e9mulateur.</p> <p>Pour le lancer, tapez <code>&gt;&gt;go()</code> ou <code>&gt;&gt;go(30)</code> si vous voulez que la machine cache 30 mines au lieu de 20</p> <p></p>"
+}

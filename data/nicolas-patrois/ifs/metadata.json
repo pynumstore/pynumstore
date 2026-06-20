@@ -1,0 +1,9 @@
+{
+    "name": "ifs",
+    "creator": "nicolas-patrois",
+    "created_at": "August 29, 2019",
+    "size": "747 Bytes",
+    "image": "data/nicolas-patrois/ifs/nicolas-patrois_ifs.png",
+    "tags": [],
+    "description": "<p>Draws iterated functions fractals.</p> <p>nb is the number of pixels drawn.</p> <p>Draw a tree: m=350 w.append([[0,0],[0,.5]]); b.append([[0],[0]]); p.append(.05) w.append([[.42,-.42],[.42,.42]]); b.append([[0],[.2]]); p.append(p[-1]+.4) w.append([[.42,.42],[-.42,.42]]); b.append([[0],[.2]]); p.append(p[-1]+.4) w.append([[.1,0],[0,.1]]); b.append([[0],[.2]]); p.append(1)</p> <p></p>"
+}

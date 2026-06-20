@@ -1,0 +1,9 @@
+{
+    "name": "a_readme",
+    "creator": "fime",
+    "created_at": "December 13, 2023",
+    "size": "79 Bytes",
+    "image": "data/fime/a_readme/fime_a_readme.png",
+    "tags": [],
+    "description": "<h4>Here are my games :</h4> <ul> <li><a href=\"https://my.numworks.com/python/fime/cyclope_snake\" rel=\"nofollow\">Cyclope Snake</a></li> <li><a href=\"https://my.numworks.com/python/fime/doodle_man\" rel=\"nofollow\">Doodle Man</a></li> <li><a href=\"https://my.numworks.com/python/fime/jetpack_bird\" rel=\"nofollow\">JetPack Bird</a></li> <li><a href=\"pong.py\" rel=\"nofollow\">Pong V1</a></li> <li> <a href=\"https://my.numworks.com/python/fime/pong2\" rel=\"nofollow\">Pong V2</a>*. Better than the V1.</li> <li> <a href=\"https://my.numworks.com/python/fime/ruin\" rel=\"nofollow\">R U I N</a>(*)</li> <li><a href=\"https://my.numworks.com/python/fime/ruin_lvl_maker\" rel=\"nofollow\">Ruin Level Maker</a></li> <li> <a href=\"https://my.numworks.com/python/fime/numtris_v05\" rel=\"nofollow\">NumTris</a>* (versus or solo tetris clone) - not polished but still fun together (i think)</li> <li>Comming soon : Zeldnum</li> </ul> <h5>* only available on <a href=\"https://getomega.dev/\" rel=\"nofollow\">Omega</a> and his forks.</h5> <p></p>"
+}

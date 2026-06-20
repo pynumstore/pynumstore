@@ -1,0 +1,9 @@
+{
+    "name": "wordle",
+    "creator": "chambounaudaubin",
+    "created_at": "May 26, 2025",
+    "size": "3.44 KB",
+    "image": "data/chambounaudaubin/wordle/chambounaudaubin_wordle.png",
+    "tags": [],
+    "description": "<p>Ceci est un jeu de r\u00e9flexion. Entrer un mot existant dans la langue fran\u00e7aise, le programme ne v\u00e9rifie pas sa validit\u00e9 car les milliers de mots possibles seraient trop lourds \u00e0 supporter pour la calculatrice. Enfin il faut jouer le jeu.</p> <p>Si la lettre se colore en orange, elle est mal plac\u00e9e Si celle-ci se colore en noir, la lettre ne fait pas partie du mot. Si celle-ci se colore en vert, elle est bien plac\u00e9e!</p> <p>Attention: deux lettres dans le mot entr\u00e9 peuvent \u00eatre toutes les deux indiqu\u00e9es comme mal plac\u00e9es alors que le mot myst\u00e8re ne contient qu\u2019une seule fois la lettre!</p> <p>Reporter les bugs \u00e0 l\u2019adresse: chambounaudaubin@gmail.com</p> <p></p>"
+}

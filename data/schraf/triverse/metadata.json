@@ -1,0 +1,9 @@
+{
+    "name": "triverse",
+    "creator": "schraf",
+    "created_at": "July 22, 2024",
+    "size": "311 Bytes",
+    "image": "data/schraf/triverse/schraf_triverse.png",
+    "tags": [],
+    "description": "<p>Dans le script ci-dessous je n\u2019utilise que \u201clt\u201d (left) pour orienter la tortue et \u201cfd\u201d pour la faire avancer. La lettre \u201cm\u201d permet d\u2019indiquer qu\u2019il faut m\u00e9moriser la position actuelle et \u201cr\u201d qu\u2019il faut retourner \u00e0 cette position.</p> <p></p>"
+}

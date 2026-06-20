@@ -1,0 +1,9 @@
+{
+    "name": "dec2bin",
+    "creator": "pascal-chauvin",
+    "created_at": "June 16, 2019",
+    "size": "721 Bytes",
+    "image": "data/pascal-chauvin/dec2bin/pascal-chauvin_dec2bin.png",
+    "tags": [],
+    "description": "<p>Repr\u00e9sente un entier naturel sous forme d\u2019une s\u00e9rie de bits ou d\u2019octets, suivant le cas.</p> <p></p>"
+}

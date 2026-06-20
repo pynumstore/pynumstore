@@ -1,0 +1,9 @@
+{
+    "name": "country",
+    "creator": "matt-numworks",
+    "created_at": "April 14, 2026",
+    "size": "273 Bytes",
+    "image": "data/matt-numworks/country/matt-numworks_country.png",
+    "tags": [],
+    "description": "<p>Randomly chooses a country to go visit.</p> <p>*Test script for f-string support in a future update</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "orlog",
+    "creator": "florian-allard",
+    "created_at": "March 02, 2024",
+    "size": "15.4 KB",
+    "image": "data/florian-allard/orlog/florian-allard_orlog.png",
+    "tags": [],
+    "description": "<p>Adaptation du jeu Orlog (jeu de d\u00e9s et de jetons) \u00e0 partir du mini-jeu \u00e9ponyme dans le jeu Assassin\u2019s Creed\u00ae : Valhalla. <br> Version avec une IA basique et un r\u00e9sum\u00e9 du plateau affich\u00e9 en bas lors du choix de la divinit\u00e9 pour la prochaine manche mais avec le nom des sorts r\u00e9duit au nom de la divinit\u00e9.<br> Une version avec le nom complet des sorts mais sans l\u2019affichage du r\u00e9sum\u00e9 du plateau est disponible ici : <a href=\"https://my.numworks.com/python/florian-allard/orlog2023\" rel=\"nofollow\">https://my.numworks.com/python/florian-allard/orlog2023</a></p> <p></p>"
+}

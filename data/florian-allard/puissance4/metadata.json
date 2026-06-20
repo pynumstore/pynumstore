@@ -1,0 +1,9 @@
+{
+    "name": "puissance4",
+    "creator": "florian-allard",
+    "created_at": "August 01, 2020",
+    "size": "4.15 KB",
+    "image": "data/florian-allard/puissance4/florian-allard_puissance4.png",
+    "tags": [],
+    "description": "<p>Jeu du Puissance 4. \u00c0 tour de r\u00f4le, deux joueurs l\u00e2chent un jeton dans une colonne au choix. Le premier joueur qui aligne au moins 4 jetons de sa couleur, en ligne, en colonne ou en diagonale, a gagn\u00e9. Les versions pr\u00e9c\u00e9dentes sont disponibles <a href=\"https://workshop.numworks.com/python/florian-allard/puissance4_0\" rel=\"nofollow\">ici</a> et <a href=\"https://workshop.numworks.com/python/florian-allard/puissance4_2\" rel=\"nofollow\">l\u00e0</a>. Une version optimis\u00e9e avec un script plus court est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/puissance4_opti\" rel=\"nofollow\">par ici</a>.</p> <p></p>"
+}

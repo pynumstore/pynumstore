@@ -1,0 +1,9 @@
+{
+    "name": "cube_3d",
+    "creator": "escartem",
+    "created_at": "May 28, 2024",
+    "size": "1.28 KB",
+    "image": "data/escartem/cube_3d/escartem_cube_3d.png",
+    "tags": [],
+    "description": "<p>Affiche un cube en 3D Fl\u00e8ches pour le d\u00e9placer Touches + et - pour changer la r\u00e9solution (nombre de points pour chaque ligne) Touches x et / pour changer la taille des lignes /!\\ Programme tr\u00e8s lent \u00e0 cause de la quantit\u00e9 de calculs par seconde /!\\</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "sudoto",
+    "creator": "andreanx",
+    "created_at": "December 06, 2023",
+    "size": "7.08 KB",
+    "image": "data/andreanx/sudoto/andreanx_sudoto.png",
+    "tags": [],
+    "description": "<p><b>Sudoku solver</b><br> <b>Usage :</b> <b><i>sudoto(grid, show, steps)</i></b> where :<br> <b><i>grid</i></b> = sudoto grid <i>(examples are included : g0, g1, g2 and g3)</i><br> <b><i>show</i></b> = True for graphic display<br> <b><i>steps</i></b> = True to show steps on graphic display</p> <p></p>"
+}

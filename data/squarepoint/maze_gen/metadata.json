@@ -1,0 +1,9 @@
+{
+    "name": "maze_gen",
+    "creator": "squarepoint",
+    "created_at": "April 13, 2023",
+    "size": "1.07 KB",
+    "image": "data/squarepoint/maze_gen/squarepoint_maze_gen.png",
+    "tags": [],
+    "description": "<p>This (unoptimised) recursive algorithm generates a whole different maze each time you load the script! Crazy right?! (it takes a lot of time to render tho) Ima try to raycast it now\u2026</p> <p></p>"
+}

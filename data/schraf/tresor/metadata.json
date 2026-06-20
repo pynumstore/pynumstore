@@ -1,0 +1,9 @@
+{
+    "name": "tresor",
+    "creator": "schraf",
+    "created_at": "September 09, 2018",
+    "size": "838 Bytes",
+    "image": "data/schraf/tresor/schraf_tresor.png",
+    "tags": [],
+    "description": "<p>Au pied d\u2019un arbre, dans un petit coffre enterr\u00e9, vous trouvez un parchemin avec le texte suivant : <br></p> <p><i>\u201cPirate, pour arriver au tr\u00e9sor, tu devras faire 100 pas dans chacune de ces directions : ONNESEE\u201d</i></p> <p>Mais en faisant un sch\u00e9ma on se rend vite compte que pour arriver au tr\u00e9sor nous ne sommes pas oblig\u00e9s de faire tout le parcours indiqu\u00e9 mais seulement de faire 200 pas vers l\u2019Est et 100 pas vers le Nord, soit EEN.</p> <p>On vous demande d\u2019\u00e9crire une fonction nomm\u00e9e <b>tresor</b> qui admet en param\u00e8tre le chemin indiqu\u00e9 sur le parchemin et qui en sortie vous donne le chemin le plus court pour y acc\u00e9der.</p> <p></p>"
+}

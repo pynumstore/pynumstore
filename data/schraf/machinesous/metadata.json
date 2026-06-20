@@ -1,0 +1,9 @@
+{
+    "name": "machinesous",
+    "creator": "schraf",
+    "created_at": "September 14, 2018",
+    "size": "1.14 KB",
+    "image": "data/schraf/machinesous/schraf_machinesous.png",
+    "tags": [],
+    "description": "<p>Sur une machine \u00e0 sous d\u2019un casino, on gagne 50\u20ac d\u00e8s que l\u2019on a 3 valeurs identiques (3 Rois, 3 Dames ou 3 Valets) et chaque partie coute 2\u20ac. Voici les r\u00e9sultats que d\u2019un joueur :</p> <p><code>var casino= ['DVR','VVR','RDV','VVV','RRV','DVD','VRV','RVD','DVD','VRV','VRV','DDD','DDV','VRR','DVV','DDR','RRR','DRR','DRR','DVR','DDD','VVD','DRR','RRD','RRV','RDD','VDV','VDV','VDR','DRV','RVV','VRV','RRD','DRR','DDD','DDV','RVV','VDD','DVR','DRD','VRD','VVV','VRR','DRV','RRV','VVR','DRR','DRV','DDR','VDD','VRD','VVV','RRR','RVR','VVD','RVD','DVD','RVD','VVD','DDR','VVD','RDR','VRD','RDD','VDV','DVR','RVV','RVV','RDV','RRV','RVD','DVD','DDD','RVV','DDR','VDV','VVD','VVD','RVR','VDD','DDD','RDV','RVD','DDR','VDD','RVV','VRV','DRR','RRD','RVV','RVD','VRR','VRV','DRR','DVV','DRV','VRD','VDV','VDV','DRV']</code></p> <p>\u00c9crire une fonction <b>gain</b> qui admet en param\u00e8tre la liste des r\u00e9sultats obtenus et donne en retour le montant gagn\u00e9 (ou perdu !).<br></p> <p><a href=\"https://youtu.be/pNrHZn_lZrY\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p></p>"
+}

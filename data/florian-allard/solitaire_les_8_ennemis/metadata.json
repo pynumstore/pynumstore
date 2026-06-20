@@ -1,0 +1,9 @@
+{
+    "name": "solitaire_les_8_ennemis",
+    "creator": "florian-allard",
+    "created_at": "July 15, 2025",
+    "size": "6.08 KB",
+    "image": "data/florian-allard/solitaire_les_8_ennemis/florian-allard_solitaire_les_8_ennemis.png",
+    "tags": [],
+    "description": "<p>Adaptation du jeu du solitaire : les huit ennemis.</p> <p>Le but est de faire passer les huit pions rouges \u00e0 la place des huit pions bruns et r\u00e9ciproquement.</p> <p>On peut d\u00e9placer les pions directement ou en sautant par-dessus un autre pion. Les pions ne se d\u00e9placent pas en diagonale.</p> <p>Au d\u00e9part, la case centrale du plateau est vide et il y a toujours une case vide au cours de la partie.</p> <p>On joue avec les fl\u00e8ches pour s\u00e9lectionner le pion \u00e0 d\u00e9placer puis on le d\u00e9place avec la touche OK (il y a au maximum UN d\u00e9placement possible pour chaque pion s\u00e9lectionn\u00e9). Un appui sur la touche HOME permet de r\u00e9initialiser le plateau et de retrouver la disposition de d\u00e9part.</p> <p>Bon jeu et bonne chance !</p> <p></p>"
+}

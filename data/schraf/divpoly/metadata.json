@@ -1,0 +1,9 @@
+{
+    "name": "divpoly",
+    "creator": "schraf",
+    "created_at": "February 15, 2023",
+    "size": "133 Bytes",
+    "image": "data/schraf/divpoly/schraf_divpoly.png",
+    "tags": [],
+    "description": "<p>Division synth\u00e9tique d\u2019un polyn\u00f4me P par x-a<br> Exemple : Diviser P(x) = x^2-5x+6 par x-2<br> Les coefficients de P sont 1,-5,6 et a=2<br> On lance le programme et on tape 1,-5,6 EXE puis 2 EXE<br> Le quotient Q(x) s\u2019affiche sous la forme 1,-3 qui signifie x - 3 ainsi que le reste R(x) = 0</p> <p></p>"
+}

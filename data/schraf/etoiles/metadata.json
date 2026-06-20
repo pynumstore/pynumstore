@@ -1,0 +1,9 @@
+{
+    "name": "etoiles",
+    "creator": "schraf",
+    "created_at": "September 15, 2019",
+    "size": "123 Bytes",
+    "image": "data/schraf/etoiles/schraf_etoiles.png",
+    "tags": [],
+    "description": "<p>\u00c9crire une fonction \u201cetoile\u201d qui admet en param\u00e8tre un mot . En retour, ce mot sera mis en majuscules puis une \u00e9toile \u201c*\u201d traversera toutes les lettres. Plus pr\u00e9cis\u00e9ment, si un utilisateur tape par exemple le mot \u201csoleil\u201d alors l\u2019affichage sera constitu\u00e9 des 7 lignes suivantes :</p> <pre>*SOLEIL\nS*OLEIL\nSO*LEIL\nSOL*EIL\nSOLE*IL\nSOLEI*L\nSOLEIL*</pre> <p></p>"
+}

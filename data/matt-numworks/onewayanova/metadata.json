@@ -1,0 +1,9 @@
+{
+    "name": "onewayanova",
+    "creator": "matt-numworks",
+    "created_at": "August 22, 2024",
+    "size": "2.77 KB",
+    "image": "data/matt-numworks/onewayanova/matt-numworks_onewayanova.png",
+    "tags": [],
+    "description": "<p>Perform a One-Way ANOVA with three groups using Python on the NumWorks calculator.</p> <p>To use this script, change the values in the groups to represent your dataset and then execute the script.</p> <p></p>"
+}

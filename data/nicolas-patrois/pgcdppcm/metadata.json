@@ -1,0 +1,9 @@
+{
+    "name": "pgcdppcm",
+    "creator": "nicolas-patrois",
+    "created_at": "July 22, 2020",
+    "size": "650 Bytes",
+    "image": "data/nicolas-patrois/pgcdppcm/nicolas-patrois_pgcdppcm.png",
+    "tags": [],
+    "description": "<p>Calcule le PGCD et le PPCM de nombres. Le PGCD fonctionne seul, le PPCM utilise une m\u00e9thode d\u2019exclusion-inclusion et donc des combinaisons (sans itertools).</p> <p></p>"
+}

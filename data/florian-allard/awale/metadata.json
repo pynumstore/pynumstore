@@ -1,0 +1,9 @@
+{
+    "name": "awale",
+    "creator": "florian-allard",
+    "created_at": "July 17, 2025",
+    "size": "9.21 KB",
+    "image": "data/florian-allard/awale/florian-allard_awale.png",
+    "tags": [],
+    "description": "<p>Adaptation du jeu Awale.</p> <p>Chaque joueur choisit une de ses 6 cases puis valide et les graines qu\u2019elle contient sont alors distribu\u00e9es dans les cases suivantes. Si la derni\u00e8re graine distribu\u00e9e est d\u00e9pos\u00e9e dans une case de l\u2019adversaire et que cette derni\u00e8re contient 2 ou 3 graines, alors elles sont ramass\u00e9es et donn\u00e9es au joueur qui vient de jouer, puis on applique la m\u00eame r\u00e8gle aux cases pr\u00e9c\u00e9dentes tant que les deux conditions sont v\u00e9rifi\u00e9es.</p> <p>Le but est de ramasser plus de graines que son adversaire.</p> <p>Lorsque l\u2019adversaire n\u2019a plus de graine dans ses 6 cases, il est obligatoire de le nourrir, c\u2019est-\u00e0-dire de jouer un coup qui va d\u00e9poser au moins une graine dans ses cases. S\u2019il n\u2019est pas possible de nourrir l\u2019adversaire, alors la partie est termin\u00e9e et le joueur r\u00e9cup\u00e8re les graines restant dans ses cases.</p> <p>Si un coup affame l\u2019adversaire, c\u2019est-\u00e0-dire un coup qui entra\u00eene la r\u00e9colte de toutes les graines qui sont dans les cases de l\u2019adversaire, alors le coup est jou\u00e9 mais la r\u00e9colte n\u2019est pas effectu\u00e9e et aucune graine n\u2019est ramass\u00e9e.</p> <p>On joue avec les fl\u00e8ches et la touche OK. Avant le d\u00e9but du jeu, il est possible de choisir d\u2019afficher les graines ou simplement leur nombre.</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "water_sort_color",
+    "creator": "florian-allard",
+    "created_at": "July 15, 2025",
+    "size": "5.38 KB",
+    "image": "data/florian-allard/water_sort_color/florian-allard_water_sort_color.png",
+    "tags": [],
+    "description": "<p>Il faut trier les couleurs pour avoir une seule couleur dans chaque bouteille. On peut verser du liquide sur du liquide de m\u00eame couleur ou dans une bouteille vide. Shift pour recommencer la partie du d\u00e9but. Fl\u00e8ches pour choisir les bouteilles. OK pour valider. Clear pour annuler une s\u00e9lection.</p> <p></p>"
+}

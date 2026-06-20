@@ -1,0 +1,9 @@
+{
+    "name": "jeu_vie_1d",
+    "creator": "schraf",
+    "created_at": "October 15, 2021",
+    "size": "465 Bytes",
+    "image": "data/schraf/jeu_vie_1d/schraf_jeu_vie_1d.png",
+    "tags": [],
+    "description": "<p>Un article sur cet automate : <a href=\"https://www.miximum.fr/blog/jouons-avec-les-automates-cellulaires-en-javascript/\" rel=\"nofollow\">https://www.miximum.fr/blog/jouons-avec-les-automates-cellulaires-en-javascript/</a><br> Descriptions des r\u00e8gles suivant le num\u00e9ro : <a href=\"http://atlas.wolfram.com/01/01/rulelist.html\" rel=\"nofollow\">http://atlas.wolfram.com/01/01/rulelist.html</a><br></p> <p>Exemples de r\u00e9sultats :<br> <code>&gt;&gt; life(30)</code> (on part d\u2019un seul point central et on applique la r\u00e8gle n\u00b030)<br> <img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/150/images/r30.jpg\"><br> <code>&gt;&gt; life(90)</code><br> <img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/150/images/r90.jpg\"><br> <code>&gt;&gt; life(184,1)</code> (on met \u201c1\u201d en second param\u00e8tre si on veut un tirage al\u00e9atoire pour la premi\u00e8re ligne)<br> <img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/150/images/r184_1.jpg\"><br></p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "taquin",
+    "creator": "florian-allard",
+    "created_at": "December 27, 2021",
+    "size": "3.22 KB",
+    "image": "data/florian-allard/taquin/florian-allard_taquin.png",
+    "tags": [],
+    "description": "<p>Jeu du Taquin, dont le but est de remettre des nombres dans l\u2019ordre, en faisant glisser un nombre dans une case vide. Se joue avec les 4 fl\u00e8ches directionnelles. On peut choisir la taille de la grille et un mode de r\u00e9solution automatique mais pas optimis\u00e9 et uniquement pour une grille de taille inf\u00e9rieur ou \u00e9gale \u00e0 4 (sinon il faut modifier le script et r\u00e9duire le nombre de mouvements pour le m\u00e9lange).</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "conway",
+    "creator": "florian-allard",
+    "created_at": "July 22, 2020",
+    "size": "1012 Bytes",
+    "image": "data/florian-allard/conway/florian-allard_conway.png",
+    "tags": [],
+    "description": "<p>Automate cellulaire ou Jeu de la vie, cr\u00e9\u00e9 par John Conway, qui simule l\u2019\u00e9volution d\u2019une population de cellules. Le plateau se comporte comme un tore, les bords se recollent.</p> <p></p>"
+}

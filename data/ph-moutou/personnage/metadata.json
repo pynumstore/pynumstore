@@ -1,0 +1,9 @@
+{
+    "name": "personnage",
+    "creator": "ph-moutou",
+    "created_at": "June 19, 2018",
+    "size": "2.32 KB",
+    "image": "data/ph-moutou/personnage/ph-moutou_personnage.png",
+    "tags": [],
+    "description": "<p>Ce programme dessine une animation d\u2019un personnage marchant. Taper marche(n), sur la calculatrice uniquement, pour obtenir n fois le passage du personnage. Le mouvement des membres est un peu rudimentaire: quelqu\u2019un pourra t-il proposer un meilleur sc\u00e9nario?</p> <p></p>"
+}

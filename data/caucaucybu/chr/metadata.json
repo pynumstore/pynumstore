@@ -1,0 +1,9 @@
+{
+    "name": "chr",
+    "creator": "caucaucybu",
+    "created_at": "March 01, 2023",
+    "size": "1.18 KB",
+    "image": "data/caucaucybu/chr/caucaucybu_chr.png",
+    "tags": [],
+    "description": "<p>Ce script recense tous les codes ASCII reconnu par la calculatrice. pour utiliser l\u2019un d\u2019eux, rentrer chr() avec en argument le code du caract\u00e8re recherch\u00e9. Pour retrouver le code d\u2019un caract\u00e8re, entrer ord() avec en argument le caract\u00e8re entre guillemets. Les accents sont particuliers, ils vont se placer sur le caract\u00e8re pr\u00e9c\u00e9dent.</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "sim",
+    "creator": "pascal-chauvin",
+    "created_at": "February 24, 2019",
+    "size": "442 Bytes",
+    "image": "data/pascal-chauvin/sim/pascal-chauvin_sim.png",
+    "tags": [],
+    "description": "<p>Une urne contient des billes bleues et des billes rouges. On tire une bille, on note sa couleur puis on la remet dans l\u2019urne. On recommence plusieurs tirages : il s\u2019agit de deviner le nombre de billes de chaque couleur.</p> <p></p>"
+}

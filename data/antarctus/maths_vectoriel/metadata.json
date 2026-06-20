@@ -1,0 +1,9 @@
+{
+    "name": "maths_vectoriel",
+    "creator": "antarctus",
+    "created_at": "March 17, 2023",
+    "size": "3.75 KB",
+    "image": "data/antarctus/maths_vectoriel/antarctus_maths_vectoriel.png",
+    "tags": [],
+    "description": "<p>Affichage graphique des relations entre deux vecteurs.<br> Il y a leur coordonn\u00e9es, le d\u00e9terminants, le produit scalaire, l\u2019angle form\u00e9 et leur norme.</p> <p></p>"
+}

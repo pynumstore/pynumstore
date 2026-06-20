@@ -1,0 +1,9 @@
+{
+    "name": "swarm",
+    "creator": "florian-allard",
+    "created_at": "April 29, 2025",
+    "size": "3.69 KB",
+    "image": "data/florian-allard/swarm/florian-allard_swarm.png",
+    "tags": [],
+    "description": "<p>Adaptation du homebrew Swarm (sorti sur PSP).</p> <p>Le but du jeu est de survivre en esquivant l\u2019essaim (\u201cswarm\u201d) de carr\u00e9s qui suit le joueur. Les poursuivants noirs font perdre 2 PV (points de vie) en cas de collision. Les poursuivants verts font regagner 20 PV en cas de collision (il est m\u00eame possible de d\u00e9passer 100 PV !). La barre verte en haut de l\u2019\u00e9cran donne la progression avant d\u2019atteindre le niveau suivant (progression du score par rapport au score vis\u00e9). La couleur de fond du jeu (qui tire sur le rouge en cas de PV faibles) donne une indication sur les PV restants.</p> <p>On se d\u00e9place avec les 4 fl\u00e8ches.</p> <p>Bon jeu !</p> <p></p>"
+}

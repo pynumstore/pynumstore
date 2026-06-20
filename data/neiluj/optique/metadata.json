@@ -1,0 +1,9 @@
+{
+    "name": "optique",
+    "creator": "neiluj",
+    "created_at": "December 22, 2023",
+    "size": "1.77 KB",
+    "image": "data/neiluj/optique/neiluj_optique.png",
+    "tags": [],
+    "description": "<ul> <li>[OK] : change la couleur d\u2019arri\u00e8re plan noir/blanc</li> <li>[+]/[-] : agrandit ou r\u00e9duit la distance focale (f\u2019)</li> <li>[up][down] : agrandit ou r\u00e9duit la distance AB (hauteur de l\u2019objet)</li> <li>[right][left] : agrandit ou r\u00e9duit la distance OA (lentille-objet)</li> </ul> <p></p>"
+}

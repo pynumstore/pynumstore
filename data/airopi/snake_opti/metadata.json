@@ -1,0 +1,9 @@
+{
+    "name": "snake_opti",
+    "creator": "airopi",
+    "created_at": "February 01, 2022",
+    "size": "3.85 KB",
+    "image": "data/airopi/snake_opti/airopi_snake_opti.png",
+    "tags": [],
+    "description": "<p>Une version \u201coptimis\u00e9e\u201d de mon script snake.py, mais qui pourrait \u00eatre encore plus raccourcie si l\u2019on rempla\u00e7ait l\u2019indentation de 2 par une indentation de 1, si l\u2019on renommais les variables/fonctions/m\u00e9thodes en 1 seule caract\u00e8re, ou encore si l\u2019on utilisait ; pour placer plusieurs lignes en 1.</p> <p></p>"
+}

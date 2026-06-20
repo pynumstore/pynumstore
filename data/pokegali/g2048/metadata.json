@@ -1,0 +1,9 @@
+{
+    "name": "g2048",
+    "creator": "pokegali",
+    "created_at": "October 02, 2023",
+    "size": "3.01 KB",
+    "image": "data/pokegali/g2048/pokegali_g2048.png",
+    "tags": [],
+    "description": "<p>Le but est d\u2019associer des carr\u00e9s qui portent le m\u00eame num\u00e9ro pour les additionner, et obtenir le carr\u00e9 2048, comme dans le jeu. D\u00e9marre avec p2048(), et se joue avec les fl\u00e8ches</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "tanks_error",
+    "creator": "antarctus",
+    "created_at": "December 04, 2021",
+    "size": "7.11 KB",
+    "image": "data/antarctus/tanks_error/antarctus_tanks_error.png",
+    "tags": [],
+    "description": "<p>Tanks.py peut engendrer des erreurs. Si jamais vous avez une erreur du type <code>MemoryError: memory allocation failed, allocating 348 bytes</code> sur le <a href=\"https://my.numworks.com/python/antarctus/tanks\" rel=\"nofollow\">jeu tanks original </a>. Testez celui-ci</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "hauteur_arbre",
+    "creator": "ph-moutou",
+    "created_at": "May 17, 2024",
+    "size": "279 Bytes",
+    "image": "data/ph-moutou/hauteur_arbre/ph-moutou_hauteur_arbre.png",
+    "tags": [],
+    "description": "<p>Pour \u00e9valuer la hauteur d\u2019un arbre : choisir deux points align\u00e9s avec le pied de l\u2019arbre, entrer les deux angles sous lesquels on rel\u00e8ve le sommet de l\u2019arbre depuis ces points puis la distance entre ces points. Le programme calcule alors la hauteur de l\u2019arbre.</p> <p></p>"
+}

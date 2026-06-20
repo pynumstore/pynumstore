@@ -1,0 +1,9 @@
+{
+    "name": "factor",
+    "creator": "numworks",
+    "created_at": "April 11, 2018",
+    "size": "144 Bytes",
+    "image": "data/numworks/factor/numworks_factor.png",
+    "tags": [],
+    "description": "<p>Contient une fonction <code>factor(n)</code> qui renvoie la d\u00e9composition en facteurs premiers de n.</p> <p></p>"
+}

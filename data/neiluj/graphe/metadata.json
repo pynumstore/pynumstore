@@ -1,0 +1,9 @@
+{
+    "name": "graphe",
+    "creator": "neiluj",
+    "created_at": "April 03, 2025",
+    "size": "4.18 KB",
+    "image": "data/neiluj/graphe/neiluj_graphe.png",
+    "tags": [],
+    "description": "<ul> <li>(+) : ajouter un sommet</li> <li>(fl\u00eaches) : d\u00e9placer le curseur parmis les sommets</li> <li>(fl\u00eaches) + (OK) : d\u00e9placer le sommet courant</li> <li>(multiplication) sur un sommet A puis une nouvelle fois sur un sommet B relie A et B</li> <li>(toolbox) sur un sommet le relie \u00e0 tous les autres sommets du graphes</li> <li>(EXE) afficher la matrice d\u2019adjacence du graphe</li> </ul> <p></p>"
+}

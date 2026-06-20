@@ -1,0 +1,9 @@
+{
+    "name": "piano_bug_showcase",
+    "creator": "aquaebm",
+    "created_at": "August 24, 2022",
+    "size": "1.45 KB",
+    "image": "data/aquaebm/piano_bug_showcase/aquaebm_piano_bug_showcase.png",
+    "tags": [],
+    "description": "<p>Script made to easily reproduce a bug (python app crash on occasional presses to the shift key) REQUIRES util.py to be downloaded onto your calculator.</p> <p></p>"
+}

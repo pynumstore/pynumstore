@@ -1,0 +1,9 @@
+{
+    "name": "scramble",
+    "creator": "laigna",
+    "created_at": "March 14, 2026",
+    "size": "685 Bytes",
+    "image": "data/laigna/scramble/laigna_scramble.png",
+    "tags": [],
+    "description": "<p>Unscramble a random word. Re-shuffles if shuffle matches original.</p> <p></p>"
+}

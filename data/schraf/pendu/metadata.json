@@ -1,0 +1,9 @@
+{
+    "name": "pendu",
+    "creator": "schraf",
+    "created_at": "October 01, 2019",
+    "size": "1.31 KB",
+    "image": "data/schraf/pendu/schraf_pendu.png",
+    "tags": [],
+    "description": "<p><a href=\"https://youtu.be/RgvOqYkDqWo\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p>Voici le c\u00e9l\u00e8bre jeu du pendu. Pour cela vous aurez besoin d\u2019une autre personne qui tapera le mot ou la phrase secr\u00e8te puis ce sera \u00e0 vous de jouer.</p> <p>Modifications possibles :</p> <ul> <li>Ajouter une liste de mots pr\u00e9d\u00e9finis pour ne pas avoir besoin d\u2019un autre joueur :</li> </ul> <pre>from random import *\nmot=[\"CHIEN\",\"CHAT\",\"CRAYON\",\"FEUILLE\"]\nsecret = choice(mot)\n</pre> <ul> <li>Modifier le visuel du pendu pour avoir plus de coups, par exemple en 10 coups :</li> </ul> <pre>  |\n  o\n/-+-/\n  |\n  |\n / \\</pre> <p></p>"
+}

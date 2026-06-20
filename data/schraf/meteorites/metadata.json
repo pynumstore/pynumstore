@@ -1,0 +1,9 @@
+{
+    "name": "meteorites",
+    "creator": "schraf",
+    "created_at": "April 27, 2020",
+    "size": "1.69 KB",
+    "image": "data/schraf/meteorites/schraf_meteorites.png",
+    "tags": [],
+    "description": "<p>Jeu \u201cm\u00e9t\u00e9orites\u201d inspir\u00e9 du jeu <a href=\"https://www.youtube.com/watch?v=F2l3K0-PU6E\" rel=\"nofollow\">Game &amp; Watch \u201cHelmet\u201d</a>.</p> <p>But du jeu : Traverser le terrain en \u00e9vitant la pluie de m\u00e9t\u00e9orites ! Mais attention, la porte du c\u00f4t\u00e9 droit n\u2019est pas toujours ouverte, il faut attendre que le voyant soit vert ;-)</p> <p>Le programme a la m\u00eame base que <a href=\"https://youtu.be/90j16zFXB6o\" rel=\"nofollow\">jeu \u201cfire\u201d pour la NUMWORKS</a>, vous ne devriez donc pas avoir de difficult\u00e9s \u00e0 le comprendre.</p> <p></p>"
+}

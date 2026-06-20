@@ -1,0 +1,9 @@
+{
+    "name": "parallelogram",
+    "creator": "matt-numworks",
+    "created_at": "January 09, 2026",
+    "size": "949 Bytes",
+    "image": "data/matt-numworks/parallelogram/matt-numworks_parallelogram.png",
+    "tags": [],
+    "description": "<p>Calculates the area of a parallelogram given the coordinates (x,y,z) of three points.</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "calendrier",
+    "creator": "ph-moutou",
+    "created_at": "April 21, 2018",
+    "size": "1.35 KB",
+    "image": "data/ph-moutou/calendrier/ph-moutou_calendrier.png",
+    "tags": [],
+    "description": "<p>Ce programme donne les jours de la semaine qui contient et qui suit le jour entr\u00e9. la fonction jourSemaine(j,m,a) d\u00e9termine le jour de la semaine d\u2019une date donn\u00e9e tandis que calendrier(j,m,a) g\u00e9n\u00e8re la liste des jours en fran\u00e7ais.</p> <p></p>"
+}

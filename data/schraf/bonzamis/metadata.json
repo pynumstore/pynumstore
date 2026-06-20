@@ -1,0 +1,9 @@
+{
+    "name": "bonzamis",
+    "creator": "schraf",
+    "created_at": "October 09, 2018",
+    "size": "453 Bytes",
+    "image": "data/schraf/bonzamis/schraf_bonzamis.png",
+    "tags": [],
+    "description": "<p>Voil\u00e0 pourquoi il faut toujours prendre sa Numworks quand on part en vacances ! <br> Imaginez 4 amis : Pierre (not\u00e9 <b>pi</b>), Audrey (<b>a</b>), Patricia (<b>pa</b>) et Eric (<b>e</b>)<br> - Pour aller au cin\u00e9ma, Eric a avanc\u00e9 10 euros \u00e0 Audrey<br> - Pierre a pay\u00e9 20 euros l\u2019entr\u00e9e dans un parc pour les 4 personnes<br> - Patricia a avanc\u00e9 2 euros \u00e0 Eric pour une glace<br> - Eric a avanc\u00e9 24 euros pour l\u2019entr\u00e9e \u00e0 la piscine des 4 amis<br> Qui doit combien \u00e0 qui ??<br> C\u2019est tr\u00e8s simple en utilisant le programme <code>amis</code> : <br> <code>&gt;&gt; amis()<br>\nListe amis ? pi,a,pa,e<br>\nT=tous, 0=fin # On nous dit d'utiliser T pour tous et 0 pour terminer<br>\na avance x EUR pr b # l'ordre de saisi est a puis x puis b<br>\na,x,b : e,10,a # Eric avance 10 EUR \u00e0 Audrey<br>\na,x,b : pi,20,T # Pierre avance 20 EUR \u00e0 Tous<br>\na,x,b : pa,2,e<br>\na,x,b : e,24,T<br>\na,x,b : 0 # On a fini<br>\nBilan : <br>\npi prend 9.0 # Pierre r\u00e9cup\u00e8re 9 EUR<br>\na depose 21.0 # Audrey d\u00e9pose 21 EUR<br>\npa depose 9.0 # Patricia d\u00e9pose 9 EUR<br>\ne prend 21.0 # Eric r\u00e9cup\u00e8re 21 EUR\n</code><br> Bien entendu vous pouvez utiliser des nombres \u00e0 virgule, par exemple : <code>pa,2.50,e</code>.</p> <p></p>"
+}

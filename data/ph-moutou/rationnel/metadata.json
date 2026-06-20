@@ -1,0 +1,9 @@
+{
+    "name": "rationnel",
+    "creator": "ph-moutou",
+    "created_at": "April 21, 2018",
+    "size": "985 Bytes",
+    "image": "data/ph-moutou/rationnel/ph-moutou_rationnel.png",
+    "tags": [],
+    "description": "<p>Ce programme d\u00e9termine la nature d\u2019un nombre rationnel (entier, d\u00e9cimal non entier ou rationnel non d\u00e9cimal) et donne, dans le cas d\u2019un nombre non d\u00e9cimal, la s\u00e9quence p\u00e9riodique et sa longueur. Dans tous les cas, une \u00e9criture d\u00e9cimale est donn\u00e9e.</p> <p></p>"
+}

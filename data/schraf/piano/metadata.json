@@ -1,0 +1,9 @@
+{
+    "name": "piano",
+    "creator": "schraf",
+    "created_at": "September 08, 2018",
+    "size": "202 Bytes",
+    "image": "data/schraf/piano/schraf_piano.png",
+    "tags": [],
+    "description": "<p>Voici les 88 touches d\u2019un piano :<br> <img width=\"800\" src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/132/images/piano.png\"></p> <p>La touche n\u00b01 compl\u00e8tement \u00e0 gauche est blanche, la 2e noire, la 3e et 4e blanches, la 5e noire etc.<br> La touche n\u00b088 compl\u00e8tement \u00e0 droite est blanche et la 89e sera pour nous \u00e0 nouveau comme la touche n\u00b01.<br> Vous jouez en tapant successivement sur les touches 1 puis 2 puis 3 etc.<br> Compte tenu du num\u00e9ro sur lequel vous vous \u00eates arr\u00eat\u00e9, serez-vous sur une touche noire ou sur une touche blanche ? <br> Par exemple, si vous vous \u00eates arr\u00eat\u00e9 \u00e0 92, vous \u00eates all\u00e9 au bout des touches 1 \u00e0 88, puis vous avez continuez sur la n\u00b01, de sorte que vous serez sur la quatri\u00e8me touche qui est blanche.<br></p> <p>\u00c9crire une fonction <b>couleur</b> qui admet en param\u00e8tre un nombre entier quelconque et qui devra renvoyer la cha\u00eene \u201cnoire\u201d ou \u201cblanche\u201d. <br></p> <p><code>&gt;&gt; couleur(1)<br>\n'blanche'<br>\n&gt;&gt; couleur(12)<br>\n'noire'<br>\n&gt;&gt; couleur(100)<br>\n'noire'<br>\n&gt;&gt; couleur(1000)<br>\n'blanche'<code><br></code></code></p> <p></p>"
+}

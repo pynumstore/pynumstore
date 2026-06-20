@@ -1,0 +1,9 @@
+{
+    "name": "pipemania",
+    "creator": "schraf",
+    "created_at": "July 07, 2022",
+    "size": "4.35 KB",
+    "image": "data/schraf/pipemania/schraf_pipemania.png",
+    "tags": [],
+    "description": "<p>D\u2019autres <a href=\"https://www.youtube.com/playlist?list=PLIz4PfDd5D2_4Or-TCQA_XtO-r4_8vJ5_\" rel=\"nofollow\">jeux pour la NUMWORKS sur ma chaine Youtube</a> : Rubika, solitaire, Mission missile, d\u00e9mineur, carr\u00e9 magique, TRON, d\u00e9fis de blanche\u2026</p> <p><a href=\"https://youtu.be/EgpTxBl9Yx4\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p>Le c\u00e9l\u00e8bre jeu Pipe Mania (Pipe Dream) pour votre Numworks.</p> <h2>Pour jouer</h2> <ul> <li>Evitez la fuite en pla\u00e7ant des tuyaux et formez un parcours</li> <li>Fl\u00e8ches de directions</li> <li>Touche <code>EXE</code> pour placer un tuyau</li> <li>Pour passer au niveau suivant, <code>dist</code> doit \u00eatre \u00e9gal \u00e0 z\u00e9ro</li> <li> <code>OK</code> pour passer au tour suivant</li> </ul> <p></p>"
+}

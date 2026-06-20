@@ -1,0 +1,9 @@
+{
+    "name": "marche",
+    "creator": "schraf",
+    "created_at": "September 07, 2018",
+    "size": "168 Bytes",
+    "image": "data/schraf/marche/schraf_marche.png",
+    "tags": [],
+    "description": "<p>Vous avez 10 minutes \u00e0 attendre avant un rendez-vous. Votre t\u00e9l\u00e9phone poss\u00e8de une application qui g\u00e9n\u00e8re des chemins (par exemple \u201cNOEESON\u201d pour \u201cAvancer 1 minute vers le Nord, puis 1 minute vers l\u2019Ouest, 2 minutes vers l\u2019Est, etc.) Cr\u00e9ez une fonction <b>valide</b> qui admet une proposition de chemin en param\u00e8tre et qui en retour indique si celui-ci est compatible avec votre situation, \u00e0 savoir qu\u2019il doit durer 10 minutes et bien s\u00fbr vous ramener au point de d\u00e9part (vu que vous avez rendez-vous)<br></p> <p><code>&gt;&gt; valide(\"NNSS\")<br>\n\"Impossible\"</code></p> <p>En effet le chemin <code>NNSS</code> vous ram\u00e8ne bien \u00e0 votre point de d\u00e9part mais il ne dure pas 10 minutes.<br></p> <p><code>&gt;&gt; valide(\"NSEONSEONS\")<br>\n\"Parfait\"</code></p> <p></p>"
+}

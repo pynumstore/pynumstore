@@ -1,0 +1,9 @@
+{
+    "name": "bataille_navale",
+    "creator": "ph-moutou",
+    "created_at": "June 08, 2018",
+    "size": "2.42 KB",
+    "image": "data/ph-moutou/bataille_navale/ph-moutou_bataille_navale.png",
+    "tags": [],
+    "description": "<p>Le programme choisis les emplacements de 5 bateaux (longueurs \u00e9gales \u00e0 2, 3, 3, 4 et 5) que le joueur doit couler en un minimum de coups. Successivement il donne les coordonn\u00e9es d\u2019une case sous la forme de 2 chiffres suivis de \u201cEXE\u201d (18 pour colonne=1 et ligne=8) : si un bateau est touch\u00e9, le point s\u2019allume en rouge sinon il s\u2019allume en blanc. Lorsqu\u2019un bateau est coul\u00e9 un message le signale.</p> <p></p>"
+}

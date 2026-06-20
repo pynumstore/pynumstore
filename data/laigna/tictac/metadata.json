@@ -1,0 +1,9 @@
+{
+    "name": "tictac",
+    "creator": "laigna",
+    "created_at": "March 14, 2026",
+    "size": "4.58 KB",
+    "image": "data/laigna/tictac/laigna_tictac.png",
+    "tags": [],
+    "description": "<p>2-player X/O. Positions 1\u20139, detects wins/draws.</p> <p></p>"
+}

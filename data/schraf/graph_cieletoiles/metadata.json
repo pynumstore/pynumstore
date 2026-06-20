@@ -1,0 +1,9 @@
+{
+    "name": "graph_cieletoiles",
+    "creator": "schraf",
+    "created_at": "September 22, 2018",
+    "size": "831 Bytes",
+    "image": "data/schraf/graph_cieletoiles/schraf_graph_cieletoiles.png",
+    "tags": [],
+    "description": "<p>C\u2019est une belle soir\u00e9e et le ciel est rempli d\u2019\u00e9toiles. Plus pr\u00e9cis\u00e9ment, il y a en moyenne 1% d\u2019\u00e9toiles et parmi ces \u00e9toiles 1% sont rouges (les autres sont bleues). Ce qui donne par exemple :<br> <img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/141/images/nuit1.png\"><br>Visuel n\u00b01<br></p> <p>Comme vous pouvez le constater, il est difficile de rep\u00e9rer les \u00e9toiles rouges (vos pr\u00e9f\u00e9r\u00e9es !). Vous d\u00e9cidez de programmer en Python votre t\u00e9lescope pour qu\u2019il les rep\u00e8re \u00e0 votre place :<br></p> <p><img src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/141/images/nuit2.png\"><br>Visuel n\u00b02<br></p> <p>Plus pr\u00e9cis\u00e9ment :<br></p> <ul> <li>Cr\u00e9ez une fonction <b>nuit</b> sans param\u00e8tre qui permet de cr\u00e9er le ciel noir avec 1% d\u2019\u00e9toiles dont 1% seront rouges. Ainsi, en lan\u00e7ant <code>nuit()</code> on obtiendra un visuel ressemblant au n\u00b01<br> </li> <li>Cr\u00e9ez ensuite une fonction <b>scan</b> sans param\u00e8tre qui appellera <b>nuit</b> puis, autour de chaque \u00e9toile rouge, ajoutera 4 pixels blancs comme sur le visuel ci-dessous :<br> </li> </ul> <p><img width=\"150\" src=\"http://moodle.univ-angers.fr/pluginfile.php/230776/mod_resource/content/141/images/rouge.jpg\"><br>Visuel n\u00b03<br></p> <p>Remarque : On ne tiendra pas compte du fait qu\u2019a priori mettre 4 pixels blancs peut cacher une autre \u00e9toile.</p> <p></p>"
+}

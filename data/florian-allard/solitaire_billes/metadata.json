@@ -1,0 +1,9 @@
+{
+    "name": "solitaire_billes",
+    "creator": "florian-allard",
+    "created_at": "July 15, 2025",
+    "size": "5.25 KB",
+    "image": "data/florian-allard/solitaire_billes/florian-allard_solitaire_billes.png",
+    "tags": [],
+    "description": "<p>Jeu du solitaire avec les billes (ou b\u00e2tonnets). On choisit une bille (avec les fl\u00e8ches, validation avec OK) puis la direction dans laquelle on veut la d\u00e9placer. Le seul d\u00e9placement autoris\u00e9 est celui qui permet de passer par-dessus une autre bille tout en arrivant sur une case libre. La bille par-dessus laquelle on a saut\u00e9 est alors retir\u00e9e du plateau.</p> <p>Le but est de n\u2019avoir plus qu\u2019une bille \u00e0 la fin de la partie, sans \u00eatre \u00e0 court de d\u00e9placement avant.</p> <p></p>"
+}

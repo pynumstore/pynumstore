@@ -1,0 +1,9 @@
+{
+    "name": "inversecasse",
+    "creator": "schraf",
+    "created_at": "September 07, 2018",
+    "size": "619 Bytes",
+    "image": "data/schraf/inversecasse/schraf_inversecasse.png",
+    "tags": [],
+    "description": "<p>\u00c9crire une fonction \u201cinverse\u201d qui admet une phrase en param\u00e8tre (par exemple \u201cPython For ever !\u201d) et qui en sortie affiche cette m\u00eame phrase o\u00f9 les minuscules sont devenues des majuscules et vice-versa. Les autres lettres (apostrophes, ponctuations, guillemets etc) ne changent pas.</p> <p>Pour notre exemple, le programme affichera donc \u201cpYTHON fOR EVER !\u201d</p> <p></p>"
+}

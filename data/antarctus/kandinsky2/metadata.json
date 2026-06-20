@@ -1,0 +1,9 @@
+{
+    "name": "kandinsky2",
+    "creator": "antarctus",
+    "created_at": "July 25, 2022",
+    "size": "798 Bytes",
+    "image": "data/antarctus/kandinsky2/antarctus_kandinsky2.png",
+    "tags": [],
+    "description": "<p>Biblioth\u00e8que pour am\u00e9liorer kandinsky. Permet d\u2019utiliser <code>draw_line</code> et <code>fill_circle</code>.</p> <p><em>Date d\u2019Avril 2022.</em></p> <p></p>"
+}

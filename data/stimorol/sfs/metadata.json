@@ -1,0 +1,9 @@
+{
+    "name": "sfs",
+    "creator": "stimorol",
+    "created_at": "September 03, 2023",
+    "size": "6.23 KB",
+    "image": "data/stimorol/sfs/stimorol_sfs.png",
+    "tags": [],
+    "description": "<p>Recr\u00e9ation simplifi\u00e9e du super jeu space flight simulator. Il est possible de modifier de pouss\u00e9e de la fus\u00e9e (en N), son poids ou son carburant. L\u2019utilisateur peut la piloter et lire des information relatives a sa position (vitesse, angle de vol). Une version sera peut \u00eatre cr\u00e9e pour cr\u00e9er sa propre fus\u00e9e et ajouter des plan\u00e8tes.</p> <p></p>"
+}

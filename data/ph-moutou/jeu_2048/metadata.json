@@ -1,0 +1,9 @@
+{
+    "name": "jeu_2048",
+    "creator": "ph-moutou",
+    "created_at": "June 13, 2018",
+    "size": "1.98 KB",
+    "image": "data/ph-moutou/jeu_2048/ph-moutou_jeu_2048.png",
+    "tags": [],
+    "description": "<p>Ce programme reproduit le fonctionnement du jeu 2048 invent\u00e9 par Gabriele Cirulli. Utiliser les touches 2, 4, 6 et 8 pour aller vers le bas, la gauche, le haut ou la droite. Atteignez 2048 et allez au-del\u00e0!</p> <p></p>"
+}

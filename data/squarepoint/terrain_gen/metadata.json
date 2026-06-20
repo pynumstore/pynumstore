@@ -1,0 +1,9 @@
+{
+    "name": "terrain_gen",
+    "creator": "squarepoint",
+    "created_at": "September 25, 2023",
+    "size": "2.04 KB",
+    "image": "data/squarepoint/terrain_gen/squarepoint_terrain_gen.png",
+    "tags": [],
+    "description": "<p>A nice 3d ish terrain generator that uses my fake perlin algorithm (it\u2019s actually called blur noise iirc). Move with arrows, press ok to generate a new map, zoom with + and -, you can also raise or lower the water level but i forgor the keys for it. Yeah the height isn\u2019t synced w/ the zoom but i\u2019m too lazy to rewrite the whole thing, have fun :D</p> <p></p>"
+}

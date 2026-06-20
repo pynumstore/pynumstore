@@ -1,0 +1,9 @@
+{
+    "name": "couleur_rgb_devinette",
+    "creator": "florian-allard",
+    "created_at": "April 18, 2021",
+    "size": "3.47 KB",
+    "image": "data/florian-allard/couleur_rgb_devinette/florian-allard_couleur_rgb_devinette.png",
+    "tags": [],
+    "description": "<p>Petit jeu dont le but est de retrouver une couleur donn\u00e9e en d\u00e9pla\u00e7ant 3 curseurs qui r\u00e8glent les composantes Rouge, Verte et Bleue. <br>Une version simple (sans la partie jouable) est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/couleur_rgb\" rel=\"nofollow\">ici</a>.</p> <p></p>"
+}

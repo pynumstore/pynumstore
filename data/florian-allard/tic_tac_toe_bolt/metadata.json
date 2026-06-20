@@ -1,0 +1,9 @@
+{
+    "name": "tic_tac_toe_bolt",
+    "creator": "florian-allard",
+    "created_at": "November 08, 2025",
+    "size": "5.03 KB",
+    "image": "data/florian-allard/tic_tac_toe_bolt/florian-allard_tic_tac_toe_bolt.png",
+    "tags": [],
+    "description": "<p>Adaptation du jeu Tic Tac Toe Bolt, ou Morpion \u00e9clair.</p> <p>Le principe est celui du Morpion, c\u2019est-\u00e0-dire : \u00e0 tour de r\u00f4le, deux joueurs dessinent une marque dans une case d\u2019un plateau de 3 cases par 3 cases. Le premier joueur qui aligne 3 de ses marques (en ligne, colonne ou diagonale) a gagn\u00e9.</p> <p>Ici, il y a une variante : lorsqu\u2019un joueur dessine sa 4\u00e8me marque, sa 1\u00e8re marque dessin\u00e9e dispara\u00eet et lib\u00e8re une case. Apr\u00e8s la 5\u00e8me marque dessin\u00e9e, c\u2019est la 2\u00e8me marque dessin\u00e9e qui dispara\u00eet et ainsi de suite. Un changement de couleur montre quelle marque s\u2019appr\u00eate \u00e0 dispara\u00eetre.</p> <p>Pour placer une marque, on appuie sur une des touches de 1 \u00e0 9 (le jeu n\u2019est pas jouable depuis le simulateur).</p> <p></p>"
+}

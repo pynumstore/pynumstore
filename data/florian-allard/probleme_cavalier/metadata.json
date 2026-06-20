@@ -1,0 +1,9 @@
+{
+    "name": "probleme_cavalier",
+    "creator": "florian-allard",
+    "created_at": "July 15, 2025",
+    "size": "5.22 KB",
+    "image": "data/florian-allard/probleme_cavalier/florian-allard_probleme_cavalier.png",
+    "tags": [],
+    "description": "<p>Adaptation sur calculatrice du probl\u00e8me du cavalier. On place un cavalier de jeu d\u2019\u00e9chec sur le plateau. Ensuite, on le d\u00e9place en respectant les r\u00e8gles de d\u00e9placement du cavalier aux \u00e9checs (d\u00e9placement en L). Le but est de passer par toutes les cases du plateau.</p> <p></p>"
+}

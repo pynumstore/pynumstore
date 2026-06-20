@@ -1,0 +1,9 @@
+{
+    "name": "graph",
+    "creator": "numworks",
+    "created_at": "April 13, 2018",
+    "size": "653 Bytes",
+    "image": "data/numworks/graph/numworks_graph.png",
+    "tags": [],
+    "description": "<p>Ce script permet de tracer des graphes de fonctions. La fonction <code>plotf(function,Xmin,Xmax,Ymin,Ymax)</code> trace la fonction en premier argument dans le rep\u00e8re d\u00e9fini par Xmin, Xmax, Ymin et Ymax. Essayer par exemple <code>plotf(sin,-10,10,-2,2)</code>. La fonction <code>plotlist(list)</code> trace les \u00e9l\u00e9ments de la liste plac\u00e9e en argument \u00e0 raison d\u2019un \u00e9l\u00e9ment par pixel sur l\u2019axe horizontal et sur un axe vertical ajust\u00e9 par rapport aux valeurs contenues dans la liste. Essayer par exemple <code>plotlist(range(320))</code>.</p> <p></p>"
+}

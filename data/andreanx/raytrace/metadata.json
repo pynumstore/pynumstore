@@ -1,0 +1,9 @@
+{
+    "name": "raytrace",
+    "creator": "andreanx",
+    "created_at": "April 15, 2020",
+    "size": "6.58 KB",
+    "image": "data/andreanx/raytrace/andreanx_raytrace.png",
+    "tags": [],
+    "description": "<p>A raytracing demo. Requires version 13 or above. Just adapted and optimized it for the NumWorks Kandinsky and 32K heap from a Casio version by Lightmare : https://www.planet-casio.com/Fr/programmes/programme4056-4-raytracing-lightmare-jeux-divers.html</p> <p></p>"
+}

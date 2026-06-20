@@ -1,0 +1,9 @@
+{
+    "name": "euclide_etendu",
+    "creator": "remy-cobena",
+    "created_at": "May 02, 2018",
+    "size": "227 Bytes",
+    "image": "data/remy-cobena/euclide_etendu/remy-cobena_euclide_etendu.png",
+    "tags": [],
+    "description": "<p>La fonction calcule un couple de coefficients de B\u00e9zout . (deux entiers u et v tels que au + bv = PGCD(a, b). exemple: euclide(13,11) retourne alors : \u201813x-5 + 11x6 = 1\u2019</p> <p></p>"
+}

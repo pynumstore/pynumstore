@@ -1,0 +1,9 @@
+{
+    "name": "floppy_birb",
+    "creator": "zecake",
+    "created_at": "September 04, 2025",
+    "size": "5.03 KB",
+    "image": "data/zecake/floppy_birb/zecake_floppy_birb.png",
+    "tags": [],
+    "description": "<p>[FR]<br> Flappy bird sur calculatrice.</p> <p>Contr\u00f4les : <br>Fl\u00e8ches pour se d\u00e9placer dans le menu, + et - pour changer les options, OK pour sauter.</p> <p>Changelog :</p> <ul> <li>1.0 : Premi\u00e8re version du jeu publi\u00e9e</li> <li>1.1 : Ajout du menu, des options et des meilleurs graphismes (+bugs r\u00e9gl\u00e9s)</li> <li>1.2 : Am\u00e9lioration du sprite du joueur</li> <li>1.2.1 : Am\u00e9lioration des fps en utilisant le delta time</li> <li>1.3 : R\u00e9glage du clignotement des tuyaux + Boost des FPS + Optimisation du stockage</li> <li>1.5 : Le sprite du joueur est d\u00e9sormais 2x plus gros et peut pivoter selon sa vitesse verticale + Contours des pipes plus gros pour aller avec le sprite + Plus d\u2019optimisations du stockage</li> </ul> <p>[EN]<br> Flappy bird, but it\u2019s on a calculator.</p> <p>Controls :<br> Arrows to move in menu, + and - to change the options, OK to jump</p> <p>Changelog :</p> <ul> <li>1.0 : First version of the game published</li> <li>1.1 : Menu, options and better graphics were added (+bug fixes)</li> <li>1.2 : Player sprite upgrade</li> <li>1.2.1 : Fps upgrade using delta time</li> <li>1.3 : Pipes blinking fixed + FPS boost + optimized storage</li> <li>1.5 : Player sprite is now 2x bigger and can rotate based on velocity + Pipes outlines made thicker to fit with the player sprite + More storage optimization</li> </ul> <p></p>"
+}

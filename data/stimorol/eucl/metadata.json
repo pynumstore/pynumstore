@@ -1,0 +1,9 @@
+{
+    "name": "eucl",
+    "creator": "stimorol",
+    "created_at": "November 16, 2023",
+    "size": "299 Bytes",
+    "image": "data/stimorol/eucl/stimorol_eucl.png",
+    "tags": [],
+    "description": "<p>Programme pour calculer le PGCD de deux nombres avec l\u2019algorithme d\u2019Euclide, avec r\u00e9daction !</p> <p></p>"
+}

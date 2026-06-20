@@ -1,0 +1,9 @@
+{
+    "name": "cheetos",
+    "creator": "squarepoint",
+    "created_at": "May 19, 2024",
+    "size": "320 Bytes",
+    "image": "data/squarepoint/cheetos/squarepoint_cheetos.png",
+    "tags": [],
+    "description": "<p>Add this extension as a security into your games! If the teacher is getting close, just press the toolbox key and a bunch of math will spawn ;)</p> <p>HOW TO USE: Add \u201cfrom cheetos import *\u201d at the top of your script and put \u201ccheat()\u201d in your main loop. You will be able to pause/play your game! To play again, type \u201c69*420\u201d and press exe.</p> <p></p>"
+}

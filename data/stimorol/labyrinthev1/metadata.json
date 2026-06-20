@@ -1,0 +1,9 @@
+{
+    "name": "labyrinthev1",
+    "creator": "stimorol",
+    "created_at": "December 16, 2021",
+    "size": "1.73 KB",
+    "image": "data/stimorol/labyrinthev1/stimorol_labyrinthev1.png",
+    "tags": [],
+    "description": "<p>Jeu simple d\u2019un labyrinthe: Le joueur peut se d\u00e9placer gr\u00e2ce aux fl\u00e8ches de la calculatrice, et son but est d\u2019atteindre le c\u00f4t\u00e9 droit de l\u2019\u00e9cran. Vous pouvez modifier la difficult\u00e9 du labyrinthe et beaucoup d\u2019autres param\u00e8tres depuis le script (comme l\u2019\u00e9cart entre les murs, la longueur des murs ou encore le nombre de murs\u2026). D\u2019autres mises a jour de ce programme sont susceptibles d\u2019arriver dans les prochaines semaines, notamment pour l\u2019ajout d\u2019un menu pour modifier les graphismes</p> <p></p>"
+}

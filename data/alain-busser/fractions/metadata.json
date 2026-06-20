@@ -1,0 +1,9 @@
+{
+    "name": "fractions",
+    "creator": "alain-busser",
+    "created_at": "April 25, 2018",
+    "size": "632 Bytes",
+    "image": "data/alain-busser/fractions/alain-busser_fractions.png",
+    "tags": [],
+    "description": "<p>le module fractions permet de faire du calcul sur les fractions. Pour entrer 3/5 faire Fraction(3,5). Les op\u00e9rations se font comme avec les autres nombres: a+b, a-b, a*b, a/b et a**n.</p> <p>actuellement seules l\u2019addition et la soustraction fonctionnent, probablement un bug de micropython (?)</p> <p></p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "snake",
+    "creator": "stimorol",
+    "created_at": "November 19, 2022",
+    "size": "6 KB",
+    "image": "data/stimorol/snake/stimorol_snake.png",
+    "tags": [],
+    "description": "<p>Intelligence artificielle utilisant le machine learning. N\u00e9cessite la biblioth\u00e8que numpy, uniquement accessible avec Upsilon. Il est aussi possible de sauvegarder et charger les meilleurs cerveaux.</p> <p></p>"
+}

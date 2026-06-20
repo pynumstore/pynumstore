@@ -1,0 +1,9 @@
+{
+    "name": "conway",
+    "creator": "eloidrai1",
+    "created_at": "September 24, 2018",
+    "size": "269 Bytes",
+    "image": "data/eloidrai1/conway/eloidrai1_conway.png",
+    "tags": [],
+    "description": "<p>Ce programme g\u00e9n\u00e8re une suite de Conway. Les param\u00e8tres sont le nombre de d\u00e9part et le nombre d\u2019it\u00e9rations.</p> <p></p>"
+}

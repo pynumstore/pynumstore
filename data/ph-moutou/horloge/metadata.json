@@ -1,0 +1,9 @@
+{
+    "name": "horloge",
+    "creator": "ph-moutou",
+    "created_at": "May 01, 2018",
+    "size": "1.92 KB",
+    "image": "data/ph-moutou/horloge/ph-moutou_horloge.png",
+    "tags": [],
+    "description": "<p>Ce programme trace une horloge indiquant l\u2019heure. Utilisation: taper horloge(9,30,120) si vous voulez voir l\u2019heure d\u00e9filer pendant 2 minutes (120 s) \u00e0 partir de 9h30. Taper horloge(9,30) simplement pour voir cette heure (9h30) s\u2019afficher. L\u2019\u00e9talonnage peut \u00eatre am\u00e9lior\u00e9 (modifier le range de la fonction temporise) si on cherche une meilleure pr\u00e9cision.</p> <p></p>"
+}

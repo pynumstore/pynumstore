@@ -1,0 +1,9 @@
+{
+    "name": "sudoku",
+    "creator": "neiluj",
+    "created_at": "December 29, 2023",
+    "size": "8.61 KB",
+    "image": "data/neiluj/sudoku/neiluj_sudoku.png",
+    "tags": [],
+    "description": "<ul> <li>BACKSPACE : Erase number</li> <li>TOOLBOX : Erase all numbers</li> <li>EXE : is grid correct</li> </ul> <p></p>"
+}

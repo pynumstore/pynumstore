@@ -1,0 +1,9 @@
+{
+    "name": "base_coder",
+    "creator": "zetamap",
+    "created_at": "March 19, 2024",
+    "size": "442 Bytes",
+    "image": "data/zetamap/base_coder/zetamap_base_coder.png",
+    "tags": [],
+    "description": "<p>Simple library to encode and decode int values to any encoding base between 2 and 64.</p> <h4>Content</h4> <p><strong>encode(</strong>v: <em>the value</em>, b: <em>encoding base</em> <strong>)</strong>: Encode the value in the specified encoding base, return None if base is not valid.</p> <p><strong>decode(</strong>v: <em>the value</em>, b: <em>encoding base</em> <strong>)</strong>: Decode the encoded value in the specified encoding base, return None if base is not valid or if value is an empty string.</p> <p><strong>CHARSET</strong>: The list of characters that define the encoding, add your own characters to increase the encoding base.</p> <p><strong>CHARS</strong>: The maximum possible encoding base, must be increased if you add new characters in <strong>CHARSET</strong>.</p> <p></p>"
+}

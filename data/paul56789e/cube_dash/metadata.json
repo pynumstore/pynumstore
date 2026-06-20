@@ -1,0 +1,9 @@
+{
+    "name": "cube_dash",
+    "creator": "paul56789e",
+    "created_at": "February 01, 2026",
+    "size": "13.2 KB",
+    "image": "data/paul56789e/cube_dash/paul56789e_cube_dash.png",
+    "tags": [],
+    "description": "<p>Une imitation du c\u00e9l\u00e8bre <strong>Geometry Dash</strong>, avec un niveau, des param\u00e8tres (th\u00e8me sombre/clair, langue, affichage du FPS), des r\u00e9glages graphiques (couleur du cube, cube qui tourne, particules), et un onglet \u201cstats\u201d, qui permet de voir ses statistiques. J\u2019ai du faire un long travail d\u2019optimisation pour \u00e9viter <em>MemoryError</em> mais je ne suis pas sur que la <strong>N0100</strong> supporte les nouvelles fonctionnalit\u00e9s. L\u2019ancienne version est toujours disponible <a href=\"https://my.numworks.com/python/paul56789e/cube_dash_light\" rel=\"nofollow\">ici</a>.</p> <p></p>"
+}

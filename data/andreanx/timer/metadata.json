@@ -1,0 +1,9 @@
+{
+    "name": "timer",
+    "creator": "andreanx",
+    "created_at": "February 13, 2020",
+    "size": "117 Bytes",
+    "image": "data/andreanx/timer/andreanx_timer.png",
+    "tags": [],
+    "description": "<p>Times the execution time of a function call in seconds. Use : timer( function, parameter1, parameter2, \u2026)</p> <p></p>"
+}
