@@ -69,8 +69,8 @@ async function render(list, query) {
   }
 
   document.title = query
-      ? `PyNum Store - Search for "${query}"`
-      : `PyNum Store - Search`;
+      ? `PyNumStore - Search for "${query}"`
+      : `PyNumStore - Search`;
     
   const title = document.getElementById("results-title");
   if (title) {

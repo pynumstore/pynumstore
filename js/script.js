@@ -12,7 +12,7 @@ async function loadScriptPage() {
   const res = await fetch(`data/${creator}/${name}/metadata.json`);
   const script = await res.json();
 
-  document.title = `PyNum Store - ${script.name}`;
+  document.title = `PyNumStore - ${script.name}`;
 
   document.querySelector(".name").textContent = script.name;
   document.querySelector(".creator").innerHTML =

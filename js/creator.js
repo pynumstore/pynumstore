@@ -7,7 +7,7 @@ async function loadCreatorPage() {
 
   const creator = getCreatorFromURL();
 
-  document.title = "PyNum Store - " + creator;
+  document.title = "PyNumStore - " + creator;
 
   document.getElementById("creator-name").textContent = creator;
 
