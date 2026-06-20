@@ -179,8 +179,6 @@ def scan_script(creator, name, page, debug=None):
             page.wait_for_load_state("networkidle")
             if page.title() == "404. Not found.":
                 return None
-            
-            page.pause()
 
             canvas = page.locator(".screen-container")
             canvas.click()
