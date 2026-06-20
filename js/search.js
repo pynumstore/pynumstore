@@ -1,3 +1,6 @@
+import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.esm.js";
+import { buildScriptCard } from "./utils.js";
+
 let fuse;
 let allScripts = [];
 const metadataCache = {};
@@ -38,40 +41,26 @@ async function search(query) {
 
 async function render(list, query) {
   const grid = document.getElementById("results");
-  grid.textContent = "";
+  grid.replaceChildren();
 
   for (const script of list) {
-
     const key = `${script.creator}/${script.name}`;
 
     if (!metadataCache[key]) {
-      const res = await fetch(`data/${key}/metadata.json`);
+      const res = await fetch(
+        `data/${encodeURIComponent(script.creator)}/${encodeURIComponent(script.name)}/metadata.json`
+      );
       metadataCache[key] = await res.json();
     }
 
     const meta = metadataCache[key];
-
-    const card = document.createElement("a");
-    card.href = `script.html?creator=${script.creator}&name=${script.name}`;
-
-    card.innerHTML = `
-      <div class="card">
-        <div class="img-wrapper">
-          <img src="${meta.image}" alt="">
-        </div>
-
-        <p class="card-tag">${script.creator}</p>
-        <h3>${script.name}</h3>
-      </div>
-    `;
-
-    grid.appendChild(card);
+    grid.appendChild(buildScriptCard(script, meta));
   }
 
   document.title = query
-      ? `PyNumStore - Search for "${query}"`
-      : `PyNumStore - Search`;
-    
+    ? `PyNumStore - Search for "${query}"`
+    : `PyNumStore - Search`;
+
   const title = document.getElementById("results-title");
   if (title) {
     title.textContent = query
