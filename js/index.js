@@ -18,3 +18,5 @@ async function loadScripts() {
     grid.appendChild(buildScriptCard(script, meta));
   }));
 }
+
+document.addEventListener("DOMContentLoaded", loadScripts);

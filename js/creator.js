@@ -34,3 +34,6 @@ async function loadCreatorPage() {
     grid.appendChild(buildScriptCard(script, meta));
   }
 }
+
+
+document.addEventListener("DOMContentLoaded", loadCreatorPage);

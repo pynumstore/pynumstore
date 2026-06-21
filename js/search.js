@@ -79,3 +79,17 @@ function shuffle(array) {
 
   return arr;
 }
+
+document.addEventListener("DOMContentLoaded", initSearch);
+
+document.getElementById("search-button").addEventListener("click", () => {
+  const query = document.getElementById("search-input").value;
+  search(query);
+});
+
+document.getElementById("search-input").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    const query = document.getElementById("search-input").value;
+    search(query);
+  }
+});

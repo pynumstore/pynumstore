@@ -27,32 +27,33 @@ async function sendCreator() {
     const data = await res.json();
 
     if (data.success) {
-      document.getElementById("msg").textContent = name + " has been saved!";
-      document.getElementById("msg").style.color = "green";
-      document.getElementById("msg").style.display = "block";
+      msg(name + " has been saved!", "green");
       document.getElementById("creatorName").value = "";
-      document.getElementById("creatorName").focus();
     } else {
       if (data.reason === "duplicate") {
-        document.getElementById("msg").textContent = name + " is already in the database.";
+        msg(name + " is already in the database.", "red");
       } else if (data.reason === "invalid_name") {
-        document.getElementById("msg").textContent = name + " is not a valid creator name. Please check the name and try again.";
+        msg(name + " is not a valid creator name. Please check the name and try again.", "red");
       } else if (data.reason === "too_many_requests") {
-        document.getElementById("msg").textContent = "Too many requests. Please try again later.";
+        msg("Too many requests. Please try again later.", "red");
       } else {
-        document.getElementById("msg").textContent = "Error: " + data.reason;
+        msg("Error: " + data.reason, "red");
       }
-      document.getElementById("msg").style.color = "red";
-      document.getElementById("msg").style.display = "block";
-      document.getElementById("creatorName").focus();
       console.log("Error:", data.reason);
     }
 
   } catch (err) {
-    document.getElementById("msg").textContent = "Error: " + err;
-    document.getElementById("msg").style.color = "red";
-    document.getElementById("msg").style.display = "block";
-    document.getElementById("creatorName").focus();
+    msg("Error: " + err, "red");
     console.error("Unexpected error:", err);
   }
 }
+
+function msg(message, color) {
+  const msgElement = document.getElementById("msg");
+  msgElement.textContent = message;
+  msgElement.style.color = color;
+  msgElement.style.display = "block";
+  document.getElementById("creatorName").focus();
+}
+
+document.getElementById("submit-button").addEventListener("click", sendCreator);

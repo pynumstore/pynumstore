@@ -1,4 +1,5 @@
-const VALID_ID = /^[a-z0-9-]{1,50}$/;
+const VALID_CREATOR_ID = /^[a-z0-9][a-z0-9-]{0,49}[a-z0-9]$/;
+const VALID_SCRIPT_ID = /^[a-z_][a-z0-9_]{0,49}$/;
 
 function getQueryParams() {
   const params = new URLSearchParams(window.location.search);
@@ -11,14 +12,16 @@ function getQueryParams() {
 async function loadScriptPage() {
   const { creator, name } = getQueryParams();
 
-  if (!creator || !name || !VALID_ID.test(creator) || !VALID_ID.test(name)) {
-    document.querySelector(".name").textContent = "Script introuvable.";
+  if (!creator || !name || !VALID_CREATOR_ID.test(creator) || !VALID_SCRIPT_ID.test(name)) {
+    document.querySelector(".name").textContent = "Script not found.";
+    console.log("Invalid query parameters:", { creator, name });
     return;
   }
 
   const res = await fetch(`data/${encodeURIComponent(creator)}/${encodeURIComponent(name)}/metadata.json`);
   if (!res.ok) {
-    document.querySelector(".name").textContent = "Script introuvable.";
+    document.querySelector(".name").textContent = "Script not found.";
+    console.log("Script not found:", { creator, name });
     return;
   }
   const script = await res.json();
@@ -49,7 +52,7 @@ async function loadScriptPage() {
     const divider = document.createElement("div");
     divider.className = "divider";
     const p = document.createElement("p");
-    p.textContent = script.description;
+    p.innerHTML = script.description;
     descSection.append(h2, divider, p);
   }
 
@@ -68,3 +71,5 @@ async function loadScriptPage() {
     }
   }
 }
+
+document.addEventListener("DOMContentLoaded", loadScriptPage);

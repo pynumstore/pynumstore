@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
   <script>
@@ -9,13 +11,11 @@
     gtag('js', new Date());
     gtag('config', 'G-6FY6CRZ97G');
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1280">
   <title>PyNumStore - For Creators</title>
   <link rel="icon" href='static/favicon.ico'>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/forcreators.js"></script>
+  <script type="module" src="js/forcreators.js"></script>
 </head>
 <body>
 
@@ -34,7 +34,7 @@
   <section id="search">
     <div class="search-bar">
       <input type="text" id="creatorName" placeholder="A creator name...">
-      <button type="button" onclick="sendCreator()">Submit</button>
+      <button id="submit-button">Submit</button>
     </div>
     <p id="msg"></p>
   </section>
