@@ -5,5 +5,5 @@
     "size": "8.02 KB",
     "image": "data/archange/visual/archange_visual.png",
     "tags": [],
-    "description": "<h3><strong>Visual</strong></h3> <hr> <p>Flexible <strong><em>library</em></strong> of <strong><em>graphical algorithms</em></strong> in <strong><em>Python</em></strong>, providing mathematical classes such as vectors and points, speed-optimized graphical functions and much more ! It can be used on the <strong><em>Numworks calculator</em></strong>, or on a computer.</p> <hr> <ul> <li><strong>Short presentation :</strong></li> </ul> <p><img src=\"https://raw.githubusercontent.com/Archange-py/Visual/refs/heads/main/src/visual/examples/functions/pictures/examples.gif\" alt=\"picture\"></p> <hr> <ul> <li><strong>Documentation :</strong></li> </ul> <p>The link to the github project: <a href=\"https://github.com/Archange-py/Visual\" rel=\"nofollow\">Visual</a></p> <p></p>"
+    "description": "<h3><strong>Visual</strong></h3>"
 }

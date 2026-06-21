@@ -4,8 +4,6 @@
     "created_at": "March 22, 2022",
     "size": "4.42 KB",
     "image": "data/airopi/snake/airopi_snake.png",
-    "tags": [
-        "3715"
-    ],
-    "description": "<h3>Jouez au snake sur votre calculatrice ! G\u00e9nial n\u2019est-ce pas ?</h3> <h4>Commandes :</h4> <ul> <li>Les <strong>4 fl\u00e8ches</strong> pour contr\u00f4ler le serpent</li> <li>Cliquez sur <strong>EXE</strong> pendant votre partie pour mettre en pause !</li> </ul> <hr> <h4>Configuration</h4> <p>Si vous voulez changer les couleurs et vitesses etc\u2026 rapidement et simplement, vous pouvez aussi ajouter le script <a href=\"https://workshop.numworks.com/python/airopi/snake_config\" rel=\"nofollow\">snake_config.py</a>, et modifier celui-ci !</p> <p><a href=\"https://workshop.numworks.com/python/airopi/snake_config\" rel=\"nofollow\">https://workshop.numworks.com/python/airopi/snake_config</a></p> <p><em>Il faudra aussi enlever les # au tout d\u00e9but du code, devant <code>try:</code> et <code>except:</code></em></p> <hr> <h4>Optimisations :</h4> <p>Une version de ce jeu avec un code beaucoup moins lisible et compr\u00e9hensible est aussi disponible pour prendre le moins de place possible sur votre calculatrice !</p> <p><a href=\"https://workshop.numworks.com/python/airopi/snake_opti\" rel=\"nofollow\">https://workshop.numworks.com/python/airopi/snake_opti</a></p> <hr> <p>J\u2019esp\u00e8re que vous vous amuserez bien !</p> <p>Me contacter sur Discord : P\u0131\u03b5\u044f\u044f\u03b5#3715</p> <p></p>"
+    "tags": [],
+    "description": "<h3>Jouez au snake sur votre calculatrice ! G\u00e9nial n\u2019est-ce pas ?</h3> <h4>Commandes :</h4> <ul> <li>Les <strong>4 fl\u00e8ches</strong> pour contr\u00f4ler le serpent</li> <li>Cliquez sur <strong>EXE</strong> pendant votre partie pour mettre en pause !</li> </ul>"
 }

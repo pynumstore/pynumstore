@@ -5,5 +5,5 @@
     "size": "5.43 KB",
     "image": "data/dan-wallez/master/dan-wallez_master.png",
     "tags": [],
-    "description": "<p>Jeu classique du mastermind : pour lancer le jeu&nbsp;\u00bb&gt; mastermind() ou s\u00e9lectionner la fonction mastermind() apr\u00e8s l\u2019appui de la touche var. Le nombre de couleurs et de positions est param\u00e9trables mais attention les difficult\u00e9s montent tr\u00e8s vite. Choix classique : 6 couleurs (de 0 \u00e0 5) et 4 positions vous pouvez vous confronter \u00e0 la machine, saisir la lettre o puis suivre les indications. Important : choisir la police petite (voir menu. param\u00e8tres de la machine)</p> <p></p>"
+    "description": "<p>Jeu classique du mastermind : pour lancer le jeu \u00bb&gt; mastermind() ou s\u00e9lectionner la fonction mastermind() apr\u00e8s l\u2019appui de la touche var. Le nombre de couleurs et de positions est param\u00e9trables mais attention les difficult\u00e9s montent tr\u00e8s vite. Choix classique : 6 couleurs (de 0 \u00e0 5) et 4 positions vous pouvez vous confronter \u00e0 la machine, saisir la lettre o puis suivre les indications. Important : choisir la police petite (voir menu. param\u00e8tres de la machine)</p> <p></p>"
 }
