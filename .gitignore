@@ -162,3 +162,6 @@ cython_debug/
 # Tokens files
 tokens.py
 credentials.json
+
+# Settings files
+settings.json

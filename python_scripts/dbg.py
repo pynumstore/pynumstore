@@ -59,7 +59,7 @@ ALLOWED_PROTOCOLS = [
 
 def update(debug=None):
 
-    if not debug is None: debug.pull("update")
+    if debug is not None: debug.pull("update")
     creators = generate_creators_index()
 
     with sync_playwright() as p:
@@ -70,21 +70,21 @@ def update(debug=None):
         page.locator("#pi_tracking_opt_in_no").click()
 
         scripts = generate_scripts_index(creators, page, debug)
-        if not debug is None: debug.pull("nbScripts", len(scripts))
+        if debug is not None: debug.pull("nbScripts", len(scripts))
 
         scan_and_save_scripts(scripts, page, debug)
 
         for creator in os.listdir("data/"):
             if (not creator in creators) and (not creator[-5:] == ".json"):
                 shutil.rmtree(f"data/{creator}")
-                if not debug is None: debug.pull("errorCreator", creator)
+                if debug is not None: debug.pull("errorCreator", creator)
                 continue
             elif creator[-5:] == ".json":
                 continue
             for script in os.listdir(f"data/{creator}/"):
                 if not {"name":script, "creator": creator} in scripts:
                     shutil.rmtree(f"data/{creator}/{script}")
-                    if not debug is None: debug.pull("errorScript", creator, script)
+                    if debug is not None: debug.pull("errorScript", creator, script)
                     continue
     
     with open(f"data/creators_index.json", "w", encoding="utf-8") as f:
@@ -105,7 +105,7 @@ def update(debug=None):
         range_name=f"A1:A{len(creators)}",
         values=[[item] for item in creators]
     )
-    if not debug is None: debug.pull("endUpdate")
+    if debug is not None: debug.pull("endUpdate")
 
 
 def generate_creators_index():
@@ -131,7 +131,7 @@ def generate_scripts_index(creators, page, debug=None):
             s = scan_creator(creator, page)
             if s is None:
                 creators.remove(creator)
-                if not debug is None: debug.pull("errorCreator2", creator)
+                if debug is not None: debug.pull("errorCreator2", creator)
                 continue
             for script in s:
                 scripts.append({"name": script, "creator": creator})
