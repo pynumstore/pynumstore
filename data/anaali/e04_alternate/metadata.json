@@ -5,5 +5,5 @@
     "size": "298 Bytes",
     "image": "data/anaali/e04_alternate/anaali_e04_alternate.png",
     "tags": [],
-    "description": "<p>from turtle import * h=0 list1 = [\u201cred\u201d,\u201dorange\u201d,\u201dyellow\u201d,\u201dgreen\u201d,\u201dblue\u201d,\u201dpurple\u201d]</p> <p>speed(6000) for i in range(1000) : color(list1[i%6])) h+=10 pensize(1) forward(i/4) right(59)</p> <p></p>"
+    "description": "<p>from turtle import *\nh=0\nlist1 = [\u201cred\u201d,\u201dorange\u201d,\u201dyellow\u201d,\u201dgreen\u201d,\u201dblue\u201d,\u201dpurple\u201d]</p><p>speed(6000)\nfor i in range(1000) :\n  color(list1[i%6]))\n  h+=10\n  pensize(1)\n  forward(i/4)\n  right(59)</p>"
 }

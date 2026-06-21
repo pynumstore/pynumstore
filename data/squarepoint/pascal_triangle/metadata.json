@@ -5,5 +5,5 @@
     "size": "209 Bytes",
     "image": "data/squarepoint/pascal_triangle/squarepoint_pascal_triangle.png",
     "tags": [],
-    "description": "<p>Renders a pascal triangle up to a specified line. Useful to solve (a+b)^n type stuff</p> <p></p>"
+    "description": "<p>Renders a pascal triangle up to a specified line. Useful to solve (a+b)^n type stuff</p>"
 }

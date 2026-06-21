@@ -5,5 +5,5 @@
     "size": "302 Bytes",
     "image": "data/schraf/feigenbaum/schraf_feigenbaum.png",
     "tags": [],
-    "description": "<p>On fait varier a entre 2 et 4 par exemple avec un pas de 0.01</p> <p>La premi\u00e8re boucle permet d\u2019arriver \u00e0 un comportement limite (100 it\u00e9rations) de u(n+1)=a<em>u(n)</em>(1-u(n))</p> <p>On trace ensuite les 20 points suivants (u(101) \u00e0 u(120))</p> <p>https://fr.wikipedia.org/wiki/Nombres_de_Feigenbaum</p> <p></p>"
+    "description": "<p>On fait varier a entre 2 et 4 par exemple avec un pas de 0.01</p><p>La premi\u00e8re boucle permet d\u2019arriver \u00e0 un comportement limite (100 it\u00e9rations) de u(n+1)=a<em>u(n)</em>(1-u(n))</p><p>On trace ensuite les 20 points suivants (u(101) \u00e0 u(120))</p><p>https://fr.wikipedia.org/wiki/Nombres_de_Feigenbaum</p>"
 }

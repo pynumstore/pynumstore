@@ -5,5 +5,5 @@
     "size": "1.15 KB",
     "image": "data/nicolas-patrois/brainfuck/nicolas-patrois_brainfuck.png",
     "tags": [],
-    "description": "<p>Le langage minimaliste BrainFuck, version l\u00e9g\u00e8rement \u00e9tendue.</p> <p>usage : brainfuck(\u201c;&gt;;[&lt;+&gt;-]&lt;:\u201d,\u201d10 12\u201d)</p> <p>commandes=\u201d,.+-&gt;&lt;[];:#!\u201d &lt; et &gt; d\u00e9placent la t\u00eate de lecture + et - incr\u00e9mentent et d\u00e9cr\u00e9mentent la cellule . et , affichent et entrent un code ASCII [ et ] est la seule boucle si la cellule est nulle : et ; affichent et entrent un nombre ! affiche l\u2019\u00e9tat de la bande # indique que la suite est ignor\u00e9e</p> <p></p>"
+    "description": "<p>Le langage minimaliste BrainFuck, version l\u00e9g\u00e8rement \u00e9tendue.</p><p>usage :\n       brainfuck(\u201c;&gt;;[&lt;+&gt;-]&lt;:\u201d,\u201d10 12\u201d)</p><p>commandes=\u201d,.+-&gt;&lt;[];:#!\u201d\n   &lt; et &gt; d\u00e9placent la t\u00eate de lecture\n   + et - incr\u00e9mentent et d\u00e9cr\u00e9mentent la cellule\n   . et , affichent et entrent un code ASCII\n   [ et ] est la seule boucle si la cellule est nulle\n   : et ; affichent et entrent un nombre\n   ! affiche l\u2019\u00e9tat de la bande\n   # indique que la suite est ignor\u00e9e</p>"
 }

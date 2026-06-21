@@ -5,5 +5,5 @@
     "size": "267 Bytes",
     "image": "data/bclerc/plan_mediateur/bclerc_plan_mediateur.png",
     "tags": [],
-    "description": "<p>Algorithme qui d\u00e9termine l\u2019\u00e9quation du plan m\u00e9diateur du segment [AB] : - En entr\u00e9e les coordonn\u00e9es de A et de B ; - En sortie les coefficients a, b, c et d de l\u2019\u00e9quation cart\u00e9sienne du plan m\u00e9diateur : ax + by + cz + d = 0 - On utilise le fait que si I est le milieu de [AB], on a vec(MI).vec(AB) = 0 pour tout M appartenant au plan m\u00e9diateur de [AB].</p> <p></p>"
+    "description": "<p>Algorithme qui d\u00e9termine l\u2019\u00e9quation du plan m\u00e9diateur du segment [AB] :\n- En entr\u00e9e les coordonn\u00e9es de A et de B ;\n- En sortie les coefficients a, b, c et d de l\u2019\u00e9quation cart\u00e9sienne du plan m\u00e9diateur : ax + by + cz + d = 0\n- On utilise le fait que si I est le milieu de [AB], on a vec(MI).vec(AB) = 0 pour tout M appartenant au plan m\u00e9diateur de [AB].</p>"
 }

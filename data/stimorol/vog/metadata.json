@@ -5,5 +5,5 @@
     "size": "4.41 KB",
     "image": "data/stimorol/vog/stimorol_vog.png",
     "tags": [],
-    "description": "<p>Intelligence artificielle utilisant le machine learning. Il fonctionne avec la biblioth\u00e8que numpy, et n\u2019est donc pas fonctionnel sur le syst\u00e8me d\u2019exploitation par d\u00e9faut (il faudrait installer Upsilon).</p> <p></p>"
+    "description": "<p>Intelligence artificielle utilisant le machine learning. Il fonctionne avec la biblioth\u00e8que numpy, et n\u2019est donc pas fonctionnel sur le syst\u00e8me d\u2019exploitation par d\u00e9faut (il faudrait installer Upsilon).</p>"
 }

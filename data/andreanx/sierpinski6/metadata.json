@@ -5,5 +5,5 @@
     "size": "870 Bytes",
     "image": "data/andreanx/sierpinski6/andreanx_sierpinski6.png",
     "tags": [],
-    "description": "<p>rotsierp(n=6, n0=0, s=1, h=222, m=3) Draws adjacent Sierpi\u0144ski triangles starting with iterations and increasing by each time and with pixels of margin for a global height of pixels.</p> <p></p>"
+    "description": "<p>rotsierp(n=6, n0=0, s=1, h=222, m=3)\nDraws  adjacent Sierpi\u0144ski triangles starting with  iterations and increasing by  each time and with  pixels of margin for a global height of  pixels.</p>"
 }

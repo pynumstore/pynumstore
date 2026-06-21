@@ -5,5 +5,5 @@
     "size": "1.26 KB",
     "image": "data/schraf/lentille/schraf_lentille.png",
     "tags": [],
-    "description": "<p>Sur une id\u00e9e de <a href=\"https://twitter.com/physiquebeyaert\" rel=\"nofollow\">Fabien Beyaert</a></p> <p>Tapez <code>go()</code> puis entrez les valeurs de AB, OA et f\u2019 (par exemple 5, 25, 15 ou 7, 40, 10)</p> <p>La machine affiche OA\u2019 et A\u2019B\u2019. Appuyez sur <code>EXE</code> pour voir le diagramme.</p> <p></p>"
+    "description": "<p>Sur une id\u00e9e de <a href=\"https://twitter.com/physiquebeyaert\" rel=\"nofollow\">Fabien Beyaert</a></p><p>Tapez <code>go()</code> puis entrez les valeurs de AB, OA et f\u2019 (par exemple 5, 25, 15 ou 7, 40, 10)</p><p>La machine affiche OA\u2019 et A\u2019B\u2019. Appuyez sur <code>EXE</code> pour voir le diagramme.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "196 Bytes",
     "image": "data/schraf/cartecredit/schraf_cartecredit.png",
     "tags": [],
-    "description": "<p>Habituellement, lorsque vous achetez un produit, on vous donne un re\u00e7u o\u00f9 l\u2019on voit apparaitre les 4 derniers chiffres de votre carte de cr\u00e9dit. <br> Plus g\u00e9n\u00e9ralement, on voudrait une fonction <b>masque</b> qui admet en param\u00e8tre une chaine (num\u00e9ro de la carte de cr\u00e9dit, num\u00e9ro de t\u00e9l\u00e9phone ou autre) et qui en sortie affiche des \u201c*\u201d sauf pour les 4 derniers chiffres.<br></p> <p><code>&gt;&gt; masque(\"123456\")<br>\n'**3456'<br>\n&gt;&gt; masque(\"888\")<br>\n'888'<br>\n&gt;&gt; masque(\"0620212223\")<br>\n'******2223'</code></p> <p></p>"
+    "description": "<p>Habituellement, lorsque vous achetez un produit, on vous donne un re\u00e7u o\u00f9 l\u2019on voit apparaitre les 4 derniers chiffres de votre carte de cr\u00e9dit. <br>\nPlus g\u00e9n\u00e9ralement, on voudrait une fonction <b>masque</b> qui admet en param\u00e8tre une chaine (num\u00e9ro de la carte de cr\u00e9dit, num\u00e9ro de t\u00e9l\u00e9phone ou autre) et qui en sortie affiche des \u201c*\u201d sauf pour les 4 derniers chiffres.<br></p><p><code>&gt;&gt; masque(\"123456\")<br>\n'**3456'<br>\n&gt;&gt; masque(\"888\")<br>\n'888'<br>\n&gt;&gt; masque(\"0620212223\")<br>\n'******2223'</code></p>"
 }

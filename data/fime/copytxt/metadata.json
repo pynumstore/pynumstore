@@ -5,5 +5,5 @@
     "size": "471 Bytes",
     "image": "data/fime/copytxt/fime_copytxt.png",
     "tags": [],
-    "description": "<p>Fonction <code>draw_string_bigger()</code> qui permet de dessiner un chaine agrandie.</p> <p>Usage : <code>draw_string_bigger(txt_string : str, x_position : int, y_position : int, size : int, &lt;letter_color : tuple&gt;, &lt;background_color : tuple&gt;)</code></p> <p>Warning : don\u2019t use a y position &lt;20.</p> <p></p>"
+    "description": "<p>Fonction <code>draw_string_bigger()</code> qui permet de dessiner un chaine agrandie.</p><p>Usage : <code>draw_string_bigger(txt_string : str, x_position : int, y_position : int, size : int, &lt;letter_color : tuple&gt;, &lt;background_color : tuple&gt;)</code></p><p>Warning : don\u2019t use a y position &lt;20.</p>"
 }

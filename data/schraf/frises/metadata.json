@@ -5,5 +5,5 @@
     "size": "761 Bytes",
     "image": "data/schraf/frises/schraf_frises.png",
     "tags": [],
-    "description": "<p><code>&gt;&gt; frise(f1)</code> pour afficher la premi\u00e8re frise, <code>&gt;&gt; frise(f2,4)</code> pour affiche la frise n\u00b02 en petit, <code>&gt;&gt; frise(f3,16)</code> pour affiche la frise n\u00b03 en grand, etc.</p> <p></p>"
+    "description": "<p><code>&gt;&gt; frise(f1)</code> pour afficher la premi\u00e8re frise, \n<code>&gt;&gt; frise(f2,4)</code> pour affiche la frise n\u00b02 en petit,\n<code>&gt;&gt; frise(f3,16)</code> pour affiche la frise n\u00b03 en grand,\netc.</p>"
 }

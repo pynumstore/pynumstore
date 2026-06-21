@@ -5,5 +5,5 @@
     "size": "1.31 KB",
     "image": "data/schraf/tron/schraf_tron.png",
     "tags": [],
-    "description": "<p><a href=\"https://youtu.be/vNd1yUsmNSY\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p>Pour lancer le programme avec 2 joueurs, tapez <code>&gt;&gt; go()</code> et pour 3 joueurs tapez <code>&gt;&gt; go(3)</code></p> <p></p>"
+    "description": "<p><a href=\"https://youtu.be/vNd1yUsmNSY\" rel=\"nofollow\">Explications en vid\u00e9o</a></p><p>Pour lancer le programme avec 2 joueurs, tapez <code>&gt;&gt; go()</code> et pour 3 joueurs tapez <code>&gt;&gt; go(3)</code></p>"
 }

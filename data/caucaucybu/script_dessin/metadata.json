@@ -5,5 +5,5 @@
     "size": "941 Bytes",
     "image": "data/caucaucybu/script_dessin/caucaucybu_script_dessin.png",
     "tags": [],
-    "description": "<p>Ce script permet de dessiner. Touche fl\u00e8ches : direction. Touche XNT : cacher la tortue. Touche VAR : mettre une couleur al\u00e9atoire. Touche TOOLBOX : montrer la tortue. Touche BACKSPACE : remet \u00e0 z\u00e9ro le dessin. Touche MULTIPLICATION : baisser le stylo. Touche DIVISION : relever le stylo. Touche PLUS : augmenter la taille du trac\u00e9. Touche MINUS : r\u00e9duire la taille du trac\u00e9. Touche ANS : l\u00e8ve le stylo si il est baiss\u00e9, l\u2019abaisse si il est lev\u00e9 (sert \u00e0 faire du pointill\u00e9 quand la taille du trac\u00e9 est de 1).</p> <p></p>"
+    "description": "<p>Ce script permet de dessiner.\nTouche fl\u00e8ches : direction.\nTouche XNT : cacher la tortue.\nTouche VAR : mettre une couleur al\u00e9atoire.\nTouche TOOLBOX : montrer la tortue.\nTouche BACKSPACE : remet \u00e0 z\u00e9ro le dessin.\nTouche MULTIPLICATION : baisser le stylo.\nTouche DIVISION : relever le stylo.\nTouche PLUS : augmenter la taille du trac\u00e9.\nTouche MINUS : r\u00e9duire la taille du trac\u00e9.\nTouche ANS : l\u00e8ve le stylo si il est baiss\u00e9, l\u2019abaisse si il est lev\u00e9 (sert \u00e0 faire du pointill\u00e9 quand la taille du trac\u00e9 est de 1).</p>"
 }

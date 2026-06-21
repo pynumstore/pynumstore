@@ -5,5 +5,5 @@
     "size": "5.81 KB",
     "image": "data/rapha1111/echec_v2/rapha1111_echec_v2.png",
     "tags": [],
-    "description": "<p>Echecs version 2 :</p> <p>utilisez la fonction echec() pour lancer une partie.</p> <p>Les touches :</p> <p>bouger le curseur : les fl\u00e8ches. Choisir un pion et valider le d\u00e9placement : EXE ou OK Annuler la s\u00e9l\u00e9ction d\u2019un pion : BACKSPACE revenir en arri\u00e8re (maximum un coup) : 0</p> <p></p>"
+    "description": "<p>Echecs version 2 :</p><p>utilisez la fonction echec() pour lancer une partie.</p><p>Les touches :</p><p>bouger le curseur : les fl\u00e8ches.\nChoisir un pion et valider le d\u00e9placement : EXE ou OK\nAnnuler la s\u00e9l\u00e9ction d\u2019un pion : BACKSPACE\nrevenir en arri\u00e8re (maximum un coup) : 0</p>"
 }

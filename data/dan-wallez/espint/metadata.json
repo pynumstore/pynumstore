@@ -5,5 +5,5 @@
     "size": "10.4 KB",
     "image": "data/dan-wallez/espint/dan-wallez_espint.png",
     "tags": [],
-    "description": "<p>3 Fonctions d\u2019intersection associ\u00e9es \u00e0 l\u2019espace \u00e0 3 dimensions, Menu : 1 :Droite d\u2019intersection de 2 plans non parall\u00e8les 2 :Point d\u2019intersection d\u2019une droite avec un plan (si droite non parall\u00e8le au plan) 3 :Point d\u2019intersection de 2 droites si s\u00e9cantes Attention donn\u00e9es \u00e0 entrer sous forme de fraction.Police python format petit</p> <p></p>"
+    "description": "<p>3 Fonctions d\u2019intersection associ\u00e9es \u00e0 l\u2019espace \u00e0 3 dimensions, Menu  :\n1 :Droite d\u2019intersection de 2 plans non parall\u00e8les\n 2 :Point d\u2019intersection d\u2019une droite avec un plan (si droite non parall\u00e8le au plan)\n3 :Point d\u2019intersection de 2 droites si s\u00e9cantes\nAttention donn\u00e9es \u00e0 entrer sous forme de fraction.Police python format petit</p>"
 }

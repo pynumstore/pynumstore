@@ -5,5 +5,5 @@
     "size": "1.11 KB",
     "image": "data/matt-numworks/cardpicker/matt-numworks_cardpicker.png",
     "tags": [],
-    "description": "<p>This script allows the user to randomly draw a card from a deck of cards. Once a card is chosen, it is removed from the deck and you can continue drawing cards until it runs out.</p> <p></p>"
+    "description": "<p>This script allows the user to randomly draw a card from a deck of cards. Once a card is chosen, it is removed from the deck and you can continue drawing cards until it runs out.</p>"
 }

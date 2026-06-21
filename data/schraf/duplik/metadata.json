@@ -5,5 +5,5 @@
     "size": "750 Bytes",
     "image": "data/schraf/duplik/schraf_duplik.png",
     "tags": [],
-    "description": "<p>Vous devez \u00e9crire une fonction <b>duplik</b> admettant en param\u00e8tre une chaine de caract\u00e8res. En sortie on doit obtenir une chaine o\u00f9 chaque caract\u00e8re est soit \u201c(\u201c (si le caract\u00e8re n\u2019apparait qu\u2019une seule fois dans la chaine initiale), soit \u201c)\u201d (si le caract\u00e8re apparait plusieurs fois).</p> <p><code>&gt;&gt; duplik(\"bacasable\")<br>\n'))()())(('</code><br></p> <p><a href=\"https://youtu.be/hvbLPv4Hun8\" rel=\"nofollow\">Explications en vid\u00e9o</a></p> <p></p>"
+    "description": "<p>Vous devez \u00e9crire une fonction <b>duplik</b> admettant en param\u00e8tre une chaine de caract\u00e8res. En sortie on doit obtenir une chaine o\u00f9 chaque caract\u00e8re est soit \u201c(\u201c (si le caract\u00e8re n\u2019apparait qu\u2019une seule fois dans la chaine initiale), soit \u201c)\u201d (si le caract\u00e8re apparait plusieurs fois).</p><p><code>&gt;&gt; duplik(\"bacasable\")<br>\n'))()())(('</code><br></p><p><a href=\"https://youtu.be/hvbLPv4Hun8\" rel=\"nofollow\">Explications en vid\u00e9o</a></p>"
 }

@@ -5,5 +5,5 @@
     "size": "355 Bytes",
     "image": "data/andreanx/getkeys/andreanx_getkeys.png",
     "tags": [],
-    "description": "<p>getkeys() : get the list of pressed keys / getkey() : get a pressed key code (scanned from top to bottom)</p> <p></p>"
+    "description": "<p>getkeys() : get the list of pressed keys / getkey() : get a pressed key code (scanned from top to bottom)</p>"
 }

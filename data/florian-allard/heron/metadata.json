@@ -5,5 +5,5 @@
     "size": "125 Bytes",
     "image": "data/florian-allard/heron/florian-allard_heron.png",
     "tags": [],
-    "description": "<p>Affiche les 10 premiers termes de la suite de H\u00e9ron d\u2019Alexandrie, avec comme premier terme 2 et comme valeur de a, une valeur demand\u00e9e \u00e0 l\u2019utilisateur. Cette suite tend vers la racine carr\u00e9e du nombre a.</p> <p></p>"
+    "description": "<p>Affiche les 10 premiers termes de la suite de H\u00e9ron d\u2019Alexandrie, avec comme premier terme 2 et comme valeur de a, une valeur demand\u00e9e \u00e0 l\u2019utilisateur.\nCette suite tend vers la racine carr\u00e9e du nombre a.</p>"
 }

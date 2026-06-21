@@ -5,5 +5,5 @@
     "size": "7.62 KB",
     "image": "data/laigna/chem/laigna_chem.png",
     "tags": [],
-    "description": "<p>Chemistry solver with molar mass calculator, moles/mass conversions, gas volume at STP, solution dilution (C1V1=C2V2), pH calculator, mass percentage, and element table.</p> <p></p>"
+    "description": "<p>Chemistry solver with molar mass calculator, moles/mass conversions, gas volume at STP, solution dilution (C1V1=C2V2), pH calculator, mass percentage, and element table.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "776 Bytes",
     "image": "data/stimorol/perlin/stimorol_perlin.png",
     "tags": [],
-    "description": "<p>Script dessinant des cartes avec le bruit de perlin. Le deuxi\u00e8me argument de la fonction apply est le nombre de fois que l\u2019algorithme va \u00eatre perform\u00e9 sur la carte.</p> <p></p>"
+    "description": "<p>Script dessinant des cartes avec le bruit de perlin. Le deuxi\u00e8me argument de la fonction apply est le nombre de fois que l\u2019algorithme va \u00eatre perform\u00e9 sur la carte.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "396 Bytes",
     "image": "data/nicolas-patrois/robinson/nicolas-patrois_robinson.png",
     "tags": [],
-    "description": "<p>Calcule les termes de la suite de Robinson jusqu\u2019\u00e0 obtenir une boucle.</p> <p>Essayez robinson(\u201c0\u201d) ou robinson(\u201c40\u201d).</p> <p></p>"
+    "description": "<p>Calcule les termes de la suite de Robinson jusqu\u2019\u00e0 obtenir une boucle.</p><p>Essayez robinson(\u201c0\u201d) ou robinson(\u201c40\u201d).</p>"
 }

@@ -1,9 +1,9 @@
 {
     "name": "utilitaires",
     "creator": "ph-moutou",
-    "created_at": "June 13, 2018",
+    "created_at": "June 14, 2018",
     "size": "1.79 KB",
     "image": "data/ph-moutou/utilitaires/ph-moutou_utilitaires.png",
     "tags": [],
-    "description": "<p>fonctions utiles au jeu 2048</p> <p></p>"
+    "description": "<p>fonctions utiles au jeu 2048</p>"
 }

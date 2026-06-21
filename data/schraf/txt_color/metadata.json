@@ -5,5 +5,5 @@
     "size": "540 Bytes",
     "image": "data/schraf/txt_color/schraf_txt_color.png",
     "tags": [],
-    "description": "<p><code> txt(\"Bonjour\",10,20,color(255,0,0))</code> met le texte \u201cBonjour\u201d en rouge \u00e0 la position (10,20)<br> L\u2019id\u00e9e est de r\u00e9cup\u00e9rer les valeurs Rouge-Vert-Bleu des pixels du texte \u00e9crit en noir et gris et de les convertir dans la couleur voulue. Chaque lettre fait 10*18 pixels</p> <p></p>"
+    "description": "<p><code> txt(\"Bonjour\",10,20,color(255,0,0))</code> met le texte \u201cBonjour\u201d en rouge \u00e0 la position (10,20)<br>\nL\u2019id\u00e9e est de r\u00e9cup\u00e9rer les valeurs Rouge-Vert-Bleu des pixels du texte \u00e9crit en noir et gris et de les convertir dans la couleur voulue. Chaque lettre fait 10*18 pixels</p>"
 }

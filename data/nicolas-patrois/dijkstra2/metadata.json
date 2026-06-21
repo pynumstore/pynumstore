@@ -5,5 +5,5 @@
     "size": "780 Bytes",
     "image": "data/nicolas-patrois/dijkstra2/nicolas-patrois_dijkstra2.png",
     "tags": [],
-    "description": "<p>Still Dijsktra but with an adjacency list (and you are asked for the start and end).</p> <p></p>"
+    "description": "<p>Still Dijsktra but with an adjacency list (and you are asked for the start and end).</p>"
 }

@@ -5,5 +5,5 @@
     "size": "405 Bytes",
     "image": "data/matt-numworks/parallelogramarea/matt-numworks_parallelogramarea.png",
     "tags": [],
-    "description": "<p>Find the area of a parallelogram using three arrays where p is between q and r. The script first calculates PQ and PR, then uses those values to find the cross product and ultimately the area of the parallelogram.</p> <p></p>"
+    "description": "<p>Find the area of a parallelogram using three arrays where p is between q and r. The script first calculates PQ and PR, then uses those values to find the cross product and ultimately the area of the parallelogram.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "609 Bytes",
     "image": "data/nicolas-patrois/basephi/nicolas-patrois_basephi.png",
     "tags": [],
-    "description": "<p>D\u00e9compose un nombre en base \u03d5 (le nombre d\u2019or tel que \u03d5^2=\u03d5+1). Comme 6=\u03d5^3+\u03d5+\u03d5^-4, on note 6=1010.0001 en base \u03d5. Si on impose qu\u2019aucun chiffre n\u2019est sup\u00e9rieur \u00e0 1 et que deux chiffres \u00e9gaux \u00e0 1 ne soient pas cons\u00e9cutifs, la d\u00e9composition est unique.</p> <p></p>"
+    "description": "<p>D\u00e9compose un nombre en base \u03d5 (le nombre d\u2019or tel que \u03d5^2=\u03d5+1).\nComme 6=\u03d5^3+\u03d5+\u03d5^-4, on note 6=1010.0001 en base \u03d5.\nSi on impose qu\u2019aucun chiffre n\u2019est sup\u00e9rieur \u00e0 1 et que deux chiffres \u00e9gaux \u00e0 1 ne soient pas cons\u00e9cutifs, la d\u00e9composition est unique.</p>"
 }

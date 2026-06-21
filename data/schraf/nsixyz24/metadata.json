@@ -5,5 +5,5 @@
     "size": "766 Bytes",
     "image": "data/schraf/nsixyz24/schraf_nsixyz24.png",
     "tags": [],
-    "description": "<p>Version papier-peint des ann\u00e9es 70 :</p> <pre>from math import *\nfrom kandinsky import *\nfor i in range(321*222):\n set_pixel(i%321,i//321,[(194,156,94),(255,255,0),(255,128,0),(77,40,4)][int(3*sin((i%321-160)/16)*cos((i//321-111)/16))])</pre> <p></p>"
+    "description": "<p>Version papier-peint des ann\u00e9es 70 :</p><pre>from math import *\nfrom kandinsky import *\nfor i in range(321*222):\n set_pixel(i%321,i//321,[(194,156,94),(255,255,0),(255,128,0),(77,40,4)][int(3*sin((i%321-160)/16)*cos((i//321-111)/16))])</pre>"
 }

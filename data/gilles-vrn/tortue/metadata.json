@@ -5,5 +5,5 @@
     "size": "829 Bytes",
     "image": "data/gilles-vrn/tortue/gilles-vrn_tortue.png",
     "tags": [],
-    "description": "<p>Un essai de tortue, avec la fonction \u2018seg\u2019 de telpe51. Fonctions : av(n) : avancer de n pixels, re(n) : reculer, td(a) : tourner \u00e0 droite de a degres, tg(a) : tourner \u00e0 gauche, go(x,y) : aller au point de coordonn\u00e9es (x;y)</p> <p></p>"
+    "description": "<p>Un essai de tortue, avec la fonction \u2018seg\u2019 de telpe51.\nFonctions : av(n) : avancer de n pixels, re(n) : reculer,  td(a) : tourner \u00e0 droite de a degres, tg(a) : tourner \u00e0 gauche, go(x,y) : aller au point de coordonn\u00e9es (x;y)</p>"
 }

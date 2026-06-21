@@ -5,5 +5,5 @@
     "size": "77 Bytes",
     "image": "data/antarctus/quine/antarctus_quine.png",
     "tags": [],
-    "description": "<p>Un Quine sur la Numworks.<br> Un <a href=\"https://fr.wikipedia.org/wiki/Quine_(informatique)\" rel=\"nofollow\">Quine est une prouesse logique o\u00f9 un programme informatique imprime son propre code source</a>. Mon code est en grande partie tir\u00e9 de l\u2019exemple de wikip\u00e9dia.</p> <p></p>"
+    "description": "<p>Un Quine sur la Numworks.<br>\nUn <a href=\"https://fr.wikipedia.org/wiki/Quine_(informatique)\" rel=\"nofollow\">Quine est une prouesse logique o\u00f9 un programme informatique imprime son propre code source</a>.  Mon code est en grande partie tir\u00e9 de l\u2019exemple de wikip\u00e9dia.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "31 KB",
     "image": "data/florian-allard/super_dupont_5/florian-allard_super_dupont_5.png",
     "tags": [],
-    "description": "<p>Affiche 74 lignes pleines et bloque pour 75 lignes. Chaque pixel est cod\u00e9 avec un seul caract\u00e8re en \u2018\\u1234\u2019 ou simplement \u2018\\x12\u2019 lorsque c\u2019est possible. Le script fait moins de 32 ko donc se lance, mais un essai avec 75 lignes (et moins de 32 ko) renvoie une erreur de m\u00e9moire car la cha\u00eene est trop longue. Donc le codage en 1 caract\u00e8re par pixel n\u2019est pas assez efficace.</p> <p></p>"
+    "description": "<p>Affiche 74 lignes pleines et bloque pour 75 lignes. Chaque pixel est cod\u00e9 avec un seul caract\u00e8re en \u2018\\u1234\u2019 ou simplement \u2018\\x12\u2019 lorsque c\u2019est possible. Le script fait moins de 32 ko donc se lance, mais un essai avec 75 lignes (et moins de 32 ko) renvoie une erreur de m\u00e9moire car la cha\u00eene est trop longue. Donc le codage en 1 caract\u00e8re par pixel n\u2019est pas assez efficace.</p>"
 }

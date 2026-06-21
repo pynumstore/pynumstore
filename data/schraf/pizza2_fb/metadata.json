@@ -5,5 +5,5 @@
     "size": "363 Bytes",
     "image": "data/schraf/pizza2_fb/schraf_pizza2_fb.png",
     "tags": [],
-    "description": "<p><a href=\"https://www.youtube.com/schraf\" rel=\"nofollow\">Ma chaine Youtube consacr\u00e9e aux maths, \u00e0 la programmation en Python, aux calculatrices, Excel, etc.</a></p> <h1>D\u00e9coupage d'une pizza</h1> <p><code>xc,yc</code> sont les coordonn\u00e9es de la pointe de la part de pizza, r\u00e9parties sur un cercle de rayon 20 et centr\u00e9 en (0,0). Il ne faut pas oublier d\u2019orienter la tortue avant de tracer les arcs de cercles (en partant \u00e0 90\u00b0 pour le premier)</p> <p>Testez par exemple <code>pizza(3)</code> ou <code>pizza(17)</code></p> <p></p>"
+    "description": "<p><a href=\"https://www.youtube.com/schraf\" rel=\"nofollow\">Ma chaine Youtube consacr\u00e9e aux maths, \u00e0 la programmation en Python, aux calculatrices, Excel, etc.</a></p><h1>D\u00e9coupage d'une pizza</h1><p><code>xc,yc</code> sont les coordonn\u00e9es de la pointe de la part de pizza, r\u00e9parties sur un cercle de rayon 20 et centr\u00e9 en (0,0).\nIl ne faut pas oublier d\u2019orienter la tortue avant de tracer les arcs de cercles (en partant \u00e0 90\u00b0 pour le premier)</p><p>Testez par exemple <code>pizza(3)</code> ou <code>pizza(17)</code></p>"
 }

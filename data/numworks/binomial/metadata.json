@@ -5,5 +5,5 @@
     "size": "397 Bytes",
     "image": "data/numworks/binomial/numworks_binomial.png",
     "tags": [],
-    "description": "<p>Ce script contient deux fonctions pour le calcul des probabilit\u00e9s binomiales : <code>binomialpdf(k,N,p)</code> renvoie <strong>p(X=k)</strong> et <code>binomialcdf(k,N,P)</code> renvoie <strong>p(X\u2264k)</strong> pour N r\u00e9p\u00e9titions et une probabilit\u00e9 de succ\u00e8s p.</p> <p></p>"
+    "description": "<p>Ce script contient deux fonctions pour le calcul des probabilit\u00e9s binomiales : <code>binomialpdf(k,N,p)</code> renvoie <strong>p(X=k)</strong> et <code>binomialcdf(k,N,P)</code> renvoie <strong>p(X\u2264k)</strong> pour N r\u00e9p\u00e9titions et une probabilit\u00e9 de succ\u00e8s p.</p>"
 }

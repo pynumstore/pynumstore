@@ -5,5 +5,5 @@
     "size": "285 Bytes",
     "image": "data/schraf/lettremax/schraf_lettremax.png",
     "tags": [],
-    "description": "<p>\u00c9crire une fonction <b>maxi</b> qui admet en param\u00e8tre des lettres (pas d\u2019espace ni de ponctuation) et qui en retour affiche en majuscule la lettre la plus loin dans l\u2019alphabet. Par exemple :<br> <code>&gt;&gt; maxi(\"BonjourATous\")<br>\n'U'</code><br></p> <p>car la lettre \u2018U\u2019 est bien celle la plus proche de la fin de l\u2019alphabet.</p> <p></p>"
+    "description": "<p>\u00c9crire une fonction <b>maxi</b> qui admet en param\u00e8tre des lettres (pas d\u2019espace ni de ponctuation) et qui en retour affiche en majuscule la lettre la plus loin dans l\u2019alphabet. Par exemple :<br>\n<code>&gt;&gt; maxi(\"BonjourATous\")<br>\n'U'</code><br></p><p>car la lettre \u2018U\u2019 est bien celle la plus proche de la fin de l\u2019alphabet.</p>"
 }

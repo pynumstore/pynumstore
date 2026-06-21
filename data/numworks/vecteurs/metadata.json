@@ -5,5 +5,5 @@
     "size": "153 Bytes",
     "image": "data/numworks/vecteurs/numworks_vecteurs.png",
     "tags": [],
-    "description": "<p>Le script contient deux fonctions concernant le calcul sur les vecteurs. La fonction <code>coordinates(x_A,y_A,x_B,y_B)</code> renvoie les coordonn\u00e9es du vecteur AB avec A(x_A,y_A) et B(x_B,y_B). La fonction <code>collinear(x_1,y_1,x_2,y_2)</code> renvoie True si les vecteurs u(x_1,y_1) et v(x_2,y_2) sont colin\u00e9aires et False sinon.</p> <p></p>"
+    "description": "<p>Le script contient deux fonctions concernant le calcul sur les vecteurs. La fonction  <code>coordinates(x_A,y_A,x_B,y_B)</code> renvoie les coordonn\u00e9es du vecteur AB avec A(x_A,y_A) et B(x_B,y_B). La fonction <code>collinear(x_1,y_1,x_2,y_2)</code> renvoie True si les vecteurs u(x_1,y_1) et v(x_2,y_2) sont colin\u00e9aires et False sinon.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "725 Bytes",
     "image": "data/alain-busser/galton_board/alain-busser_galton_board.png",
     "tags": [],
-    "description": "<p>Simulation de la planche de Galton (programme de terminale \u00e0 partir de la rentr\u00e9e 2020). board(N) simule le trajet de N billes. On suppose que 0&lt;N&lt;159 et plus il y a de billes \u00e0 lancer, plus \u00e7a va vite.</p> <p></p>"
+    "description": "<p>Simulation de la planche de Galton (programme de terminale \u00e0 partir de la rentr\u00e9e 2020). board(N) simule le trajet de N billes. On suppose que 0&lt;N&lt;159 et plus il y a de billes \u00e0 lancer, plus \u00e7a va vite.</p>"
 }

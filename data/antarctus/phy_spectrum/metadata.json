@@ -5,5 +5,5 @@
     "size": "1.02 KB",
     "image": "data/antarctus/phy_spectrum/antarctus_phy_spectrum.png",
     "tags": [],
-    "description": "<p>Permet d\u2019afficher le spectre visible, de s\u00e9lectionner une couleur et d\u2019afficher sa longueur d\u2019onde. Utilisez les fl\u00e8ches pour choisir la couleur, appuyez sur OK pour affiner la s\u00e9lection, touche retour pour quitter.</p> <p>Est issu du <a href=\"https://my.numworks.com/python/uncurieux/visible_spectrum\" rel=\"nofollow\">programme d\u2019affichage du spectre d\u2019uncurieux</a>.</p> <p></p>"
+    "description": "<p>Permet d\u2019afficher le spectre visible, de s\u00e9lectionner une couleur et d\u2019afficher sa longueur d\u2019onde.\nUtilisez les fl\u00e8ches pour choisir la couleur, appuyez sur OK pour affiner la s\u00e9lection, touche retour pour quitter.</p><p>Est issu du <a href=\"https://my.numworks.com/python/uncurieux/visible_spectrum\" rel=\"nofollow\">programme d\u2019affichage du spectre d\u2019uncurieux</a>.</p>"
 }

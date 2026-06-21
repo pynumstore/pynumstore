@@ -5,5 +5,5 @@
     "size": "224 Bytes",
     "image": "data/bclerc/droite/bclerc_droite.png",
     "tags": [],
-    "description": "<p>Renvoie [m,p] tels que y = mx + p est l\u2019\u00e9quation r\u00e9duite de (AB). Utilisation :droite_AB([0,2],[5,6])</p> <p></p>"
+    "description": "<p>Renvoie [m,p] tels que y = mx + p est l\u2019\u00e9quation r\u00e9duite de (AB).\nUtilisation :droite_AB([0,2],[5,6])</p>"
 }

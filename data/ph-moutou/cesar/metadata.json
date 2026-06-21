@@ -5,5 +5,5 @@
     "size": "991 Bytes",
     "image": "data/ph-moutou/cesar/ph-moutou_cesar.png",
     "tags": [],
-    "description": "<p>La fonction encode permet de coder/d\u00e9coder un message t avec un code C\u00e9sar de cl\u00e9 c. La fonction analyse proc\u00e8de \u00e0 une analyse des fr\u00e9quences de chaque lettre de l\u2019alphabet dans le message t; elle renvoie la liste des lettres dans l\u2019ordre des fr\u00e9quences d\u00e9croissantes. On peut ainsi afficher le message d\u00e9cod\u00e9 selon la cl\u00e9 qui s\u2019en d\u00e9duit pour les principales hypoth\u00e8ses concernant le codage du E.</p> <p></p>"
+    "description": "<p>La fonction encode permet de coder/d\u00e9coder un message t avec un code C\u00e9sar de cl\u00e9 c. La fonction analyse proc\u00e8de \u00e0 une analyse des fr\u00e9quences de chaque lettre de l\u2019alphabet dans le message t; elle renvoie la liste des lettres dans l\u2019ordre des fr\u00e9quences d\u00e9croissantes. On peut ainsi afficher le message d\u00e9cod\u00e9 selon la cl\u00e9 qui s\u2019en d\u00e9duit pour les principales hypoth\u00e8ses concernant le codage du E.</p>"
 }

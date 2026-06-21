@@ -5,5 +5,5 @@
     "size": "2.17 KB",
     "image": "data/florian-allard/couleur_rgb/florian-allard_couleur_rgb.png",
     "tags": [],
-    "description": "<p>Petit script qui permet d\u2019afficher une couleur \u00e0 partir de ses trois composantes Rouge, Verte et Bleue param\u00e9tr\u00e9es par des curseurs. Une fois la couleur choisie, un appui sur la touche OK ou EXE permet de copier le code hexad\u00e9cimal et le code RGB dans la console et un appui sur la touche Retour (ou \u00c9chap) r\u00e9p\u00e9t\u00e9 deux fois permet d\u2019afficher la console et de voir les codes. On peut choisir et valider plusieurs couleurs avant d\u2019afficher la console.</p> <p></p>"
+    "description": "<p>Petit script qui permet d\u2019afficher une couleur \u00e0 partir de ses trois composantes Rouge, Verte et Bleue param\u00e9tr\u00e9es par des curseurs. Une fois la couleur choisie, un appui sur la touche OK ou EXE permet de copier le code hexad\u00e9cimal et le code RGB dans la console et un appui sur la touche Retour (ou \u00c9chap) r\u00e9p\u00e9t\u00e9 deux fois permet d\u2019afficher la console et de voir les codes. On peut choisir et valider plusieurs couleurs avant d\u2019afficher la console.</p>"
 }

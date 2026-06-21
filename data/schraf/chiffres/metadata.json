@@ -5,5 +5,5 @@
     "size": "349 Bytes",
     "image": "data/schraf/chiffres/schraf_chiffres.png",
     "tags": [],
-    "description": "<p>Petite fonction pour afficher un nombre <code>n</code> \u00e0 la position <code>(x,y)</code> avec une taille <code>t</code> et une couleur <code>co</code></p> <p></p>"
+    "description": "<p>Petite fonction pour afficher un nombre <code>n</code> \u00e0 la position <code>(x,y)</code> avec une taille <code>t</code> et une couleur <code>co</code></p>"
 }

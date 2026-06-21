@@ -5,5 +5,5 @@
     "size": "1.38 KB",
     "image": "data/alain-busser/sofus/alain-busser_sofus.png",
     "tags": [],
-    "description": "<p>Sofus est un langage de programmation bas\u00e9 sur la notion de variable. Une variable est un objet capable de varier. Pour cela on lui demande de varier, par un ordre clair et explicite. Par exemple si N est une variable de Sofus (cr\u00e9\u00e9e par N=Variable(0) par exemple) on peut l\u2019incr\u00e9menter classiquement par N=Variable(N.valeur+1) ou \u00e0 la fa\u00e7on de Sofus par N.augmente_toi_de(1)</p> <p></p>"
+    "description": "<p>Sofus est un langage de programmation bas\u00e9 sur la notion de variable. Une variable est un objet capable de varier. Pour cela on lui demande de varier, par un ordre clair et explicite. Par exemple si N est une variable de Sofus (cr\u00e9\u00e9e par N=Variable(0) par exemple) on peut l\u2019incr\u00e9menter classiquement par N=Variable(N.valeur+1) ou \u00e0 la fa\u00e7on de Sofus par N.augmente_toi_de(1)</p>"
 }

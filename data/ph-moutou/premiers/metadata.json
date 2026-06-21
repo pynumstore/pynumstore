@@ -5,5 +5,5 @@
     "size": "496 Bytes",
     "image": "data/ph-moutou/premiers/ph-moutou_premiers.png",
     "tags": [],
-    "description": "<p>La fonction premiers(n) utilise la m\u00e9thode du crible d\u2019\u00c9ratosth\u00e8ne pour renvoyer la liste des nombres premiers jusqu\u2019\u00e0 n</p> <p></p>"
+    "description": "<p>La fonction premiers(n) utilise la m\u00e9thode du crible d\u2019\u00c9ratosth\u00e8ne pour renvoyer la liste des nombres premiers jusqu\u2019\u00e0 n</p>"
 }

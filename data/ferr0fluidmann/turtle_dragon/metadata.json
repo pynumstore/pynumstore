@@ -5,5 +5,5 @@
     "size": "648 Bytes",
     "image": "data/ferr0fluidmann/turtle_dragon/ferr0fluidmann_turtle_dragon.png",
     "tags": [],
-    "description": "<p>Draws a dragon curve using the turtle library. Run with <code>dragon_run()</code>.</p> <p></p>"
+    "description": "<p>Draws a dragon curve using the turtle library. Run with <code>dragon_run()</code>.</p>"
 }

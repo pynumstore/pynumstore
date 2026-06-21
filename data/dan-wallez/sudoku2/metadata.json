@@ -5,5 +5,5 @@
     "size": "3.72 KB",
     "image": "data/dan-wallez/sudoku2/dan-wallez_sudoku2.png",
     "tags": [],
-    "description": "<p>Fonction \u00e0 lancer sudoku() . R\u00e9solution du jeu du sudoku avec saisie de la grille initiale a11 case en haut \u00e0 gauche et case a99 en bas \u00e0 droite. Si case vide saisir le chiffre 0. Algorithme perso qui repose sur le niveau d\u2019hypoth\u00e8se. Plus de confort police python en grand dans param\u00e8tres.</p> <p></p>"
+    "description": "<p>Fonction \u00e0 lancer sudoku() . R\u00e9solution du jeu du sudoku avec saisie de la grille initiale a11 case en haut \u00e0 gauche et case a99 en bas \u00e0 droite. Si case vide saisir le chiffre 0.\nAlgorithme perso qui repose sur le niveau d\u2019hypoth\u00e8se.\nPlus de confort police python en grand dans param\u00e8tres.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "282 Bytes",
     "image": "data/ciel/get_gcd/ciel_get_gcd.png",
     "tags": [],
-    "description": "<p>takes 2 integers as parameters (must be in descending order) and compute the gcd of them both</p> <p></p>"
+    "description": "<p>takes 2 integers as parameters (must be in descending order) and compute the gcd of them both</p>"
 }

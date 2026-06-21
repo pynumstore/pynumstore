@@ -5,5 +5,5 @@
     "size": "117 Bytes",
     "image": "data/andreanx/timer/andreanx_timer.png",
     "tags": [],
-    "description": "<p>Times the execution time of a function call in seconds. Use : timer( function, parameter1, parameter2, \u2026)</p> <p></p>"
+    "description": "<p>Times the execution time of a function call in seconds.\nUse : timer( function, parameter1, parameter2, \u2026)</p>"
 }

@@ -5,5 +5,5 @@
     "size": "992 Bytes",
     "image": "data/ph-moutou/bertrand/ph-moutou_bertrand.png",
     "tags": [],
-    "description": "<p>Paradoxe de Bertrand: tirage de 2 points au hasard sur un cercle trigonom\u00e9trique et d\u00e9termination de la probabilit\u00e9 (exp\u00e9rimentale) que la longueur soit sup\u00e9rieure au c\u00f4t\u00e9 d\u2019un triangle \u00e9quilat\u00e9ral inscrit dans le cercle. La m\u00e9thode 1 : utilise l\u2019\u00e9quation du cercle (x tir\u00e9 dans [-1;1[) et la m\u00e9thode 2 : utilise l\u2019abscisse angulaire des points (alpha tir\u00e9 dans [0;2\u03c0[) ne donnent pas le m\u00eame r\u00e9sultat!</p> <p></p>"
+    "description": "<p>Paradoxe de Bertrand: tirage de 2 points au hasard sur un cercle trigonom\u00e9trique et d\u00e9termination de la probabilit\u00e9 (exp\u00e9rimentale) que la longueur soit sup\u00e9rieure au c\u00f4t\u00e9 d\u2019un triangle \u00e9quilat\u00e9ral inscrit dans le cercle. La m\u00e9thode 1 : utilise l\u2019\u00e9quation du cercle (x tir\u00e9 dans [-1;1[) et la m\u00e9thode 2 : utilise l\u2019abscisse angulaire des points (alpha tir\u00e9 dans [0;2\u03c0[) ne donnent pas le m\u00eame r\u00e9sultat!</p>"
 }

@@ -5,5 +5,5 @@
     "size": "2.69 KB",
     "image": "data/ph-moutou/puissance4/ph-moutou_puissance4.png",
     "tags": [],
-    "description": "<p>Ce programme simule le jeu \u201cpuissance 4\u201d commercialis\u00e9 en 1974 par la soci\u00e9t\u00e9 MB et d\u00e9tenu depuis 1984 par la soci\u00e9t\u00e9 Hasbro (info Wikipedia). Le joueur 1 (jaune) commence. Les 2 joueurs entrent alternativement un num\u00e9ro de colonne; \u00e0 la fin de la partie (quand il y a un alignement de 4 jetons d\u2019un joueur), pour rejouer, il faut entrer 1 (entrer 0 arr\u00eate le jeu) et c\u2019est \u00e0 l\u2019autre joueur de commencer.</p> <p></p>"
+    "description": "<p>Ce programme simule le jeu \u201cpuissance 4\u201d  commercialis\u00e9 en 1974 par la soci\u00e9t\u00e9 MB et d\u00e9tenu depuis 1984 par la soci\u00e9t\u00e9 Hasbro (info Wikipedia). Le joueur 1 (jaune) commence. Les 2 joueurs entrent alternativement un num\u00e9ro de colonne; \u00e0 la fin de la partie (quand il y a un alignement de 4 jetons d\u2019un joueur), pour rejouer, il faut entrer 1 (entrer 0 arr\u00eate le jeu) et c\u2019est \u00e0 l\u2019autre joueur de commencer.</p>"
 }

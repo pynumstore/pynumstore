@@ -5,5 +5,5 @@
     "size": "618 Bytes",
     "image": "data/ph-moutou/doublons/ph-moutou_doublons.png",
     "tags": [],
-    "description": "<p>\u00c9limination des doublons d\u2019une liste, selon 4 m\u00e9thodes Python diff\u00e9rentes. NB: les 2 derni\u00e8res ne marchent pas \u00e0 cause de fonctionnalit\u00e9s Python non [encore] impl\u00e9ment\u00e9es.</p> <p></p>"
+    "description": "<p>\u00c9limination des doublons d\u2019une liste, selon 4 m\u00e9thodes Python diff\u00e9rentes. \nNB: les 2 derni\u00e8res ne marchent pas \u00e0 cause de fonctionnalit\u00e9s Python non [encore] impl\u00e9ment\u00e9es.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "1.37 KB",
     "image": "data/aquaebm/piano/aquaebm_piano.png",
     "tags": [],
-    "description": "<p>Definitely NOT a Piano Tiles clone\u2026 <br><br> REQUIRES util.py to be downloaded onto your calculator. <br><br> Use keys ALPHA through TOOLBOX to click on the tiles the moment they touch their corresponding black pads, which will increase your score and health bar which, when empty, results in a game over. Pressing too early or too late will deplete your health bar. <br><br></p> <p>Survive as long as you can and aim for the highest score! :D</p> <p></p>"
+    "description": "<p>Definitely NOT a Piano Tiles clone\u2026 <br><br>\nREQUIRES util.py to be downloaded onto your calculator. <br><br>\nUse keys ALPHA through TOOLBOX to click on the tiles the moment they touch their corresponding black pads, which will increase your score and health bar which, when empty, results in a game over. Pressing too early or too late will deplete your health bar. <br><br></p><p>Survive as long as you can and aim for the highest score! :D</p>"
 }

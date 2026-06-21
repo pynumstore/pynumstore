@@ -5,5 +5,5 @@
     "size": "301 Bytes",
     "image": "data/florian-allard/primalite/florian-allard_primalite.png",
     "tags": [],
-    "description": "<p>Affiche, pour chaque nombre entier compris entre les deux nombres entiers donn\u00e9s en entr\u00e9e, s\u2019il est premier. Et s\u2019il n\u2019est pas premier, affiche son nombre de diviseurs.</p> <p></p>"
+    "description": "<p>Affiche, pour chaque nombre entier compris entre les deux nombres entiers donn\u00e9s en entr\u00e9e, s\u2019il est premier. Et s\u2019il n\u2019est pas premier, affiche son nombre de diviseurs.</p>"
 }

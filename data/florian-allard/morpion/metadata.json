@@ -1,9 +1,9 @@
 {
     "name": "morpion",
     "creator": "florian-allard",
-    "created_at": "July 27, 2020",
+    "created_at": "July 28, 2020",
     "size": "1.98 KB",
     "image": "data/florian-allard/morpion/florian-allard_morpion.png",
     "tags": [],
-    "description": "<p>Un jeu de Morpion ou Tic Tac Toe, avec seulement un mode Joueur contre joueur, avec gestion de l\u2019appui sur les touches en utilisant le module ion. On peut donc jouer en appuyant directement sur les touches 1 \u00e0 9. La version d\u2019\u00e9bauche est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/morpion0\" rel=\"nofollow\">ici</a>. Une version avec IA (Intelligence Artificielle) dans un mode Joueur contre machine est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/morpion_ia\" rel=\"nofollow\">ici</a>.</p> <p></p>"
+    "description": "<p>Un jeu de Morpion ou Tic Tac Toe, avec seulement un mode Joueur contre joueur, avec gestion de l\u2019appui sur les touches en utilisant le module ion. On peut donc jouer en appuyant directement sur les touches 1 \u00e0 9.\nLa version d\u2019\u00e9bauche est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/morpion0\" rel=\"nofollow\">ici</a>.\nUne version avec IA (Intelligence Artificielle) dans un mode Joueur contre machine est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/morpion_ia\" rel=\"nofollow\">ici</a>.</p>"
 }

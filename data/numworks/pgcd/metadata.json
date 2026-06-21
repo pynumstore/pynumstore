@@ -5,5 +5,5 @@
     "size": "94 Bytes",
     "image": "data/numworks/pgcd/numworks_pgcd.png",
     "tags": [],
-    "description": "<p>Ce script contient une fonction <code>pgcd(a,b)</code> qui renvoie le PGCD de a et b.</p> <p></p>"
+    "description": "<p>Ce script contient une fonction <code>pgcd(a,b)</code> qui renvoie le PGCD de a et b.</p>"
 }

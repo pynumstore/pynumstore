@@ -5,5 +5,5 @@
     "size": "120 Bytes",
     "image": "data/alain-busser/viete/alain-busser_viete.png",
     "tags": [],
-    "description": "<p>Calcul de \u03c0 par l\u2019algorithme de Fran\u00e7ois Vi\u00e8te. La fonction viete(n) renvoie une approximation \u00e0 n it\u00e9rations. Concr\u00e8tement viete(40) est d\u00e9j\u00e0 bon</p> <p></p>"
+    "description": "<p>Calcul de \u03c0 par l\u2019algorithme de Fran\u00e7ois Vi\u00e8te. La fonction viete(n) renvoie une approximation \u00e0 n it\u00e9rations. Concr\u00e8tement viete(40) est d\u00e9j\u00e0 bon</p>"
 }

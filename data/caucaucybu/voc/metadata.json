@@ -5,5 +5,5 @@
     "size": "2.9 KB",
     "image": "data/caucaucybu/voc/caucaucybu_voc.png",
     "tags": [],
-    "description": "<p>Permet de s\u2019entrainer sur du vocabulaire de langue. Pour personnaliser la liste il suffit de remplacer les mots pr\u00e9sents par vos mots, en sachant qu\u2019ils doivent \u00eatre entre \u201c et \u201c, qu\u2019entre la traduction et le mot il y a : et qu\u2019a la fin de la ligne il faut mettre une virgule. Pour le mode, pas besoin de rentrer une valeur. Si vous rentrer test alors on vous demandera tout les mots pr\u00e9sents dans la liste et \u00e0 la fin vous affichera le score.</p> <p></p>"
+    "description": "<p>Permet de s\u2019entrainer sur du vocabulaire de langue.\nPour personnaliser la liste il suffit de remplacer les mots pr\u00e9sents par vos mots, en sachant qu\u2019ils doivent \u00eatre entre \u201c et \u201c,  qu\u2019entre la traduction et le mot il y a : et qu\u2019a la fin de la ligne il faut mettre une virgule.\nPour le mode, pas besoin de rentrer une valeur. Si vous rentrer test alors on vous demandera tout les mots pr\u00e9sents dans la liste et \u00e0 la fin vous affichera le score.</p>"
 }

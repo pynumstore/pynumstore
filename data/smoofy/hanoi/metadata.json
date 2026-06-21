@@ -5,5 +5,5 @@
     "size": "542 Bytes",
     "image": "data/smoofy/hanoi/smoofy_hanoi.png",
     "tags": [],
-    "description": "<p>Contient deux fonctions, hanoi(n) calcul le nombre de mouvements n\u00e9cessaires \u00e0 la r\u00e9solution d\u2019une tour de Hano\u00ef \u00e0 n gallets, hanoim(n) donne les mouvements \u00e0 faire pour la r\u00e9soudre.</p> <p></p>"
+    "description": "<p>Contient deux fonctions, hanoi(n) calcul le nombre de mouvements n\u00e9cessaires \u00e0 la r\u00e9solution d\u2019une tour de Hano\u00ef \u00e0 n gallets, hanoim(n) donne les mouvements \u00e0 faire pour la r\u00e9soudre.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "312 Bytes",
     "image": "data/ferr0fluidmann/fraction/ferr0fluidmann_fraction.png",
     "tags": [],
-    "description": "<p>Approximates a fraction from a decimal value and a specified tolerance.</p> <p></p>"
+    "description": "<p>Approximates a fraction from a decimal value and a specified tolerance.</p>"
 }

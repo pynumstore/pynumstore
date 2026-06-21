@@ -5,5 +5,5 @@
     "size": "252 Bytes",
     "image": "data/florian-allard/nombreparfait/florian-allard_nombreparfait.png",
     "tags": [],
-    "description": "<p>Renvoie la liste des nombres parfaits (nombre \u00e9gal \u00e0 la somme de ses diviseurs propres), pour les nombres entiers inf\u00e9rieurs \u00e0 1000.</p> <p></p>"
+    "description": "<p>Renvoie la liste des nombres parfaits (nombre \u00e9gal \u00e0 la somme de ses diviseurs propres), pour les nombres entiers inf\u00e9rieurs \u00e0 1000.</p>"
 }

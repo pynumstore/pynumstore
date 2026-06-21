@@ -5,5 +5,5 @@
     "size": "5.06 KB",
     "image": "data/ciel/conway/ciel_conway.png",
     "tags": [],
-    "description": "<p><br> ABOUT\u2661<br><br>Here\u2019s a little game of life for NumWorks, in Python, in memory of John Conway.<br> If you don\u2019t know about the Game of Life, I strongly advise you to go check this <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\" rel=\"nofollow\">wiki</a><br>And if you want to improve the Game of Life, here\u2019s the GitHub <a href=\"https://github.com/Ci3l/GameOfLife\" rel=\"nofollow\">repo</a> <br><br>USAGE<br><br>start(number of generations, length, width)<br>There\u2019s default values so don\u2019t worry you can directly enter start()</p> <p></p>"
+    "description": "<p><br> ABOUT\u2661<br><br>Here\u2019s a little game of life for NumWorks, in Python, in memory of John Conway.<br> If you don\u2019t know about the Game of Life, I strongly advise you to go check this <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\" rel=\"nofollow\">wiki</a><br>And if you want to improve the Game of Life, here\u2019s the GitHub <a href=\"https://github.com/Ci3l/GameOfLife\" rel=\"nofollow\">repo</a> <br><br>USAGE<br><br>start(number of generations, length, width)<br>There\u2019s default values so don\u2019t worry you can directly enter start()</p>"
 }

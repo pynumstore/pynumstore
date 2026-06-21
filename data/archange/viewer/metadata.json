@@ -5,5 +5,5 @@
     "size": "14.2 KB",
     "image": "data/archange/viewer/archange_viewer.png",
     "tags": [],
-    "description": "<p>This project is an image editor currently in 16*16 format, recommended for Minecraft block and item textures. It runs on the Numworks calculator and on the computer, as long as the required dependencies are installed (follow instructions in the Visuel repository on github of the same author). It is used by installing viewer.py and examples_pictures.py alone on the calculator.</p> <p>The link to the Viewer examples pictures: https://my.numworks.com/python/archange/examples_pictures The link to the Github project: https://github.com/Archange-py/Viewer</p> <p></p>"
+    "description": "<p>This project is an image editor currently in 16*16 format, recommended for Minecraft block and item textures. It runs on the Numworks calculator and on the computer, as long as the required dependencies are installed (follow instructions in the Visuel repository on github of the same author). It is used by installing viewer.py and examples_pictures.py alone on the calculator.</p><p>The link to the Viewer examples pictures: https://my.numworks.com/python/archange/examples_pictures\nThe link to the Github project: https://github.com/Archange-py/Viewer</p>"
 }

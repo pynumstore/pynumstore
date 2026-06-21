@@ -5,5 +5,5 @@
     "size": "1.17 KB",
     "image": "data/ph-moutou/irreductibles/ph-moutou_irreductibles.png",
     "tags": [],
-    "description": "<p>Ce programme donne, pour le quotient de a par b: sa nature (r\u00e9ductible ou non), son rang (ordre du d\u00e9nombrement) parmi les fractions de m\u00eame nature, le pourcentage d\u2019irr\u00e9ductibles jusqu\u2019\u00e0 cette fraction. Il affiche les fractions irr\u00e9ductibles obtenues dans l\u2019ordre num\u00e9rique; de m\u00eame pour les fractions simplifiables.</p> <p></p>"
+    "description": "<p>Ce programme donne, pour le quotient de a par b: sa nature (r\u00e9ductible ou non), son rang (ordre du d\u00e9nombrement) parmi les fractions de m\u00eame nature,  le pourcentage d\u2019irr\u00e9ductibles jusqu\u2019\u00e0 cette fraction. Il affiche les fractions irr\u00e9ductibles obtenues dans l\u2019ordre num\u00e9rique; de m\u00eame pour les fractions simplifiables.</p>"
 }

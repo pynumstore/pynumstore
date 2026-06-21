@@ -5,5 +5,5 @@
     "size": "189 Bytes",
     "image": "data/numworks/normal/numworks_normal.png",
     "tags": [],
-    "description": "<p>Ce script contient une fonction <code>normalcdf(a,mu,sigma)</code> qui calcule <strong>P(X\u2264a)</strong> dans le cas d\u2019une loi normale de moyenne <strong>mu</strong> et d\u2019\u00e9cart-type <strong>sigma</strong>. La fonction <code>normalcdf2(a,b,mu,sigma)</code> calcule <strong>P(a\u2264X\u2264b)</strong>.</p> <p></p>"
+    "description": "<p>Ce script contient une fonction <code>normalcdf(a,mu,sigma)</code> qui calcule <strong>P(X\u2264a)</strong> dans le cas d\u2019une loi normale de moyenne <strong>mu</strong> et d\u2019\u00e9cart-type <strong>sigma</strong>. La fonction <code>normalcdf2(a,b,mu,sigma)</code>  calcule <strong>P(a\u2264X\u2264b)</strong>.</p>"
 }

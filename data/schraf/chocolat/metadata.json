@@ -5,5 +5,5 @@
     "size": "1.35 KB",
     "image": "data/schraf/chocolat/schraf_chocolat.png",
     "tags": [],
-    "description": "<p><a href=\"https://www.facebook.com/NumWorksFR/posts/4736285516428795\" rel=\"nofollow\">Enonc\u00e9 de l\u2019\u00e9nigme Numworks</a></p> <p>L\u2019algorithme teste les diff\u00e9rents choix possibles (remplir A, vider B, verser A dans B etc.). Tant qu\u2019il obtient de nouvelles combinaisons, par exemples [0,0],[2,5],[3,0]\u2026 il continue. Quand il trouve une combinaison d\u00e9j\u00e0 existante, il remonte d\u2019un niveau (indiqu\u00e9 par \u201cAnnuler\u201d) et teste un autre choix.</p> <p></p>"
+    "description": "<p><a href=\"https://www.facebook.com/NumWorksFR/posts/4736285516428795\" rel=\"nofollow\">Enonc\u00e9 de l\u2019\u00e9nigme Numworks</a></p><p>L\u2019algorithme teste les diff\u00e9rents choix possibles (remplir A, vider B, verser A dans B etc.). Tant qu\u2019il obtient de nouvelles combinaisons, par exemples [0,0],[2,5],[3,0]\u2026 il continue. Quand il trouve une combinaison d\u00e9j\u00e0 existante, il remonte d\u2019un niveau (indiqu\u00e9 par \u201cAnnuler\u201d) et teste un autre choix.</p>"
 }

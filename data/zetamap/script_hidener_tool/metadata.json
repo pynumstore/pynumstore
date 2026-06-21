@@ -5,5 +5,5 @@
     "size": "896 Bytes",
     "image": "data/zetamap/script_hidener_tool/zetamap_script_hidener_tool.png",
     "tags": [],
-    "description": "<p><strong>Only works on Omega, Upsilon and KhiCass.</strong> <br> Add a dot at beginning of all scripts names to hide them and automatically delete this script. <br> To show all scripts, just run <code>exec(open(\".show\").read())</code> in the shell or in a new script. <br><br> <strong><em>This script is for single use, once run it will delete itself, so you will have to transfer the script again.</em></strong></p> <p></p>"
+    "description": "<p><strong>Only works on Omega, Upsilon and KhiCass.</strong> <br>\nAdd a dot at beginning of all scripts names to hide them and automatically delete this script. <br>\nTo show all scripts, just run <code>exec(open(\".show\").read())</code> in the shell or in a new script. <br><br>\n<strong><em>This script is for single use, once run it will delete itself, so you will have to transfer the script again.</em></strong></p>"
 }

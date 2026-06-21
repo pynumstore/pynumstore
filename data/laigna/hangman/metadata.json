@@ -5,5 +5,5 @@
     "size": "3.54 KB",
     "image": "data/laigna/hangman/laigna_hangman.png",
     "tags": [],
-    "description": "<p>Classic hangman. Enter a word for P2 or press ENTER for random. 7 lives, skips duplicate guesses.</p> <p></p>"
+    "description": "<p>Classic hangman. Enter a word for P2 or press ENTER for random. 7 lives, skips duplicate guesses.</p>"
 }

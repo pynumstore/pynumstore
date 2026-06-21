@@ -5,5 +5,5 @@
     "size": "630 Bytes",
     "image": "data/alain-busser/christmas/alain-busser_christmas.png",
     "tags": [],
-    "description": "<p>draws the christmas balls (without the tree). The positions, colors and sizes of the balls are more or less random. To create a drawing, just type xmas(); a more impressive effect is obtained with for k in range(10): xmas()</p> <p></p>"
+    "description": "<p>draws the christmas balls (without the tree). The positions, colors and sizes of the balls are more or less random.  To create a drawing, just type xmas(); a more impressive effect is obtained with for k in range(10): xmas()</p>"
 }

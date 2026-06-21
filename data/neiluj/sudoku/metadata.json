@@ -5,5 +5,5 @@
     "size": "8.61 KB",
     "image": "data/neiluj/sudoku/neiluj_sudoku.png",
     "tags": [],
-    "description": "<ul> <li>BACKSPACE : Erase number</li> <li>TOOLBOX : Erase all numbers</li> <li>EXE : is grid correct</li> </ul> <p></p>"
+    "description": "<ul>\n<li>BACKSPACE : Erase number</li>\n<li>TOOLBOX : Erase all numbers</li>\n<li>EXE : is grid correct</li>\n</ul>"
 }

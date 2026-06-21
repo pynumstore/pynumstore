@@ -5,5 +5,5 @@
     "size": "443 Bytes",
     "image": "data/caucaucybu/rechercher/caucaucybu_rechercher.png",
     "tags": [],
-    "description": "<p>Pour trouver une couleur rvb entrez couleur() et r\u00e9glez avec les touches 7, 9, 4, 6, 1, 3, 0 et *10. Quand vous avez la bonne couleur appuyez sur ok. Vous pouvez aussi entrer en argument de couleur() les nombres d\u2019une couleur rvb pour l\u2019affiner. Pour trouver une touche vous entrez touche() puis vous appuyez sur la touche recherch\u00e9e et son code s\u2019affichera.</p> <p></p>"
+    "description": "<p>Pour trouver une couleur rvb entrez couleur() et r\u00e9glez avec les touches 7, 9, 4, 6, 1, 3,  0 et *10.\nQuand vous avez la bonne couleur appuyez sur ok.\nVous pouvez aussi entrer en argument de couleur() les nombres d\u2019une couleur rvb pour l\u2019affiner.\nPour trouver une touche vous entrez touche() puis vous appuyez sur la touche recherch\u00e9e et son code s\u2019affichera.</p>"
 }

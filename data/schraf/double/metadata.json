@@ -5,5 +5,5 @@
     "size": "622 Bytes",
     "image": "data/schraf/double/schraf_double.png",
     "tags": [],
-    "description": "<p>\u00c9crire une fonction \u201cdouble\u201d qui admet 2 phrases en param\u00e8tres et affiche en sortie les lettres communes SANS r\u00e9p\u00e9tition (y compris espace, ponctuation etc.). Les deux phrases devront automatiquement \u00eatre converties en majuscules.</p> <p></p>"
+    "description": "<p>\u00c9crire une fonction \u201cdouble\u201d qui admet 2 phrases en param\u00e8tres et affiche en sortie les lettres communes SANS r\u00e9p\u00e9tition (y compris espace, ponctuation etc.). Les deux phrases devront automatiquement \u00eatre converties en majuscules.</p>"
 }

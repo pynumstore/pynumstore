@@ -5,5 +5,5 @@
     "size": "185 Bytes",
     "image": "data/schraf/adn/schraf_adn.png",
     "tags": [],
-    "description": "<p>\u00c9crire une fonction \u201cadn\u201d qui admet en param\u00e8tre une chaine de caract\u00e8res et renvoie \u201cBrin ADN\u201d si les caract\u00e8res sont uniquement des A, T, C et G ou \u201cPas ADN\u201d si d\u2019autres lettres sont pr\u00e9sentes.</p> <p></p>"
+    "description": "<p>\u00c9crire une fonction \u201cadn\u201d qui admet en param\u00e8tre une chaine de caract\u00e8res et renvoie \u201cBrin ADN\u201d si les caract\u00e8res sont uniquement des A, T, C et G ou \u201cPas ADN\u201d si d\u2019autres lettres sont pr\u00e9sentes.</p>"
 }

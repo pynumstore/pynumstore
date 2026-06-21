@@ -5,5 +5,5 @@
     "size": "707 Bytes",
     "image": "data/florian-allard/jeu5boules/florian-allard_jeu5boules.png",
     "tags": [],
-    "description": "<p>Un jeu plus ou moins dans l\u2019esprit du Mastermind. On joue en proposant une cha\u00eene de caract\u00e8res compos\u00e9e de 5 lettres dont 2 \u201cw\u201d et 3 \u201cb\u201d, d\u00e9signant 2 boules blanches et 3 boules bleues, par exemple \u201cbbbww\u201d. La machine r\u00e9pond \u00e0 chaque essai en donnant le nombre de boules bleues bien plac\u00e9es. Le but est de retrouver l\u2019ordre des 5 boules choisi par la machine, autrement dit de retrouver l\u2019emplacement des 3 boules bleues, en seulement 3 essais.</p> <p></p>"
+    "description": "<p>Un jeu plus ou moins dans l\u2019esprit du Mastermind.\nOn joue en proposant une cha\u00eene de caract\u00e8res compos\u00e9e de 5 lettres dont 2 \u201cw\u201d et 3 \u201cb\u201d, d\u00e9signant 2 boules blanches et 3 boules bleues, par exemple \u201cbbbww\u201d. La machine r\u00e9pond \u00e0 chaque essai en donnant le nombre de boules bleues bien plac\u00e9es. Le but est de retrouver l\u2019ordre des 5 boules choisi par la machine, autrement dit de retrouver l\u2019emplacement des 3 boules bleues, en seulement 3 essais.</p>"
 }

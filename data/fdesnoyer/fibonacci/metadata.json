@@ -5,5 +5,5 @@
     "size": "296 Bytes",
     "image": "data/fdesnoyer/fibonacci/fdesnoyer_fibonacci.png",
     "tags": [],
-    "description": "<p>Script qui calcule et affiche les termes de la suite de Fibonacci (fonction Fib) et qui donne la valeur calcul\u00e9e par la formule classique en fonction du nombre d\u2019or (fonction Formule_Fib)</p> <p></p>"
+    "description": "<p>Script qui calcule et affiche les termes de la suite de Fibonacci (fonction Fib) et qui donne la valeur calcul\u00e9e par la formule classique en fonction du nombre d\u2019or (fonction Formule_Fib)</p>"
 }

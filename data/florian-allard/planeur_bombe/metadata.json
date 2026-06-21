@@ -5,5 +5,5 @@
     "size": "1.65 KB",
     "image": "data/florian-allard/planeur_bombe/florian-allard_planeur_bombe.png",
     "tags": [],
-    "description": "<p>Un petit jeu inspir\u00e9 de <a href=\"http://www.jeuxcasio.com/viewdownloaddetails-186-Bombrun.html\" rel=\"nofollow\">BombRun</a> sur Casio. Le planeur doit raser la ville avant de pouvoir atterrir. Un appui sur EXE ou OK permet de l\u00e2cher une bombe pour raser un immeuble. Attention au timing ! Si le planeur heurte un immeuble, c\u2019est perdu ! <br> Version couleur du 14/03/2021. La version initiale est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/planeur_bombe0\" rel=\"nofollow\">ici</a>.</p> <p></p>"
+    "description": "<p>Un petit jeu inspir\u00e9 de <a href=\"http://www.jeuxcasio.com/viewdownloaddetails-186-Bombrun.html\" rel=\"nofollow\">BombRun</a> sur Casio. Le planeur doit raser la ville avant de pouvoir atterrir. \nUn appui sur EXE ou OK permet de l\u00e2cher une bombe pour raser un immeuble. Attention au timing ! \nSi le planeur heurte un immeuble, c\u2019est perdu ! <br>\nVersion couleur du 14/03/2021. La version initiale est disponible <a href=\"https://workshop.numworks.com/python/florian-allard/planeur_bombe0\" rel=\"nofollow\">ici</a>.</p>"
 }

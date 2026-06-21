@@ -5,5 +5,5 @@
     "size": "742 Bytes",
     "image": "data/numworks/mandelbrot/numworks_mandelbrot.png",
     "tags": [],
-    "description": "<p>Ce script contient une fonction qui trace une fractale de Mandelbrot avec un nombre d\u2019it\u00e9rations donn\u00e9 en argument. Par exemple, pour 20 it\u00e9rations, demander : <code>mandelbrot(20)</code>.</p> <p></p>"
+    "description": "<p>Ce script contient une fonction qui trace une fractale de Mandelbrot avec un nombre d\u2019it\u00e9rations donn\u00e9 en argument. Par exemple, pour 20 it\u00e9rations, demander : <code>mandelbrot(20)</code>.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "1.08 KB",
     "image": "data/ferr0fluidmann/parametric_graphing/ferr0fluidmann_parametric_graphing.png",
     "tags": [],
-    "description": "<p>Plot parametric graphs with <code>parametric_graph(x_function, y_function, tMin, tMax)</code>.</p> <p></p>"
+    "description": "<p>Plot parametric graphs with <code>parametric_graph(x_function, y_function, tMin, tMax)</code>.</p>"
 }

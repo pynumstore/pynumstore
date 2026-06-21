@@ -5,5 +5,5 @@
     "size": "1.28 KB",
     "image": "data/alain-busser/sofus_en/alain-busser_sofus_en.png",
     "tags": [],
-    "description": "<p>Sofus is a programming language, inspired by Cobol, but object-programmed. It has variables, which have a value (a float), and can be inverted or raised by or lowered by or multiplied by or divided by or raised to the power, any constant increment/factor/power, or any other variable. Try for example</p> <p>price = Variable(100) for n in range(100): price.raise_by(1,percents)</p> <p></p>"
+    "description": "<p>Sofus is a programming language, inspired by Cobol, but object-programmed. It has variables, which have a value (a float), and can be inverted or raised by or lowered by or  multiplied by  or divided by or raised to the power, any constant increment/factor/power, or any other variable. Try for example</p><p>price = Variable(100)\nfor n in range(100): price.raise_by(1,percents)</p>"
 }

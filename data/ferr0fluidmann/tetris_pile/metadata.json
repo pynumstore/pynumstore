@@ -5,5 +5,5 @@
     "size": "3.17 KB",
     "image": "data/ferr0fluidmann/tetris_pile/ferr0fluidmann_tetris_pile.png",
     "tags": [],
-    "description": "<p>Play a simple stacking game using tetris blocks. You have the whole screen to stack and order blocks however you want. You can move and rotate the blocks but you cannot remove blocks. The game ends when you reach the top of the screen. Start the game by executing the <code>play()</code> function. Type a character and press <code>EXE</code> to move or rotate your block. Press <code>4</code> to move left, <code>6</code> to move right, <code>7</code> to rotate 90 degrees counterclockwise, <code>9</code> to rotate 90 degrees clockwise, and any other key to drop.</p> <p></p>"
+    "description": "<p>Play a simple stacking game using tetris blocks. You have the whole screen to stack and order blocks however you want. You can move and rotate the blocks but you cannot remove blocks. The game ends when you reach the top of the screen. Start the game by executing the <code>play()</code> function. Type a character and press <code>EXE</code> to move or rotate your block. Press <code>4</code> to move left, <code>6</code> to move right, <code>7</code> to rotate 90 degrees counterclockwise, <code>9</code> to rotate 90 degrees clockwise, and any other key to drop.</p>"
 }

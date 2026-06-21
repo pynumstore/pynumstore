@@ -5,5 +5,5 @@
     "size": "685 Bytes",
     "image": "data/laigna/scramble/laigna_scramble.png",
     "tags": [],
-    "description": "<p>Unscramble a random word. Re-shuffles if shuffle matches original.</p> <p></p>"
+    "description": "<p>Unscramble a random word. Re-shuffles if shuffle matches original.</p>"
 }

@@ -5,5 +5,5 @@
     "size": "383 Bytes",
     "image": "data/antarctus/france/antarctus_france.png",
     "tags": [],
-    "description": "<p><em>Script qui dessine la France</em>.<br> On trace les lignes entre 57 points repr\u00e9sentatifs des limites du territoires\u2026<br> <code>txt=\"\"\nfor i in p:\n  txt=txt+chr(i*2+32)\n</code></p> <p></p>"
+    "description": "<p><em>Script qui dessine la France</em>.<br>\nOn trace les lignes entre 57 points repr\u00e9sentatifs des limites du territoires\u2026<br>\n<code>txt=\"\"\nfor i in p:\n  txt=txt+chr(i*2+32)\n</code></p>"
 }

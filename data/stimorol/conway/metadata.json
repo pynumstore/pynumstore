@@ -5,5 +5,5 @@
     "size": "5.97 KB",
     "image": "data/stimorol/conway/stimorol_conway.png",
     "tags": [],
-    "description": "<p>Simulation du jeu de la vie, d\u00e9velopp\u00e9 par le math\u00e9maticien John Conway (d\u2019o\u00f9 le programme tire son nom). L\u2019utilisateur peut entrer la disposition de d\u00e9part des cellules en se servant des fl\u00e8ches, de le touche OK et la touche supprimer, et peut aussi personnaliser les graphismes et le jeu en appuyant sur la touche shift (en dessous des fl\u00e8ches).</p> <p></p>"
+    "description": "<p>Simulation du jeu de la vie, d\u00e9velopp\u00e9 par le math\u00e9maticien John Conway (d\u2019o\u00f9 le programme tire son nom).\nL\u2019utilisateur peut entrer la disposition de d\u00e9part des cellules en se servant des fl\u00e8ches, de le touche OK et la touche supprimer, et peut aussi personnaliser les graphismes et le jeu en appuyant sur la touche shift (en dessous des fl\u00e8ches).</p>"
 }

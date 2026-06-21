@@ -5,5 +5,5 @@
     "size": "990 Bytes",
     "image": "data/andreanx/chromac/andreanx_chromac.png",
     "tags": [],
-    "description": "<p>Draws a HSV/HSB chromatic disk. chromac(xc,yc,rmax,ds,dv,tred) with : - xc and yc : center at coordinates - rmax : radius - ds and dv : * 0 to keep S or V to 1 * 1 to have S or V increase from 0 in the center to 1 * -1 to have S or V decrease from 1 in the center to 0 - tred : position in radians of the red component on the disk (0=right, pi/2=top, \u2026) - rev : True or False to to revert the color order</p> <p></p>"
+    "description": "<p>Draws a HSV/HSB chromatic disk.\nchromac(xc,yc,rmax,ds,dv,tred) with :\n- xc and yc : center at coordinates\n- rmax : radius\n- ds and dv :\n* 0 to keep S or V to 1\n* 1 to have S or V increase from 0 in the center to 1\n* -1 to have S or V decrease from 1 in the center to 0\n- tred : position in radians of the red component on the disk (0=right, pi/2=top, \u2026)\n- rev : True or False to to revert the color order</p>"
 }

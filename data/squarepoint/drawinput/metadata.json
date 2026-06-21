@@ -5,5 +5,5 @@
     "size": "757 Bytes",
     "image": "data/squarepoint/drawinput/squarepoint_drawinput.png",
     "tags": [],
-    "description": "<p>Aren\u2019t you tired of writing inputs in text mode? Well now you can write them in graphic mode too! Without the input() function!!!!</p> <p>HOW IT WORKS: Apparently, each key value such as KEY_OK is actually a variable set to an integer! That means you can cycle through a list of numbers and detect if each key is pressed! Isn\u2019t that amazing?</p> <p></p>"
+    "description": "<p>Aren\u2019t you tired of writing inputs in text mode? Well now you can write them in graphic mode too! Without the input() function!!!!</p><p>HOW IT WORKS:\nApparently, each key value such as KEY_OK is actually a variable set to an integer! That means you can cycle through a list of numbers and detect if each key is pressed! Isn\u2019t that amazing?</p>"
 }

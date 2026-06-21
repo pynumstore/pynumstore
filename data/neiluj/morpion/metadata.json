@@ -5,5 +5,5 @@
     "size": "2.93 KB",
     "image": "data/neiluj/morpion/neiluj_morpion.png",
     "tags": [],
-    "description": "<p>morpion/tic-tac-toe</p> <ul> <li>Arrows keys : move</li> <li>[OK] : Put cross/circle</li> </ul> <p></p>"
+    "description": "<p>morpion/tic-tac-toe</p><ul>\n<li>Arrows keys : move</li>\n<li>[OK] : Put cross/circle</li>\n</ul>"
 }

@@ -5,5 +5,5 @@
     "size": "901 Bytes",
     "image": "data/schraf/stencil/schraf_stencil.png",
     "tags": [],
-    "description": "<p>R\u00e9alisation de la montre suivante sur la NumWorks : <a href=\"https://www.tokyoflash.com/en/watches/kisai-stencil\" rel=\"nofollow\">https://www.tokyoflash.com/en/watches/kisai-stencil</a><br></p> <p><img src=\"http://schraf.chez-alice.fr/numworks/hms2.jpg\" width=\"800\"><br><br> On peut aussi remplacer le changement des heures - minutes - secondes par : <br></p> <pre>s+=1\nm+=s//60\ns%=60\nh=(h+m//60)%24\nm%=60</pre> <p><br></p> <h2>Autre pr\u00e9sentation</h2> <pre>aff(20,20,h//10,3)\naff(80,20,h%10,3)\naff(20,110,m//10,3)\naff(80,110,m%10,3)\naff(180,80,s//10,2)\naff(220,80,s%10,2)</pre> <p></p>"
+    "description": "<p>R\u00e9alisation de la montre suivante sur la NumWorks : <a href=\"https://www.tokyoflash.com/en/watches/kisai-stencil\" rel=\"nofollow\">https://www.tokyoflash.com/en/watches/kisai-stencil</a><br></p><p><img src=\"http://schraf.chez-alice.fr/numworks/hms2.jpg\" width=\"800\"><br><br>\nOn peut aussi remplacer le changement des heures - minutes - secondes par : <br></p><pre>s+=1\nm+=s//60\ns%=60\nh=(h+m//60)%24\nm%=60</pre><p><br></p><h2>Autre pr\u00e9sentation</h2><pre>aff(20,20,h//10,3)\naff(80,20,h%10,3)\naff(20,110,m//10,3)\naff(80,110,m%10,3)\naff(180,80,s//10,2)\naff(220,80,s%10,2)</pre>"
 }

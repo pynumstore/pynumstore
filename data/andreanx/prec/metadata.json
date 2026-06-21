@@ -5,5 +5,5 @@
     "size": "443 Bytes",
     "image": "data/andreanx/prec/andreanx_prec.png",
     "tags": [],
-    "description": "<p>Check floats precision.</p> <p>Syntax :</p> <p>precm(b) for the mantissa precision where b is the base.</p> <p>prece(b) for the exponent precision where b is the base.</p> <p>Examples :</p> <p>precm(2) for the maximum number of bits used for the mantissa</p> <p>precm(10) for the maximum number of significative digits used for the mantissa</p> <p>prece() for the minimum and maximum values for the exponent.</p> <p></p>"
+    "description": "<p>Check floats precision.</p><p>Syntax :</p><p>precm(b) for the mantissa precision where b is the base.</p><p>prece(b) for the exponent precision where b is the base.</p><p>Examples :</p><p>precm(2) for the maximum number of bits used for the mantissa</p><p>precm(10) for the maximum number of significative digits used for the mantissa</p><p>prece() for the minimum and maximum values for the exponent.</p>"
 }

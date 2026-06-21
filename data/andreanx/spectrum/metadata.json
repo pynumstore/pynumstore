@@ -5,5 +5,5 @@
     "size": "4.99 KB",
     "image": "data/andreanx/spectrum/andreanx_spectrum.png",
     "tags": [],
-    "description": "<p>Draws the emission spectrum and absorption spectrum of the first 8 elements. Use : spectrum(n,a,b,g) with : n for the atomic number, [a;b] for the min and max wavelengths, default is [380;780].</p> <p></p>"
+    "description": "<p>Draws the emission spectrum and absorption spectrum of the first 8 elements.\nUse : spectrum(n,a,b,g) with :\nn for the atomic number,\n[a;b] for the min and max wavelengths, default is [380;780].</p>"
 }

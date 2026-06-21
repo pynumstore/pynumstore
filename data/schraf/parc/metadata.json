@@ -5,5 +5,5 @@
     "size": "457 Bytes",
     "image": "data/schraf/parc/schraf_parc.png",
     "tags": [],
-    "description": "<p>Un parc d\u2019attraction est accessible aux enfants de 13 ans et plus. Il est \u00e9galement accessible aux enfants de moins de 13 ans s\u2019ils sont accompagn\u00e9s par un adulte. \u00c9crire une fonction <b>parc</b> qui admet 2 param\u00e8tres, l\u2019\u00e2ge du visiteur et s\u2019il est accompagn\u00e9 ou non d\u2019un adulte (False ou True). En sortie on obtient :</p> <p><code>&gt;&gt; parc(15,False) <br>\n\"Bienvenue\" <br>\n&gt;&gt; parc(17,True) <br>\n\"Bienvenue\" <br>\n&gt;&gt; parc(7,True) <br>\n\"Bienvenue\" <br>\n&gt;&gt; parc(9,False) <br>\n\"Interdit\"</code></p> <p></p>"
+    "description": "<p>Un parc d\u2019attraction est accessible aux enfants de 13 ans et plus. Il est \u00e9galement accessible aux enfants \nde moins de 13 ans s\u2019ils sont accompagn\u00e9s par un adulte. \u00c9crire une fonction <b>parc</b> qui admet 2 param\u00e8tres, \nl\u2019\u00e2ge du visiteur et s\u2019il est accompagn\u00e9 ou non d\u2019un adulte (False ou True). En sortie on obtient :</p><p><code>&gt;&gt; parc(15,False) <br>\n\"Bienvenue\" <br>\n&gt;&gt; parc(17,True) <br>\n\"Bienvenue\" <br>\n&gt;&gt; parc(7,True) <br>\n\"Bienvenue\" <br>\n&gt;&gt; parc(9,False) <br>\n\"Interdit\"</code></p>"
 }

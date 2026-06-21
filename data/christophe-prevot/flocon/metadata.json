@@ -5,5 +5,5 @@
     "size": "496 Bytes",
     "image": "data/christophe-prevot/flocon/christophe-prevot_flocon.png",
     "tags": [],
-    "description": "<p>Dessine un flocon de Koch avec le module Tortue. Fonction floconkoch : 2 param\u00e8tres : - le 1er (l) est la longueur de la branche initiale - le 2e (n) est le nombre de r\u00e9currences \u00e0 effectuer</p> <p></p>"
+    "description": "<p>Dessine un flocon de Koch avec le module Tortue. Fonction floconkoch : 2 param\u00e8tres : - le 1er (l) est la longueur de la branche initiale - le 2e (n) est le nombre de r\u00e9currences \u00e0 effectuer</p>"
 }

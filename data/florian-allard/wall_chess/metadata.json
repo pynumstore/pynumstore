@@ -5,5 +5,5 @@
     "size": "10.2 KB",
     "image": "data/florian-allard/wall_chess/florian-allard_wall_chess.png",
     "tags": [],
-    "description": "<p>Adaptation du jeu Wall Chess (\u00e9checs avec des murs ?) ou Quoridor.</p> <p>Le but du jeu est de d\u00e9placer son pion jusqu\u2019\u00e0 avoir travers\u00e9 le plateau. Chaque joueur peut soit d\u00e9placer son pion, soit placer un mur pour ralentir son adversaire.</p> <p>Il est interdit de bloquer totalement ou d\u2019enfermer son adversaire. Il faut toujours lui laisser au moins un chemin qui lui permette de traverser le plateau.</p> <p></p>"
+    "description": "<p>Adaptation du jeu Wall Chess (\u00e9checs avec des murs ?) ou Quoridor.</p><p>Le but du jeu est de d\u00e9placer son pion jusqu\u2019\u00e0 avoir travers\u00e9 le plateau. Chaque joueur peut soit d\u00e9placer son pion, soit placer un mur pour ralentir son adversaire.</p><p>Il est interdit de bloquer totalement ou d\u2019enfermer son adversaire. Il faut toujours lui laisser au moins un chemin qui lui permette de traverser le plateau.</p>"
 }

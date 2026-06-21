@@ -5,5 +5,5 @@
     "size": "226 Bytes",
     "image": "data/andreanx/ascii/andreanx_ascii.png",
     "tags": [],
-    "description": "<p>Print characters. Usage : pchars(start, stop,w) start=lowest character code stop=highest character code w=number of characters per line</p> <p></p>"
+    "description": "<p>Print characters.\nUsage : pchars(start, stop,w)\nstart=lowest character code\nstop=highest character code\nw=number of characters per line</p>"
 }

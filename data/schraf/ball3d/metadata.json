@@ -5,5 +5,5 @@
     "size": "252 Bytes",
     "image": "data/schraf/ball3d/schraf_ball3d.png",
     "tags": [],
-    "description": "<p>Traduction en Python du script BASIC ci-dessous (\u201cCreative Graphics on the BBC Microcomputer\u201d John Cownie):</p> <p><img src=\"http://schraf.chez-alice.fr/fb/woolball.jpg\"></p> <h2>Variation</h2> <p><img src=\"http://schraf.chez-alice.fr/fb/woolball2.png\"></p> <pre>from turtle import *\nfrom math import *\nfrom kandinsky import fill_rect\n\nspeed(0)\nhideturtle()\n\nfill_rect(0,0,320,222,(0,)*3)\n\ndef s(a): return 120 * sin(a / 10)\n\nfor a in range(1258):\n  x, y = s(a), cos(a / 10) * s(a * .95)\n  c = int((x * x + y * y) / 2200)\n  pensize(7 - c)\n  color(255 - 30 * c, 0, 0)\n  goto(x,y)</pre> <p></p>"
+    "description": "<p>Traduction en Python du script BASIC ci-dessous (\u201cCreative Graphics on the BBC Microcomputer\u201d John Cownie):</p><p><img src=\"http://schraf.chez-alice.fr/fb/woolball.jpg\"></p><h2>Variation</h2><p><img src=\"http://schraf.chez-alice.fr/fb/woolball2.png\"></p><pre>from turtle import *\nfrom math import *\nfrom kandinsky import fill_rect\n\nspeed(0)\nhideturtle()\n\nfill_rect(0,0,320,222,(0,)*3)\n\ndef s(a): return 120 * sin(a / 10)\n\nfor a in range(1258):\n  x, y = s(a), cos(a / 10) * s(a * .95)\n  c = int((x * x + y * y) / 2200)\n  pensize(7 - c)\n  color(255 - 30 * c, 0, 0)\n  goto(x,y)</pre>"
 }

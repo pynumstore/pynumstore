@@ -5,5 +5,5 @@
     "size": "4.18 KB",
     "image": "data/neiluj/graphe/neiluj_graphe.png",
     "tags": [],
-    "description": "<ul> <li>(+) : ajouter un sommet</li> <li>(fl\u00eaches) : d\u00e9placer le curseur parmis les sommets</li> <li>(fl\u00eaches) + (OK) : d\u00e9placer le sommet courant</li> <li>(multiplication) sur un sommet A puis une nouvelle fois sur un sommet B relie A et B</li> <li>(toolbox) sur un sommet le relie \u00e0 tous les autres sommets du graphes</li> <li>(EXE) afficher la matrice d\u2019adjacence du graphe</li> </ul> <p></p>"
+    "description": "<ul>\n<li>(+) : ajouter un sommet</li>\n<li>(fl\u00eaches) : d\u00e9placer le curseur parmis les sommets</li>\n<li>(fl\u00eaches) + (OK) : d\u00e9placer le sommet courant</li>\n<li>(multiplication) sur un sommet A puis une nouvelle fois sur un sommet B relie A et B</li>\n<li>(toolbox) sur un sommet le relie \u00e0 tous les autres sommets du graphes</li>\n<li>(EXE)  afficher la matrice d\u2019adjacence du graphe</li>\n</ul>"
 }

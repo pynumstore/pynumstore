@@ -5,5 +5,5 @@
     "size": "2.22 KB",
     "image": "data/andreanx/bdf_pi/andreanx_bdf_pi.png",
     "tags": [],
-    "description": "<p>bdf_pi(n) calcule le nombre \u03c0 avec n chiffres significatifs (et donc n - 1 d\u00e9cimales). Pour l\u2019afficher sur plusieurs lignes, utiliser demo(0) pour l\u2019\u00e9cran graphique, demo(1) pour la console en grande police, demo(1, 0) pour la console en petite police.</p> <p></p>"
+    "description": "<p>bdf_pi(n) calcule le nombre \u03c0 avec n chiffres significatifs (et donc n - 1 d\u00e9cimales). Pour l\u2019afficher sur plusieurs lignes, utiliser demo(0) pour l\u2019\u00e9cran graphique, demo(1) pour la console en grande police, demo(1, 0) pour la console en petite police.</p>"
 }

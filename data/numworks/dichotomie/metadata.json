@@ -5,5 +5,5 @@
     "size": "218 Bytes",
     "image": "data/numworks/dichotomie/numworks_dichotomie.png",
     "tags": [],
-    "description": "<p>La fonction <code>solve(f,a,b,epsilon)</code> recherche une solution de l\u2019\u00e9quation <strong>f(x)=0</strong> entre <strong>a</strong> et <strong>b</strong> avec une pr\u00e9cision de <strong>epsilon</strong> par dichotomie. Les images de <strong>a</strong> et <strong>b</strong> par f, <strong>f(a)</strong> et <strong>f(b)</strong>, doivent \u00eatre de signes diff\u00e9rents.</p> <p></p>"
+    "description": "<p>La fonction <code>solve(f,a,b,epsilon)</code> recherche une solution de l\u2019\u00e9quation <strong>f(x)=0</strong> entre <strong>a</strong> et <strong>b</strong> avec une pr\u00e9cision de <strong>epsilon</strong> par dichotomie. Les images de <strong>a</strong> et <strong>b</strong> par f, <strong>f(a)</strong> et <strong>f(b)</strong>, doivent \u00eatre de signes diff\u00e9rents.</p>"
 }

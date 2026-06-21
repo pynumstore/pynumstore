@@ -5,5 +5,5 @@
     "size": "1.83 KB",
     "image": "data/archange/fire_simulator/archange_fire_simulator.png",
     "tags": [],
-    "description": "<p>Welcome ! In this project, the forest is represented by a matrix of dimension N, and contains forest plots in different states: alive, on fire or burnt. You can change many of the parameters, including the probability of burning (wind strength), the colors of the 3 possible states, the size of the plots and their spacing, the position of the matrix\u2026</p> <p>The link to the github project: https://github.com/Archange-py/Fire_Simulation</p> <p></p>"
+    "description": "<p>Welcome ! In this project, the forest is represented by a matrix of dimension N, and contains forest plots in different states: alive, on fire or burnt. You can change many of the parameters, including the probability of burning (wind strength), the colors of the 3 possible states, the size of the plots and their spacing, the position of the matrix\u2026</p><p>The link to the github project: https://github.com/Archange-py/Fire_Simulation</p>"
 }

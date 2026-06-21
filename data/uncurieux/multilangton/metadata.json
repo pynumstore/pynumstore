@@ -5,5 +5,5 @@
     "size": "2.84 KB",
     "image": "data/uncurieux/multilangton/uncurieux_multilangton.png",
     "tags": [],
-    "description": "<p>You know the Langton\u2019s ant : there is only two colors. In this script you have Langton\u2019s ant with 3, 4, 5, 7 and 11 colors ! Enjoy to see these creations :)</p> <p>I used https://workshop.numworks.com/python/nicolas-patrois/langton and https://youtu.be/i8N2xnMm6qE</p> <p></p>"
+    "description": "<p>You know the Langton\u2019s ant : there is only two colors. \nIn this script you have Langton\u2019s ant with 3, 4, 5, 7 and 11 colors !\nEnjoy to see these creations :)</p><p>I used https://workshop.numworks.com/python/nicolas-patrois/langton and https://youtu.be/i8N2xnMm6qE</p>"
 }

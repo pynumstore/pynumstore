@@ -5,5 +5,5 @@
     "size": "7.15 KB",
     "image": "data/gradient01/proba_m44/gradient01_proba_m44.png",
     "tags": [],
-    "description": "<p>This script is used to evaluate the probability of destroying a unit in the board game Memoir \u201844 with the binomial law. You can adjust:</p> <ul> <li>the number of dice rolled,</li> <li>the type of unit targeted,</li> <li>the number of figures in the unit targeted,</li> <li>whether retreating results in a loss,</li> <li>whether a star results in a loss.</li> </ul> <p>For more details, refer to <a href=\"https://www.daysofwonder.com/game/memoir44/\" rel=\"nofollow\">the official rules of Memoir \u201844</a>.</p> <p></p>"
+    "description": "<p>This script is used to evaluate the probability of destroying a unit in the board game Memoir \u201844 with the binomial law. You can adjust:</p><ul>\n<li>the number of dice rolled,</li>\n<li>the type of unit targeted,</li>\n<li>the number of figures in the unit targeted,</li>\n<li>whether retreating results in a loss,</li>\n<li>whether a star results in a loss.</li>\n</ul><p>For more details, refer to <a href=\"https://www.daysofwonder.com/game/memoir44/\" rel=\"nofollow\">the official rules of Memoir \u201844</a>.</p>"
 }

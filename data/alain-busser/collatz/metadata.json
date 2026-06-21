@@ -5,5 +5,5 @@
     "size": "97 Bytes",
     "image": "data/alain-busser/collatz/alain-busser_collatz.png",
     "tags": [],
-    "description": "<p>The famous Collatz (ou \u201cSyracuse\u201d) sequence, as an iterator. You can print the terms of the sequence beginning with 65 by for u in collatz(65): print(u) or compute the sequence with list(collatz(65)) or compute the maximum height with max(list(collatz(65))) or the flight duration with len(list(collatz(65)))</p> <p></p>"
+    "description": "<p>The famous Collatz (ou \u201cSyracuse\u201d) sequence, as an iterator. You can print the terms of the sequence beginning with 65 by for  u in collatz(65): print(u) or compute the sequence with list(collatz(65)) or  compute the maximum height with max(list(collatz(65))) or the flight duration with len(list(collatz(65)))</p>"
 }

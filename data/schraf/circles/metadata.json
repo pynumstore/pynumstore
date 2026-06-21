@@ -5,5 +5,5 @@
     "size": "696 Bytes",
     "image": "data/schraf/circles/schraf_circles.png",
     "tags": [],
-    "description": "<p>\u201cpion\u201d dessine un pion de couleur \u201ccoul\u201d aux coordonn\u00e9es (c, l). Possibilit\u00e9 d\u2019ajouter une ombre en utilisant le d\u00e9calage \u201cd\u201d et une autre couleur, par exemple noire.</p> <p>La boucle \u201cfor i in range(3): pion()\u201d permet d\u2019avoir un trac\u00e9 plus net, essayez avec 2 ou sans la boucle pour voir la diff\u00e9rence.</p> <p></p>"
+    "description": "<p>\u201cpion\u201d dessine un pion de couleur \u201ccoul\u201d aux coordonn\u00e9es (c, l). Possibilit\u00e9 d\u2019ajouter une ombre en utilisant le d\u00e9calage \u201cd\u201d et une autre couleur, par exemple noire.</p><p>La boucle \u201cfor i in range(3): pion()\u201d permet d\u2019avoir un trac\u00e9 plus net, essayez avec 2 ou sans la boucle pour voir la diff\u00e9rence.</p>"
 }
