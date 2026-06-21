@@ -4,6 +4,7 @@ import shutil
 import bleach
 import time
 import json
+from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 from playwright._impl._errors import TimeoutError
 import tqdm
@@ -55,6 +56,31 @@ ALLOWED_PROTOCOLS = [
     'sftp',
     '#',
 ]
+
+
+def extract_description(html):
+
+    soup = BeautifulSoup(html, "html.parser")
+    container = soup.find(class_="text-justify")
+    if container is None:
+        return None
+    
+    parts = []
+    for child in container.children:
+        if getattr(child, "name", None) == "hr":
+            break
+        parts.append(str(child))
+    fragment = "".join(parts).strip()
+
+    if not fragment:
+        return None
+
+    inner = BeautifulSoup(fragment, "html.parser")
+    top_level = [c for c in inner.contents if str(c).strip()]
+    if len(top_level) == 1 and getattr(top_level[0], "name", None) == "p":
+        fragment = top_level[0].decode_contents().strip()
+
+    return fragment
 
 
 def update(debug=None):
@@ -188,16 +214,12 @@ def scan_script(creator, name, page, debug=None):
             size = container.locator("p").nth(2).inner_text()
 
             html = page.content()
-            match = re.search(r'class="text-justify">(.*)<hr', html, re.DOTALL)
-            i = 0
-            match = match.group(1)
-            while match[i] == "\n" or match[i] == " " and i < len(match):
-                i += 1
-            match = match[i+4:]
-            i = len(match) - 1
-            while (match[i] == "\n" or match[i] == " ") and i >= 0:
-                i -= 1
-            description = match[:i+1]
+            description = extract_description(html)
+            if description is None:
+                if debug is not None:
+                    debug.pull("errorDescription", creator, name)
+                return None
+
             code_blocks = {}
             def save_code(m):
                 key = f"__CODE_{len(code_blocks)}__"

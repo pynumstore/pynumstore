@@ -92,6 +92,10 @@ class DebugHandler:
             msg = f"{args[0]} creator no longer exists on the Numworks website, so its file has been deleted!"
             print("  "+msg)
             bot.send_message(msg)
+        elif debug_type == "errorDescription":
+            msg = f"{args[1]} script by {args[0]} creator has an unexpected description markup, so it was skipped!"
+            print("  "+msg)
+            bot.send_message(msg)
         elif debug_type == "scanScript":
             t = time.monotonic()
             if args[2] == 0:
