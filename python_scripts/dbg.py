@@ -59,28 +59,35 @@ ALLOWED_PROTOCOLS = [
 
 
 def extract_description(html):
-
     soup = BeautifulSoup(html, "html.parser")
     container = soup.find(class_="text-justify")
     if container is None:
-        return None
-    
+        return None, "container_not_found"
+
     parts = []
+    hr_found = False
+
     for child in container.children:
         if getattr(child, "name", None) == "hr":
+            hr_found = True
             break
         parts.append(str(child))
+
+    if not hr_found:
+        for sibling in container.next_siblings:
+            if getattr(sibling, "name", None) == "hr":
+                break
+            parts.append(str(sibling))
+
     fragment = "".join(parts).strip()
 
-    if not fragment:
-        return None
+    if fragment:
+        inner = BeautifulSoup(fragment, "html.parser")
+        top_level = [c for c in inner.contents if str(c).strip()]
+        if len(top_level) == 1 and getattr(top_level[0], "name", None) == "p":
+            fragment = top_level[0].decode_contents().strip()
 
-    inner = BeautifulSoup(fragment, "html.parser")
-    top_level = [c for c in inner.contents if str(c).strip()]
-    if len(top_level) == 1 and getattr(top_level[0], "name", None) == "p":
-        fragment = top_level[0].decode_contents().strip()
-
-    return fragment
+    return fragment, None
 
 
 def update(debug=None):
@@ -154,13 +161,17 @@ def generate_scripts_index(creators, page, debug=None):
 
     scripts = []
     for creator in creators.copy():
+        try:
             s = scan_creator(creator, page)
-            if s is None:
-                creators.remove(creator)
-                if debug is not None: debug.pull("errorCreator2", creator)
-                continue
-            for script in s:
-                scripts.append({"name": script, "creator": creator})
+        except Exception as e:
+            if not debug is None: debug.pull("errorCreator2", creator)
+            continue
+        if s is None:
+            creators.remove(creator)
+            if not debug is None: debug.pull("errorCreator2", creator)
+            continue
+        for script in s:
+            scripts.append({"name": script, "creator": creator})
     with open(f"data/scripts_index.json", "w", encoding="utf-8") as f:
         json.dump(scripts, f, indent=4)
     return scripts
@@ -174,7 +185,10 @@ def scan_creator(creator, page):
         return None
         
     rows = page.locator("tbody").locator("tr").all()
-    scripts = [row.locator("a").text_content()[:-3] for row in rows]
+    scripts = [
+        row.locator(f'a[href^="/python/{creator}/"]').first.text_content()[:-3]
+        for row in rows
+        ]
     
     return scripts
 
@@ -214,10 +228,10 @@ def scan_script(creator, name, page, debug=None):
             size = container.locator("p").nth(2).inner_text()
 
             html = page.content()
-            description = extract_description(html)
+            description, fail_reason = extract_description(html)
             if description is None:
                 if debug is not None:
-                    debug.pull("errorDescription", creator, name)
+                    debug.pull("errorDescription", creator, name, fail_reason)
                 return None
 
             code_blocks = {}

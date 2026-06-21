@@ -93,7 +93,7 @@ class DebugHandler:
             print("  "+msg)
             bot.send_message(msg)
         elif debug_type == "errorDescription":
-            msg = f"{args[1]} script by {args[0]} creator has an unexpected description markup, so it was skipped!"
+            msg = f"{args[1]} script by {args[0]} creator has an unexpected description markup, so it was skipped! Reason: {args[2]}"
             print("  "+msg)
             bot.send_message(msg)
         elif debug_type == "scanScript":
