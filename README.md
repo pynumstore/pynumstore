@@ -100,7 +100,7 @@ The `python_scripts/` directory contains:
 
 * `dbg.py`: scrapes and parses the NumWorks website
 * `event_manager.py`: manages updates and scans
-* `settings.json`: stores project settings and configuration data
+* `generate_sitemap.py`: generates the sitemap for the website
 
 ## Contributing
 

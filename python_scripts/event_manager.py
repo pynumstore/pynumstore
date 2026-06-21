@@ -4,6 +4,7 @@ import json
 from dbg import update
 import requests
 import traceback
+from generate_sitemap import generate_sitemap
 from tokens import CHAT_TOKEN, CHAT_ID
 
 class TelegramBot:
@@ -142,6 +143,7 @@ while True:
 
         if "/update" in msgs or (now - last_update).total_seconds() > update_interval:
             update(debugHandler)
+            generate_sitemap()
             with open("python_scripts/settings.json", "r", encoding="utf-8") as f:
                 data = json.load(f)
             data["last_update"] = now.isoformat()
