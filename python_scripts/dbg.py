@@ -4,7 +4,7 @@ import shutil
 import bleach
 import time
 import json
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from playwright.sync_api import sync_playwright
 from playwright._impl._errors import TimeoutError
 import tqdm
@@ -59,33 +59,34 @@ ALLOWED_PROTOCOLS = [
 
 
 def extract_description(html):
+    
     soup = BeautifulSoup(html, "html.parser")
-    container = soup.find(class_="text-justify")
-    if container is None:
-        return None, "container_not_found"
 
-    parts = []
-    hr_found = False
+    content_div = soup.find("div", class_="content")
+    if content_div is None:
+        return None, "content_div_not_found"
 
-    for child in container.children:
-        if getattr(child, "name", None) == "hr":
-            hr_found = True
+    marker = content_div.find("p", class_="text-justify")
+    if marker is None:
+        return None, "marker_not_found"
+
+    elements = []
+    for sibling in marker.next_siblings:
+        if isinstance(sibling, str) and not sibling.strip():
+            continue
+        if isinstance(sibling, Tag) and sibling.name == "pre" and sibling.get("id") == "script":
             break
-        parts.append(str(child))
+        elements.append(sibling)
+    
+    if len(elements) == 1 and isinstance(elements[0], Tag) and elements[0].name == "hr":
+        elements = []
+    else:
+        if len(elements) < 2:
+            return None, "unexpected_structure"
+        elements.pop()
+        elements.pop()
 
-    if not hr_found:
-        for sibling in container.next_siblings:
-            if getattr(sibling, "name", None) == "hr":
-                break
-            parts.append(str(sibling))
-
-    fragment = "".join(parts).strip()
-
-    if fragment:
-        inner = BeautifulSoup(fragment, "html.parser")
-        top_level = [c for c in inner.contents if str(c).strip()]
-        if len(top_level) == 1 and getattr(top_level[0], "name", None) == "p":
-            fragment = top_level[0].decode_contents().strip()
+    fragment = "".join(str(e) for e in elements).strip()
 
     return fragment, None
 
@@ -233,21 +234,11 @@ def scan_script(creator, name, page, debug=None):
                 if debug is not None:
                     debug.pull("errorDescription", creator, name, fail_reason)
                 return None
-
-            code_blocks = {}
-            def save_code(m):
-                key = f"__CODE_{len(code_blocks)}__"
-                code_blocks[key] = m.group(0)
-                return key
-
-            description = re.sub(r'<(code|pre)[^>]*>.*?</\1>', save_code, description, flags=re.DOTALL)
-            description = " ".join(description.split())
-            for key, value in code_blocks.items():
-                description = description.replace(key, value)
+            
             description = bleach.clean(description, tags=ALLOWED_TAGS, attributes=ALLOWED_ATTRIBUTES, protocols=ALLOWED_PROTOCOLS, strip=True, strip_comments=True)
-
-            stripped_description = re.sub(r'<(code|pre)[^>]*>.*?</\1>', '', description, flags=re.DOTALL)
-            tags = re.findall(r'#(\w+)', stripped_description)
+            
+            stripped_for_tags = re.sub(r'<(code|pre)[^>]*>.*?</\1>', '', description, flags=re.DOTALL)
+            tags = re.findall(r'#(\w+)', stripped_for_tags)
 
             if not os.path.exists(f"data/{creator}/"):
                 os.makedirs(f"data/{creator}/")
