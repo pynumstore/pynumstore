@@ -53,7 +53,7 @@ function validateAndStore(name) {
 
   if (lastRow > 1) {
     values = sheet
-      .getRange(2, 1, lastRow - 1, 1)
+      .getRange(1, 1, lastRow - 1, 1)
       .getValues()
       .flat()
       .map(v => String(v).toLowerCase());
