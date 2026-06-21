@@ -12,7 +12,7 @@ function doPost(e) {
       .setMimeType(ContentService.MimeType.JSON);
   }
 
-  cache.put(ip, "1", 30);
+  cache.put(ip, "1", 10);
   
   try {
     const data = JSON.parse(e.postData.contents);
