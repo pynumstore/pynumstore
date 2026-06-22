@@ -51,7 +51,8 @@ async function loadScriptPage() {
     h2.textContent = "Description:";
     const divider = document.createElement("div");
     divider.className = "divider";
-    const p = document.createElement("p");
+    const p = document.createElement("div");
+    p.className = "description-text";
     p.innerHTML = script.description;
     descSection.append(h2, divider, p);
   }
