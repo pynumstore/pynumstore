@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none';
+    script-src 'self' https://www.googletagmanager.com 'sha256-IS7oKpJKokDUbzWAtV6RvEgINVguTi6qfiu8RNrKXeM=';
+    style-src 'self' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self';
+    connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://script.google.com https://script.googleusercontent.com;
+    base-uri 'self';
+    form-action 'none';
+    object-src 'none';
+  ">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280">
   <!-- Google tag (gtag.js) -->
