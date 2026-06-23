@@ -19,6 +19,13 @@ function doPost(e) {
       return response({ success: false, reason: "captcha_failed: " + vTurnstile[1] });
     }
 
+    const cache = CacheService.getScriptCache();
+    const cacheKey = "cooldown_" + name;
+    if (cache.get(cacheKey)) {
+      return response({ success: false, reason: "too_many_requests" });
+    }
+    cache.put(cacheKey, "1", 30);
+
     if (!CREATOR_REGEX.test(name)) {
       return response({ success: false, reason: "invalid_name" });
     }
@@ -28,14 +35,7 @@ function doPost(e) {
         success: false,
         reason: "numworks_user_not_found"
       });
-}
-
-    const cache = CacheService.getScriptCache();
-    const cacheKey = "cooldown_" + name;
-    if (cache.get(cacheKey)) {
-      return response({ success: false, reason: "too_many_requests" });
     }
-    cache.put(cacheKey, "1", 30);
 
     return response(validateAndStore(name));
 
