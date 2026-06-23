@@ -1,101 +1,120 @@
+const TURNSTILE_SECRET_KEY = PropertiesService
+  .getScriptProperties()
+  .getProperty("TURNSTILE_SECRET_KEY");
+
+const SHEET_ID = PropertiesService
+  .getScriptProperties()
+  .getProperty("SHEET_ID");
+
+const CREATOR_REGEX = /^[a-z0-9]([a-z0-9-]{0,48}[a-z0-9])?$/;
+
 function doPost(e) {
-
-  const cache = CacheService.getScriptCache();
-  const ip = e.parameter.ip || "unknown";
-
-  if (cache.get(ip)) {
-    return ContentService
-      .createTextOutput(JSON.stringify({
-        success: false,
-        reason: "too_many_requests"
-      }))
-      .setMimeType(ContentService.MimeType.JSON);
-  }
-
-  cache.put(ip, "1", 10);
-  
   try {
     const data = JSON.parse(e.postData.contents);
-    const name = String(data.name || "").toLowerCase();
+    const name = String(data.name || "").toLowerCase().trim();
+    const cfToken = String(data.cfToken || "");
+    const vTurnstile = verifyTurnstile(cfToken);
 
-    const result = validateAndStore(name);
+    if (!vTurnstile[0]) {
+      return response({ success: false, reason: "captcha_failed: " + vTurnstile[1] });
+    }
 
-    return ContentService
-      .createTextOutput(JSON.stringify(result))
-      .setMimeType(ContentService.MimeType.JSON);
+    if (!CREATOR_REGEX.test(name)) {
+      return response({ success: false, reason: "invalid_name" });
+    }
+
+    if (!numworksUserExists(name)) {
+      return response({
+        success: false,
+        reason: "numworks_user_not_found"
+      });
+}
+
+    const cache = CacheService.getScriptCache();
+    const cacheKey = "cooldown_" + name;
+    if (cache.get(cacheKey)) {
+      return response({ success: false, reason: "too_many_requests" });
+    }
+    cache.put(cacheKey, "1", 30);
+
+    return response(validateAndStore(name));
 
   } catch (err) {
-    return ContentService
-      .createTextOutput(JSON.stringify({
-        success: false,
-        error: err.toString()
-      }))
-      .setMimeType(ContentService.MimeType.JSON);
+    return response({ success: false, reason: err.toString() });
+  }
+}
+
+function verifyTurnstile(token) {
+  if (!token) return [false, "missing_token"];
+
+  try {
+    const res = UrlFetchApp.fetch(
+      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+      {
+        method: "post",
+        payload: {
+          secret: TURNSTILE_SECRET_KEY,
+          response: token
+        },
+        muteHttpExceptions: true
+      }
+    );
+
+    const code = res.getResponseCode();
+    const text = res.getContentText();
+
+    if (code !== 200) {
+      return [false, `http_${code}: ${text}`];
+    }
+
+    const result = JSON.parse(text);
+
+    return result.success
+      ? [true, ""]
+      : [false, JSON.stringify(result["error-codes"] || [])];
+
+  } catch (err) {
+    return [false, String(err)];
   }
 }
 
 function validateAndStore(name) {
-
-  if (!creatorNameIsValid(name)) {
-    return {
-      success: false,
-      reason: "invalid_name"
-    };
-  }
-
   const sheet = SpreadsheetApp
-    .openById("******************************************************")
+    .openById(SHEET_ID)
     .getSheetByName("creators_index");
 
   const lastRow = sheet.getLastRow();
 
-  let values = [];
+  const existing = lastRow > 0
+    ? sheet.getRange(1, 1, lastRow, 1).getValues().flat().map(v => String(v).toLowerCase().trim())
+    : [];
 
-  if (lastRow > 1) {
-    values = sheet
-      .getRange(1, 1, lastRow - 1, 1)
-      .getValues()
-      .flat()
-      .map(v => String(v).toLowerCase());
-  }
-
-  if (values.includes(name)) {
-    return {
-      success: false,
-      reason: "duplicate"
-    };
+  if (existing.includes(name)) {
+    return { success: false, reason: "duplicate" };
   }
 
   sheet.appendRow([name]);
-
-  return {
-    success: true,
-    reason: "saved"
-  };
+  return { success: true };
 }
 
-function creatorNameIsValid(name) {
+function numworksUserExists(name) {
+  try {
+    const res = UrlFetchApp.fetch(
+      "https://my.numworks.com/python/" + encodeURIComponent(name),
+      {
+        method: "get",
+        muteHttpExceptions: true
+      }
+    );
 
-  if (!name) return false;
-
-  if (name[0] === "-" || name[name.length - 1] === "-") {
+    return res.getResponseCode() === 200;
+  } catch (err) {
     return false;
   }
+}
 
-  if (name.length > 50) {
-    return false;
-  }
-
-  for (const c of name) {
-    const valid =
-      (c >= "a" && c <= "z") ||
-      (c >= "0" && c <= "9") ||
-      c === "-";
-
-    if (!valid) {
-      return false;
-    }
-  }
-
-  return true;
+function response(data) {
+  return ContentService
+    .createTextOutput(JSON.stringify(data))
+    .setMimeType(ContentService.MimeType.JSON);
 }

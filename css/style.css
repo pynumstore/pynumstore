@@ -289,7 +289,7 @@ nav ul li a:hover {
 #advanced {
     flex: 1;
     background-color: var(--bg);
-    padding: 80px 24px;
+    padding: 40px 24px;
 }
     
 #advanced .section-inner {
@@ -484,6 +484,14 @@ nav ul li a:hover {
 #error-content p {
     font-size: 1.2rem;
     color: var(--muted);
+}
+
+#turnstile-section {
+    flex: 1;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
