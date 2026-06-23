@@ -72,13 +72,13 @@ async function sendCreator() {
 
     const data = await res.json();
 
+    window.turnstile?.reset();
+
     if (data.success) {
       setMsg(`"${name}" has been added to the database!`, "green");
       document.getElementById("creatorName").value = "";
-      window.turnstile?.reset();
-      startCooldown();
     } else {
-      window.turnstile?.reset();
+      startCooldown()
       document.getElementById("submit-button").disabled = false;
 
       switch (data.reason) {
@@ -93,11 +93,9 @@ async function sendCreator() {
           break;
         case "too_many_requests":
           setMsg("Too many requests. Please try again later.", "red");
-          startCooldown();
           break;
         case "numworks_user_not_found":
           setMsg("This creator doesn't exists the NumWorks website.", "red");
-          startCooldown();
           break;
         default:
           setMsg(`Error: ${data.reason}`, "red");
