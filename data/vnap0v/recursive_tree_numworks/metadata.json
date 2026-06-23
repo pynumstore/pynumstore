@@ -1,0 +1,9 @@
+{
+    "name": "recursive_tree_numworks",
+    "creator": "vnap0v",
+    "created_at": "July 25, 2025",
+    "size": "2.38 KB",
+    "image": "data/vnap0v/recursive_tree_numworks/vnap0v_recursive_tree_numworks.png",
+    "tags": [],
+    "description": "<h3>recursive_tree_numworks.py</h3><p>This script draws recursively generated trees.</p><p>The function</p><pre><code>def branch(length, depth, width):\n</code></pre><p>recursively calls itself, when recursion limit is not yet reached</p><p>it draws a branch and calls itself twice after changing the heading</p><p>when recursion limit is reached it draws a leaf</p><p>A lot of the tree\u2019s parameters have random variation.</p><p>The code uses Turtle graphics for drawing, the timer function to wait after each tree and random to introduce random variations.</p>"
+}

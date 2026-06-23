@@ -1,0 +1,9 @@
+{
+    "name": "calcul",
+    "creator": "cent20",
+    "created_at": "April 21, 2021",
+    "size": "8.42 KB",
+    "image": "data/cent20/calcul/cent20_calcul.png",
+    "tags": [],
+    "description": "<h3>\ud835\uddd6\ud835\uddee\ud835\uddf9\ud835\uddf0\ud835\ude02\ud835\uddf9 \ud835\udde0\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\uddee\ud835\uddf9</h3><p>Un g\u00e9n\u00e9rateur de calcul al\u00e9atoire  : <a href=\"https://nsi.xyz/calcul\" rel=\"nofollow\">nsi.xyz/calcul </a><br> Version 2.0, int\u00e8gre le <a href=\"https://workshop.numworks.com/python/cent20/menu\" rel=\"nofollow\">menu</a> graphique pour python pour un param\u00e9trage facile. \ud83e\udd2f <br>Ne fonctionne que sur la calculatrice, pas sur le simulateur en ligne.</p>"
+}

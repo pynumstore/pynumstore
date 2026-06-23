@@ -1,0 +1,9 @@
+{
+    "name": "colorcode",
+    "creator": "vnap0v",
+    "created_at": "June 02, 2025",
+    "size": "1.58 KB",
+    "image": "data/vnap0v/colorcode/vnap0v_colorcode.png",
+    "tags": [],
+    "description": "<p>By entering the color-bands of a resistor this scripts gives the value and tolerance. Works with 4 band or 5 band resistors. The script also runs in CPython on a PC. Tested on the calculator using software version 23.2.6.</p>"
+}

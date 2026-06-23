@@ -1,0 +1,9 @@
+{
+    "name": "rc",
+    "creator": "vnap0v",
+    "created_at": "June 28, 2025",
+    "size": "668 Bytes",
+    "image": "data/vnap0v/rc/vnap0v_rc.png",
+    "tags": [],
+    "description": "<p>This script defines a number of functions to calculate the impedance of resistor - capacitor combinations</p><ul>\n<li>zcap(c,f) impedance of capacitance c at frequency f, returns a complex number for impedance</li>\n<li>zseries(r,c,f) impedance of series resistance r and capacitance c at frequency f, returns a complex number for impedance</li>\n<li>zparall(r,c,f) impedance of parallel resistance r and capacitance c at frequency f, returns a complex number for impedance</li>\n<li>z_all() to keep things interactive, this function asks for input values and returns impedance of bith series and parallel combinations</li>\n</ul><p>Exponential notation can be used to input values for example</p><pre><code>1e-6\n</code></pre><p>for a capacitance value means</p><pre><code>0.000001 Farad or\n1 micro Farad\n</code></pre><p>The code also runs on CPython on a PC</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "sierpinsky",
+    "creator": "vnap0v",
+    "created_at": "May 01, 2025",
+    "size": "341 Bytes",
+    "image": "data/vnap0v/sierpinsky/vnap0v_sierpinsky.png",
+    "tags": [],
+    "description": "<p>Draws a Sierpinsky triangle on the screen. Defines one function sierp(), this function can be used with 1 parameter defining the number of iterations. Uses libraries math and kandinsky. Tested on the calculator using software version 23.2.6.</p>"
+}

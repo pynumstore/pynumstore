@@ -1,0 +1,9 @@
+{
+    "name": "add_subtract_bin",
+    "creator": "wperez274",
+    "created_at": "August 12, 2022",
+    "size": "4.9 KB",
+    "image": "data/wperez274/add_subtract_bin/wperez274_add_subtract_bin.png",
+    "tags": [],
+    "description": "<p>Add and Subtract up to 8 different rows of digits.\nkey [left] / [right ] = - 1/ +1\nkey [up] / [down] =  Cursor Up/Down\nkey [EXE] = Change background Color\n key [+] / [-]  = +10 / -10</p><pre><code>      (    Press [OK] to Start    )\n</code></pre>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "rpn",
+    "creator": "vnap0v",
+    "created_at": "May 08, 2025",
+    "size": "1.73 KB",
+    "image": "data/vnap0v/rpn/vnap0v_rpn.png",
+    "tags": [],
+    "description": "<p>This script implements a simple Reverse Polish Notation calculator. Numbers are entered on the stack before the operators. For example 5*6= would here be entered as 5 [Exe] 6 [Exe] * [Exe]\nTested on the calculator using software version 23.2.6</p>"
+}

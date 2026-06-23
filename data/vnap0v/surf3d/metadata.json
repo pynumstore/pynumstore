@@ -1,0 +1,9 @@
+{
+    "name": "surf3d",
+    "creator": "vnap0v",
+    "created_at": "April 30, 2026",
+    "size": "1.93 KB",
+    "image": "data/vnap0v/surf3d/vnap0v_surf3d.png",
+    "tags": [],
+    "description": "<p>This script draws a 3D surface plot with hidden-line removal.</p><p>The expression to plot is defined in a python function which takes 2 arguments (x,y) and returns z.</p><p>Plotting is performed by python function surf() which takes arguments telling it which function to plot and the ranges on x,y and z axis. An optional text string can be added to the plot.</p><p>The script uses a function which extends the functionality of the kandinsky module:</p><p>connect draws a line between two arbitrary points</p><pre><code>connect(x1,y1,x2,y2,co=\"black\")\n</code></pre><p>The script uses only the math and kandinsky libraries.</p>"
+}

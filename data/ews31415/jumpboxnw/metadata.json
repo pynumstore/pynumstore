@@ -1,0 +1,9 @@
+{
+    "name": "jumpboxnw",
+    "creator": "ews31415",
+    "created_at": "May 18, 2025",
+    "size": "504 Bytes",
+    "image": "data/ews31415/jumpboxnw/ews31415_jumpboxnw.png",
+    "tags": [],
+    "description": "<p>A red box of size 20 pixels by 20 pixels jumps around the screen using the modules kandinsky, time, and random.</p><p>Numworks\u2019 kandinsky does not have a clear screen (as of Version 23), we create a function to \u201cclear\u201d the screen.  We can make the screen anything we want but the following code creates the \u201cboring\u201d white screen:\ndef cls():\n  fill_rect(0,0,320,220,(255,255,255))</p><p>Remember the randrange does NOT include the stop value, so if we want to include the stop value, we will need to add it:\nrandrange(start, stop + 1)\nrandrange(start, stop + step, step)</p>"
+}

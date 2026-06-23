@@ -1,0 +1,9 @@
+{
+    "name": "verlet",
+    "creator": "dkfe123",
+    "created_at": "April 10, 2026",
+    "size": "1.81 KB",
+    "image": "data/dkfe123/verlet/dkfe123_verlet.png",
+    "tags": [],
+    "description": "<p>juste un test sur l\u2019int\u00e9gration de verlet (j\u2019ai fait ca en 20 min en cours d\u2019espagnol sur la calculatrice donc c\u2019est tr\u00e8s limit\u00e9 et pas tr\u00e8s stable). Fps d\u00e9sastreux, appuyer sur OK pour ajouter des balles (on voit des carr\u00e9s mais ce sont des cercles)</p>"
+}

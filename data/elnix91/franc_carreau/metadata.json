@@ -1,0 +1,9 @@
+{
+    "name": "franc_carreau",
+    "creator": "elnix91",
+    "created_at": "March 22, 2024",
+    "size": "1.21 KB",
+    "image": "data/elnix91/franc_carreau/elnix91_franc_carreau.png",
+    "tags": [],
+    "description": "<p>Calcule la probabilit\u00e9 de gagner au jeu du franc carreau avec une carreau de 36 de cot\u00e9 et une pi\u00e8ce de 8 de rayon.\nATTENTION ce programme n\u2019est pas fini, ni optimis\u00e9 et comporte plusieurs \u00e9l\u00e9ments en phase de test. Il peut en r\u00e9sulter des bugs ou d\u2019autre disfonctionnements du m\u00eame type.</p>"
+}

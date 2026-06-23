@@ -1,0 +1,9 @@
+{
+    "name": "simpsonrule",
+    "creator": "vnap0v",
+    "created_at": "June 18, 2025",
+    "size": "771 Bytes",
+    "image": "data/vnap0v/simpsonrule/vnap0v_simpsonrule.png",
+    "tags": [],
+    "description": "<p>The Numworks calculator can calculate definite integrals without coding using the Calculation or Grapher apps.</p><p>However this script explores the \u201c1/3 Simpson rule\u201d for definite integrals. It defines the function:</p><pre><code>simpson(fun,a,b,n)\n</code></pre><ul>\n<li>fun is a python function of one variable to apply integration on</li>\n<li>a, b is the integration interval</li>\n<li>n is the number of points to be used</li>\n</ul><p>The rest of the script generates a plot illustrating the function and showing the result as text.</p><p>Tested on the calculator using software version 23.2.6.</p>"
+}

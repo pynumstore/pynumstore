@@ -1,0 +1,9 @@
+{
+    "name": "gemaddlc",
+    "creator": "frablock",
+    "created_at": "September 26, 2021",
+    "size": "2.42 KB",
+    "image": "data/frablock/gemaddlc/frablock_gemaddlc.png",
+    "tags": [],
+    "description": "<p>Une adaptation de <a href=\"https://discode.fr/gema\" rel=\"nofollow\">GeMa</a> pour le jeu <a href=\"https://discode.fr/gema/game/ddlc.html\" rel=\"nofollow\">dokidoki_fast</a></p><p><em>Si vous voulez utiliser GeMa pour votre script, nous vous recommandons la version <a href=\"https://my.numworks.com/python/frablock/gemamin\" rel=\"nofollow\">GeMaMIN</a></em></p>"
+}

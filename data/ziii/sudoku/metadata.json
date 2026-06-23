@@ -1,0 +1,9 @@
+{
+    "name": "sudoku",
+    "creator": "ziii",
+    "created_at": "August 26, 2023",
+    "size": "4.63 KB",
+    "image": "data/ziii/sudoku/ziii_sudoku.png",
+    "tags": [],
+    "description": "<p>A basic sudoku game, the game is interactive even though I couldn\u2019t create a start menu due to memory limitations.</p><p>It creates randomly a sudoku grid every restart.</p><p>You can change the difficulty by changing the number of prefilled squares.</p><p>The program will tell you if the position is legal, illegal or a solution.</p><p>Colors are also customizable, from line 60 to 67 changing the 3 values in parenthesis to some RGB values will change the colors of the things stated above. For example changing (50,50,50) under \u201c# background color\u201d to (0,0,0) will change the color of the background (dark grey to black in this example).</p><p>How to play:</p><p>Enter a number in the console at the beginning to set the amount of prefilled squares.</p><p>Arrows to move the cursor.</p><p>0 to empty square.</p><p>1-9 to fill a square with a number.</p><p>Exe to show a solution, it will also stop the program.</p>"
+}

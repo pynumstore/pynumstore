@@ -1,0 +1,9 @@
+{
+    "name": "maze_escape",
+    "creator": "wperez274",
+    "created_at": "August 02, 2022",
+    "size": "5.02 KB",
+    "image": "data/wperez274/maze_escape/wperez274_maze_escape.png",
+    "tags": [],
+    "description": "<p>Escape the random maze forest and try to\navoid touching the electric walls ( energy will decrease ).\nThe goal is to reach the right side of the screen (exit).</p><p>Keys:</p><p>key [Navigate/Arrows] = Move, (UP, DOWN, LEFT, RIGHT, DIAGONAL)\nkey [OK] = Slow Motion\nkey [Backspace] = Pause / Resume</p><p>Good luck!</p><p>Sincerely,</p><p>Wilson</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "line3d",
+    "creator": "vnap0v",
+    "created_at": "May 31, 2025",
+    "size": "1.95 KB",
+    "image": "data/vnap0v/line3d/vnap0v_line3d.png",
+    "tags": [],
+    "description": "<p>This script plots sets of 3 expressions x=f(t),y=g(t),z=h(t)using a simple 3D projection. The expressions to plot are defined in a python function which takes one argument t and returns three values for x,y and z. . Plotting is performed by python function line() which takes arguments telling it which function to plot and the ranges on parameter t, and x, y, z axis. An optional text string can be added to the plot. It uses only the math and kandinsky libraries. Tested on the calculator using software version 23.2.6.</p>"
+}

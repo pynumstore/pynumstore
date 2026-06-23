@@ -1,0 +1,9 @@
+{
+    "name": "ccg1_computer_nightmare",
+    "creator": "mobluse",
+    "created_at": "September 19, 2025",
+    "size": "1.07 KB",
+    "image": "data/mobluse/ccg1_computer_nightmare/mobluse_ccg1_computer_nightmare.png",
+    "tags": [],
+    "description": "<p>This game is a typing contest where you need to type the shown number (hold down the key). The game is <em>Computer Nightmare</em> from <em>Usborne Creepy Computer Games</em> (1983) by Jenny Tyler &amp; Chris Oxlade (ed). Free pdf:s are on <a href=\"https://usborne.com/row/books/computer-and-coding-books\" rel=\"nofollow\">https://usborne.com/row/books/computer-and-coding-books</a>.\nThe ZX81 BASIC original was typed in by XavSnap on <a href=\"https://www.sinclairzxworld.com/viewtopic.php?f=4&amp;t=1809\" rel=\"nofollow\">https://www.sinclairzxworld.com/viewtopic.php?f=4&amp;t=1809</a>.\nConverted to MicroPython for NumWorks calculator and simulator by mobluse/MOB-i-L.\nThe converted program is close to ZX81 BASIC and not optimized or pythonic Python.</p>"
+}

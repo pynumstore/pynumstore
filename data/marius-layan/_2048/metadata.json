@@ -1,0 +1,9 @@
+{
+    "name": "_2048",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "2.23 KB",
+    "image": "data/marius-layan/_2048/marius-layan__2048.png",
+    "tags": [],
+    "description": "<p>Le but du jeu est de faire glisser des tuiles sur une grille, pour combiner les tuiles de m\u00eames valeurs et cr\u00e9er ainsi une tuile portant le nombre 2048.</p><p>Le joueur peut toutefois continuer \u00e0 jouer apr\u00e8s cet objectif atteint pour faire le meilleur score possible.</p><p>d\u00e9placement: fl\u00e8ches directionnelles</p><p>BON JEU !</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "wordle",
+    "creator": "ziii",
+    "created_at": "November 24, 2023",
+    "size": "2.08 KB",
+    "image": "data/ziii/wordle/ziii_wordle.png",
+    "tags": [],
+    "description": "<p>A basic implementation of the wordle game. There is obviously no room for a dictionnary on a calculator so there are no checks for the spelling, and you\u2019ll need to ask a friend to give you a word.</p><p>when executing the script enter a word in the console, you\u2019ll then see the play screen, just press the keys with the letters you want, alpha or shift mode doesn\u2019t matter.</p>"
+}

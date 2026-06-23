@@ -1,0 +1,9 @@
+{
+    "name": "horner",
+    "creator": "ews31415",
+    "created_at": "June 06, 2025",
+    "size": "224 Bytes",
+    "image": "data/ews31415/horner/ews31415_horner.png",
+    "tags": [],
+    "description": "<p>Horner\u2019s Method</p><p>Evaluation of polynomial p(x) at a point x.   p(x) is represented as a list of coefficients with powers in descending order.</p><p>p(x) = a_n * x^n + a_(n-1) * x^(n-1) + \u2026 + a2 * x^2 + a1 * x + a0\nl1 = [a_n, a_(n-1), \u2026 , a2, a1, a0]</p>"
+}

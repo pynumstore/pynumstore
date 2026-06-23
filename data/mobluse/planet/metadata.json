@@ -1,0 +1,9 @@
+{
+    "name": "planet",
+    "creator": "mobluse",
+    "created_at": "September 14, 2024",
+    "size": "1.08 KB",
+    "image": "data/mobluse/planet/mobluse_planet.png",
+    "tags": [],
+    "description": "<p>The script shows a planet orbit about the origin, where the Sun is. The initial velocity v0=1.0 results in a circular orbit. Units are not SI units. Press Back/Esc to enter a new v0. The output, comments, and function names are in Swedish.</p><p>Skriptet visar en planetbana runt origo, d\u00e4r solen \u00e4r. Ursprungshastigheten v0=1.0 ger en cirkul\u00e4r bana. Enheterna \u00e4r inte SI-enheter. Tryck p\u00e5 Back/Esc f\u00f6r att mata in ett nytt v0. Utskrifterna, kommentarerna och funktionsnamnen \u00e4r p\u00e5 svenska.</p>"
+}

@@ -1,0 +1,11 @@
+{
+    "name": "couleurs",
+    "creator": "elnix90",
+    "created_at": "March 07, 2023",
+    "size": "2.48 KB",
+    "image": "data/elnix90/couleurs/elnix90_couleurs.png",
+    "tags": [
+        "0116"
+    ],
+    "description": "<p>Ce programme permet de choisir une couleur au format R,G,B et de la renvoyer  au format:\n\u201c(R,G,B)\u201d en utilisant la touche [OK].\nIl n\u2019est pas parfait et si vous  voulez me sugg\u00e9rer des am\u00e9liorations, vous pouvez me contacter sur discord: Elnix90#0116</p>"
+}

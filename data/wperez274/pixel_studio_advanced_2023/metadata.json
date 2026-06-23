@@ -1,0 +1,9 @@
+{
+    "name": "pixel_studio_advanced_2023",
+    "creator": "wperez274",
+    "created_at": "April 27, 2023",
+    "size": "5.92 KB",
+    "image": "data/wperez274/pixel_studio_advanced_2023/wperez274_pixel_studio_advanced_2023.png",
+    "tags": [],
+    "description": "<p>guide=\u201d\u201d\u201d\n[OK] = Set Shape\n[pi] = Sketch Mode On/ Off\n[7]89= \u201cred\u201d, \u201cgreen, \u201cblue\u201d\nEXE = Exit &amp; Print Data</p><p>Hold [shift] + [(][)][x]/] = Fast Increase, Decrease Width, Height</p><p>Length of my_shapes should be \u2264 6 for copy &amp; paste ability.\n( Numworks has limit if copy )\nUse:\nfrom Kandinsky import fill_rect\nfrom Kandinsky import fill_rect as F</p><h3>tuple = color = *white\u201d</h3><p>bg=(255,255,255)\nmy_shapes =[\n[x,y,w,h,c], [x,y,w,h,c],[x,y,w,h,c]\n]</p><p>for i in my_shapes:\n    F(*i)</p><p>Try\ndifferent keys..\n\u201c\u201d\u201d</p>"
+}

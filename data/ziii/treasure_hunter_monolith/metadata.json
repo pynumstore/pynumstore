@@ -1,0 +1,17 @@
+{
+    "name": "treasure_hunter_monolith",
+    "creator": "ziii",
+    "created_at": "December 22, 2025",
+    "size": "5.79 KB",
+    "image": "data/ziii/treasure_hunter_monolith/ziii_treasure_hunter_monolith.png",
+    "tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "4",
+        "1",
+        "cursor"
+    ],
+    "description": "<p>An adaptation of the mini game \u201ctreasure hunter ! monolith\u201d from danganronpa v3 (on mean difficulty). It\u2019s not a perfect reproduction,  there are only 3 different treasures because the numwork lacks the necessary amount of RAM, and the way the color of each tile is chosen may be different, but everything else works as it should.</p><p>How to play:</p><p>The goal of the game is to find as much treasures as possible to have the best score, at first they\u2019re all hidden under tiles.</p><p>There is 4 type of tiles, silver(#1), pink(#2), yellow(#3), blue(#4), and you can remove them if there are tiles of the same types connected (at least 2). Removing them will increment by one the type of every adjacent tiles, the blue tile(#4),  loops around to silver(#1). Each tile removed will also give you 5 points.</p><p>If you remove all the tiles above a treasure, he will change of color, showing he was discovered. If there is no more connected tiles of the same type the game will stop and tell you there is no more move available.</p><p>There always are two \u201cbears\u201d (not really recognizable, i\u2019m not good at pixel art) worth 1000 points each and the other 7 treasures are randomly choosen between two types of fishes worth 500 points each. Every treasure is rotated randomly.</p><p>Ok to interact with tiles.</p><p>Arrows to move cursor.</p><p>Colors, sprites, hitboxes and scores are fully customisable.</p><p>To change colors go to the line 55 and change the rgb values, each line is a different color, changing the rgb values next to #cursor will change the color of the cursor for exemple.</p><p>To change the sprites, draw one in my paint program then go to the beginning of the program and change the tuple in the obj_draw variable. The sprite is automatically scaled by a factor of 4, and each tile is 14 pixels long, if the sprite is too big for the hitbox, the parts protuding won\u2019t be drawn on the screen.</p>"
+}

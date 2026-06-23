@@ -1,0 +1,9 @@
+{
+    "name": "polynomial",
+    "creator": "parisseb",
+    "created_at": "February 04, 2020",
+    "size": "290 Bytes",
+    "image": "data/parisseb/polynomial/parisseb_polynomial.png",
+    "tags": [],
+    "description": "<p>Equation du second degr\u00e9.\nVersion utilisable dans MicroPython ou dans KhiCAS. Dans KhiCAS, les racines sont calcul\u00e9es exactement.</p>"
+}

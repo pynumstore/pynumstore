@@ -1,0 +1,9 @@
+{
+    "name": "extfdemo",
+    "creator": "ews31415",
+    "created_at": "February 05, 2021",
+    "size": "694 Bytes",
+    "image": "data/ews31415/extfdemo/ews31415_extfdemo.png",
+    "tags": [],
+    "description": "<p>Demonstration of how to import a custom module.  This must have extf.py loaded to the calculator.</p>"
+}

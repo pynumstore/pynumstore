@@ -1,0 +1,9 @@
+{
+    "name": "cinetique",
+    "creator": "martin-tilloy5",
+    "created_at": "December 09, 2022",
+    "size": "375 Bytes",
+    "image": "data/martin-tilloy5/cinetique/martin-tilloy5_cinetique.png",
+    "tags": [],
+    "description": "<p>Moment cinetique :</p><ul>\n<li>C et Q sont confondu avec G :   SIGg(S/R) = Ig(S).[OMEGA(s/R)]</li>\n<li>Q est au centre de gravit\u00e9 G :   SIGc(S/R) = Ig(S).[OMEGA(S/R) + CG^Vgcs/r</li>\n<li>C et Q sont confondus :   SIGq(S/R) = Iq(S).[OMEGA(S/R)] + mQG^Vqcs/r</li>\n<li>Q est fixe dans R :   SIGq(S/R) = Iq(S).[OMEGA(S/R)]</li>\n</ul><p>Moment dynamique :</p><ul>\n<li>DELi(E/R) = (SIGi(E/R))\u2019 + m(OI)\u2019(r) ^Vg/r</li>\n</ul>"
+}

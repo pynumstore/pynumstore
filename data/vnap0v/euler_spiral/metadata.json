@@ -1,0 +1,9 @@
+{
+    "name": "euler_spiral",
+    "creator": "vnap0v",
+    "created_at": "October 02, 2025",
+    "size": "1.35 KB",
+    "image": "data/vnap0v/euler_spiral/vnap0v_euler_spiral.png",
+    "tags": [],
+    "description": "<p>This script draws an \u201cEuler\u2019s Spiral\u201d also known as \u201cCornu Spiral\u201d.</p><p>Two Fresnel integrals have to be calculated, this code uses a Maclaurin series approximation.</p><p>It also uses a function coded in Python to draw a line between any two x,y points.</p><p>It is possible to draw this spiral using the Numworks calculator\u2019s graphing app as well.</p>"
+}

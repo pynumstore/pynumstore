@@ -1,0 +1,9 @@
+{
+    "name": "quirk",
+    "creator": "vnap0v",
+    "created_at": "May 24, 2025",
+    "size": "733 Bytes",
+    "image": "data/vnap0v/quirk/vnap0v_quirk.png",
+    "tags": [],
+    "description": "<p>This script demonstrates a quirk with the numpy implementation in Numworks. when tested with software version  23.2.6. \nWhen multiplying a int or float with a numpy array an error occurs if the int or float comes first. For example as in float * array. \nWhen the array comes first as in array * float the operation works fine. \nAlso converting the  int or float to a one element array eliminates the error.</p>"
+}

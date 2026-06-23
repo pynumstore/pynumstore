@@ -1,0 +1,9 @@
+{
+    "name": "turtle_python_logo_numworks",
+    "creator": "vnap0v",
+    "created_at": "July 17, 2025",
+    "size": "2.54 KB",
+    "image": "data/vnap0v/turtle_python_logo_numworks/vnap0v_turtle_python_logo_numworks.png",
+    "tags": [],
+    "description": "<p>Turtle graphics does have a circle function but no ellipse.</p><p>This script defines a function to draw an ellipse using Turtle graphics.</p><pre><code>def ellipse(a, b , direction, **kwargs):\n  a, b: size of ellipse\n  direction: positive for counterclockwise, negative for clockwise\n  keyword arguments:\n  extent: part of ellipse to draw as angle in degrees\n  npoints: number of steps to use\n</code></pre><p>The ellipse function is then used to draw a python logo using Turtle graphics.</p>"
+}

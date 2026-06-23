@@ -1,0 +1,9 @@
+{
+    "name": "earth",
+    "creator": "frablock",
+    "created_at": "March 12, 2022",
+    "size": "30 KB",
+    "image": "data/frablock/earth/frablock_earth.png",
+    "tags": [],
+    "description": "<p>R\u00e9\u00e9criture du script d\u2019affichage d\u2019image propos\u00e9 par <a href=\"https://my.numworks.com/python/schraf/photov2\" rel=\"nofollow\">schraf </a></p><p><a href=\"https://postimg.cc/tZxbHg5J\" rel=\"nofollow\"><img alt=\"screenshot-2022-3-12-20-15-4.png\" src=\"https://i.postimg.cc/xCs1MJNv/screenshot-2022-3-12-20-15-4.png\"></a></p><p>Test \u00e0 1px</p><p>code GIMP (PNG &amp; JPG) :</p><pre><code>```\ndef nw():\n    I=':;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz';A=gimp.image_list()[0];pdb.gimp_image_scale(A,320,225);J=pdb.gimp_image_active_drawable(A)\nif not pdb.gimp_drawable_is_indexed(J):pdb.gimp_convert_indexed(A,0,0,len(I),0,1,0)\nE='';B=[];C=0\nfor D in range(72000):\n\tF=list(pdb.gimp_image_pick_color(A,J,D%320,D//320,1,0,0))[:-1]\n\tif F not in B:B.append(F)\n\tG=B.index(F)\n\tif D==0:H=G\n\tif H!=G and D&gt;0:\n\t\tE+=I[H]\n\t\tif C&gt;1:E+=K(C)\n\t\tC=1;H=G\n\telse:C+=1\nprint('p='+str(B));print('o=\"'+E+'\"') ```\n</code></pre><p><a rel=\"nofollow\">Voir le code</a></p><p>Attention</p><p>Fichier volumineux</p>"
+}

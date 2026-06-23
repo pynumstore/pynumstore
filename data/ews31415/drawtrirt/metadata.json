@@ -1,0 +1,9 @@
+{
+    "name": "drawtrirt",
+    "creator": "ews31415",
+    "created_at": "June 01, 2024",
+    "size": "284 Bytes",
+    "image": "data/ews31415/drawtrirt/ews31415_drawtrirt.png",
+    "tags": [],
+    "description": "<p>Draws an 45-45-90 degree right triangle.   Enter the length of the one of the legs (s), not the hypotenuse.  The base is set on the x-axis.  The screen is set up to fit the proportion of the 320 x 220 screen.   The vertical axis ranges from y = -44 to y = 44 while the horizontal axis ranges from x = -64 to x = 64.</p>"
+}

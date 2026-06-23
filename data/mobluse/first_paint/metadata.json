@@ -1,0 +1,9 @@
+{
+    "name": "first_paint",
+    "creator": "mobluse",
+    "created_at": "December 06, 2024",
+    "size": "609 Bytes",
+    "image": "data/mobluse/first_paint/mobluse_first_paint.png",
+    "tags": [],
+    "description": "<p>A paint program. Press the arrow keys to move the painting cursor. Hold down SHIFT to paint faster. Press EXE/Enter to invert the screen. Press BACK/Esc key twice to quit.</p>"
+}

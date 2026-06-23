@@ -1,0 +1,9 @@
+{
+    "name": "treasure",
+    "creator": "cent20",
+    "created_at": "April 22, 2021",
+    "size": "6.84 KB",
+    "image": "data/cent20/treasure/cent20_treasure.png",
+    "tags": [],
+    "description": "<h3>\ud835\udde7\ud835\uddff\ud835\uddf2\ud835\uddee\ud835\ude00\ud835\ude02\ud835\uddff\ud835\uddf2</h3><p><br>\nPython Game for Numworks N0110 and N0100, <br>\ncode by Robert V., october 2020.<br>\n<a href=\"https://nsi.xyz/treasure\" rel=\"nofollow\">nsi.xyz/treasure</a> (FR)<br>\nUn tr\u00e9sor a \u00e9t\u00e9 cach\u00e9. D\u00e9place toi et pars \u00e0 sa recherche. Evite les rochers et les trous.\nAppuies sur [OK] pour creuser un trou. Un sonar t\u2019aide \u00e0 te guider, sauras-tu l\u2019utiliser ? \ud83e\uddd0</p>"
+}

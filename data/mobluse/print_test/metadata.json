@@ -1,0 +1,9 @@
+{
+    "name": "print_test",
+    "creator": "mobluse",
+    "created_at": "June 02, 2024",
+    "size": "531 Bytes",
+    "image": "data/mobluse/print_test/mobluse_print_test.png",
+    "tags": [],
+    "description": "<p><strong>PrintTest</strong> shows all characters using ordinary <code>print()</code> in the module <code>builtins</code>. Press <code>OK</code> or <code>EXE</code> after each screen to see the next. You can enter a high \u201cbyte\u201d for the Unicode. There are characters on e.g. 0x00, 0x1D, 0x22, 0x1D4.</p>"
+}

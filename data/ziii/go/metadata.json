@@ -1,0 +1,9 @@
+{
+    "name": "go",
+    "creator": "ziii",
+    "created_at": "September 09, 2023",
+    "size": "4.09 KB",
+    "image": "data/ziii/go/ziii_go.png",
+    "tags": [],
+    "description": "<p>A basic game of go, close to an over the board experience. Uses area scoring because it\u2019s easier to implement.</p><p>The colors of the game are fully customizable, from line 23 to 27 change the rgb values to whatever you wish.</p><p>How to play :</p><p>After starting the program enter the number of lines you want for the board.</p><p>Arrows to move the cursor.</p><p>Ok to place a stone.</p><p>Zero to remove a stone.</p><p>One to add a black stone.</p><p>Two to add a white stone.</p><p>Plus to pass turn.</p><p>Shift to remove a group of stones of the same color.</p>"
+}

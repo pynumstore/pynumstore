@@ -1,0 +1,11 @@
+{
+    "name": "facteurs_premiers",
+    "creator": "elnix90",
+    "created_at": "April 03, 2023",
+    "size": "8.23 KB",
+    "image": "data/elnix90/facteurs_premiers/elnix90_facteurs_premiers.png",
+    "tags": [
+        "0116"
+    ],
+    "description": "<p>Ce script donne plusieurs informations sur le ou les nombres entr\u00e9s:\n-si il sont premiers\n-leurs diviseurs\n-leur pgcd\n-leur d\u00e9composition en produits de facteurs premiers\n-si l\u2019un est divisible par l\u2019autre</p><p>Toutes ces informations peuvent prendre de la place et sortir de l\u2019\u00e9cran, c\u2019est pour \u00e7a que j\u2019ai dot\u00e9 mon programme d\u2019un syst\u00e8me pour d\u00e9placer les informations au moyen des touches directionnelles.</p><p>N\u2019h\u00e9sitez pas \u00e0 me faire part de vos impressions sur discord: Elnix90#0116</p>"
+}

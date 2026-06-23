@@ -1,0 +1,9 @@
+{
+    "name": "power_old8",
+    "creator": "elnix91",
+    "created_at": "February 28, 2025",
+    "size": "9.07 KB",
+    "image": "data/elnix91/power_old8/elnix91_power_old8.png",
+    "tags": [],
+    "description": "<p>An old program that I\u2019d never finished. This is a board game that a friend told me, and I wanted to recreate it, but at this time I didn\u2019t had the knowledge to do some thing, such as verifying some constraints. Now, I may finish it, but as you can see, it takes already more than 8kb, so the final version would probably be around 15kb, and it will be very complicated to run on Numworks.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "koch_snowflake",
+    "creator": "vnap0v",
+    "created_at": "September 21, 2025",
+    "size": "1.8 KB",
+    "image": "data/vnap0v/koch_snowflake/vnap0v_koch_snowflake.png",
+    "tags": [],
+    "description": "<h3>Koch Snowflake</h3><p>The Koch Snowflake is a fractal curve. The Antisnowflake is a variation.</p><p>This script uses recursion to construct the fractal.</p><p>Drawing is done using the turtle module.</p><p>Two Python functions are defined:</p><ol>\n<li>\n<p>draw_koch_curve(length, recursion_depth, draw_anti_snowflake = False)</p>\n<p>This function draws a Koch curve which is used for the sides of the snow flakes.\nIt calls itself recursively to construct the fractal shape</p>\n</li>\n<li>\n<p>draw_koch_snowflake(center_xy, length_side, recursion_depth, draw_anti_snowflake = False):</p>\n<p>This function calls draw_koch_curve() three times to draw the snowflake</p>\n</li>\n</ol>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "trigo",
+    "creator": "jilsaint90",
+    "created_at": "January 03, 2021",
+    "size": "1.15 KB",
+    "image": "data/jilsaint90/trigo/jilsaint90_trigo.png",
+    "tags": [],
+    "description": "<p>trace un cercle trigonom\u00e9trique gr\u00e2ce au module turtle, mais n\u2019a malheureusement pas une pr\u00e9cision folle, au vu de la taille r\u00e9duite de l\u2019\u00e9cran de la calculatrice (rend mieux sur \u00e9diteur de l\u2019ordi, comme thonny)</p>"
+}

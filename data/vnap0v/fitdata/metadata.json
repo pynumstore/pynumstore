@@ -1,0 +1,9 @@
+{
+    "name": "fitdata",
+    "creator": "vnap0v",
+    "created_at": "June 06, 2025",
+    "size": "844 Bytes",
+    "image": "data/vnap0v/fitdata/vnap0v_fitdata.png",
+    "tags": [],
+    "description": "<p>The Numworks calculator has the Regression app to find polynomials which best fit given data. The calculator\u2019s Python app has a numpy library which contains the function polyfit() for the same purpose. Another function called polyval() evaluates a polynomial for a set of x values. This script demonstrates numpy.polyfit() and numpy.polyval().  Tested on the calculator using software version 23.2.6. Also works in CPython on a PC</p>"
+}

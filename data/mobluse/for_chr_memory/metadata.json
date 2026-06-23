@@ -1,0 +1,9 @@
+{
+    "name": "for_chr_memory",
+    "creator": "mobluse",
+    "created_at": "December 29, 2025",
+    "size": "83 Bytes",
+    "image": "data/mobluse/for_chr_memory/mobluse_for_chr_memory.png",
+    "tags": [],
+    "description": "<p>Demonstrates the bug on https://github.com/numworks/epsilon/issues/1893\nAfter i=5112 here and 5114 in actual device it gives \u201cMemoryError: memory allocation failed, allocating 5120 bytes\u201d.</p>"
+}

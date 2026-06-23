@@ -1,0 +1,9 @@
+{
+    "name": "melange_cube",
+    "creator": "elnix90",
+    "created_at": "March 15, 2023",
+    "size": "1.66 KB",
+    "image": "data/elnix90/melange_cube/elnix90_melange_cube.png",
+    "tags": [],
+    "description": "<p>amis Speecubers, ce programma est pour vous!\nIl vous permettra de g\u00e9n\u00e9rer un m\u00e9lange al\u00e9atoire pour un cube de type 3x3.\nLa fonction comp\u00e9tition() vous permet de r\u00e9soudre 5 m\u00e9langes et de calculer une moyenne de temps.</p>"
+}

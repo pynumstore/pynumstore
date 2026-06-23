@@ -1,0 +1,9 @@
+{
+    "name": "purple_bunny",
+    "creator": "fizban",
+    "created_at": "October 27, 2024",
+    "size": "9.38 KB",
+    "image": "data/fizban/purple_bunny/fizban_purple_bunny.png",
+    "tags": [],
+    "description": "<p>Image of a purple bunny. The image has been encoded in base64 in a special 16 color compressed format on top of an lz77 based compression algorithm</p>"
+}

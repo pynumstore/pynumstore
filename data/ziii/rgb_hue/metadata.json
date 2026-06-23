@@ -1,0 +1,9 @@
+{
+    "name": "rgb_hue",
+    "creator": "ziii",
+    "created_at": "February 20, 2022",
+    "size": "969 Bytes",
+    "image": "data/ziii/rgb_hue/ziii_rgb_hue.png",
+    "tags": [],
+    "description": "<p>A basic program to help you see what rgb values make what color.</p><p>How to use :</p><p>The upper part of the screen shows the color of the rgb values</p><p>The number with next to it a plus and a minus is the number you\u2019ll add to the rgb values.</p><p>Key 4 adds to the red value.</p><p>Key 5 adds to the green value.</p><p>Key 6 adds to the blue value.</p><p>Key 1 substracts to the red value.</p><p>Key 2 substracts to the green value.</p><p>Key 3 substracts to the blue value.</p>"
+}

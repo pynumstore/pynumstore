@@ -1,0 +1,9 @@
+{
+    "name": "gradient6",
+    "creator": "elnix91",
+    "created_at": "February 05, 2025",
+    "size": "237 Bytes",
+    "image": "data/elnix91/gradient6/elnix91_gradient6.png",
+    "tags": [],
+    "description": "<p>Display a gradient color using the function gradient(n). N can be any integer, a it is modulo. Do display a gradient, use the function in a loop and increment n progressively.</p>"
+}

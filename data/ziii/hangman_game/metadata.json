@@ -1,0 +1,9 @@
+{
+    "name": "hangman_game",
+    "creator": "ziii",
+    "created_at": "July 11, 2022",
+    "size": "612 Bytes",
+    "image": "data/ziii/hangman_game/ziii_hangman_game.png",
+    "tags": [],
+    "description": "<p>A basic command prompt based hangman game.</p><p>The program doesn\u2019t check the language or the validity of the given word for obvious reasons.</p><p>How to play:</p><p>Being in constant alpha mode is recommended to write letters easily (double click Alpha).</p><p>Enter a word after you execute the program.</p><p>then you\u2019ll be asked to enter letters one by one, the program will print the number of wrong guesses and the word you\u2019re guessing partially every time until you guessed the whole word.</p>"
+}

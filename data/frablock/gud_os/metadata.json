@@ -1,0 +1,9 @@
+{
+    "name": "gud_os",
+    "creator": "frablock",
+    "created_at": "June 22, 2022",
+    "size": "7.66 KB",
+    "image": "data/frablock/gud_os/frablock_gud_os.png",
+    "tags": [],
+    "description": "<p>Un simulateur d\u2019os, avec</p><ul>\n<li>\n<p>un \u00e9diteur de fichier</p>\n</li>\n<li>\n<p>un bloc note</p>\n</li>\n<li>\n<p>paint</p>\n</li>\n<li>\n<p>calculatrice</p>\n</li>\n<li>\n<p>time</p>\n</li>\n</ul><p><a href=\"https://my.numworks.com/python/frablock/cfg\" rel=\"nofollow\">https://my.numworks.com/python/frablock/cfg</a></p><blockquote>\n<p>Marche avec Omega</p>\n</blockquote>"
+}

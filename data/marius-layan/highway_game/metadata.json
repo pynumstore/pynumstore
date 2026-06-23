@@ -1,0 +1,9 @@
+{
+    "name": "highway_game",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "6.66 KB",
+    "image": "data/marius-layan/highway_game/marius-layan_highway_game.png",
+    "tags": [],
+    "description": "<p>Voici mon jeu nomm\u00e9 highway, le but est simple:</p><p>on incarne une petite voiture rouge qui doit \u00e9viter les autres voitures qui arrives en face, sinon c\u2019est Game Over.\n(un code de triche \u00e0 \u00e9tait int\u00e9gr\u00e9, a vous de chercher dans le script c\u2019est quoi)\nLe jeu est fonctionnel mais il manque un syst\u00e8me de vitesse progressive.</p><p>BON JEU !</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "snake",
+    "creator": "ziii",
+    "created_at": "August 31, 2022",
+    "size": "1.5 KB",
+    "image": "data/ziii/snake/ziii_snake.png",
+    "tags": [],
+    "description": "<p>A snake game.</p><p>How to play :</p><p>Arrows to change the direction of the snake, you can\u2019t make it move in the direct opposite direction.</p><p>Eat cherries (red square) to make your snake grow in length.</p><p>The snake teleport to the opposite side of the screen as he goes through a border of the screen.</p><p>You can\u2019t go through your own body or you\u2019ll lose.</p><p>Restart the program to restart the game.</p>"
+}

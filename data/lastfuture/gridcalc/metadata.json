@@ -1,0 +1,9 @@
+{
+    "name": "gridcalc",
+    "creator": "lastfuture",
+    "created_at": "October 18, 2018",
+    "size": "739 Bytes",
+    "image": "data/lastfuture/gridcalc/lastfuture_gridcalc.png",
+    "tags": [],
+    "description": "<p>Calculations for creating Layouts with columns. Find out how wide your columns or your gutters have to be to fit your layout. If the result isn\u2019t an integer rounded solutions will be provided</p>"
+}

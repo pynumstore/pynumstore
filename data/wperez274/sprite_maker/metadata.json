@@ -1,0 +1,9 @@
+{
+    "name": "sprite_maker",
+    "creator": "wperez274",
+    "created_at": "March 28, 2023",
+    "size": "6.87 KB",
+    "image": "data/wperez274/sprite_maker/wperez274_sprite_maker.png",
+    "tags": [],
+    "description": "<p>good tool to create sprites, shapes, etc.</p><p>/////// keys  ////////</p><p>( , ) = increase, decrease Width\n*,  / = increase, decrease height</p><p>[Backspace]  = choose shape\n[EXE] = Print choosen shape</p><p>1) copy printed data.</p><p>2) Use \u201csprite_tester.py\u201d to test the sprite\n( Paste data in the upper area of code )</p><h3>Look for the comment that says \u201cpaste code here\u201d\u2026</h3><p>Test the different keys for different functions.</p><p>Hold VAR for like 2-3 seconds to erase all.\nPress X**2 (Under Backspace to fill background)</p><p>Numbers = Colors</p><p>[ANS] key = Open sprite list data and is printed on screen, (top).\nYou can scroll to left or right to view the list of shapes chosen ( with the Backspace button.</p><h3>\n<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*</h3><p>I will continue to improve and upgrade program frequently or when I see\nwhat could could improved.</p><p>I just wrote this program in like a day or two so theres plenty of room for improvements.</p><p>Also, I\u2019m just learning to program so my code tends to be on the simple side.</p><p>to be continued\u2026</p>"
+}

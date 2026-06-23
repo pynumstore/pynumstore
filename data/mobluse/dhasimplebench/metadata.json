@@ -1,0 +1,9 @@
+{
+    "name": "dhasimplebench",
+    "creator": "mobluse",
+    "created_at": "June 25, 2023",
+    "size": "712 Bytes",
+    "image": "data/mobluse/dhasimplebench/mobluse_dhasimplebench.png",
+    "tags": [],
+    "description": "<p>\u201cAhl\u2019s Simple Benchmark\u201d from the magazine Creative Computing. The last result is the average of the earlier 10. Before that are 10 runs, because it speeds up when you run it a few times.\nI got accuracy 6.821210263296962e-13, random 12.58937371239872, time 00:00:00.92350 on my Numworks N0110 version 21.0.0. See <a href=\"https://en.wikipedia.org/wiki/Creative_Computing_Benchmark\" rel=\"nofollow\">https://en.wikipedia.org/wiki/Creative_Computing_Benchmark</a>.</p>"
+}

@@ -1,0 +1,11 @@
+{
+    "name": "mdp_aleatoires",
+    "creator": "elnix90",
+    "created_at": "March 15, 2023",
+    "size": "1.63 KB",
+    "image": "data/elnix90/mdp_aleatoires/elnix90_mdp_aleatoires.png",
+    "tags": [
+        "0116"
+    ],
+    "description": "<p>Ce programme g\u00e9n\u00e8re une mot de passe al\u00e9atoire.\nPar d\u00e9faut, il y aura 1 mot de passe de 12 caract\u00e8res mais si vous en voulez plus, vous pouvez renseigner deux variables dans la fonction mdp():\nx, le nombre de caract\u00e8res et y, le nombre de mots de passes g\u00e9n\u00e9r\u00e9s.\nJ\u2019esp\u00e8re que mon programme vous plaira, dites moi ce que vous en pensez sur discord: Elnix90#0116</p>"
+}

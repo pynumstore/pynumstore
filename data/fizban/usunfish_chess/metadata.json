@@ -1,0 +1,9 @@
+{
+    "name": "usunfish_chess",
+    "creator": "fizban",
+    "created_at": "January 12, 2025",
+    "size": "8.22 KB",
+    "image": "data/fizban/usunfish_chess/fizban_usunfish_chess.png",
+    "tags": [],
+    "description": "<p>Grafical user interface of the chess program based on Sunfish.\nIt has 7 levels of difficulty (use Ln to change levels) and you can undo the last move (only the last one, with backspace). Use Pi to switch to black (rotates the board and makes the engine move)\nYou select the piece to move with the cursor keys and OK. You can cancel the move selecting again the piece.</p><p>Requires the usunfish_engine.py to be also loaded in the calculator.</p><p><img src=\"https://raw.githubusercontent.com/fizban99/numworks_usunfish/refs/heads/main/img/screenshot.png\"></p><p><a href=\"https://github.com/fizban99/numworks_usunfish\" rel=\"nofollow\">github repository</a></p>"
+}

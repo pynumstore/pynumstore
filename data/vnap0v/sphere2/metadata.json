@@ -1,0 +1,9 @@
+{
+    "name": "sphere2",
+    "creator": "vnap0v",
+    "created_at": "April 29, 2026",
+    "size": "1.73 KB",
+    "image": "data/vnap0v/sphere2/vnap0v_sphere2.png",
+    "tags": [],
+    "description": "<h3>Sphere with hidden-line removal.</h3><p>This script draws a projection of a 3D sphere with longitude and latitude lines.</p><p>It applies hidden-line removal.</p><p>The sphere is rotated around the x axis for viewing.</p><p>The script uses two functions which extend the functionality of the kandinsky module.</p><p>connect draws a line between two arbitrary points</p><pre><code>connect(x1,y1,x2,y2,co=\"black\")\n</code></pre><p>circle draws a circle using the Minsky algorithm</p><pre><code>circle(xc,yc,r,co=\"black\")\n</code></pre>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "flappy_bird",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "2.52 KB",
+    "image": "data/marius-layan/flappy_bird/marius-layan_flappy_bird.png",
+    "tags": [],
+    "description": "<p>Voici une reconstitution du jeu Flappy Bird, le but est simple: on incarne un petit oiseaux jaune qui doit \u00e9viter les tuileaux vert, sinon c\u2019est Game Over.</p><p>pour sauter: EXE</p><p>BON JEU !</p>"
+}

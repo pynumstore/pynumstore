@@ -1,0 +1,9 @@
+{
+    "name": "mandelbrot_text",
+    "creator": "vnap0v",
+    "created_at": "June 30, 2025",
+    "size": "661 Bytes",
+    "image": "data/vnap0v/mandelbrot_text/vnap0v_mandelbrot_text.png",
+    "tags": [],
+    "description": "<p>This code displays a text output of the Mandelbrot fractal.</p><p>The text is colored, to achieve this the kandinsky library is used with the draw_string() function.</p><p>The last digit of the hexadecimal Mandelbrot values is displayed.</p><p>The color also depends on the value.</p>"
+}

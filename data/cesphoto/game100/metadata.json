@@ -1,0 +1,9 @@
+{
+    "name": "game100",
+    "creator": "cesphoto",
+    "created_at": "April 12, 2023",
+    "size": "564 Bytes",
+    "image": "data/cesphoto/game100/cesphoto_game100.png",
+    "tags": [],
+    "description": "<p>Six tries to guess a number between 1 and 100 (or other value)\nstart() begins the game for 1 to 100\nstart(50) starts the game for 1 to 50</p>"
+}

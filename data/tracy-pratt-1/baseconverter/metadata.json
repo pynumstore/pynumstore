@@ -1,0 +1,9 @@
+{
+    "name": "baseconverter",
+    "creator": "tracy-pratt-1",
+    "created_at": "October 24, 2025",
+    "size": "1.62 KB",
+    "image": "data/tracy-pratt-1/baseconverter/tracy-pratt-1_baseconverter.png",
+    "tags": [],
+    "description": "<p>This script will take a number in any base (2-16), and convert it to another base (2-16).</p><p>Method: First, it converts all numbers (regardless of the goal) to base 10. Then it will either return the base 10 value it that is the goal, or converts to the target base.</p><p>Because a crucial part of this script is to convert all numbers to base 10, the script will return the base 10 conversion AND the desired conversion, if base 10 is not the goal nor the initial base.</p><p>This script has two functions defined, convert_to_10 and convert_from_10. These two functions are helper functions that do the mathematical computation converting numbers to and from base 10.</p>"
+}

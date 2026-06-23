@@ -1,0 +1,9 @@
+{
+    "name": "the_cuble_game",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "1.9 KB",
+    "image": "data/marius-layan/the_cuble_game/marius-layan_the_cuble_game.png",
+    "tags": [],
+    "description": "<p>Voici mon tout premier jeu, le but est simple:</p><p>on incarne un petit carr\u00e9 bleu qui doit \u00e9viter les zones rouges fonc\u00e9es qui apparaissent avais qu\u2019elle ne deviennent rouge clair, sinon c\u2019est Game Over.\n(ne plus toucher au fl\u00e8ches directionnel quand la zone est rouge claire, sinon le programme bug).</p><p>BON JEU !</p>"
+}

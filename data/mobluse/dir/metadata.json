@@ -1,0 +1,9 @@
+{
+    "name": "dir",
+    "creator": "mobluse",
+    "created_at": "October 20, 2024",
+    "size": "857 Bytes",
+    "image": "data/mobluse/dir/mobluse_dir.png",
+    "tags": [],
+    "description": "<p>Shows <code>dir</code> of all modules one page at a time.</p>"
+}

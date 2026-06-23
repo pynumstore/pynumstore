@@ -1,0 +1,9 @@
+{
+    "name": "gemamin",
+    "creator": "frablock",
+    "created_at": "September 20, 2021",
+    "size": "4.42 KB",
+    "image": "data/frablock/gemamin/frablock_gemamin.png",
+    "tags": [],
+    "description": "<p><a href=\"https://discode.fr/gema/game/share.php?n=GeMaMIN&amp;a=frablock&amp;f=gemamin&amp;\" rel=\"nofollow\">Partager</a></p><h3>\n<img alt=\"LogoGeMa\" src=\"https://discode.fr/gema/logo.svg\"> GeMaMIN</h3><blockquote>\n<p>Version 0.9</p>\n</blockquote><h4><strong>Commencer \u00e0 utiliser GeMaMIN</strong></h4><p><code>\nfrom gemamin import *\n</code>\nEt voil\u00e0, vous avez acc\u00e8s \u00e0 GeMa depuis votre script</p><p>Si vous voulez en savoir plus, allez voir <a href=\"https://discode.fr/gema/doc.html\" rel=\"nofollow\">notre documentation</a></p><h5>\n<strong>Avec GeMaMIN, vous pouvez</strong> :</h5><ul>\n<li><strong>Cr\u00e9ez</strong></li>\n</ul><p>Ce script a \u00e9t\u00e9 cr\u00e9\u00e9 dans un but, faciliter la cr\u00e9ation de jeu, et en particulier les visualnovels.</p><ul>\n<li><strong>Manipulez vos sprites</strong></li>\n</ul><p>GeMa Engine peut lire et interpr\u00e9ter les fichiers sprites (.pikt ou .pik), et vous permettre de pouvoir bouger des sprites \u00e0 votre guise <a href=\"https://discode.fr/gema/pik.html\" rel=\"nofollow\">En savoir plus</a></p><ul>\n<li><strong>Partagez</strong></li>\n</ul><p>Partagez rapidement votre cr\u00e9ation sur notre site <a href=\"https://discode.fr/gema/script/add.php\" rel=\"nofollow\">Partager votre script d\u00e8s maintenant</a></p>"
+}

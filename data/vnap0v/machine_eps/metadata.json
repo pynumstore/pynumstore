@@ -1,0 +1,9 @@
+{
+    "name": "machine_eps",
+    "creator": "vnap0v",
+    "created_at": "December 25, 2025",
+    "size": "555 Bytes",
+    "image": "data/vnap0v/machine_eps/vnap0v_machine_eps.png",
+    "tags": [],
+    "description": "<h3>Determine machine epsilon through test</h3><p>Machine epsilon  is smallest value such that (1.0 + epsilon) is still distinguishable from 1.0  by the system</p><p>In CPython implementations this value can be found directly using</p><pre><code>import sys\nprint(sys.float_info.epsilon)\n</code></pre><p>However the micropython of Numworks does not have a sys module</p>"
+}

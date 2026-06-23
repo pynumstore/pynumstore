@@ -1,0 +1,9 @@
+{
+    "name": "fedora",
+    "creator": "vnap0v",
+    "created_at": "June 07, 2025",
+    "size": "482 Bytes",
+    "image": "data/vnap0v/fedora/vnap0v_fedora.png",
+    "tags": [],
+    "description": "<p>This script draws a fedora using the kandinsky library. The drawn shape appears opaque. Tested on the calculator using software version 23.2.6.</p>"
+}

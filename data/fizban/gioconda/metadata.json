@@ -1,0 +1,9 @@
+{
+    "name": "gioconda",
+    "creator": "fizban",
+    "created_at": "October 27, 2024",
+    "size": "14.6 KB",
+    "image": "data/fizban/gioconda/fizban_gioconda.png",
+    "tags": [],
+    "description": "<p>Image of the Gioconda using a special compression algorithm based on lz77 and encoded in base64. Still, it is displayed zoomed from an image of  165x111 pixels</p>"
+}

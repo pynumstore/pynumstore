@@ -4,8 +4,6 @@
     "created_at": "April 27, 2021",
     "size": "2.64 KB",
     "image": "data/fime/matrix/fime_matrix.png",
-    "tags": [
-        "9701"
-    ],
+    "tags": [],
     "description": "<p><strong>Bug report or review <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdw_YQyVFAZ1aGYHgwbAhjgHOFtuieCalm8qZLS267tAGvdTA/viewform?usp=sf_link\" rel=\"nofollow\">here</a></strong></p><p>Matrix rain script on numworks, object-oriented. Press the power button to switch between the \n color themes.</p><ul>\n<li>\n<code>MatrixRain()</code> is the main class.</li>\n<li>The <code>Theme()</code> class contain all the theme values, like the colors and the characters to display.</li>\n</ul><p>Feel free to ask me question about  it on my Discord : <code>Fime#9701</code></p>"
 }

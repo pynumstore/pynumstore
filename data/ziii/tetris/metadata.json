@@ -1,0 +1,11 @@
+{
+    "name": "tetris",
+    "creator": "ziii",
+    "created_at": "October 18, 2022",
+    "size": "4.37 KB",
+    "image": "data/ziii/tetris/ziii_tetris.png",
+    "tags": [
+        "background"
+    ],
+    "description": "<p>A basic game of tetris.</p><p>There is a score but numbers added to the score were randomly decided so it\u2019s far from perfect.</p><p>Colors are easily customisable, from line 23 to line 38 you can change the rgb values (exemple : change the \u201cx\u201d \u201cy\u201d \u201cz\u201d values in \u201c(x,y,z)\u201d next to \u201c#background\u201d to change the background color)</p><p>How to play:</p><p>Up arrow to rotate your piece.</p><p>Left arrow and right arrow to move your piece.</p><p>Down arrow to make the piece fall faster.</p><p>Shift key to make your piece fall instantly.</p><p>Alpha to pause</p><p>Upcoming pieces are shown on the top right.</p>"
+}

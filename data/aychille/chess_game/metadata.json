@@ -1,0 +1,9 @@
+{
+    "name": "chess_game",
+    "creator": "aychille",
+    "created_at": "November 10, 2023",
+    "size": "12.5 KB",
+    "image": "data/aychille/chess_game/aychille_chess_game.png",
+    "tags": [],
+    "description": "<p>A 1v1 chess game. No timer, no interface to begin/end the game, no detection of check, checkmate, draw and any other end but it\u2019s in the work. To win, just take the opponent\u2019s king.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "drawellipse",
+    "creator": "ews31415",
+    "created_at": "June 01, 2024",
+    "size": "349 Bytes",
+    "image": "data/ews31415/drawellipse/ews31415_drawellipse.png",
+    "tags": [],
+    "description": "<p>Draw an ellipse given the length of x and y radii.   If x and y are equal, a circle is drawn.   The screen is set up to fit the proportion of the 320 x 220 screen.   The vertical axis ranges from y = -44 to y = 44 while the horizontal axis ranges from x = -64 to x = 64.  The ellipse is centered at (0,0).</p>"
+}

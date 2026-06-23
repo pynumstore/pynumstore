@@ -1,0 +1,9 @@
+{
+    "name": "slpfld",
+    "creator": "cesphoto",
+    "created_at": "June 03, 2024",
+    "size": "623 Bytes",
+    "image": "data/cesphoto/slpfld/cesphoto_slpfld.png",
+    "tags": [],
+    "description": "<p>Draw a slope field for a first order differential equation</p>"
+}

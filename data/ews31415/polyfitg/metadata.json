@@ -1,0 +1,9 @@
+{
+    "name": "polyfitg",
+    "creator": "ews31415",
+    "created_at": "September 26, 2023",
+    "size": "743 Bytes",
+    "image": "data/ews31415/polyfitg/ews31415_polyfitg.png",
+    "tags": [],
+    "description": "<p>Perfectly fits a polynomial to a set of points.  For a set of n points, a polynomial of degree n-1 can be perfect fit to the set of points.   For instance,  2 points fit a perfect line,  3 points fit a quadratic polynomial, and 4 points fit a cubic polynomial.    Software version 21 or later is required as the numpy module is used.</p>"
+}

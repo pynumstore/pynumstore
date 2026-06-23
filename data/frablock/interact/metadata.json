@@ -1,0 +1,9 @@
+{
+    "name": "interact",
+    "creator": "frablock",
+    "created_at": "June 15, 2023",
+    "size": "7.16 KB",
+    "image": "data/frablock/interact/frablock_interact.png",
+    "tags": [],
+    "description": "<p>Impl\u00e9mentation d\u2019\u00e9l\u00e9ment d\u2019UI :</p><ul>\n<li>\n<p>input pour kandinsky (voir fonction keyboard)</p>\n</li>\n<li>\n<p>affichage popup</p>\n</li>\n<li>\n<p>menu de s\u00e9lection/menu de s\u00e9lection par pointeur</p>\n</li>\n<li>\n<p>Des ic\u00f4nes</p>\n</li>\n<li>\n<p>Affichage des images</p>\n</li>\n</ul><p>Ce script est un assemblage d\u2019\u00e9l\u00e9ment qui me semblent utiles \u00e0 la cr\u00e9ation d\u2019interface</p><p>Si vous souhaitez gagner de la place, supprimez les commentaires</p><p>LICENCE CC4.0 BY SA NC</p>"
+}

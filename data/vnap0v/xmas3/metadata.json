@@ -1,0 +1,9 @@
+{
+    "name": "xmas3",
+    "creator": "vnap0v",
+    "created_at": "December 19, 2025",
+    "size": "1.7 KB",
+    "image": "data/vnap0v/xmas3/vnap0v_xmas3.png",
+    "tags": [],
+    "description": "<h3>Drawing a xmas tree.</h3><p>Uses following modules:</p><ul>\n<li>kandinsky for drawing</li>\n<li>random for colors of stars and position of background stars</li>\n<li>math to calculate the spirals using cos() and sin()</li>\n<li>time to pace the color changes of the stars</li>\n</ul>"
+}

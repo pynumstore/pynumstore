@@ -1,0 +1,9 @@
+{
+    "name": "bal",
+    "creator": "vnap0v",
+    "created_at": "May 01, 2025",
+    "size": "378 Bytes",
+    "image": "data/vnap0v/bal/vnap0v_bal.png",
+    "tags": [],
+    "description": "<p>This code tests the matplotlib library of the calculator. It plots ballistic trajectories for a series of different starting angles. It uses libraries math, numpy and matplotlib.pyplot. This code can run on CPython as well. Tested on the calculator using software version 23.2.6.</p>"
+}

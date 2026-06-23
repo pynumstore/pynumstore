@@ -1,0 +1,11 @@
+{
+    "name": "truchet_numworks",
+    "creator": "vnap0v",
+    "created_at": "July 11, 2025",
+    "size": "3.32 KB",
+    "image": "data/vnap0v/truchet_numworks/vnap0v_truchet_numworks.png",
+    "tags": [
+        "truchet_tiles2py"
+    ],
+    "description": "<h3>Truchet Tiles using Python &amp; Turtle</h3><p>This script is a strong simplification of a version made for CPython to run on a PC\nsee:\n<a href=\"https://github.com/oonap0oo/Python-and-Turtle?tab=readme-ov-file#truchet_tiles2py\" rel=\"nofollow\">GitHub truchet_tiles2.py</a></p><p>This numworks version also uses the Turtle library, unlike the PC version it does not have the capability to fill a shape.</p><p>This script shows a series of patterns of Truchet Tiles.</p><p>The tiles are drawn using the Turtle libary. All patters are made from 4 different tiles.</p><p>The patterns are defined as rows and columns of tile numbers, for this nested tuples are used:</p><pre><code>pattern_X = (\n    (2,4,3,4,4,2),\n    (2,1,2,2,4,4),\n    (3,4,4,2,2,4),\n    (2,2,4,4,2,1),\n    (4,2,2,4,3,4),\n    (4,4,2,1,2,2)\n    )\n</code></pre>"
+}

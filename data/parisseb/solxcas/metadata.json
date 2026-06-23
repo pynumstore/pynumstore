@@ -1,0 +1,9 @@
+{
+    "name": "solxcas",
+    "creator": "parisseb",
+    "created_at": "November 13, 2020",
+    "size": "3.61 KB",
+    "image": "data/parisseb/solxcas/parisseb_solxcas.png",
+    "tags": [],
+    "description": "<p>solaire.py traduit en syntaxe Xcas pour tenir dans la memoire disponible</p>"
+}

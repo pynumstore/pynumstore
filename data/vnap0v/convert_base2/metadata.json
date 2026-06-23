@@ -1,0 +1,9 @@
+{
+    "name": "convert_base2",
+    "creator": "vnap0v",
+    "created_at": "December 15, 2025",
+    "size": "1.42 KB",
+    "image": "data/vnap0v/convert_base2/vnap0v_convert_base2.png",
+    "tags": [],
+    "description": "<h3>convert number from one base to another base</h3><p>Although micropython can do these convertions using int(), hex(), oct() and bin(). The convertion is coded in Python for fun.</p><p>There are two functions defined, first function converts from arbitrary base to base 10, second fucntion converts from base 10 to new base</p><ul>\n<li>tobase10(s, base)\n    <ul>\n<li>convert number to base 10</li>\n<li>s: string representation of number</li>\n<li>base: integer stating number base of s</li>\n<li>returns: integer version of s in base 10</li>\n</ul>\n</li>\n<li>frombase10(x, base)\n    <ul>\n<li>convert number from base 10 to another base</li>\n<li>x: integer representation of number</li>\n<li>base: integer stating number base to convert to</li>\n<li>returns: string representation of x in new base</li>\n</ul>\n</li>\n</ul>"
+}

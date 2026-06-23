@@ -1,0 +1,9 @@
+{
+    "name": "z_screen_size",
+    "creator": "cent20",
+    "created_at": "March 30, 2023",
+    "size": "1.01 KB",
+    "image": "data/cent20/z_screen_size/cent20_z_screen_size.png",
+    "tags": [],
+    "description": "<p>Place des rectangles au 4 coins de l\u2019\u00e9cran de la NumWorks, en exploitant les fonctions fill_rect et draw_string du module kandinsky de la calculatrice.</p>"
+}

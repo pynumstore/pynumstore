@@ -1,0 +1,9 @@
+{
+    "name": "eigensys",
+    "creator": "cesphoto",
+    "created_at": "March 12, 2024",
+    "size": "529 Bytes",
+    "image": "data/cesphoto/eigensys/cesphoto_eigensys.png",
+    "tags": [],
+    "description": "<p>Calculates eigenvalues and eigenvectors for a 2 by 2 matrix.</p>"
+}

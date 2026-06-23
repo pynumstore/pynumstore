@@ -1,0 +1,9 @@
+{
+    "name": "stick_fighter",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "3.58 KB",
+    "image": "data/marius-layan/stick_fighter/marius-layan_stick_fighter.png",
+    "tags": [],
+    "description": "<p>Ce jeu est une reconstitution simple du jeu Street-fighter, un jeu d\u2019arcade de combat. C\u2019est un jeu \u00e0 2 et le but et d\u2019\u00e9liminer le joueur adverse (barre de vie visible en haut).</p><p>Joueur 1: \u2022gauche[ZERO] \u2022droite[DOT] \u2022coup de point[ONE] \u2022sauter[TWO]</p><p>Joueur 2: \u2022gauche[ANS] \u2022droite[EXE] \u2022coup de point[PLUS] \u2022sauter[MINUS]</p><p>BON JEU !</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "polar",
+    "creator": "cesphoto",
+    "created_at": "November 03, 2023",
+    "size": "224 Bytes",
+    "image": "data/cesphoto/polar/cesphoto_polar.png",
+    "tags": [],
+    "description": "<p>Graph polar functions with polar grid.</p>"
+}

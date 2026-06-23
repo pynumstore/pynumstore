@@ -1,0 +1,9 @@
+{
+    "name": "spider_solitaire",
+    "creator": "ziii",
+    "created_at": "August 26, 2023",
+    "size": "3.99 KB",
+    "image": "data/ziii/spider_solitaire/ziii_spider_solitaire.png",
+    "tags": [],
+    "description": "<p>A classic spider solitaire game.</p><p>Due to an obvious lack of screen space, if there is a stack of card only the one on top and at the bottom will be shown.</p><p>How to play :</p><p>L&amp;R to move cursor</p><p>down arrow to select.</p><p>Shift to deal new cards</p>"
+}

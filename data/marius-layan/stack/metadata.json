@@ -1,0 +1,9 @@
+{
+    "name": "stack",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "3.85 KB",
+    "image": "data/marius-layan/stack/marius-layan_stack.png",
+    "tags": [],
+    "description": "<p>Voici une reconstitution en 3d du jeu mobile stack. Le but est de faire la plus haute pile de rectangles.</p><p>Plus vous montez en niveau, plus vous d\u00e9bloquerez de nouvelles couleurs dans le menu.</p><p>Placer le rectangle: [ OK ]</p><p>Menu: [ EXE ]</p>"
+}

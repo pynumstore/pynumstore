@@ -1,0 +1,9 @@
+{
+    "name": "turtlecrystal",
+    "creator": "ews31415",
+    "created_at": "December 14, 2021",
+    "size": "474 Bytes",
+    "image": "data/ews31415/turtlecrystal/ews31415_turtlecrystal.png",
+    "tags": [],
+    "description": "<p>Draws a crystal consisting of four 60-80-100 triangles using the Turtle modules.  The triangles are modeled after the 3-4-5 right triangle.</p>"
+}

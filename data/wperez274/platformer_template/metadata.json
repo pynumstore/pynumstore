@@ -1,0 +1,9 @@
+{
+    "name": "platformer_template",
+    "creator": "wperez274",
+    "created_at": "November 26, 2021",
+    "size": "5.88 KB",
+    "image": "data/wperez274/platformer_template/wperez274_platformer_template.png",
+    "tags": [],
+    "description": "<p>All the physics needed to make a fun game.\n* Gravity, Jump, Collision detection, Side Wall Climbing, Bouncy Platform, Regular Platform,\nHanging from Bottom of Platform, Icy Platform.\nAwesome potential!! Respect to the programmer who created this :-)</p>"
+}

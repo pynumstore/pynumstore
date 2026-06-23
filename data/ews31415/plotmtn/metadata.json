@@ -1,0 +1,9 @@
+{
+    "name": "plotmtn",
+    "creator": "ews31415",
+    "created_at": "July 26, 2024",
+    "size": "653 Bytes",
+    "image": "data/ews31415/plotmtn/ews31415_plotmtn.png",
+    "tags": [],
+    "description": "<p>This program draws a 2D motion plot from an initial starting point (x, y) given initial velocity and acceleration.   The rate and direction of both velocity and acceleration are assumed to be constant.</p><p>x(t) = ax * t^2 / 2 + vx * t + x0\ny(t) = ay * t^2 / 2 + vy * t + y0</p><p>where t =  number of seconds.</p><p>The script uses math and matplot.pyplot modules.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "numint",
+    "creator": "cesphoto",
+    "created_at": "July 27, 2023",
+    "size": "1.28 KB",
+    "image": "data/cesphoto/numint/cesphoto_numint.png",
+    "tags": [],
+    "description": "<p>Graphical and numerical integration with Riemann sums.  Left, center, right, and trapezoid.</p>"
+}

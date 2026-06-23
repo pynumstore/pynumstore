@@ -1,0 +1,9 @@
+{
+    "name": "cube_game",
+    "creator": "wperez274",
+    "created_at": "February 03, 2022",
+    "size": "6.81 KB",
+    "image": "data/wperez274/cube_game/wperez274_cube_game.png",
+    "tags": [],
+    "description": "<p>\u201ccubegame.py\u201d</p><p>key [left/right] = move\nkey [OK] = Pause/Resume\nkey [Backspace] = Jump\nkey [Toolbox] = Shoot</p><p>Good luck!</p><p>Sincerely,</p><p>Wilson</p>"
+}

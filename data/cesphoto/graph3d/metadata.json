@@ -1,0 +1,9 @@
+{
+    "name": "graph3d",
+    "creator": "cesphoto",
+    "created_at": "April 01, 2020",
+    "size": "734 Bytes",
+    "image": "data/cesphoto/graph3d/cesphoto_graph3d.png",
+    "tags": [],
+    "description": "<p>A simple 3D grapher: line 3 is the function;\n a,b,c,d=domain; \nm, n=size; \nrot and tilt are viewing angles.</p>"
+}

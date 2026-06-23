@@ -1,0 +1,9 @@
+{
+    "name": "mem_test_str",
+    "creator": "cent20",
+    "created_at": "July 27, 2019",
+    "size": "80 Bytes",
+    "image": "data/cent20/mem_test_str/cent20_mem_test_str.png",
+    "tags": [],
+    "description": "<p>Il rempli la m\u00e9moire par une cha\u00eene de caract\u00e8re qui grossi jusqu\u2019au crash \u00e0 la 5006eme it\u00e9ration.</p>"
+}

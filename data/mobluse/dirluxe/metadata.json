@@ -1,0 +1,9 @@
+{
+    "name": "dirluxe",
+    "creator": "mobluse",
+    "created_at": "October 11, 2024",
+    "size": "1.69 KB",
+    "image": "data/mobluse/dirluxe/mobluse_dirluxe.png",
+    "tags": [],
+    "description": "<p><strong>Dirluxe</strong> shows <code>dir()</code> of a module or a type on the graphics screen. This is helpful during program development to show each function in the modules. You can use the toolbox to type an <code>import </code><em>module</em> and you don\u2019t have to remove \u201c<code>import </code>\u201d. Examples of supported modules: <code>builtins</code>, <code>math</code>, <code>matplotlib.pyplot</code>, and <code>ion</code>. Default is <code>all</code> i.e. display all modules - press OK or EXE to advance. Press shift +OK or shift+EXE to repeat current module from top. Hold shift to pause scrolling. You can also input a type e.g. <code>{}</code>, <code>[]</code>, <code>()</code>, <code>\"\"</code>, <code>1</code>, <code>1.0</code>, <code>1j</code>, and <code>{1}</code>. You can use <code>run()</code>, <code>run(\"\")</code>, and <code>run(\"math\")</code> etc. in the shell.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "converse",
+    "creator": "tracy-pratt-1",
+    "created_at": "November 13, 2025",
+    "size": "176 Bytes",
+    "image": "data/tracy-pratt-1/converse/tracy-pratt-1_converse.png",
+    "tags": [],
+    "description": "<p>Defines function converse(a,b,c). Input 3 sides of a triangle to determine if a triangle is a right triangle, acute, or obtuse.</p>"
+}

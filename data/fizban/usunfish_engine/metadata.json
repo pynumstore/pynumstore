@@ -1,0 +1,9 @@
+{
+    "name": "usunfish_engine",
+    "creator": "fizban",
+    "created_at": "January 23, 2025",
+    "size": "12.7 KB",
+    "image": "data/fizban/usunfish_engine/fizban_usunfish_engine.png",
+    "tags": [],
+    "description": "<p>Chess engine based on Sunfish for the NumWorks. Requires usunfish_chess.py to be loaded as well in the calculator. uSunfish is an alternate spelling of \u03bcSunfish (micro Sunfish), meant to be a port of Sunfish to micropython.</p><p><a href=\"https://github.com/fizban99/numworks_usunfish\" rel=\"nofollow\">github repository</a></p>"
+}

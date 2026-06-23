@@ -1,0 +1,9 @@
+{
+    "name": "pacman",
+    "creator": "cent20",
+    "created_at": "April 19, 2021",
+    "size": "8.74 KB",
+    "image": "data/cent20/pacman/cent20_pacman.png",
+    "tags": [],
+    "description": "<h3>\ud835\udde3\ud835\uddee\ud835\uddf0\ud835\uddfa\ud835\uddee\ud835\uddfb</h3><p><br>\nPython Game for Numworks N0110 and N0100, <br>\ncode by Fedyna K.  october 2020.<br>\n<a href=\"https://nsi.xyz/pacman\" rel=\"nofollow\">nsi.xyz/pacman</a> (FR)<br>\n<a href=\"https://workshop.numworks.com/python/fedyna-kevin/pacman\" rel=\"nofollow\">Original workshop host</a> \ud83e\udd2a</p>"
+}

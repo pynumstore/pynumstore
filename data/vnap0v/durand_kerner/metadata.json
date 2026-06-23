@@ -1,0 +1,9 @@
+{
+    "name": "durand_kerner",
+    "creator": "vnap0v",
+    "created_at": "September 05, 2025",
+    "size": "3.01 KB",
+    "image": "data/vnap0v/durand_kerner/vnap0v_durand_kerner.png",
+    "tags": [],
+    "description": "<h3>Quadratic equations solving using the  Durand\u2013Kerner method</h3><p>x**4 + a * x**3 + b * x**2 + c * x + d = 0</p><p>The quadratic equation can be solved using a number of iterations according to the Durand\u2013Kerner method.</p><p>The script accepts the values for coefficients a,b,c,d.</p><p>It then lists the roots with the residual. Roots can be complex numbers.</p><p>The script uses no imported libraries, it can also run in CPython on a PC.</p>"
+}

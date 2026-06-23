@@ -1,0 +1,9 @@
+{
+    "name": "infinite",
+    "creator": "elnix91",
+    "created_at": "November 25, 2023",
+    "size": "214 Bytes",
+    "image": "data/elnix91/infinite/elnix91_infinite.png",
+    "tags": [],
+    "description": "<p>Ce programme utilise le module graphique kandinsky pour cr\u00e9er une animation visuelle captivante sur l\u2019\u00e9cran de votre calculatrice. Il g\u00e9n\u00e8re un effet artistique o\u00f9 une bande verte se r\u00e9tr\u00e9cit progressivement vers le centre de l\u2019\u00e9cran, cr\u00e9ant un mouvement de convergence saisissant.</p>"
+}

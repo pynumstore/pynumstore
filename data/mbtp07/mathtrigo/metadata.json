@@ -1,0 +1,9 @@
+{
+    "name": "mathtrigo",
+    "creator": "mbtp07",
+    "created_at": "March 09, 2021",
+    "size": "1.24 KB",
+    "image": "data/mbtp07/mathtrigo/mbtp07_mathtrigo.png",
+    "tags": [],
+    "description": "<p>1- Rep\u00e9rage et coordonn\u00e9e sur le cercle trigonom\u00e9trique\nP\u00e9rim\u00e8tre = 2pi\n(Cos(x))^2+(sin(x))^2=1</p><pre><code>    0|30   |45    |60   |90\n    0|pi/6|pi/4|pi/3|pi/2 cos 1|(racine3)/2|(racine2)/2|1/2|0 sin  0|1/2|(racine2)/2|(racine3)/2|1\n</code></pre><p>cos(-a)=cos(a) par sym\u00e9trie\nsin(-a)=sin(a)</p><p>P\u00e9riodicit\u00e9\nLes fonctions sinus et cosinus sont p\u00e9riodiques de p\u00e9riode 2pi, dites \u201c2pi p\u00e9riodiques\u201d:\n    sin(x+2pi)=sin(x)\n    cos(x+2pi)=cos(x)</p><p>Pour savoir la p\u00e9riode graphiquement :\non regarde la dur\u00e9e du motif</p><p>Avec le calcul :\nmontrer que f(x)=cos(4x)<em>sin^2(4x) est pi/2 p\u00e9riodique\nf(x+pi/2)=cos(4(xpi/2))</em>sin^2(4(x+pi/2))\n= cos(4x+2pi)<em>sin^2(4x+2pi)\n= cos(4x)</em>sin^2(4x) car sin et cos sont 2pi p\u00e9riodique\ndonc f(x+pi/2)=f(x)\ndonc f est pi/2 p\u00e9riodique</p><p>Parit\u00e9:\npaire sym\u00e9trique axe ordonn\u00e9e hb\nimpaire sym\u00e9trique origine repaire ( fonction cube)</p><p>Savoir si fonction f(x) paire ou non il faut :\nPour f(x)=cos(4x)<em>sin^2(4x)\nf(-x)=cos(4(-x))</em>sin^2(4-x)\nsachant que cos est une fonction paire et sin un fonction impaire on en d\u00e9duit que \nf(-x)=cos(4x)*sin^2(4x)\nf(-x)=f(x) donc f est paire et la courbe sera sym\u00e9trique par rapport a l\u2019axe des ordonn\u00e9es</p><p>Remarque :\ncos((pi/2)-x)=sin(x)\nsin((pi/2)-x)=cos(x)\ncar Csin et Ccos sont d\u00e9cal\u00e9es de pi/2</p>"
+}

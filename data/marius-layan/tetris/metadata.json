@@ -1,0 +1,9 @@
+{
+    "name": "tetris",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "5.17 KB",
+    "image": "data/marius-layan/tetris/marius-layan_tetris.png",
+    "tags": [],
+    "description": "<p>BETA (un probl\u00e8me sur la navigation lat\u00e9ral, et la rotation des pi\u00e8ces n\u2019est pas pr\u00e9sente)\nSe script est r\u00e9alis\u00e9 par un lyc\u00e9en de premi\u00e8re. Voici mon jeu nomm\u00e9 Tetris. ce jeu est assez connu mais pour les quelques personnes vivants dans une grotte, je vous explique le but du jeu :\nTetris met le joueur au d\u00e9fi de r\u00e9aliser des lignes compl\u00e8tes en d\u00e9pla\u00e7ant des pi\u00e8ces de formes diff\u00e9rentes, les t\u00e9trominos, qui d\u00e9filent depuis le haut jusqu\u2019au bas de l\u2019\u00e9cran. Les lignes compl\u00e9t\u00e9es disparaissent et le joueur peut de nouveau remplir les cases lib\u00e9r\u00e9es.</p><p>Les touches utilisables sont: [LEFT]\u2013[RIGHT]\u2013[DOWN]</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "eulers_slopefield",
+    "creator": "tracy-pratt-1",
+    "created_at": "January 09, 2026",
+    "size": "2.85 KB",
+    "image": "data/tracy-pratt-1/eulers_slopefield/tracy-pratt-1_eulers_slopefield.png",
+    "tags": [],
+    "description": "<p>This script will allow you to approximate a solution to a differential equation using Euler\u2019s method.</p><p>When inputting your dy/dx you must explicitly define every operation</p><p>Examples of inputting different dy/dx are below:</p><p>if dy/dx = 2x/y then input 2*x/y</p><p>if dy/dx = 0.5x+y then input 0.5*x+y</p><p>Watch a tutorial at : https://youtu.be/Q9BwmdPH9-M?si=O26JjlLRm4A3En69</p>"
+}

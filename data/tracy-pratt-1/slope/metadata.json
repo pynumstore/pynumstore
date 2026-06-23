@@ -1,0 +1,9 @@
+{
+    "name": "slope",
+    "creator": "tracy-pratt-1",
+    "created_at": "July 08, 2025",
+    "size": "270 Bytes",
+    "image": "data/tracy-pratt-1/slope/tracy-pratt-1_slope.png",
+    "tags": [],
+    "description": "<p>This script takes two points and compute the slope between two points</p>"
+}

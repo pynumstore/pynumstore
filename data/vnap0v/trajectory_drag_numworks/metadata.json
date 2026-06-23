@@ -1,0 +1,9 @@
+{
+    "name": "trajectory_drag_numworks",
+    "creator": "vnap0v",
+    "created_at": "August 16, 2025",
+    "size": "1.4 KB",
+    "image": "data/vnap0v/trajectory_drag_numworks/vnap0v_trajectory_drag_numworks.png",
+    "tags": [],
+    "description": "<h3>ballistic trajectory of projectile with drag proportional to square of velocity</h3><p>System of first order ODEs</p><pre><code>v = sqrt(vx**2 + vy**2)\ndx/dt = vx\ndy/dt = vy\ndvx/dt = -mu * vx * v\ndvy/dt = -g - mu * vy * v\n</code></pre><p>These are solved numerically using Euler\u2019s method. Plot made using matplotlib.</p>"
+}

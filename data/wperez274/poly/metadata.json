@@ -1,0 +1,9 @@
+{
+    "name": "poly",
+    "creator": "wperez274",
+    "created_at": "September 08, 2023",
+    "size": "345 Bytes",
+    "image": "data/wperez274/poly/wperez274_poly.png",
+    "tags": [],
+    "description": "<p>polyval() is a function commonly found in mathematical libraries like NumPy in Python. It is used to evaluate a polynomial at a specific value.\nIn this example, np.polyval() takes the coefficients of the polynomial and the value at which you want to evaluate it and returns the result.</p>"
+}

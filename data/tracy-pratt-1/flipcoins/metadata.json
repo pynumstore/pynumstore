@@ -1,0 +1,9 @@
+{
+    "name": "flipcoins",
+    "creator": "tracy-pratt-1",
+    "created_at": "November 13, 2025",
+    "size": "284 Bytes",
+    "image": "data/tracy-pratt-1/flipcoins/tracy-pratt-1_flipcoins.png",
+    "tags": [],
+    "description": "<p>Use function flipcoin(n) to flip n number of coins. Get total number of heads and tails from each n number flips.</p>"
+}

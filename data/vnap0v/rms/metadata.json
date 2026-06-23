@@ -1,0 +1,9 @@
+{
+    "name": "rms",
+    "creator": "vnap0v",
+    "created_at": "June 22, 2025",
+    "size": "2.03 KB",
+    "image": "data/vnap0v/rms/vnap0v_rms.png",
+    "tags": [],
+    "description": "<p>This script calculates the average and root mean square values of some common waveforms.</p><p>After selection of a waveform the avg and rms are shown as function of amplitude.</p><p>The user can enter amplitude and in case of a pulse the duty-cycle. The numerical values for avg and rms are then calculated.</p><p>The information about the waveforms is stored in a nested tuple.</p><p>Only the math library is used. The code also runs on a PC using CPython.</p>"
+}

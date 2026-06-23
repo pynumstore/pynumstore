@@ -1,0 +1,9 @@
+{
+    "name": "sierpinsky_turtle",
+    "creator": "vnap0v",
+    "created_at": "June 25, 2025",
+    "size": "782 Bytes",
+    "image": "data/vnap0v/sierpinsky_turtle/vnap0v_sierpinsky_turtle.png",
+    "tags": [],
+    "description": "<h4>Recursive turtle drawing Sierpinsky Triangle</h4><p>This script uses recursive function calls to draw a Sierpinsky Triangle.</p><p>The drawing is done using the turtle library</p>"
+}

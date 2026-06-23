@@ -1,0 +1,9 @@
+{
+    "name": "buffon",
+    "creator": "mobluse",
+    "created_at": "September 15, 2024",
+    "size": "2.43 KB",
+    "image": "data/mobluse/buffon/mobluse_buffon.png",
+    "tags": [],
+    "description": "<p>Buffon\u2019s needle problem to estimate pi from \u201cCE Python Turtle Getting Started\u201d by Texas Instruments for TI-84 Plus CE modified to run on NumWorks.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "mastermind",
+    "creator": "cent20",
+    "created_at": "February 11, 2023",
+    "size": "9.42 KB",
+    "image": "data/cent20/mastermind/cent20_mastermind.png",
+    "tags": [],
+    "description": "<p><em>Mastermind v1.0.</em> <br>\nPython Game for Numworks, all models. <br>\nBy Ilyas RAHMOUN &amp; Vincent ROBERT. February 2023. <br></p><blockquote>\n<p>Learn more about Mastermind on: <a href=\"https://nsi.xyz/mastermind\" rel=\"nofollow\">nsi.xyz/mastermind</a> (FR)</p>\n</blockquote><h4>Changelog</h4><p>Mastermind v1.0 - 11/02/2022: <br>\n- Initial game <br></p>"
+}

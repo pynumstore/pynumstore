@@ -1,0 +1,9 @@
+{
+    "name": "diviseurs",
+    "creator": "alexandrebret-84",
+    "created_at": "October 11, 2021",
+    "size": "642 Bytes",
+    "image": "data/alexandrebret-84/diviseurs/alexandrebret-84_diviseurs.png",
+    "tags": [],
+    "description": "<p>Retourne la liste des diviseurs d\u2019un entier relatif \u00e0 l\u2019aide de la fonction \u201cdiv1(n)\u201d ou \u201cdiv2(n)\u201d</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "allprimenumbers",
+    "creator": "tracy-pratt-1",
+    "created_at": "January 09, 2026",
+    "size": "384 Bytes",
+    "image": "data/tracy-pratt-1/allprimenumbers/tracy-pratt-1_allprimenumbers.png",
+    "tags": [],
+    "description": "<p>Defines function prime(lower, upper) that finds all prime values from lower limit to upper limit.</p>"
+}

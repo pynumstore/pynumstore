@@ -1,0 +1,9 @@
+{
+    "name": "drawtrieq",
+    "creator": "ews31415",
+    "created_at": "June 01, 2024",
+    "size": "299 Bytes",
+    "image": "data/ews31415/drawtrieq/ews31415_drawtrieq.png",
+    "tags": [],
+    "description": "<p>Draws an equilateral (60-60-60) triangle.   Enter the length of the side (s).   The base is set on the x-axis.  The screen is set up to fit the proportion of the 320 x 220 screen.   The vertical axis ranges from y = -44 to y = 44 while the horizontal axis ranges from x = -64 to x = 64.</p>"
+}

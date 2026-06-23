@@ -1,0 +1,9 @@
+{
+    "name": "earthg",
+    "creator": "ews31415",
+    "created_at": "February 01, 2026",
+    "size": "574 Bytes",
+    "image": "data/ews31415/earthg/ews31415_earthg.png",
+    "tags": [],
+    "description": "<p>This program estimates Earth\u2019s gravitational acceleration given the latitude and elevation (in meters).</p><p>For this calculation, consider the absolute value of the latitude.   Gravity acceleration is the a given the northern latitude north and the corresponding southern latitude.  (Example:  gravity is about 9.79325 m/s\u00b2 at 30\u00b0 north and 30\u00b0 south).</p><p>Sources:\n Bislin, Walter.  \u201cEarth Gravity Calculator\u201d   September 1, 2018. https://walter.bislins.ch/bloge/index.asp?page=Earth+Gravity+Calculator  Retrieved January 15, 2026.</p><p>Glover, Thomas J. and Richard A. Young  Desk Ref  Sequoia Publishing, Inc.  Anchorage, AK.  4th Edition, 2022.  Soft Cover ISBN 978-1-885071-60-6.  pg. 587</p><p>\u201cGravity of Earth\u201d   Wikipedia.  Last edited January 31, 2026. https://en.wikipedia.org/wiki/Gravity_of_Earth   Retrieved February 1, 2026.</p>"
+}

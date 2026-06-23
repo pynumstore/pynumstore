@@ -1,0 +1,9 @@
+{
+    "name": "luhn",
+    "creator": "ews31415",
+    "created_at": "January 10, 2021",
+    "size": "375 Bytes",
+    "image": "data/ews31415/luhn/ews31415_luhn.png",
+    "tags": [],
+    "description": "<p>Lunh Algorithm - tests an integer, like a credit card, to see if the Lunh algorithm.  This is used to check to see if a credit card number is valid.</p><p>Source: \n\u201cLunh algorithm\u201d https://www.geeksforgeeks.org/luhn-algorithm/  GeeksforGeeks Retrieved January 1. 2021</p>"
+}

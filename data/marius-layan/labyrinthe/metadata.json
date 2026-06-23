@@ -1,0 +1,9 @@
+{
+    "name": "labyrinthe",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "2.22 KB",
+    "image": "data/marius-layan/labyrinthe/marius-layan_labyrinthe.png",
+    "tags": [],
+    "description": "<p>Labyrinthe est un je qui cr\u00e9er un labyrinthe al\u00e9atoire et le but est de se d\u00e9placer pour trouver la sortie le plus rapidement (un compteur de seconde est plac\u00e9 en haut \u00e0 gauche)</p><p>le labyrinthe se cr\u00e9er par rapport \u00e0 la couleur du bleu obtenu sur numworks, le fait qu\u2019il fonctionne sur toute les numworks n\u2019est pas s\u00fbr.</p><p>pour se d\u00e9placer: Fl\u00e8ches directionnelles</p><p>BON JEU !</p>"
+}

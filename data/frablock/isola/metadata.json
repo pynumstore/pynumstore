@@ -1,0 +1,9 @@
+{
+    "name": "isola",
+    "creator": "frablock",
+    "created_at": "May 25, 2022",
+    "size": "3.72 KB",
+    "image": "data/frablock/isola/frablock_isola.png",
+    "tags": [],
+    "description": "<h3>Un simple jeu isola :</h3><p>Deux participants s\u2019affrontent en tentant d\u2019encercler l\u2019autre, celui qui se fait encercler le premier perds\nCe script inclus un mode solo et un mode duo</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "lotka_volterra",
+    "creator": "vnap0v",
+    "created_at": "September 11, 2025",
+    "size": "1.88 KB",
+    "image": "data/vnap0v/lotka_volterra/vnap0v_lotka_volterra.png",
+    "tags": [],
+    "description": "<h3>Lotka\u2013Volterra predator\u2013prey model</h3><p>This script calculates and plots a solution to the predator\u2013prey model.</p><p>It uses a simple Euler method, values are stored in numpy arrays for memory efficiency.</p><p>Lotka\u2013Volterra system is defined by two first order ODEs:</p><pre><code>dx/dt = alpha.x - beta.x.y   \n\ndy/dt = -gamma*y + delta.x.y \n</code></pre><ul>\n<li>x is the prey population</li>\n<li>y is the predator population density</li>\n<li>alpha is the maximum prey per capita\ngrowth rate</li>\n<li>beta is the effect of the presence\nof predators on the prey death rate</li>\n<li>gamma is the predator\u2019s per capita\ndeath rate</li>\n<li>delta is the effect of the presence\nof prey on the predator\u2019s growth rate</li>\n</ul><p>The script imports numpy and matplotlib.</p>"
+}

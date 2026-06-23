@@ -1,0 +1,9 @@
+{
+    "name": "plateformer",
+    "creator": "ziii",
+    "created_at": "August 31, 2022",
+    "size": "4.04 KB",
+    "image": "data/ziii/plateformer/ziii_plateformer.png",
+    "tags": [],
+    "description": "<p>A basic 2d plateformer, there are some bugs but it globally works well.</p><p>You need to download the map too, it\u2019s the program called \u201cmap_t\u201d.</p><p>How to play :</p><p>Left and right arrows to move</p><p>Ok to jump, you can jump once in the air (shown by the red color of the \u201ccharacter\u201d), you can also jump on walls.</p><p>You can grip walls but you have a stamina bar, its level is shown by the darkness of you character, the darker the lower your stamina is.</p><p>There is no end (didn\u2019t bother program one) and no death (spikes are annoying to program).</p><p>It is posssible to create maps but the system is not perfect and a bit messy, i\u2019ll maybe work  on it if I have time.</p>"
+}

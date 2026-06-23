@@ -1,0 +1,9 @@
+{
+    "name": "stopwatch7segments",
+    "creator": "vnap0v",
+    "created_at": "June 16, 2025",
+    "size": "2.64 KB",
+    "image": "data/vnap0v/stopwatch7segments/vnap0v_stopwatch7segments.png",
+    "tags": [],
+    "description": "<p>Stopwatch which displays time in 7 segment characters similar to vintage equipment.</p><p>The 7 segment characters are drawn using the function</p><pre><code>kandinsky.fill_rect() \n</code></pre><p>A Python dictionary contains the information that decides which segments should be visible when displaying a certain character. The on/off state is stated as boolean literals True or False.</p><p>The position and orientation of the 7 segments is kept in a nested tuple.</p><p>The script also uses the time and ion libraries.</p><p>Tested on the calculator using software version 23.2.6.</p>"
+}

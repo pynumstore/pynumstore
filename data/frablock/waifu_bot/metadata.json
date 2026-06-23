@@ -1,0 +1,9 @@
+{
+    "name": "waifu_bot",
+    "creator": "frablock",
+    "created_at": "September 20, 2021",
+    "size": "5.6 KB",
+    "image": "data/frablock/waifu_bot/frablock_waifu_bot.png",
+    "tags": [],
+    "description": "<p><a href=\"https://discode.fr/gema/game/share.php?n=Waifu_bot&amp;a=frablock&amp;f=waifu_bot\" rel=\"nofollow\">partager</a></p><h3>Version v0.15 comment\u00e9e de <a href=\"https://discode.fr/gema/game/share.php?n=Waifu_bot_MIN&amp;a=frablock&amp;f=waifu_bot_min\" rel=\"nofollow\">waifu_bot_min</a>\n</h3><p>Test de cr\u00e9ation d\u2019un nouveau type d\u2019interface avec le moteur graphique GeMa</p><h4>Installation</h4><p>Ce fichier n\u00e9cessite l\u2019installation de :</p><ul>\n<li>\n<p><a href=\"https://my.numworks.com/python/frablock/gemamin\" rel=\"nofollow\">GeMa Engine, pour la gestion de l\u2019interface</a></p>\n</li>\n<li>\n<p><a href=\"https://getomega.dev/install/latest\" rel=\"nofollow\">Omega OS, pour permettre la sauvegarde des donn\u00e9es</a></p>\n</li>\n<li>\n<p><a href=\"https://my.numworks.com/python/frablock/dataia\" rel=\"nofollow\">Du fichier dataia.py,  contenant certains r\u00e9sultats par d\u00e9faut</a></p>\n</li>\n</ul>"
+}

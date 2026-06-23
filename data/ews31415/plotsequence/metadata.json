@@ -1,0 +1,9 @@
+{
+    "name": "plotsequence",
+    "creator": "ews31415",
+    "created_at": "December 27, 2020",
+    "size": "520 Bytes",
+    "image": "data/ews31415/plotsequence/ews31415_plotsequence.png",
+    "tags": [],
+    "description": "<p>Plot a one-level deep recurrence relation.   In the def structure,  u for u_n-1.</p>"
+}

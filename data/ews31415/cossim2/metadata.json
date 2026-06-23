@@ -1,0 +1,9 @@
+{
+    "name": "cossim2",
+    "creator": "ews31415",
+    "created_at": "August 07, 2023",
+    "size": "902 Bytes",
+    "image": "data/ews31415/cossim2/ews31415_cossim2.png",
+    "tags": [],
+    "description": "<p>Calculates the cosine similarity between two phrases.  When you enter the phrases, do not use punctuation.   Exact syntax is matched.</p><p>Video from StatQuest (January 29, 2023):  https://www.youtube.com/watch?v=e9U0QAFbfLI</p>"
+}

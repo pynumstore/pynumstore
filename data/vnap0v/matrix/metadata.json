@@ -1,0 +1,9 @@
+{
+    "name": "matrix",
+    "creator": "vnap0v",
+    "created_at": "July 30, 2025",
+    "size": "3.27 KB",
+    "image": "data/vnap0v/matrix/vnap0v_matrix.png",
+    "tags": [],
+    "description": "<h3>matrix</h3><p>This script defines two functions, they can be used to solve a</p><ul>\n<li>linear system of 2 equations with 2 variables</li>\n<li>linear system of 3 equations with 3 variables</li>\n</ul><p>of the form</p><pre><code>A.x = b\n</code></pre><p>The functions are:</p><pre><code>solve_system_2(A, b)\nsolve_system_3(A, b) A is 2x2 or 3x3 matrix containing the coefficients\n</code></pre><p>b is a 2 or 3 element vector containing the constants</p><p>The matrix and vector are processed as Python lists</p><p>example:</p><pre><code>A=[[6, -5],\n   [-7, 2]]\nb=[2, -3]\n</code></pre>"
+}

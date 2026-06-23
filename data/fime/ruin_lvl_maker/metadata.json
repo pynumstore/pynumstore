@@ -4,8 +4,6 @@
     "created_at": "September 21, 2022",
     "size": "3.45 KB",
     "image": "data/fime/ruin_lvl_maker/fime_ruin_lvl_maker.png",
-    "tags": [
-        "insert"
-    ],
+    "tags": [],
     "description": "<p><strong>\u2014 Level maker for <a href=\"https://my.numworks.com/python/fime/ruin\" rel=\"nofollow\">R U I N</a> \u2014</strong></p><p>After creating a level, copy it\u2019s code and past it on the end of the <code>levels()</code> function (at the end of the program) :\n<code>\nelse : return [] #insert your lvl code  here\n</code></p><p><strong>Download the game</strong></p><p><a href=\"https://my.numworks.com/python/fime/ruin\" rel=\"nofollow\">ruin.py</a></p><p><strong>Controls</strong>:</p><p>-Arrows: move/resize platforms\n  -[OK]: switch editing mode\n  -[Power]: add platform\n  -[(] and [)]: previous and next platform\n  -[+] and [-]: incrase and decrase ennemy number\\n  -Backspace: delete current platform\n  -[exe]:print level hash\n  -[0]:Quit (will also print the hash)</p><p><strong>Interface</strong>:</p><p>-Left-Up:Platform data (x,y,w,h,enemy number)\n  -Left-down:Current mode and level size</p><p>-Red:current platform\n  -Orange:spawn platform\n  -Green:door\u2019s platform</p><p><strong>Pro tip</strong>: use the <var> key to see the\navailable functions</var></p>"
 }

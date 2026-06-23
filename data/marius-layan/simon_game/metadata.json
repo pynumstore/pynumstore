@@ -1,0 +1,9 @@
+{
+    "name": "simon_game",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "3.25 KB",
+    "image": "data/marius-layan/simon_game/marius-layan_simon_game.png",
+    "tags": [],
+    "description": "<p>Voici un petit jeu nomm\u00e9 simon. une suite de couleur est affich\u00e9e, retenez-la et reproduisez la gr\u00e2ce \u00e0 vos touche allant de 1 \u00e0 9. A chaque fois que vous r\u00e9ussissez, un dernier carr\u00e9 de couleur vient se rajouter au pr\u00e9c\u00e9dentes (ok pour commencer la partie).</p>"
+}

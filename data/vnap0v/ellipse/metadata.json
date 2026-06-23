@@ -1,0 +1,9 @@
+{
+    "name": "ellipse",
+    "creator": "vnap0v",
+    "created_at": "June 04, 2025",
+    "size": "1.12 KB",
+    "image": "data/vnap0v/ellipse/vnap0v_ellipse.png",
+    "tags": [],
+    "description": "<p>There is no closed-form expression for the circumference of an ellipse. This script approximates the circumference using the sum of a series. Height and width can be given, the ellipse is also plotted. Uses math and matplotlib. Tested on the calculator using software version 23.2.6.</p>"
+}

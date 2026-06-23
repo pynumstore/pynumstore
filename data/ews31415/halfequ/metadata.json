@@ -1,0 +1,9 @@
+{
+    "name": "halfequ",
+    "creator": "ews31415",
+    "created_at": "January 20, 2025",
+    "size": "372 Bytes",
+    "image": "data/ews31415/halfequ/ews31415_halfequ.png",
+    "tags": [],
+    "description": "<p>Draws an equal sign using the turtle module.</p>"
+}

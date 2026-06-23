@@ -1,0 +1,9 @@
+{
+    "name": "pendulum_runge4",
+    "creator": "vnap0v",
+    "created_at": "June 24, 2025",
+    "size": "2.77 KB",
+    "image": "data/vnap0v/pendulum_runge4/vnap0v_pendulum_runge4.png",
+    "tags": [],
+    "description": "<h4>Damped, driven pendulum</h4><p>This script calculates a solution to the ODE for a driven pendulum with damping.</p><pre><code>I*d(d\u03b8/dt)/dt + m*g*l*sin(\u03b8) + b*d\u03b8/dt = a*cos(\u03a9*t)\n</code></pre><p>This second order non linear ODE has been to be modified to a system of two first order ODEs.</p><pre><code>d\u03c9/dt = 1/I*( -g*m/l*sin(\u03b8) - b*\u03c9 + a*cos(\u03a9*t) )\nd\u03b8/dt = \u03c9\n</code></pre><p>The script uses a 4th order Runge-Kutta method  to calculate a solution of this system.</p><p>This solution is then plotted.</p><p>The libraries math, numpy and matplotlib are used.</p>"
+}

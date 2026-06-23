@@ -1,0 +1,9 @@
+{
+    "name": "euler_tut",
+    "creator": "vnap0v",
+    "created_at": "August 12, 2025",
+    "size": "661 Bytes",
+    "image": "data/vnap0v/euler_tut/vnap0v_euler_tut.png",
+    "tags": [],
+    "description": "<h3>Euler\u2019s method using Python</h3><p>On the English YouTube channel of Numworks, there is a tutorial on using the sequences app to apply Euler\u2019s method on a differential equation:</p><p><a href=\"https://youtu.be/JIc2p6jtGhs?si=8m8j5LjYKVREoqQq\" rel=\"nofollow\">Euler\u2019s method using sequences</a></p><p>This script does the same calculations, using Python instead.</p><p>The differential equation:</p><pre><code>dy/dx = sqrt(x) * y\ny(1) = 4\n</code></pre><p>For Euler\u2019s method step h=0.25</p><p>Tested on the Numworks calculator using software version 24.3.0</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "g2048",
+    "creator": "ziii",
+    "created_at": "September 09, 2023",
+    "size": "4.95 KB",
+    "image": "data/ziii/g2048/ziii_g2048.png",
+    "tags": [],
+    "description": "<p>A 2048 game. You can change the grid size.</p><p>you can custom the colors by changing the rgb values in the colors list, you can change the gradient of color used for the color of the squares of the number by replacing the second argument\u2019s rgb values when creating the gradient variable.</p><p>How to play:</p><p>Enter a number between 4 and 8 in the console when asked, it\u2019s the gride size.</p><p>Arrows to play.</p>"
+}

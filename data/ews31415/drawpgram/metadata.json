@@ -1,0 +1,9 @@
+{
+    "name": "drawpgram",
+    "creator": "ews31415",
+    "created_at": "February 15, 2026",
+    "size": "815 Bytes",
+    "image": "data/ews31415/drawpgram/ews31415_drawpgram.png",
+    "tags": [],
+    "description": "<p>The script drawpgram.py draws a parallelogram constructed by a pair of two-dimensional vectors.   Both vectors original from the origin of the Cartesian plane ([0, 0]).    Then the script calculates the area and perimeter of the constructed parallelogram consisting of the end points (0,0), (x1, y1), (x2, y2), and (x1+x2, y1+y2).</p><p>Source\nMargalit, Dan and Joseph Rabinoff.  2025.  \u201cDeterminants and Volumes\u201d  Interactive Linear Algebra  LibreTexts.  Accessed February 8, 2026.  https://math.libretexts.org/Bookshelves/Linear_Algebra/Interactive_Linear_Algebra_(Margalit_and_Rabinoff)/04%3A_Determinants/4.03%3A_Determinants_and_Volumes</p>"
+}

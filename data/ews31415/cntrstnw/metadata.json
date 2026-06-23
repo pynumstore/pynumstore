@@ -1,0 +1,11 @@
+{
+    "name": "cntrstnw",
+    "creator": "ews31415",
+    "created_at": "August 13, 2023",
+    "size": "974 Bytes",
+    "image": "data/ews31415/cntrstnw/ews31415_cntrstnw.png",
+    "tags": [
+        "relativeluminancedef"
+    ],
+    "description": "<p>The following Python script compares a contrast of colored text (foreground) color against a background color.  It is important to have good, high contrast.  High contrast allows for easy readability and it\u2019s easier on the eyes.   This becomes more important when considering web page development to allow accessibility.</p><p>Sources</p><p>\u201cHow to calculate colour contrast\u201d  Accessibility Developer Guide (ADG*).  An initiative of Access for all.  Last Edited July 29, 2023.  Accessed August 8, 2023.\nhttps://www.accessibility-developer-guide.com/knowledge/colours-and-contrast/how-to-calculate/</p><p>\u201cRelative Luminance\u201d Web Content Accessibility Guidelines (WCAG) 2.0.   W3C, Inc.  (World Wide Web Consortium, Inc.)   Last Edited December 11, 2008.  Accessed August 8, 2023.   https://www.w3.org/TR/WCAG20/#relativeluminancedef</p><p>My math and calculator blog:  edspi31415.blogspot.com</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "gema",
+    "creator": "frablock",
+    "created_at": "August 14, 2021",
+    "size": "4.07 KB",
+    "image": "data/frablock/gema/frablock_gema.png",
+    "tags": [],
+    "description": "<p><a href=\"https://discode.fr/gema/game/share.php?n=GeMa&amp;a=frablock&amp;f=gema&amp;\" rel=\"nofollow\">Partager</a></p><h3>\n<img alt=\"LogoGeMa\" src=\"https://discode.fr/gema/logo.svg\"> GeMa</h3><blockquote>\n<p>Version 0.7</p>\n</blockquote><p><em>Nous vous recommandons de publier votre script avec la version <a href=\"https://my.numworks.com/python/frablock/gemamin\" rel=\"nofollow\">GeMaMIN</a>, qui est une version plus optimis\u00e9e</em></p><h4>Commencer \u00e0 utiliser GeMa</h4><p><code>\nfrom gema import *\n</code>\nEt voil\u00e0, vous avez acc\u00e8s \u00e0 GeMa depuis votre script</p><p>Si vous voulez en savoir plus, allez voir <a href=\"https://discode.fr/gema/doc.html\" rel=\"nofollow\">notre documentation</a></p><h5>Avec GeMa, vous pouvez :</h5><ul>\n<li>Cr\u00e9ez</li>\n</ul><p>Ce script a \u00e9t\u00e9 cr\u00e9\u00e9 dans un but, faciliter la cr\u00e9ation de jeu, et en particulier les visualnovels.</p><ul>\n<li>Manipulez vos sprites</li>\n</ul><p>GeMa Engine peut lire et interpr\u00e9ter les fichiers sprites (.pikt ou .pik)</p><ul>\n<li>Partagez</li>\n</ul><p>Partagez rapidement votre cr\u00e9ation sur notre site</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "ode2",
+    "creator": "vnap0v",
+    "created_at": "August 21, 2025",
+    "size": "2.89 KB",
+    "image": "data/vnap0v/ode2/vnap0v_ode2.png",
+    "tags": [],
+    "description": "<h3>Ordinary Differential Equation</h3><p>This script allows to compute a solution to a first order ODE.</p><pre><code>dy/dx = f(x,y)\n</code></pre><p>The expression for f(x,y) can be entered along with initial conditions and other parameters.</p><p>Values are calculated using a Runge-Kutta algoritm.</p><p>The values for x and y can be listed.</p><p>The solution is then plotted along with the slope field for the ODE.</p>"
+}

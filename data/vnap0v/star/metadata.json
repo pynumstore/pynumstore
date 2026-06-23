@@ -1,0 +1,9 @@
+{
+    "name": "star",
+    "creator": "vnap0v",
+    "created_at": "June 17, 2025",
+    "size": "804 Bytes",
+    "image": "data/vnap0v/star/vnap0v_star.png",
+    "tags": [],
+    "description": "<p>Simple but kind of pretty, a colored star.</p><p>The idea came from a piece of code in the basic language encountered on the web.</p><p>It uses a function connect() which allows to draw a line between two arbitrary points using set_pixel() from the  kandisnky library. This sort of function is not included in kandinsky library.</p><p>Tested on the calculator using software version 23.2.6.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "tree",
+    "creator": "vnap0v",
+    "created_at": "May 01, 2025",
+    "size": "790 Bytes",
+    "image": "data/vnap0v/tree/vnap0v_tree.png",
+    "tags": [],
+    "description": "<p>This program draws a tree using recursive function calls. It uses the turtle module for the drawing. Tested on the calculator using software version 23.2.6.</p>"
+}

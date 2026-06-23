@@ -1,0 +1,9 @@
+{
+    "name": "draw_3d_graph",
+    "creator": "mty",
+    "created_at": "April 23, 2025",
+    "size": "12.4 KB",
+    "image": "data/mty/draw_3d_graph/mty_draw_3d_graph.png",
+    "tags": [],
+    "description": "<p>Render 3d graph. Control:\nEnter/EXE/OK - switch between move and trace mode;\narrow keys - move graph or tracer (depending on the mode);\n+/- - zoom in/out (atm. works only on calculator not in the browser);\n(, ) - rotate left, right (atm. works only on calculator not in the browser)</p>"
+}

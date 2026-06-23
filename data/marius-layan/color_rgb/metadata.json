@@ -1,0 +1,9 @@
+{
+    "name": "color_rgb",
+    "creator": "marius-layan",
+    "created_at": "March 31, 2023",
+    "size": "669 Bytes",
+    "image": "data/marius-layan/color_rgb/marius-layan_color_rgb.png",
+    "tags": [],
+    "description": "<p>Voici un petit programme qui permet de retrouver un couleur en rgb.</p><p>il est possible de modifier le rouge, vert et bleu avec ses touches:</p><p>rouge: SHIFT / EXP \u2026  vert: ALPHA / LN \u2026 bleu: XNT / LOG</p>"
+}

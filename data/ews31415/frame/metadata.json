@@ -1,0 +1,9 @@
+{
+    "name": "frame",
+    "creator": "ews31415",
+    "created_at": "December 14, 2021",
+    "size": "755 Bytes",
+    "image": "data/ews31415/frame/ews31415_frame.png",
+    "tags": [],
+    "description": "<p>Using the Turtle module to draw a random-color frame with a brown backing.</p>"
+}

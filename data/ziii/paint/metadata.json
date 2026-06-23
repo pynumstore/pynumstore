@@ -1,0 +1,9 @@
+{
+    "name": "paint",
+    "creator": "ziii",
+    "created_at": "December 15, 2023",
+    "size": "2.79 KB",
+    "image": "data/ziii/paint/ziii_paint.png",
+    "tags": [],
+    "description": "<p>A monochrome paint with possible but limited input and output because of the calculator limitations.</p><p>It was made to create map for grid based games or sprites ( I used it to create chess pieces for my chess game or to create map for my plateformer).</p><p>How to use:</p><p>The console prompt will ask you the settings you want.</p><p>You can change the length in pixels of the side of the painted squares (a zoom, only for comfort purposes won\u2019t change the output).</p><p>You can also change the width and height resolution of the canvas.</p><p>Arrows move the cursor (red square).</p><p>1 to select the pencil tool (black squares, will count as drawn pixel).</p><p>0 to select the eraser(white squares, will count as not drawn pixel).</p><p>Shift to use the tool.</p><p>\u201cx,n,t\u201d key to use your tool on the entire canvas.</p><p>Alpha can be used to apply your tool on a rectangle, two presses are needed to define the two corners of the rectangle.</p><p>Exe will stop the program, you need to press a key to see the shell back.</p><p>Ans will output the final drawing in the command prompt, while the cursor is not red it is still processing your drawing, if it is too big it may not works as well. It is a tuple with three values, the first one is a string which encodes the entirety of your drawing, the two others are the dimensions (first width then height) of the canvas. If you drawing is too large the calculator isn\u2019t able to copy paste the entire string (219 characters copy limit) so you\u2019l have to copy paste each line to your program, just don\u2019t put the line breaks.</p><p>I wrote a function in another one of my scripts (\u201cdraw_function\u201d) which is able to use this output with the kandinsky module.</p>"
+}

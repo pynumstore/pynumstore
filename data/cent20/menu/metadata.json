@@ -1,0 +1,9 @@
+{
+    "name": "menu",
+    "creator": "cent20",
+    "created_at": "April 19, 2020",
+    "size": "2.42 KB",
+    "image": "data/cent20/menu/cent20_menu.png",
+    "tags": [],
+    "description": "<p>G\u00e9n\u00e8re un menu pour param\u00e9trer une application python sur la NumWorks.<br> \nDocumentation :  <a href=\"https://nsi.xyz/menu\" rel=\"nofollow\">https://nsi.xyz/menu </a><br> \nCeci est le script pr\u00eat \u00e0 utiliser. Le script de d\u00e9monstration est <a href=\"https://workshop.numworks.com/python/cent20/menu_demo\" rel=\"nofollow\">menu_demo.py</a></p>"
+}

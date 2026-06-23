@@ -1,0 +1,9 @@
+{
+    "name": "scatter",
+    "creator": "parisseb",
+    "created_at": "February 04, 2020",
+    "size": "184 Bytes",
+    "image": "data/parisseb/scatter/parisseb_scatter.png",
+    "tags": [],
+    "description": "<p>D\u00e9mo nuage de points \u00e0 la matplotlib, n\u00e9cessite KhiCAS</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "cryptarithmes",
+    "creator": "dkfe123",
+    "created_at": "September 24, 2025",
+    "size": "1.45 KB",
+    "image": "data/dkfe123/cryptarithmes/dkfe123_cryptarithmes.png",
+    "tags": [],
+    "description": "<p>trouve les valeurs des lettres d\u2019un cryptarithme au for\u00e7age.\nPEUT ETRE LENT\nex : ab+a=ac.\na est diff\u00e9rent de 0 car c\u2019est une premi\u00e8re lettre d\u2019un nombre.\na,b et c sont des entiers de [0;10] diff\u00e9rents.\nIci, a=1;b=2 et c=3\nOu a=2;b=1 et c=3</p>"
+}

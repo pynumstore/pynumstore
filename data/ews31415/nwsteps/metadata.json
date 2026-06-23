@@ -1,0 +1,9 @@
+{
+    "name": "nwsteps",
+    "creator": "ews31415",
+    "created_at": "April 07, 2026",
+    "size": "455 Bytes",
+    "image": "data/ews31415/nwsteps/ews31415_nwsteps.png",
+    "tags": [],
+    "description": "<p>Draws a Step Function</p><p>Starts at (0,0):\nn = number of steps to be drawn\nl = length of each step segment\nu = vertical jump</p><p>Modules used:  math, pyplot</p>"
+}

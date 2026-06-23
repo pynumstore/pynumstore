@@ -1,0 +1,9 @@
+{
+    "name": "drawcards",
+    "creator": "tracy-pratt-1",
+    "created_at": "November 13, 2025",
+    "size": "937 Bytes",
+    "image": "data/tracy-pratt-1/drawcards/tracy-pratt-1_drawcards.png",
+    "tags": [],
+    "description": "<p>This script will allow you to draw n-number of cards from a standard 52 deck of cards.</p><p>Use the function draw_cards(n) to drawn cards until all 52 cards have been drawn.</p><p>To reset the deck. Use function reset() to put all drawn cards back into the deck.</p>"
+}

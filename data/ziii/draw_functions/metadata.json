@@ -1,0 +1,9 @@
+{
+    "name": "draw_functions",
+    "creator": "ziii",
+    "created_at": "December 20, 2023",
+    "size": "638 Bytes",
+    "image": "data/ziii/draw_functions/ziii_draw_functions.png",
+    "tags": [],
+    "description": "<p>Two function to use the paint.py output, the function decode takes the tuple with the encoded drawing and gives you a decoded drawing, the second one takes the position at which you want to draw it, the color, in option the upscaling, the decoded drawing and draws it.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "benchmark",
+    "creator": "cent20",
+    "created_at": "March 23, 2022",
+    "size": "819 Bytes",
+    "image": "data/cent20/benchmark/cent20_benchmark.png",
+    "tags": [],
+    "description": "<p>Script de Xavier Andr\u00e9ani (tiplanet.org) pour tester les performances des calculatrices en python.</p>"
+}

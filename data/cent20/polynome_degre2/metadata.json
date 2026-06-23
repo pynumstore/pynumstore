@@ -1,0 +1,9 @@
+{
+    "name": "polynome_degre2",
+    "creator": "cent20",
+    "created_at": "September 08, 2019",
+    "size": "8.52 KB",
+    "image": "data/cent20/polynome_degre2/cent20_polynome_degre2.png",
+    "tags": [],
+    "description": "<h3>Version optimis\u00e9e mais pas minifi\u00e9e</h3><p><br> Une des fonctions de ce script est trop lourde &gt;4ko pour le firmware stock de la numworks\n<br> La version polynome_degre2_light.py est plus efficace\n<br> Marche avec le .bin de Lionel Debroux https://tiplanet.org/forum/download/file.php?id=4627</p>"
+}

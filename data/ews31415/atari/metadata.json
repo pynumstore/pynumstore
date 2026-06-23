@@ -1,0 +1,9 @@
+{
+    "name": "atari",
+    "creator": "ews31415",
+    "created_at": "May 29, 2020",
+    "size": "493 Bytes",
+    "image": "data/ews31415/atari/ews31415_atari.png",
+    "tags": [],
+    "description": "<p>Draws the basic-eight color palette of the classic 1977 Atari 2600.</p>"
+}

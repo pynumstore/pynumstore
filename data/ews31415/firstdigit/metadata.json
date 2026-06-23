@@ -1,0 +1,9 @@
+{
+    "name": "firstdigit",
+    "creator": "ews31415",
+    "created_at": "May 29, 2020",
+    "size": "578 Bytes",
+    "image": "data/ews31415/firstdigit/ews31415_firstdigit.png",
+    "tags": [],
+    "description": "<p>Generate a bar chart of n integers (recommended that n be at least 20).  The first digit from</p>"
+}

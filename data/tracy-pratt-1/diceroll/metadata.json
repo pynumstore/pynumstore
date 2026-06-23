@@ -1,0 +1,9 @@
+{
+    "name": "diceroll",
+    "creator": "tracy-pratt-1",
+    "created_at": "November 13, 2025",
+    "size": "623 Bytes",
+    "image": "data/tracy-pratt-1/diceroll/tracy-pratt-1_diceroll.png",
+    "tags": [],
+    "description": "<p>Use function diceroll(n) to roll n number of dice. This function will report how many of each side is rolled.</p>"
+}

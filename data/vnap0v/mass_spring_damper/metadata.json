@@ -1,0 +1,9 @@
+{
+    "name": "mass_spring_damper",
+    "creator": "vnap0v",
+    "created_at": "June 19, 2025",
+    "size": "1.37 KB",
+    "image": "data/vnap0v/mass_spring_damper/vnap0v_mass_spring_damper.png",
+    "tags": [],
+    "description": "<h3>Mass-Spring-Damper</h3><p>This script plots a solution for the dampened mass-spring system using a simple Euler method. The second degree ODE has to be modified into two first order ODEs.</p><pre><code>d\u00b2x/dt\u00b2+ 2*\u03b6*\u03c9n*dx/dt + \u03c9n\u00b2*x = 0\nv = dx/dt\n\n=&gt; dv/dt + 2*\u03b6*\u03c9n*v + \u03c9n\u00b2*x = 0\n\n=&gt; dv/dt = -2*\u03b6*\u03c9n*v - \u03c9n\u00b2*x\n   dx/dt = v\n\n \u03c9n = sqrt(k/m)\n \u03b6 = c/(2*m*\u03c9n)\n</code></pre><ul>\n<li>Undamped systems \u03b6 = 0</li>\n<li>Underdamped systems \u03b6 &lt; 1</li>\n<li>Critically damped systems \u03b6 = 1</li>\n<li>Overdamped systems \u03b6 &gt; 1</li>\n</ul><p>The script uses matplotlib for plotting.</p>"
+}

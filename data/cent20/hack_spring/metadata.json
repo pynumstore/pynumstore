@@ -1,0 +1,9 @@
+{
+    "name": "hack_spring",
+    "creator": "cent20",
+    "created_at": "April 25, 2020",
+    "size": "4.5 KB",
+    "image": "data/cent20/hack_spring/cent20_hack_spring.png",
+    "tags": [],
+    "description": "<p>Hack L1 : Tu dois modifier ce script pour qu\u2019il affiche \u00e0 chaque tirage 3 fleurs identiques mais pas toujours les m\u00eame. Hack L2 : L1+ Modifies les fleurs en supprimant les tiges et en ne gardant que le bouton ; tulipes : 3 boutons horizontalement dans la case ; roses : 2 boutons verticalement dans la case ; fleur : 3 boutons en diagonale, le tout correctement centr\u00e9. Hack L3 : la touche OK ou EXE produisent le r\u00e9sultat par d\u00e9faut, la touche CLEAR le hack L1 , la touche shift le hack L2.</p>"
+}

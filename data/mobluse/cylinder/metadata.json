@@ -1,0 +1,9 @@
+{
+    "name": "cylinder",
+    "creator": "mobluse",
+    "created_at": "September 05, 2024",
+    "size": "255 Bytes",
+    "image": "data/mobluse/cylinder/mobluse_cylinder.png",
+    "tags": [],
+    "description": "<p>Ber\u00e4knar volym och densitet f\u00f6r en cylinder, givet massan, diametern och h\u00f6jden.</p>"
+}

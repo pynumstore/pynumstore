@@ -1,0 +1,9 @@
+{
+    "name": "lorenz",
+    "creator": "vnap0v",
+    "created_at": "June 05, 2025",
+    "size": "1.64 KB",
+    "image": "data/vnap0v/lorenz/vnap0v_lorenz.png",
+    "tags": [],
+    "description": "<p>This script draws a sample solution to the Lorenz System. it uses a simple Euler method to calculate the values. The graph is drawn using kandinsky, it also uses the math library. Tested on the calculator using software version 23.2.6.</p>"
+}

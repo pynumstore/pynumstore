@@ -1,0 +1,9 @@
+{
+    "name": "sumtimes",
+    "creator": "mobluse",
+    "created_at": "April 27, 2024",
+    "size": "514 Bytes",
+    "image": "data/mobluse/sumtimes/mobluse_sumtimes.png",
+    "tags": [],
+    "description": "<p>This program sums the times in the list with end times (positive) and start times (negative) for work days in a week. The times are given in the sexagesimal format h.mmss i.e. 14:50:00 is 14.5000 and -07:45:06.18 is -7.450618. The result is also in sexagesimal. It could be used to compute working hours for jobs with flexible hours per day. NO WARRANTY.</p>"
+}

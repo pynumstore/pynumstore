@@ -1,0 +1,9 @@
+{
+    "name": "julia",
+    "creator": "vnap0v",
+    "created_at": "April 28, 2026",
+    "size": "611 Bytes",
+    "image": "data/vnap0v/julia/vnap0v_julia.png",
+    "tags": [],
+    "description": "<h3>Julia Fractal</h3><p>This code displays a colorful Julia Fractal.</p><p>It uses the kandinsky and math modules.</p><p>The function</p><pre><code>Z**2 + C  --&gt; Z \n</code></pre><p>is iterated.</p><p>Both Z and C are complex values.</p><p>C is a complex constant value and defines the appearance of the fractal.</p><p>The initial value of Z depends on the position within the fractal, the real part depends on the x coordinate, the imaginary part depends on the y coordinate.</p><p>A loop measures how many iterations it takes for the modulus of Z to exceed the value of 2.0</p><p>The counter which keeps track of the number of needed iterations is then used to determine the color of the pixel being calculated</p>"
+}

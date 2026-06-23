@@ -1,0 +1,9 @@
+{
+    "name": "rotplot",
+    "creator": "ews31415",
+    "created_at": "April 20, 2021",
+    "size": "1.46 KB",
+    "image": "data/ews31415/rotplot/ews31415_rotplot.png",
+    "tags": [],
+    "description": "<p>Numworks - Python</p><p>Rotated Plot</p><p>The script rotplot.py allows the user to choose between one of five equations:\n1.  y = a + bx\n2.  y = ax^2 + bx + c\n3.  y = ax^3 + bx^2 + cx + d\n4.  y = a * sin(bx + c) + d\n5.  y = a * exp(bx + c ) + d</p><p>The original plot is in gray, the rotated plot is in blue.</p>"
+}

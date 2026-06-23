@@ -1,0 +1,9 @@
+{
+    "name": "eulers_method",
+    "creator": "nick-koberstein",
+    "created_at": "September 22, 2021",
+    "size": "942 Bytes",
+    "image": "data/nick-koberstein/eulers_method/nick-koberstein_eulers_method.png",
+    "tags": [],
+    "description": "<p>In this Python program x0 and y0 represent the initial condition. xn is the calculation point on which the value of yn corresponding to xn is to be calculated using Euler\u2019s method. step represents number of finite step before reaching to xn.</p>"
+}

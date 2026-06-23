@@ -1,0 +1,9 @@
+{
+    "name": "rpn",
+    "creator": "mobluse",
+    "created_at": "May 08, 2023",
+    "size": "2.48 KB",
+    "image": "data/mobluse/rpn/mobluse_rpn.png",
+    "tags": [],
+    "description": "<p>RPN calculator based on https://my.numworks.com/python/garycmartin/rpn . Use ? to show words. It allows comma to be used as an alternative to space. It also allows words to be followed by parenthesis: e.g. \u201cpi,cos()\u201d is -1. Some words were changed to words that are easier to enter using the Numworks keyboard.</p>"
+}

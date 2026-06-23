@@ -1,0 +1,9 @@
+{
+    "name": "tic_tac_toe",
+    "creator": "ziii",
+    "created_at": "October 22, 2022",
+    "size": "1.8 KB",
+    "image": "data/ziii/tic_tac_toe/ziii_tic_tac_toe.png",
+    "tags": [],
+    "description": "<p>a simple tic tac toe game.</p><p>how to play :</p><p>arrows to move cursor.</p><p>ok to play.</p>"
+}

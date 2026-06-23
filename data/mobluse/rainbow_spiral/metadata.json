@@ -1,0 +1,9 @@
+{
+    "name": "rainbow_spiral",
+    "creator": "mobluse",
+    "created_at": "November 22, 2021",
+    "size": "756 Bytes",
+    "image": "data/mobluse/rainbow_spiral/mobluse_rainbow_spiral.png",
+    "tags": [],
+    "description": "<p><strong>Rainbow Spiral</strong> draws a spiral using the turtle library. First it asks for a closed caption that is printed on the picture. Press Esc/BACK or OK when the drawing is finished. You are dropped into the Python shell where you can rerun it using run(), and then the old caption is default. This program is based on an example from <a href=\"https://edublocks.org\" rel=\"nofollow\">https://edublocks.org</a> with the same name.</p>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "random_walk",
+    "creator": "vnap0v",
+    "created_at": "June 29, 2025",
+    "size": "709 Bytes",
+    "image": "data/vnap0v/random_walk/vnap0v_random_walk.png",
+    "tags": [],
+    "description": "<h4>Two-dimensional Lattice random walk</h4><p>This script shows random walks on a 2D lattice. When the walk goes beyond limits the  process starts over.</p><p>The script uses the turtle library for drawing and the random library to choose a random heading at each step</p>"
+}

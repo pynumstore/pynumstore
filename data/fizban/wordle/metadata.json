@@ -1,0 +1,9 @@
+{
+    "name": "wordle",
+    "creator": "fizban",
+    "created_at": "January 19, 2025",
+    "size": "31.8 KB",
+    "image": "data/fizban/wordle/fizban_wordle.png",
+    "tags": [],
+    "description": "<p>Version of Wordle for the NumWorks. Use directly the letters in the calculator, without pressing the alpha key.\nIt contains a dictionary of 12971 words, out of which 2315 are candidates for a wordle.\nEach word has an id so that it can be used to compete with other users if they enter the same id.</p><p><img src=\"https://raw.githubusercontent.com/fizban99/numworks_wordle/refs/heads/main/img/numworks_wordle.png\"> <br>\n<a href=\"https://github.com/fizban99/numworks_wordle\" rel=\"nofollow\">github repository</a></p>"
+}

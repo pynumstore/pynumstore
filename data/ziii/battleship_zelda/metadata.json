@@ -1,0 +1,9 @@
+{
+    "name": "battleship_zelda",
+    "creator": "ziii",
+    "created_at": "September 09, 2023",
+    "size": "2.31 KB",
+    "image": "data/ziii/battleship_zelda/ziii_battleship_zelda.png",
+    "tags": [],
+    "description": "<p>A naval battle game from zelda link\u2019s awakening.</p><p>There are three \u201cboats\u201d of 2, 3 and 4 squares long, your goal is to find them all.</p><p>How to play :</p><p>Ok to \u201cshoot\u201d, if a cross apears, there are no boat, if a blue circle apears, there is a boat, if the circles turn green, you found the entire boat.</p><p>Cross to move.</p>"
+}

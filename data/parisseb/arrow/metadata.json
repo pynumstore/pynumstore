@@ -1,0 +1,9 @@
+{
+    "name": "arrow",
+    "creator": "parisseb",
+    "created_at": "February 04, 2020",
+    "size": "119 Bytes",
+    "image": "data/parisseb/arrow/parisseb_arrow.png",
+    "tags": [],
+    "description": "<p>D\u00e9mo vecteur (arrow) \u00e0 la matplotlib, n\u00e9cessite KhiCAS</p>"
+}

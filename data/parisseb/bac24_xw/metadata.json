@@ -1,0 +1,9 @@
+{
+    "name": "bac24_xw",
+    "creator": "parisseb",
+    "created_at": "June 22, 2024",
+    "size": "1.82 KB",
+    "image": "data/parisseb/bac24_xw/parisseb_bac24_xw.png",
+    "tags": [],
+    "description": "<p><b>Corrig\u00e9 exercice 3 de g\u00e9om\u00e9trie dans l\u2019espace du bac 2024 (jour 1, 19 juin)</b>\n<br>\nNe pas ouvrir dans l\u2019application Python, mais depuis\n<a href=\"https://www-fourier.univ-grenoble-alpes.fr/~parisse/nws.html\" rel=\"nofollow\">KhiCAS</a>.<br>\nPour voir la figure, taper shift Ans (menu Applications de KhiCAS), 1 (g\u00e9om\u00e9trie), 1 (figure1)<br>\nUtiliser les fl\u00e8ches de direction pour changer le point de vue, + et - pour le zoom.<br>\nSi le bouton Envoyer vers la calculatrice affiche une erreur M\u00e9moire corrompue, vous pouvez utiliser le lien ci-dessus pour envoyer le script \u00e0 la calculatrice, ou bien <a href=\"https://www-fourier.univ-grenoble-alpes.fr/~parisse/install_fr.html\" rel=\"nofollow\">installer Xcas</a> si n\u00e9cessaire, ouvrir la <a href=\"https://www-fourier.univ-grenoble-alpes.fr/~parisse/irem/bac2024.xws\" rel=\"nofollow\"> session</a> et utiliser le menu Fichier, Numworks de Xcas.</p>"
+}

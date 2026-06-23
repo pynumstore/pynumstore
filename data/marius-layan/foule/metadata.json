@@ -1,0 +1,9 @@
+{
+    "name": "foule",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "1.71 KB",
+    "image": "data/marius-layan/foule/marius-layan_foule.png",
+    "tags": [],
+    "description": "<p>Petit programme pour simuler la foule. les personnes sont repr\u00e9sent\u00e9e par des carr\u00e9es multicolores. Ils de d\u00e9place al\u00e9atoirement dans l\u2019espace en suivant \u00e0 chaque mouvement une direction durant un temps donn\u00e9.</p><p>foule( n , t )</p><p>n = nombre de personnes</p><p>t = taille des personnes</p>"
+}

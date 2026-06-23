@@ -1,0 +1,9 @@
+{
+    "name": "spectrum",
+    "creator": "parisseb",
+    "created_at": "February 06, 2020",
+    "size": "674 Bytes",
+    "image": "data/parisseb/spectrum/parisseb_spectrum.png",
+    "tags": [],
+    "description": "<p>Spectre visible.\nScript adapt\u00e9 de https://workshop.numworks.com/python/uncurieux/visible_spectrum\nN\u00e9cessite KhiCAS.</p>"
+}

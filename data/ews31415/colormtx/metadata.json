@@ -1,0 +1,9 @@
+{
+    "name": "colormtx",
+    "creator": "ews31415",
+    "created_at": "October 19, 2021",
+    "size": "476 Bytes",
+    "image": "data/ews31415/colormtx/ews31415_colormtx.png",
+    "tags": [],
+    "description": "<p>This script generates a color matrix of random integers 1 through 9, each entry its own colors.  Numbers and colors can repeat.</p>"
+}

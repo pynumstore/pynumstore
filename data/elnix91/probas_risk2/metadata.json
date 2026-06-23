@@ -1,0 +1,9 @@
+{
+    "name": "probas_risk2",
+    "creator": "elnix91",
+    "created_at": "September 28, 2025",
+    "size": "616 Bytes",
+    "image": "data/elnix91/probas_risk2/elnix91_probas_risk2.png",
+    "tags": [],
+    "description": "<p>computes probabilities for the Risk game, depending on what units there are in contries</p>"
+}

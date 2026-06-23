@@ -1,0 +1,9 @@
+{
+    "name": "bar",
+    "creator": "parisseb",
+    "created_at": "February 04, 2020",
+    "size": "130 Bytes",
+    "image": "data/parisseb/bar/parisseb_bar.png",
+    "tags": [],
+    "description": "<p>D\u00e9mo diagramme en batons (bar) \u00e0 la matplotlib, n\u00e9cessite KhiCAS</p>"
+}

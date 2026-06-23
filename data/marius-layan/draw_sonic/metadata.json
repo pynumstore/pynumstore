@@ -1,0 +1,9 @@
+{
+    "name": "draw_sonic",
+    "creator": "marius-layan",
+    "created_at": "March 20, 2023",
+    "size": "1.32 KB",
+    "image": "data/marius-layan/draw_sonic/marius-layan_draw_sonic.png",
+    "tags": [],
+    "description": "<p>Ce script permet de cr\u00e9er un dessin gr\u00e2ce a une grille (taille px modifiable).\ndans cette exemple, j\u2019ai refait Sonic</p>"
+}

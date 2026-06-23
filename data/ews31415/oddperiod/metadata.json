@@ -1,0 +1,9 @@
+{
+    "name": "oddperiod",
+    "creator": "ews31415",
+    "created_at": "November 16, 2021",
+    "size": "545 Bytes",
+    "image": "data/ews31415/oddperiod/ews31415_oddperiod.png",
+    "tags": [],
+    "description": "<p>Payment on a monthly loan with an partial first period (0 to 59 days).  The cash flow convention is used.</p><p>Source:\nHP 17BII+ Financial Calculator User\u2019s Guide.  Ed. 2.  Hewlett Packard.  San Diego, CA  2004</p>"
+}

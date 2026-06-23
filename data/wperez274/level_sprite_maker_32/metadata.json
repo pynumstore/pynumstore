@@ -1,0 +1,9 @@
+{
+    "name": "level_sprite_maker_32",
+    "creator": "wperez274",
+    "created_at": "April 05, 2023",
+    "size": "12 KB",
+    "image": "data/wperez274/level_sprite_maker_32/wperez274_level_sprite_maker_32.png",
+    "tags": [],
+    "description": "<p>\u201d\u201d\u201d\nBasic Guide:\n====================================</p><p>Key [ Backspace ] = Set shape or object.\nKey [ VAR ] = Undo Last object.\nKey [ COSINE ] = Test Game Level.\nKey [ EXE ] = EXIT &amp; Print Data of All Set Objects \nand Background as well..\n================================\nFAST MODE:</p><h4>Hold [ SHIFT ] to SHAPE Change fast.</h4><p>SHAPE Change <strong>**</strong><strong>**</strong><strong>**</strong>*****</p><pre><code>    ( - Decrease Width ) [ ( ], [ ) ] ( Increase Width+ )\n    ( - Decrease Height ) [ * ], [ / ] ( Increase Height + ) \n</code></pre><hr><hr><p>Hold [ Sqrt ] to go fast with Movement ( LEFT RIGHT UP DOWN )\n<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*****\n**Colors:</p><p>[ OK ] + Random Color of Current unset object.\n[ 0 ] (ZERO) = RANDOMIZE All Colored Objects and Background.\n[ 1 ] = Change All Set Objects Color to Black. <br>\n[ 7 ] = Red\n[ 8 ] = Green\n[ . ] = Change Current Unset Object to Color Black &amp; Background to White.\n[ x10^ ] = Opposite of [ . ]</p><p>(Every Key has a different function)</p>"
+}

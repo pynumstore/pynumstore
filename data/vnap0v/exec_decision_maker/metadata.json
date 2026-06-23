@@ -1,0 +1,9 @@
+{
+    "name": "exec_decision_maker",
+    "creator": "vnap0v",
+    "created_at": "September 01, 2025",
+    "size": "1.17 KB",
+    "image": "data/vnap0v/exec_decision_maker/vnap0v_exec_decision_maker.png",
+    "tags": [],
+    "description": "<h3>EXECUTIVE DECISION MAKER</h3><p>This script is inspired on a device Radio Shack used to sell. Meant as a joke it generates random \u201cexecutive decisions\u201d.</p><p>A bit of animation is build in.</p><p>The script uses the following libraries:</p><ul>\n<li>\n<strong>kandinsky</strong> for drawing and text positioning</li>\n<li>\n<strong>ion</strong> to react on key press</li>\n<li>\n<strong>time</strong> to time the simple animations</li>\n<li>\n<strong>random</strong> to generate the random decisions</li>\n</ul>"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "bezier1",
+    "creator": "ews31415",
+    "created_at": "May 02, 2021",
+    "size": "1.95 KB",
+    "image": "data/ews31415/bezier1/ews31415_bezier1.png",
+    "tags": [],
+    "description": "<p>The script bezier1 plots a Bezier curve of degree 1, 2, or 3 in one of four colors: black (0), red (1), green (2), and blue (3).  The script uses the ion module, which allows input directly from the keyboard.</p><p>Edward Shore 5/2/2021</p>"
+}

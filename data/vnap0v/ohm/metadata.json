@@ -1,0 +1,9 @@
+{
+    "name": "ohm",
+    "creator": "vnap0v",
+    "created_at": "May 26, 2025",
+    "size": "1.39 KB",
+    "image": "data/vnap0v/ohm/vnap0v_ohm.png",
+    "tags": [],
+    "description": "<p>This \u2018Ohms law helper\u2019 allows you to type the two known variables with the unit added for example 5V or 0.1A or 10000ohm and the script automatically calculates the third variable which was unknown. Uses no imported libraries, also runs in CPython on a PC. Tested on the calculator using software version 23.2.6.</p>"
+}

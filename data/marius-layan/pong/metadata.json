@@ -1,0 +1,9 @@
+{
+    "name": "pong",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "2.52 KB",
+    "image": "data/marius-layan/pong/marius-layan_pong.png",
+    "tags": [],
+    "description": "<p>Voici une reconstitution du jeu nomm\u00e9 Pong (2 joueur). ce jeu est assez connu mais pour les quelques personnes vivants dans une grotte, je vous explique le but du jeu : Le jeu est inspir\u00e9 du tennis de table en vue de dessus, et chaque joueur s\u2019affronte en d\u00e9pla\u00e7ant la raquette virtuelle de haut en bas, de fa\u00e7on \u00e0 garder la balle dans le terrain de jeu pendant que la vitesse augmente au cours de la manche.</p><p>joueur 1: UP = [1] \u2026 Down = [0]</p><p>joueur 2: UP = [MINUS] \u2026 Down = [EXE]</p><p>BON JEU !</p>"
+}

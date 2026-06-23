@@ -1,0 +1,9 @@
+{
+    "name": "memory_test",
+    "creator": "elnix91",
+    "created_at": "April 20, 2025",
+    "size": "1.88 KB",
+    "image": "data/elnix91/memory_test/elnix91_memory_test.png",
+    "tags": [],
+    "description": "<p>A simple memory test. You play using the arrows keys. A suite of directions (colors: Left=red; Up=blue; Down=green; Right=purple) appear and then, you have to repeat it in the exact order. If you fail on a single color, you lose and you get your score.\nIf you are on Omega or Upsilon, your best score is automatically saved in a file named \u201cmt.sav\u201d\nDon\u2019t hesitate to tell me if you find any bug on discord (@elnix91) or by mail: elnix91@gmail.com</p>"
+}

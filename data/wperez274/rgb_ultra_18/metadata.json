@@ -1,0 +1,9 @@
+{
+    "name": "rgb_ultra_18",
+    "creator": "wperez274",
+    "created_at": "March 29, 2023",
+    "size": "3.76 KB",
+    "image": "data/wperez274/rgb_ultra_18/wperez274_rgb_ultra_18.png",
+    "tags": [],
+    "description": "<p>Tool to learn about colors and\nto actually create new colors and save\nthem ( the tuple lists [] )\nExample;</p><p>DARK_GREEN = (0,155,0)</p><p>You welcome.</p>"
+}

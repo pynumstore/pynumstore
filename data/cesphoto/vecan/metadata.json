@@ -1,0 +1,9 @@
+{
+    "name": "vecan",
+    "creator": "cesphoto",
+    "created_at": "May 29, 2024",
+    "size": "2.02 KB",
+    "image": "data/cesphoto/vecan/cesphoto_vecan.png",
+    "tags": [],
+    "description": "<p>Vector Analysis program.  Input vectors U and V.  Calculate dot product, cross product, scalar projections, vector projections, the angle between vectors, norm of vectors, and normalize vectors, along with switching vectors U and V.</p>"
+}

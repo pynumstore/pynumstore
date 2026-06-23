@@ -1,0 +1,9 @@
+{
+    "name": "lines_kandinsky",
+    "creator": "vnap0v",
+    "created_at": "May 29, 2025",
+    "size": "781 Bytes",
+    "image": "data/vnap0v/lines_kandinsky/vnap0v_lines_kandinsky.png",
+    "tags": [],
+    "description": "<p>The Kandinsky library has functions to directly draw to the screen but it does not contain a function to draw a line between any two point. This script defines function connect() which draws a line between two given points. It uses kandinsky.set_pixel(). The script also contains a test of that function drawing several lines of different color. Tested on the calculator using software version 23.2.6.</p>"
+}

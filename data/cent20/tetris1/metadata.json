@@ -1,0 +1,9 @@
+{
+    "name": "tetris1",
+    "creator": "cent20",
+    "created_at": "January 27, 2025",
+    "size": "7.88 KB",
+    "image": "data/cent20/tetris1/cent20_tetris1.png",
+    "tags": [],
+    "description": "<h3>\ud835\udde7\ud835\uddf2\ud835\ude01\ud835\uddff\ud835\uddf6\ud835\ude00</h3><p><br>\nPython Game for Numworks N0110 and N0100, <br>\nBy Kevin FEDYNA, Ilyas RAHMOUN &amp; Vincent ROBERT. April 2020, december 2024<br>\n<a href=\"https://nsi.xyz/tetris\" rel=\"nofollow\">https://nsi.xyz/tetris</a> (FR)\nUn Tetris en flat design, ludique et prenant. A tester rapidement ! \ud83d\ude0d</p><p>Cette version est le script original https://my.numworks.com/python/cent20/tetris d\u00e9bogu\u00e9 pour les versions de Epsilon &gt;= 20</p>"
+}

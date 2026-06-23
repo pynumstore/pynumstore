@@ -1,0 +1,9 @@
+{
+    "name": "morpion",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "3.54 KB",
+    "image": "data/marius-layan/morpion/marius-layan_morpion.png",
+    "tags": [],
+    "description": "<p>Voici une reconstitution du jeu nomm\u00e9 le Morpion, le but est simple: 2 joueur s\u2019affronte (joueur bleu et joueur rouge), une grille de 9 cases est a leur disposition, il peuvent chacun leur tour d\u00e9sirer d\u2019occuper une case et le premier \u00e0 aligner 3 case occup\u00e9es \u00e0 gagn\u00e9.</p><p>les cases peuvent \u00eatre occup\u00e9es gr\u00e2ce aux touches allant de 1 \u00e0 9.</p><p>BON JEU !</p>"
+}

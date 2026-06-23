@@ -1,0 +1,9 @@
+{
+    "name": "pythagorean_solver",
+    "creator": "tracy-pratt-1",
+    "created_at": "June 16, 2026",
+    "size": "587 Bytes",
+    "image": "data/tracy-pratt-1/pythagorean_solver/tracy-pratt-1_pythagorean_solver.png",
+    "tags": [],
+    "description": "<p>This script will allow you to solve for a missing side of a right triangle.</p><p>This script runs automatically, so for the best experience:</p><ol>\n<li>Load the script to your calculator</li>\n<li>In the python app, use the three dots beside the script name to access the options</li>\n<li>Toggle off \u201cAuto import to shell\u201d</li>\n<li>Execute the script in the options</li>\n<li>Back out and execute again to solve repeatedly</li>\n</ol>"
+}

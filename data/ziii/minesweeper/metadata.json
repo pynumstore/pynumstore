@@ -1,0 +1,9 @@
+{
+    "name": "minesweeper",
+    "creator": "ziii",
+    "created_at": "December 19, 2023",
+    "size": "5.06 KB",
+    "image": "data/ziii/minesweeper/ziii_minesweeper.png",
+    "tags": [],
+    "description": "<p>A basic minesweeper game. Grid size can be chosen up to 24*17, as well as the number of bombs. Colors are fully customizable.</p><p>How to play:</p><p>After executing the script enter use the backspace and numbers to enter size of the grid and the amount of bombs.</p><p>Arrows to move cursor.</p><p>Ok to see what\u2019s under a tile.</p><p>Shift to put or remove a flag on a tile.</p><p>You can customize colors in the script, from line 10 to 30 change the rgb values to change the colors of what\u2019s described in the comment on the right.</p>"
+}

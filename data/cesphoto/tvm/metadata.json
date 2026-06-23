@@ -1,0 +1,9 @@
+{
+    "name": "tvm",
+    "creator": "cesphoto",
+    "created_at": "December 13, 2021",
+    "size": "997 Bytes",
+    "image": "data/cesphoto/tvm/cesphoto_tvm.png",
+    "tags": [],
+    "description": "<p>TVM Solver: \nTime Value of Money Solver.  Solves for PMT, FV, PV, or N.\nRun tvm() or press the var button and select tvm().  Select the variable to solve for, and the inputs are similar to the TI calculators.</p>"
+}

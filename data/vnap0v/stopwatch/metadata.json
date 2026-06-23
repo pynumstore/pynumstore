@@ -1,0 +1,9 @@
+{
+    "name": "stopwatch",
+    "creator": "vnap0v",
+    "created_at": "May 24, 2025",
+    "size": "812 Bytes",
+    "image": "data/vnap0v/stopwatch/vnap0v_stopwatch.png",
+    "tags": [],
+    "description": "<p>This implements a simple stopwatch. It uses the time module for the monotonic() function. It also uses kandinsky to put text on the screen at a fixed position and ion to detect key presses. Tested on the calculator using software version 23.2.6.</p>"
+}

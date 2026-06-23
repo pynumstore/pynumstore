@@ -1,0 +1,9 @@
+{
+    "name": "srdice",
+    "creator": "lastfuture",
+    "created_at": "October 19, 2018",
+    "size": "1.01 KB",
+    "image": "data/lastfuture/srdice/lastfuture_srdice.png",
+    "tags": [],
+    "description": "<p>Shadowrun dice roller with exploding sixes (edge) and glitch/critical detection</p>"
+}

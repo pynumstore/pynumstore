@@ -1,0 +1,9 @@
+{
+    "name": "freqcalc",
+    "creator": "lastfuture",
+    "created_at": "November 10, 2018",
+    "size": "460 Bytes",
+    "image": "data/lastfuture/freqcalc/lastfuture_freqcalc.png",
+    "tags": [],
+    "description": "<p>Converts between frequency in Hz and meters based on the speed of light in a vaccum. Calculates heterodyne frequencies for multiple orders</p>"
+}

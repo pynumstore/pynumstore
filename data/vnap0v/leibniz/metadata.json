@@ -1,0 +1,9 @@
+{
+    "name": "leibniz",
+    "creator": "vnap0v",
+    "created_at": "August 06, 2025",
+    "size": "1007 Bytes",
+    "image": "data/vnap0v/leibniz/vnap0v_leibniz.png",
+    "tags": [],
+    "description": "<h3>Leibniz formula for approximation of pi</h3><pre><code>pi \u2248 4 *  sum[ (-1)**k / (2*k + 1) ]\nfor k=0 .. inf\n</code></pre><p>The script shows the approximation after a first number of iterations.</p><p>Matplotlib and numpy are used to plot the values.</p><p>The code optimises the formula by</p><ul>\n<li>\n<p>using a  variable \u201cdenom\u201d which starts at 1 and increases by 2 \ninstead off calculating (2*k + 1) each iteration</p>\n</li>\n<li>\n<p>using  variable \u201csign\u201d which toggles between +1 and -1, \n instead off calculating (-1)**k</p>\n</li>\n</ul>"
+}

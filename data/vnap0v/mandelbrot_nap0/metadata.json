@@ -1,0 +1,9 @@
+{
+    "name": "mandelbrot_nap0",
+    "creator": "vnap0v",
+    "created_at": "May 16, 2025",
+    "size": "309 Bytes",
+    "image": "data/vnap0v/mandelbrot_nap0/vnap0v_mandelbrot_nap0.png",
+    "tags": [],
+    "description": "<p>There is a official Numworks Mandelbrot script. This is a different version made from scratch.  Uses the library kandinsky. Tested on the calculator using software version 23.2.6.</p>"
+}

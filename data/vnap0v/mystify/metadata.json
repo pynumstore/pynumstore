@@ -1,0 +1,9 @@
+{
+    "name": "mystify",
+    "creator": "vnap0v",
+    "created_at": "June 02, 2025",
+    "size": "1.21 KB",
+    "image": "data/vnap0v/mystify/vnap0v_mystify.png",
+    "tags": [],
+    "description": "<p>This script displays a simplified  \u201cMystify\u201d screensaver known from past versions of MS Windows. It uses the kandinsky library for drawing, random library for the random corner points and the time library to pace the animation.  Tested on the calculator using software version 23.2.6.</p>"
+}

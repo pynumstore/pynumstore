@@ -1,0 +1,9 @@
+{
+    "name": "rgbselector5",
+    "creator": "wperez274",
+    "created_at": "February 01, 2023",
+    "size": "1.25 KB",
+    "image": "data/wperez274/rgbselector5/wperez274_rgbselector5.png",
+    "tags": [],
+    "description": "<p>Color select and prints rgb values\nfor using in scripts.\nJust have to use Up arrow key to go up \nHold [Shift) &amp; Highlight tuple, [Navigation] (arrow) keys.</p><p>Paste it wherever to want to use it.\nThis is a cool tool with no bools or fools.\nNo class but still badass.\nThis spaghetti code can make you more bold.</p><p>example:</p><p>from kandinsky import *</p><p>fill_rect(0,0,322,222,(23,56,67))</p><p>the last argument (a tuple) could have been discovered with this script.</p><p>Instructions on screen.</p>"
+}

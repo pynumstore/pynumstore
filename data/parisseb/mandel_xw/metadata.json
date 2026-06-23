@@ -1,0 +1,9 @@
+{
+    "name": "mandel_xw",
+    "creator": "parisseb",
+    "created_at": "September 06, 2020",
+    "size": "661 Bytes",
+    "image": "data/parisseb/mandel_xw/parisseb_mandel_xw.png",
+    "tags": [],
+    "description": "<p>KhiCAS (MicroPython): fractale de Mandelbrot en exploitant la sym\u00e9trie</p>"
+}

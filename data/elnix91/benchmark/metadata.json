@@ -1,0 +1,9 @@
+{
+    "name": "benchmark",
+    "creator": "elnix91",
+    "created_at": "April 20, 2025",
+    "size": "719 Bytes",
+    "image": "data/elnix91/benchmark/elnix91_benchmark.png",
+    "tags": [],
+    "description": "<p>This is a benchmark for the graphics using Kandinsky.\nFor having tested on different models those are the average scores:\nN100 : &lt;7\nN100 Upsilon : &gt;7\nN110 : Na\nN115 : 30\nN120 : &gt;30\nI will surely upgrade this later, so the scores may change. I plan testing the printing power, the turtle and the capacity to run loops.\nDon\u2019t hesitate to tell me if you find any bug on discord or by mail: @elnix91 elnix91@gmail.com</p>"
+}

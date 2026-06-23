@@ -1,0 +1,9 @@
+{
+    "name": "kings_dream",
+    "creator": "vnap0v",
+    "created_at": "June 12, 2025",
+    "size": "661 Bytes",
+    "image": "data/vnap0v/kings_dream/vnap0v_kings_dream.png",
+    "tags": [],
+    "description": "<h4>King\u2019s Dream Fractal</h4><p>This script draws the fractal defined by iterating the x,y values through the following function</p><pre><code>    x = sin(a*x) + b*sin(a*y)\n    y = sin(c*x) + d*sin(c*y)\n</code></pre><p>with constants of</p><pre><code>    a = 2.879879\n    b = -0.765145\n    c = -0.966918\n    d = 0.744728\n</code></pre><p>and initial values of x=2, y=0</p><p>At each point x,y the screen color is retrieved and increased\nThe script uses the kandinsky and math libraries.\nTested on the calculator using software version 23.2.6.</p>"
+}

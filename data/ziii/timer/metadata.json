@@ -1,0 +1,9 @@
+{
+    "name": "timer",
+    "creator": "ziii",
+    "created_at": "February 19, 2022",
+    "size": "1.36 KB",
+    "image": "data/ziii/timer/ziii_timer.png",
+    "tags": [],
+    "description": "<p>A basic timer with a round clock counting seconds and a digital clock with the amount of hours minutes and second elapsed.</p><p>How to use :</p><p>Ok to start or stop the timer.</p>"
+}

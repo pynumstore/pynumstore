@@ -1,0 +1,9 @@
+{
+    "name": "mandelbrot",
+    "creator": "parisseb",
+    "created_at": "February 04, 2020",
+    "size": "458 Bytes",
+    "image": "data/parisseb/mandelbrot/parisseb_mandelbrot.png",
+    "tags": [],
+    "description": "<p>Version de la fractale de Mandelbrot plus rapide en exploitant la sym\u00e9trie.\nFonctionne dans KhiCAS et dans MicroPython (mais avec Delta, version de Epsilon modifi\u00e9e et qui accepte les codes couleurs en un seul entier).</p>"
+}

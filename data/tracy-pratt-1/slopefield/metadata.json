@@ -1,0 +1,9 @@
+{
+    "name": "slopefield",
+    "creator": "tracy-pratt-1",
+    "created_at": "January 09, 2026",
+    "size": "2.75 KB",
+    "image": "data/tracy-pratt-1/slopefield/tracy-pratt-1_slopefield.png",
+    "tags": [],
+    "description": "<p>This script will allow you to generate a slope field for a given dy/dx on the x and y axes [-3, 3].</p><p>When inputting your dy/dx you must explicitly define every operation</p><p>Examples of inputting different slopes are below:</p><p>if dy/dx = 2x/y then input 2*x/y</p><p>if dy/dx = 0.5x+y then input 0.5*x+y</p><p>Watch a tutorial at https://www.youtube.com/watch?v=bT391K229Bs</p>"
+}

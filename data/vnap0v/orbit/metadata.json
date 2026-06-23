@@ -1,0 +1,9 @@
+{
+    "name": "orbit",
+    "creator": "vnap0v",
+    "created_at": "June 21, 2025",
+    "size": "1.44 KB",
+    "image": "data/vnap0v/orbit/vnap0v_orbit.png",
+    "tags": [],
+    "description": "<p>This script simulates the trajectory of orbiting satellites.</p><p>It shows one geostationary orbit and one elliptical.</p><p>Uses the libraries</p><ul>\n<li>kandinsky for output</li>\n<li>time to pace the simulation</li>\n<li>math for the sqrt() function</li>\n<li>ion to be able to stop the simulation by hitting the EXE key</li>\n</ul>"
+}

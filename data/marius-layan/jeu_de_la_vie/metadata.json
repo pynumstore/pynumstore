@@ -1,0 +1,9 @@
+{
+    "name": "jeu_de_la_vie",
+    "creator": "marius-layan",
+    "created_at": "May 31, 2024",
+    "size": "2.39 KB",
+    "image": "data/marius-layan/jeu_de_la_vie/marius-layan_jeu_de_la_vie.png",
+    "tags": [],
+    "description": "<p>Le jeu de la Vie est un \u00ab jeu \u00e0 z\u00e9ro joueur \u00bb. Il s\u2019agit d\u2019un automate cellulaire, qui \u00e0 3 r\u00e8gles ex\u00e9cut\u00e9es \u00e0 chaque frame.</p><p>Les cellules  peuvent prendre deux \u00e9tats distincts : \u00ab vivante \u00bb ou \u00ab morte \u00bb (blanc et noir).</p><p>\u2022 si une cellule a exactement trois voisines vivantes, elle est vivante \u00e0 l\u2019\u00e9tape suivante.</p><p>\u2022 si une cellule a exactement deux voisines vivantes, elle reste dans son \u00e9tat actuel \u00e0 l\u2019\u00e9tape suivante.</p><p>\u2022 si une cellule a strictement moins de deux ou strictement plus de trois voisines vivantes, elle est morte \u00e0 l\u2019\u00e9tape suivante.</p><p>La fonction aleatoire() permet de jouer avec un des cellules d\u00e9fini vivantes al\u00e9atoirement.</p><p>La fonction dessin permet de choisir ses propres cellules vivante avec [EXE].</p>"
+}

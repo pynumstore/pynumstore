@@ -1,0 +1,9 @@
+{
+    "name": "bezier2",
+    "creator": "vnap0v",
+    "created_at": "July 01, 2025",
+    "size": "2.27 KB",
+    "image": "data/vnap0v/bezier2/vnap0v_bezier2.png",
+    "tags": [],
+    "description": "<h3>Bezier curves</h3><p>This script defines functions which can draw Bezier curves using the kandinsky library</p><p>the function that does the actual drawing is:</p><pre><code>draw_bezier(funct_bezier,points,Nsteps,col)\n</code></pre><ul>\n<li>funct_bezier: either bezier1(), bezier2() or bezier3()</li>\n<li>points is a list or tuple of (x,y)</li>\n<li>Nsteps: number of points calculated, are connected with straight lines</li>\n<li>col: color to draw</li>\n</ul>"
+}

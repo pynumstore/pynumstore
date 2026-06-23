@@ -1,0 +1,9 @@
+{
+    "name": "puissance4",
+    "creator": "marius-layan",
+    "created_at": "February 05, 2024",
+    "size": "1.7 KB",
+    "image": "data/marius-layan/puissance4/marius-layan_puissance4.png",
+    "tags": [],
+    "description": "<p>Voici une reconstitution du jeu puissance 4, un je de soci\u00e9t\u00e9 bien connu. Le but est simple: Tour \u00e0 tour, 2 joueurs placent un pion dans la colonne de leur choix, le pion coulisse alors jusqu\u2019\u00e0 la position la plus basse possible, le vainqueur est le joueur qui r\u00e9alise le premier un alignement (horizontal, vertical ou diagonal) cons\u00e9cutif d\u2019au moins quatre pions de sa couleur.\n(je n\u2019ai pas pu impl\u00e9menter la victoire d\u2019un joueur, donc c\u2019est \u00e0 vous d\u2019\u00eatre attentif, comme dans le vrai jeu)</p><p>pour changer de colonne: [LEFT] ou [RIGHT]</p><p>pour valider: [OK]</p><p>BON JEU !</p>"
+}

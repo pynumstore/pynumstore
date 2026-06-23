@@ -1,0 +1,9 @@
+{
+    "name": "rabbit_full2",
+    "creator": "fizban",
+    "created_at": "October 30, 2024",
+    "size": "19.8 KB",
+    "image": "data/fizban/rabbit_full2/fizban_rabbit_full2.png",
+    "tags": [],
+    "description": "<p>Image of a bunny. The image has been encoded in base64 in a special 16 color compressed format on top of an lz77 based compression algorithm</p>"
+}

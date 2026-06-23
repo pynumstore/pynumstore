@@ -1,0 +1,9 @@
+{
+    "name": "lagrange_interpolation",
+    "creator": "vnap0v",
+    "created_at": "December 19, 2025",
+    "size": "3.34 KB",
+    "image": "data/vnap0v/lagrange_interpolation/vnap0v_lagrange_interpolation.png",
+    "tags": [],
+    "description": "<h3>Linear and polynomial interpolation using Lagrange polynomial</h3><p>try from wikipedia using info from:</p><ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Linear_interpolation\" rel=\"nofollow\">Linear interpolation</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Lagrange_polynomial\" rel=\"nofollow\">Lagrange polynomial</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Polynomial_interpolation\" rel=\"nofollow\">Polynomial interpolation</a></li>\n</ul><h4>Linear interpolation</h4><p>(x0,y0) (x1,y1) succesive data points</p><pre><code>                   y1 - y0\ny = y0 + (x - x0) \u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\n                   x1 - x0\n</code></pre><h4>Lagrange polynomial</h4><pre><code>xi, yi : data points\n \n         n  \u239b         x - xj     \u239e\np(x) =   \u2211  \u239c    \u220f   \u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af    \u239f yi\n        i=0 \u239d  0\u2264j\u2264n  xi - xj    \u23a0\n                j\u2260i\n</code></pre><h4>Lagrange polynomial in second barycentric form</h4><pre><code>xj, yj: data points, wj: barymetric weight\n \nwj =  \u220f  (xj - xm)\u207b\u00b9  \n     m\u2260j\n \n          k  \u239b    wj      \u239e\n          \u2211  \u239c \u23af\u23af\u23af\u23af\u23af\u23af\u23af yj  \u239f \n         j=0 \u239d  x - xj    \u23a0\np(x) = \u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\u23af\n          k  \u239b    wj   \u239e\n          \u2211  \u239c \u23af\u23af\u23af\u23af\u23af\u23af\u23af  \u239f \n         j=0 \u239d  x - xj \u23a0\n</code></pre>"
+}

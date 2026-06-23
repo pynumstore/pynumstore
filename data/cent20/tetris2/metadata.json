@@ -1,0 +1,9 @@
+{
+    "name": "tetris2",
+    "creator": "cent20",
+    "created_at": "January 11, 2025",
+    "size": "11.1 KB",
+    "image": "data/cent20/tetris2/cent20_tetris2.png",
+    "tags": [],
+    "description": "<h3>\ud835\udde7\ud835\uddf2\ud835\ude01\ud835\uddff\ud835\uddf6\ud835\ude00  \ud835\udfee</h3><p><br>\nPython Game for Numworks, Epsilon 20+<br>\nBy Kevin FEDYNA, Ilyas RAHMOUN &amp; Vincent ROBERT. April 2020, december 2024<br>\n<a href=\"https://nsi.xyz/tetris\" rel=\"nofollow\">https://nsi.xyz/tetris</a> (FR)\nUn Tetris en flat design, ludique et prenant. A tester rapidement ! \ud83d\ude0d</p><p><b>Changelog</b><br>\nTetris v1.0 - 28/04/2020:<br>\n- Initial game</p><p>Tetris v2.0 - 25/12/2024:<br>\n- Fixed the game on Epsilon 20+<br>\n- The interface has been updated<br>\n- The [var] key is now used to pause and resume the game<br></p>"
+}

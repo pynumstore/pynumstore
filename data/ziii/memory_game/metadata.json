@@ -1,0 +1,9 @@
+{
+    "name": "memory_game",
+    "creator": "ziii",
+    "created_at": "August 31, 2022",
+    "size": "2.73 KB",
+    "image": "data/ziii/memory_game/ziii_memory_game.png",
+    "tags": [],
+    "description": "<p>A basic memory game with numbers instead of drawings.</p><p>How to play :</p><p>Arrows to move the cursor (red rectangle)</p><p>Ok to reveal the number under the selected card.</p>"
+}

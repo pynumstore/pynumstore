@@ -1,0 +1,9 @@
+{
+    "name": "z_test_affichage",
+    "creator": "cent20",
+    "created_at": "March 30, 2023",
+    "size": "298 Bytes",
+    "image": "data/cent20/z_test_affichage/cent20_z_test_affichage.png",
+    "tags": [],
+    "description": "<p>Test la largeur de l\u2019affichage et sa longueur en mode console : \n29 caract\u00e8res de large, 11 lignes exploitables</p>"
+}

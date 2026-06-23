@@ -1,0 +1,11 @@
+{
+    "name": "jeu_de_la_vie",
+    "creator": "elnix90",
+    "created_at": "March 15, 2023",
+    "size": "8.38 KB",
+    "image": "data/elnix90/jeu_de_la_vie/elnix90_jeu_de_la_vie.png",
+    "tags": [
+        "016"
+    ],
+    "description": "<p>Le c\u00e9l\u00e8bre Jeu de la Vie de Conway cr\u00e9\u00e9 en 1970.</p><p>Ce programme poss\u00e8de 3 fonctionnalit\u00e9s principales: \n-le mode al\u00e9atoire\n-le mode manuel\n-le mode pr\u00e9d\u00e9fini</p><p>Chacun de ses mode vous permet de placer diff\u00e9remment les cellules vivantes ou mortes.</p><p>Pour chaque mode, vous pouvez choisir une taille de cellules.</p><p>ATTENTION; en dessous de la taille 6, votre calculatrice risque de ne pas pouvoir calculer toutes les cellules, c\u2019est pourquoi je vous conseille de ne choisir que les tailles 6 et sup\u00e9rieures.</p><p>Il n\u2019est pas omis que j\u2019optimise mon programme a l\u2019avenir, donc si vous avez des suggestions, vous pouvez me contacter sur discord: Elnix90#016</p>"
+}

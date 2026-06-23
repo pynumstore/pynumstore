@@ -1,0 +1,9 @@
+{
+    "name": "etchasketch",
+    "creator": "wperez274",
+    "created_at": "January 09, 2022",
+    "size": "1.44 KB",
+    "image": "data/wperez274/etchasketch/wperez274_etchasketch.png",
+    "tags": [],
+    "description": "<p>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@                                                                                                                                                 @\n@         Classic EtchaSketch Magic Screen!                                                                   @\n@ ===========================================================  @\n@       key [+] = Increase Size.\n@       key [-] = Decrease Size.\n@       key [Backspace] = Clear Entire Screen &amp; Reset to Center of Screen.\n@       key [Ans] = Reset size to Original.\n@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</p>"
+}
