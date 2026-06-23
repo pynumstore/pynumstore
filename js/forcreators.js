@@ -74,12 +74,13 @@ async function sendCreator() {
 
     window.turnstile?.reset();
 
+    document.getElementById("submit-button").disabled = false;
+
     if (data.success) {
       setMsg(`"${name}" has been added to the database!`, "green");
       document.getElementById("creatorName").value = "";
     } else {
       startCooldown()
-      document.getElementById("submit-button").disabled = false;
 
       switch (data.reason) {
         case "duplicate":
