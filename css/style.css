@@ -272,6 +272,8 @@ nav ul li a:hover {
     letter-spacing: 1px;
     font-size: 1rem;
     transition: transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+    width: auto;
 }
 
 #search button:hover {
