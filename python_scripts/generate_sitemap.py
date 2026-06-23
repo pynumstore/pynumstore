@@ -58,5 +58,3 @@ def generate_sitemap():
         f.write(xml_str)
 
     print(f"Sitemap generated: {1 + len(creators) + len(scripts)} URLs")
-
-generate_sitemap()
