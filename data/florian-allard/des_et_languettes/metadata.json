@@ -1,0 +1,9 @@
+{
+    "name": "des_et_languettes",
+    "creator": "florian-allard",
+    "created_at": "June 29, 2026",
+    "size": "7.96 KB",
+    "image": "data/florian-allard/des_et_languettes/florian-allard_des_et_languettes.png",
+    "tags": [],
+    "description": "<p>Petit jeu qui consiste \u00e0 lancer 2 d\u00e9s puis \u00e0 s\u00e9lectionner des languettes \u00e0 rabattre. Il faut que la somme des num\u00e9ros des languettes soit \u00e9gale \u00e0 la somme des deux d\u00e9s. Le but est de rabattre toutes les languettes. Modes 1 ou 2 joueurs. Possibilit\u00e9 de choisir le nombre de vies.</p>"
+}
