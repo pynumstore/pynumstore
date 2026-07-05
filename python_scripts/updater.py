@@ -159,11 +159,8 @@ class Updater:
             creator_db_hash = self.saver.get_creator_hash(creator)
             creator_ws_hash, comment = self.scanner.get_creator_hash(creator)
             if creator_ws_hash is None:
-                if comment == "creator_not_found":
-                    self.saver.delete_creator(creator)
-                    creators_to_delete.append(creator)
-                else:
-                    continue
+                self.saver.delete_creator(creator)
+                creators_to_delete.append(creator)
             elif creator_db_hash != creator_ws_hash:
                 creators_to_update.append(creator)
             else:
@@ -191,10 +188,7 @@ class Updater:
             script_db_hash = self.saver.get_script_hash(script[0], script[1])
             script_ws_hash, comment = self.scanner.get_script_hash(script[0], script[1])
             if script_ws_hash is None:
-                if comment == "script_not_found":
-                    self.saver.delete_script(script[0], script[1])
-                else:
-                    continue
+                self.saver.delete_script(script[0], script[1])
             elif script_db_hash is None:
                 self.saver.insert_script(script[0], script[1])
             elif script_db_hash != script_ws_hash:
