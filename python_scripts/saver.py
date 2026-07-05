@@ -15,7 +15,9 @@ class Saver:
     def close(self):
         self.conn.close()
 
-    def insert_creator(self, creator, data={}):
+    def insert_creator(self, creator, data=None):
+        if data is None:
+            data = {}
         keys = " name,"
         values = (creator, )
         text = "?, "
@@ -31,7 +33,9 @@ class Saver:
             values 
         )
 
-    def insert_script(self, creator, name, data={}):
+    def insert_script(self, creator, name, data=None):
+        if data is None:
+            data = {}
         keys = "creator, name,"
         values = (creator, name)
         text = "?, ?, "
