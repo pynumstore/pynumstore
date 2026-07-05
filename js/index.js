@@ -11,7 +11,7 @@ async function loadScripts() {
     SELECT name, creator, thumbnail
     FROM scripts
     ORDER BY RANDOM()
-    LIMIT 12
+    LIMIT 30
   `);
 
   for (const script of scripts) {

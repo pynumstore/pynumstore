@@ -32,7 +32,7 @@ async function search(query) {
           ELSE 2
         END,
         name
-      LIMIT 21
+      LIMIT 30
     `, [pattern, pattern, pattern, pattern, pattern]);
 
   } else {
@@ -40,7 +40,7 @@ async function search(query) {
       SELECT name, creator, thumbnail
       FROM scripts
       ORDER BY RANDOM()
-      LIMIT 21
+      LIMIT 30
     `);
   }
 
