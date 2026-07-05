@@ -15,7 +15,7 @@ update = False
 def change_update():
     global update
     update = True
-schedule.every().hours.at(":15").do(change_update)
+schedule.every().days.at("12:00").do(change_update)
 
 while True:
 
