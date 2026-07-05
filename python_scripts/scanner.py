@@ -38,6 +38,8 @@ class Scanner:
 
         if r.status_code != 200:
             return None, "network_error"
+        if r.title == "404. Not found.":
+            return None, "creator_not_found"
 
         html = r.text
 
@@ -65,6 +67,8 @@ class Scanner:
 
         if r.status_code != 200:
             return None, "network_error"
+        if r.title == "404. Not found.":
+            return None, "script_not_found"
 
         html = r.text
 
@@ -92,6 +96,8 @@ class Scanner:
 
         if r.status_code != 200:
             return None, "network_error"
+        if r.title == "404. Not found.":
+            return None, "creator_not_found"
 
         names = []
 

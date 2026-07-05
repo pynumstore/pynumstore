@@ -126,7 +126,7 @@ class Saver:
 
     def creator_exists(self, creator):
         row = self.conn.execute(
-            "SELECT body_hash FROM creator WHERE name = ?",
+            "SELECT body_hash FROM creators WHERE name = ?",
             (creator,)
         ).fetchone()
 
