@@ -7,20 +7,23 @@ export async function getDB() {
 
   _promise = (async () => {
     try {
+      const vRes = await fetch("data/version.json");
+      const { v } = await vRes.json();
+
       const SQL = await window.initSqlJs({
         locateFile: file =>
           `https://cdn.jsdelivr.net/npm/sql.js@1.10.3/dist/${file}`
       });
 
-      const res = await fetch("data/pynumstore.db");
+      const res = await fetch(`data/pynumstore.db?v=${v}`);
       if (!res.ok) throw new Error(`Failed to fetch DB : ${res.status}`);
 
       const buffer = await res.arrayBuffer();
       _db = new SQL.Database(new Uint8Array(buffer));
       return _db;
-    } catch (err) {
+    } catch (e) {
       _promise = null;
-      throw err;
+      throw e;
     }
   })();
 

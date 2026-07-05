@@ -4,6 +4,7 @@ from saver import Saver
 from scanner import Scanner
 from reporter import Reporter
 import tqdm
+from datetime import datetime, timezone
 
 class Updater:
     
@@ -54,6 +55,8 @@ class Updater:
             self.update_scripts(scripts_to_update)
             self.saver.commit()
             self.saver.set_creators_as(self.saver.get_creators_db())
+            with open("data/version.json", "w") as f:
+                json.dump({"v": datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")}, f)
             self.saver.close()
             self.scanner.close()
             self.reporter.generate_and_send_report(
