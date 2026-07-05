@@ -74,7 +74,6 @@ class Updater:
             self.saver.close()
             self.scanner.close()
             self.reporter.end_update()
-            self.reporter.end_update()
             self.reporter.send_error(e)
             raise e
     
@@ -189,8 +188,6 @@ class Updater:
             script_ws_hash, comment = self.scanner.get_script_hash(script[0], script[1])
             if script_ws_hash is None:
                 self.saver.delete_script(script[0], script[1])
-            elif script_db_hash is None:
-                self.saver.insert_script(script[0], script[1])
             elif script_db_hash != script_ws_hash:
                 scripts_to_update.append(script)
             else:
