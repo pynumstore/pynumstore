@@ -6,7 +6,7 @@
 
 PyNumStore is an alternative platform that indexes and showcases Python scripts published on the official NumWorks website.
 
-It allows users to discover, search, and share NumWorks Python scripts more easily while also providing tools to access and process script metadata.
+It allows users to discover, search, and browse NumWorks Python scripts more easily, while providing an automated backend that keeps the database up to date.
 
 ## Features
 
@@ -14,19 +14,21 @@ It allows users to discover, search, and share NumWorks Python scripts more easi
 
 PyNumStore provides a web interface that allows users to:
 
-* Discover new creators and scripts
-* Search for NumWorks Python scripts
-* Browse scripts by creator
-* Share and promote their own scripts
+* Discover new scripts on the home page (randomized selection)
+* Search for scripts by name, creator or description
+* Browse all scripts from a specific creator
+* View script details: description, thumbnail, creation date, size and tags
+* Submit their username to be added to the database
 
-### Developer Tools
+### Backend
 
-PyNumStore also provides tools that can:
+The backend is a Python application that:
 
-* Parse the NumWorks website
-* Retrieve the complete index of creators
-* Retrieve the complete index of scripts
-* Automatically update the local database
+* Scrapes the NumWorks website using `curl_cffi` (lightweight hash checks) and `playwright` (full scans with screenshots)
+* Detects changes efficiently using SHA-256 hashes — Playwright is only launched for scripts that have actually changed
+* Stores all data in a SQLite database (`data/pynumstore.db`)
+* Syncs the list of tracked creators with a Google Sheets spreadsheet
+* Sends update reports and accepts commands via a Telegram bot
 
 ## Installation
 
@@ -34,6 +36,7 @@ PyNumStore also provides tools that can:
 
 * Python 3.10 or newer
 * `venv` module
+* Playwright browsers (`playwright install chromium`)
 
 ### Setup
 
@@ -45,94 +48,145 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
+playwright install chromium
+```
+
+### Configuration
+
+Create `python_scripts/tokens.py` (not versioned) with your credentials:
+
+```python
+TELEGRAM_BOT_TOKEN = "your_telegram_bot_token"
+TELEGRAM_CHAT_ID   = "your_telegram_chat_id"
+SHEET_ID           = "your_google_sheet_id"
+```
+
+Place your Google service account key at `python_scripts/credentials.json` (not versioned).
+
+Copy the example settings file:
+
+```bash
+cp python_scripts/settings.example.json python_scripts/settings.json
 ```
 
 ## Project Structure
 
 ```text
 pynumstore/
-├── css/              # Website stylesheets
-├── data/             # Scripts and creators data
-├── js/               # JavaScript files
-├── python_scripts/   # Python backend and utility scripts
-├── static/           # Website assets and logos
-├── 404.html          # 404 error page
-├── creator.html      # Creator page
-├── forcreators.html  # Information page for creators
-├── index.html        # Home page
-├── script.html       # Script page
-├── search.html       # Search page
-└── requirements.txt  # Python dependencies
+├── css/                        # Website stylesheets
+├── data/
+│   ├── pynumstore.db           # SQLite database (scripts + creators)
+│   └── thumbnails/             # Script screenshot thumbnails
+├── js/
+│   ├── db.js                   # sql.js loader and query helpers (shared)
+│   ├── utils.js                # Shared UI utilities (card builder)
+│   ├── index.js                # Home page logic
+│   ├── search.js               # Search page logic
+│   ├── creator.js              # Creator page logic
+│   ├── script.js               # Script detail page logic
+│   ├── forcreators.js          # Creator submission form logic
+│   ├── google_apps_script_api.js  # Apps Script API (server-side, not served)
+│   └── analytics.js            # Google Analytics initialisation
+├── python_scripts/
+│   ├── scanner.py              # Scraping logic (curl_cffi + Playwright)
+│   ├── saver.py                # Database read/write operations
+│   ├── updater.py              # Update orchestration (3 modes)
+│   ├── reporter.py             # Telegram report generation
+│   ├── telegram_bot.py         # Telegram bot (messages + file sending)
+│   ├── event_manager.py        # Main loop (scheduler + command handler)
+│   ├── bleach_allowed.py       # Allowed HTML tags/attributes for sanitisation
+│   ├── generate_sitemap.py     # Sitemap generator (reads from SQLite)
+│   └── settings.example.json  # Settings template
+├── static/                     # Favicons and app icons
+├── 404.html
+├── creator.html
+├── forcreators.html
+├── index.html
+├── robots.txt
+├── script.html
+├── search.html
+├── sitemap.xml
+└── requirements.txt
 ```
 
-### Data Directory
+## Database Schema
 
-The `data/` directory contains:
+All data is stored in `data/pynumstore.db` (SQLite).
 
-* `creators_index.json`: index of all creators
-* `scripts_index.json`: index of all scripts
+```sql
+CREATE TABLE creators (
+    name      TEXT PRIMARY KEY,
+    body_hash TEXT              -- SHA-256 of the creator page body
+);
 
-Each creator has its own directory, which contains one directory for each of their scripts.
+CREATE TABLE scripts (
+    id               INTEGER PRIMARY KEY AUTOINCREMENT,
+    name             TEXT NOT NULL,
+    creator          TEXT NOT NULL REFERENCES creators(name),
+    created_at       TEXT,
+    size             TEXT,
+    thumbnail        TEXT,      -- path to the PNG screenshot
+    description      TEXT,      -- sanitised HTML (bleach), for display
+    description_text TEXT,      -- plain text, for search
+    body_hash        TEXT,      -- SHA-256 of the script page body
+    tags             TEXT,      -- comma-separated tags extracted from description
+    UNIQUE(creator, name)
+);
+```
 
-Each script directory contains:
+## Update System
 
-* `metadata.json`, which stores:
+The backend uses a two-phase approach to minimise Playwright usage:
 
-  * script name
-  * creator name
-  * creation date
-  * description
-  * file size
-  * image path
-  * tags
-* the script thumbnail image
+1. **Hash check** (fast, `curl_cffi`) — fetches each creator page and compares the SHA-256 hash of the body with the stored value. Only creators whose hash has changed proceed to the next phase.
+2. **Full scan** (slow, `playwright`) — navigates to each changed script page, takes a screenshot, extracts metadata and description.
 
-### JavaScript Directory
+### Update Modes
 
-The `js/` directory contains:
+| Command | Description |
+|---|---|
+| `/update` | Standard update: checks all creator hashes, full scan only for changed scripts |
+| `/full_update` | Full scan of all scripts for all creators (ignores hashes) |
+| `/creator_update <name1> <name2>` | Full scan of specific creators only |
 
-* One JavaScript file for each HTML page
-* `google_apps_script_api.js`, which handles communication with the project's Google Apps Script API
+### Telegram Commands
 
-### Python Scripts Directory
+| Command | Description |
+|---|---|
+| `/update` | Run a standard update |
+| `/full_update` | Run a full update |
+| `/creator_update <names>` | Update specific creators |
+| `/status` | Check if an update is running |
+| `/git_status` | Show `git status` output |
+| `/add` | Stage all changes (`git add -A`) |
+| `/push` | Stage, commit and push all changes |
+| `/reset_soft` | Soft reset to previous commit |
+| `/reset_hard` | Hard reset to previous commit |
+| `/push_force` | Force push to remote |
 
-The `python_scripts/` directory contains:
+## Frontend
 
-* `dbg.py`: scrapes and parses the NumWorks website
-* `event_manager.py`: manages updates and scans
-* `generate_sitemap.py`: generates the sitemap for the website
+The website is fully static (HTML/CSS/JS) and hosted on GitHub Pages. There is no server-side rendering.
+
+All data is loaded from `data/pynumstore.db` via [sql.js](https://github.com/sql-js/sql.js) — the entire SQLite database is fetched once and queried in-browser using WebAssembly. Search uses SQL `LIKE` queries across name, creator and description.
+
+Script descriptions are rendered as sanitised HTML (processed by `bleach` on the backend). Multi-line `<code>` blocks are automatically styled as code boxes.
 
 ## Contributing
 
-Contributions are welcome! If you would like to improve PyNumStore, you can help in several ways:
+Contributions are welcome. You can help by:
 
-* Report bugs or issues
-* Suggest new features
-* Improve documentation
-* Submit pull requests with enhancements or fixes
+* Reporting bugs or unexpected behaviour
+* Suggesting new features
+* Improving documentation
+* Submitting pull requests
 
 ### How to contribute
 
 1. Fork the repository
-2. Create a new branch for your changes:
-
-   ```bash
-   git checkout -b feature/my-feature
-   ```
-3. Make your modifications
-4. Commit your changes:
-
-   ```bash
-   git commit -m "Add my feature"
-   ```
-5. Push your branch:
-
-   ```bash
-   git push origin feature/my-feature
-   ```
-6. Open a Pull Request
-
-Please make sure your code follows the existing style and does not break existing functionality.
+2. Create a branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -m "Add my feature"`
+4. Push and open a Pull Request
 
 ---
 
@@ -146,9 +200,7 @@ This project only indexes and displays publicly available scripts from the offic
 
 ## Author
 
-**gradient01**
-
-Email: [gradient01.dev@gmail.com](mailto:gradient01.dev@gmail.com)
+**gradient01** — [gradient01.dev@gmail.com](mailto:gradient01.dev@gmail.com)
 
 ## License
 
