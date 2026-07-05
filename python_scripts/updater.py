@@ -74,6 +74,7 @@ class Updater:
             self.saver.close()
             self.scanner.close()
             self.reporter.end_update()
+            self.reporter.end_update()
             self.reporter.send_error(e)
             raise e
     
@@ -82,51 +83,65 @@ class Updater:
         self.saver = Saver()
         self.scanner = Scanner()
         self.reporter = Reporter()
-        self.reporter.start_update(type="creator_update")
-        print(f"Updating {len(creators_to_update)} creators...")
-        scripts_to_update = []
-        for creator in tqdm.tqdm(creators_to_update):
-            scripts, comment = self.scanner.full_creator_scan(creator)
-            hash, comment = self.scanner.get_creator_hash(creator)
-            if hash is not None:
-                self.saver.update_creator_data(creator, {"body_hash": hash})
-            if scripts is not None:
-                scripts_to_update += [[creator, script] for script in scripts]
-        print(f"Found {len(scripts_to_update)} scripts to update.")
-        print(f"Updating {len(scripts_to_update)} scripts...")
-        self.update_scripts(scripts_to_update)
-        self.saver.commit()
-        self.saver.close()
-        self.scanner.close()
-        self.reporter.generate_and_send_report("creator_update", creators_to_update, scripts_to_update)
-        self.reporter.end_update(type="creator_update")
-        print(f"Update complete at {time.strftime('%Y-%m-%d %H:%M:%S')}.")
+        try:
+            self.reporter.start_update(type="creator_update")
+            print(f"Updating {len(creators_to_update)} creators...")
+            scripts_to_update = []
+            for creator in tqdm.tqdm(creators_to_update):
+                scripts, comment = self.scanner.full_creator_scan(creator)
+                hash, comment = self.scanner.get_creator_hash(creator)
+                if hash is not None:
+                    self.saver.update_creator_data(creator, {"body_hash": hash})
+                if scripts is not None:
+                    scripts_to_update += [[creator, script] for script in scripts]
+            print(f"Found {len(scripts_to_update)} scripts to update.")
+            print(f"Updating {len(scripts_to_update)} scripts...")
+            self.update_scripts(scripts_to_update)
+            self.saver.commit()
+            self.saver.close()
+            self.scanner.close()
+            self.reporter.generate_and_send_report("creator_update", creators_to_update, scripts_to_update)
+            self.reporter.end_update(type="creator_update")
+            print(f"Update complete at {time.strftime('%Y-%m-%d %H:%M:%S')}.")
+        except Exception as e:
+            self.saver.close()
+            self.scanner.close()
+            self.reporter.end_update(type="creator_update")
+            self.reporter.send_error(e)
+            raise e
     
     def full_update(self):
         print(f"Starting a full update at {time.strftime('%Y-%m-%d %H:%M:%S')}...")
         self.saver = Saver()
         self.scanner = Scanner()
         self.reporter = Reporter()
-        self.reporter.start_update(type="full_update")
-        creators_db = self.saver.get_creators_db()
-        print(f"Updating {len(creators_db)} creators...")
-        scripts_to_update = []
-        for creator in tqdm.tqdm(creators_db):
-            scripts, comment = self.scanner.full_creator_scan(creator)
-            hash, comment = self.scanner.get_creator_hash(creator)
-            if hash is not None:
-                self.saver.update_creator_data(creator, {"body_hash": hash})
-            if scripts is not None:
-                scripts_to_update += [[creator, script] for script in scripts]
-        print(f"Found {len(scripts_to_update)} scripts to update.")
-        print(f"Updating {len(scripts_to_update)} scripts...")
-        self.update_scripts(scripts_to_update)
-        self.saver.commit()
-        self.saver.close()
-        self.scanner.close()
-        self.reporter.generate_and_send_report("full_update", creators_db, scripts_to_update)
-        self.reporter.end_update(type="full_update")
-        print(f"Update complete at {time.strftime('%Y-%m-%d %H:%M:%S')}.")
+        try:
+            self.reporter.start_update(type="full_update")
+            creators_db = self.saver.get_creators_db()
+            print(f"Updating {len(creators_db)} creators...")
+            scripts_to_update = []
+            for creator in tqdm.tqdm(creators_db):
+                scripts, comment = self.scanner.full_creator_scan(creator)
+                hash, comment = self.scanner.get_creator_hash(creator)
+                if hash is not None:
+                    self.saver.update_creator_data(creator, {"body_hash": hash})
+                if scripts is not None:
+                    scripts_to_update += [[creator, script] for script in scripts]
+            print(f"Found {len(scripts_to_update)} scripts to update.")
+            print(f"Updating {len(scripts_to_update)} scripts...")
+            self.update_scripts(scripts_to_update)
+            self.saver.commit()
+            self.saver.close()
+            self.scanner.close()
+            self.reporter.generate_and_send_report("full_update", creators_db, scripts_to_update)
+            self.reporter.end_update(type="full_update")
+            print(f"Update complete at {time.strftime('%Y-%m-%d %H:%M:%S')}.")
+        except Exception as e:
+            self.saver.close()
+            self.scanner.close()
+            self.reporter.end_update(type="full_update")
+            self.reporter.send_error(e)
+            raise e
     
     def get_creators_to_check_and_insert(self, creators_db, creators_as):
         creators_to_insert = []
