@@ -1,9 +1,0 @@
-{
-    "name": "rosace",
-    "creator": "andreanx",
-    "created_at": "May 23, 2019",
-    "size": "1006 Bytes",
-    "image": "data/andreanx/rosace/andreanx_rosace.png",
-    "tags": [],
-    "description": "<p>Draws a rhombic rosette using the turtle module, with the current turtle position.\nThe construction method is the one with an equilateral polygon in rotation around one of its vertices.</p><p>Function : rosace(n,r,v)\nn = order of the rosette\nr = radius of the circumscribed circle\nc = True to use different colors for each rotation of the polygon \nv = True to draw the underlying web.</p>"
-}

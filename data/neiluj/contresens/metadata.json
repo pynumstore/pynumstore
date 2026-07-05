@@ -1,9 +1,0 @@
-{
-    "name": "contresens",
-    "creator": "neiluj",
-    "created_at": "October 08, 2023",
-    "size": "9.23 KB",
-    "image": "data/neiluj/contresens/neiluj_contresens.png",
-    "tags": [],
-    "description": "<p>Use  \u201ccreacars.py\u201d to create your own car ! You will get a long string : copy it  then paste it  in one of the four slots in the \u201ccars\u201d list in \u201ccontresens_v1_9.py\u201d</p><ul>\n<li>\n<p>play with arrow keys</p>\n</li>\n<li>\n<p>press ok in the game over menu</p>\n</li>\n<li>\n<p>press number from 1 o 4 in the parking</p>\n</li>\n</ul>"
-}

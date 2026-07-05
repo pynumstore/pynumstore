@@ -3,14 +3,15 @@
 <head>
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'none';
-    script-src 'self' https://www.googletagmanager.com;
+    script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
     style-src 'self' https://fonts.googleapis.com;
     font-src https://fonts.gstatic.com;
     img-src 'self';
     connect-src 'self'
                 https://www.google-analytics.com
                 https://analytics.google.com
-                https://*.google-analytics.com;
+                https://*.google-analytics.com
+                https://cdn.jsdelivr.net;
     base-uri 'self';
     form-action 'none';
     object-src 'none';
@@ -24,6 +25,7 @@
   <link rel="icon" href='static/favicon.ico'>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sql.js@1.10.3/dist/sql-wasm.js"></script>
   <script type="module" src="js/index.js"></script>
 </head>
 <body>

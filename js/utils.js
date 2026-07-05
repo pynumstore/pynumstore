@@ -1,4 +1,4 @@
-export function buildScriptCard(script, meta) {
+export function buildScriptCard(script) {
   const card = document.createElement("a");
   card.href = `script.html?creator=${encodeURIComponent(script.creator)}&name=${encodeURIComponent(script.name)}`;
 
@@ -15,7 +15,7 @@ export function buildScriptCard(script, meta) {
   const imgWrapper = document.createElement("div");
   imgWrapper.className = "img-wrapper";
   const img = document.createElement("img");
-  img.src = meta.image;
+  img.src = script.thumbnail;
   img.alt = script.name;
   imgWrapper.appendChild(img);
 

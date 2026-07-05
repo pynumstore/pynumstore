@@ -1,71 +1,90 @@
-const VALID_CREATOR_ID = /^[a-z0-9][a-z0-9-]{0,49}[a-z0-9]$/;
-const VALID_SCRIPT_ID = /^[a-z_][a-z0-9_]{0,49}$/;
+import { getDB, queryOne } from "./db.js";
 
-function getQueryParams() {
-  const params = new URLSearchParams(window.location.search);
-  return {
-    creator: params.get("creator"),
-    name: params.get("name")
-  };
-}
+const VALID_CREATOR = /^[a-z0-9]([a-z0-9-]{0,48}[a-z0-9])?$/;
+const VALID_NAME    = /^[a-z_][a-z0-9_]{0,49}$/;
 
 async function loadScriptPage() {
-  const { creator, name } = getQueryParams();
+  const params  = new URLSearchParams(window.location.search);
+  const creator = params.get("creator");
+  const name    = params.get("name");
 
-  if (!creator || !name || !VALID_CREATOR_ID.test(creator) || !VALID_SCRIPT_ID.test(name)) {
+  if (!creator || !name || !VALID_CREATOR.test(creator) || !VALID_NAME.test(name)) {
     document.querySelector(".name").textContent = "Script not found.";
-    console.log("Invalid query parameters:", { creator, name });
     return;
   }
 
-  const res = await fetch(`data/${encodeURIComponent(creator)}/${encodeURIComponent(name)}/metadata.json`);
-  if (!res.ok) {
+  const db     = await getDB();
+  const script = queryOne(db, `
+    SELECT * FROM scripts
+    WHERE creator = ? AND name = ?
+  `, [creator, name]);
+
+  if (!script) {
     document.querySelector(".name").textContent = "Script not found.";
-    console.log("Script not found:", { creator, name });
     return;
   }
-  const script = await res.json();
 
   document.title = `PyNumStore - ${script.name}`;
   document.querySelector(".name").textContent = script.name;
 
-  const creatorEl = document.querySelector(".creator");
+  const creatorEl   = document.querySelector(".creator");
   creatorEl.textContent = "By ";
   const creatorLink = document.createElement("a");
-  creatorLink.href = `creator.html?name=${encodeURIComponent(creator)}`;
+  creatorLink.href      = `creator.html?name=${encodeURIComponent(creator)}`;
   creatorLink.textContent = creator;
   creatorEl.appendChild(creatorLink);
 
   document.querySelector(".created-at").textContent = `Created on ${script.created_at}`;
-  document.querySelector(".size").textContent = `Size: ${script.size}`;
+  document.querySelector(".size").textContent        = `Size: ${script.size}`;
 
   document.getElementById("numworks-link").href =
-    `https://my.numworks.com/python/${encodeURIComponent(script.creator)}/${encodeURIComponent(script.name)}/`;
+    `https://my.numworks.com/python/${encodeURIComponent(creator)}/${encodeURIComponent(name)}/`;
 
-  document.getElementById("script-image").src = script.image;
+  document.getElementById("script-image").src = script.thumbnail;
 
   if (script.description) {
     const descSection = document.querySelector(".description");
     descSection.replaceChildren();
+
     const h2 = document.createElement("h2");
     h2.textContent = "Description:";
+
     const divider = document.createElement("div");
     divider.className = "divider";
-    const p = document.createElement("div");
-    p.className = "description-text";
-    p.innerHTML = script.description;
-    descSection.append(h2, divider, p);
+
+    const div = document.createElement("div");
+    div.className = "description-text";
+    div.innerHTML = script.description;
+
+    div.querySelectorAll("code").forEach(el => {
+      if (el.textContent.includes("\n") && el.closest("pre") === null) {
+        el.classList.add("code-block");
+      }
+    });
+
+    descSection.append(h2, divider, div);
+  }
+
+  let tags = [];
+  try {
+    tags = script.tags ? script.tags.split(",").map(t => t.trim()).filter(Boolean) : [];
+  } catch {
+    tags = [];
   }
 
   const tagsContainer = document.querySelector(".tags");
-  if (script.tags && script.tags.length) {
+  if (tags.length) {
     tagsContainer.replaceChildren();
+
     const h2 = document.createElement("h2");
     h2.textContent = "Tags:";
+
     const divider = document.createElement("div");
     divider.className = "divider";
+
     tagsContainer.append(h2, divider);
-    for (const t of script.tags) {
+
+    for (const t of tags) {
       const p = document.createElement("p");
       p.textContent = `#${t}`;
       tagsContainer.appendChild(p);

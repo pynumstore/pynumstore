@@ -1,9 +1,0 @@
-{
-    "name": "langton",
-    "creator": "nicolas-patrois",
-    "created_at": "August 29, 2019",
-    "size": "309 Bytes",
-    "image": "data/nicolas-patrois/langton/nicolas-patrois_langton.png",
-    "tags": [],
-    "description": "<p>La fourmi de Langton, n est le nombre de pas de la fourmi.</p>"
-}

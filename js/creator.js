@@ -1,39 +1,34 @@
+import { getDB, queryAll } from "./db.js";
 import { buildScriptCard } from "./utils.js";
 
-const VALID_ID = /^[a-z0-9-]{1,50}$/;
-
-function getCreatorFromURL() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get("name");
-}
+const VALID_ID = /^[a-z0-9]([a-z0-9-]{0,48}[a-z0-9])?$/;
 
 async function loadCreatorPage() {
-  const creator = getCreatorFromURL();
+  const params  = new URLSearchParams(window.location.search);
+  const creator = params.get("name");
 
   if (!creator || !VALID_ID.test(creator)) {
-    document.getElementById("creator-name").textContent = "Créateur invalide";
+    document.getElementById("creator-name").textContent = "Invalid creator";
     return;
   }
 
-  document.title = "PyNumStore - " + creator;
-  document.getElementById("creator-name").textContent = creator; // déjà sûr, textContent ne change pas
+  document.title = `PyNumStore - ${creator}`;
+  document.getElementById("creator-name").textContent = creator;
 
-  const res = await fetch("data/scripts_index.json");
-  const scripts = await res.json();
-
-  const filtered = scripts.filter(s => s.creator === creator);
+  const db      = await getDB();
+  const scripts = queryAll(db, `
+    SELECT name, creator, thumbnail
+    FROM scripts
+    WHERE creator = ?
+    ORDER BY name
+  `, [creator]);
 
   const grid = document.getElementById("scripts-grid");
   grid.replaceChildren();
 
-  for (const script of filtered) {
-    const metaRes = await fetch(
-      `data/${encodeURIComponent(script.creator)}/${encodeURIComponent(script.name)}/metadata.json`
-    );
-    const meta = await metaRes.json();
-    grid.appendChild(buildScriptCard(script, meta));
+  for (const script of scripts) {
+    grid.appendChild(buildScriptCard(script));
   }
 }
-
 
 document.addEventListener("DOMContentLoaded", loadCreatorPage);

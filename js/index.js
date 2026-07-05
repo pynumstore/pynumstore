@@ -1,22 +1,22 @@
+import { getDB, queryAll } from "./db.js";
 import { buildScriptCard } from "./utils.js";
 
 async function loadScripts() {
   const grid = document.getElementById("scripts-grid");
   grid.replaceChildren();
 
-  const res = await fetch("data/scripts_index.json");
-  const scripts = await res.json();
+  const db = await getDB();
 
-  const shuffled = scripts.sort(() => Math.random() - 0.5);
-  const selected = shuffled.slice(0, 12);
+  const scripts = queryAll(db, `
+    SELECT name, creator, thumbnail
+    FROM scripts
+    ORDER BY RANDOM()
+    LIMIT 12
+  `);
 
-  await Promise.all(selected.map(async script => {
-    const metaRes = await fetch(
-      `data/${encodeURIComponent(script.creator)}/${encodeURIComponent(script.name)}/metadata.json`
-    );
-    const meta = await metaRes.json();
-    grid.appendChild(buildScriptCard(script, meta));
-  }));
+  for (const script of scripts) {
+    grid.appendChild(buildScriptCard(script));
+  }
 }
 
 document.addEventListener("DOMContentLoaded", loadScripts);

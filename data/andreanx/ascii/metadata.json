@@ -1,9 +1,0 @@
-{
-    "name": "ascii",
-    "creator": "andreanx",
-    "created_at": "December 13, 2018",
-    "size": "226 Bytes",
-    "image": "data/andreanx/ascii/andreanx_ascii.png",
-    "tags": [],
-    "description": "<p>Print characters.\nUsage : pchars(start, stop,w)\nstart=lowest character code\nstop=highest character code\nw=number of characters per line</p>"
-}

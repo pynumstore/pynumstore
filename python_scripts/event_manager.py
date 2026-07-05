@@ -1,171 +1,121 @@
-import time
-from datetime import datetime, timezone, timedelta
 import json
-from dbg import update
-import requests
-import traceback
-from generate_sitemap import generate_sitemap
-from tokens import CHAT_TOKEN, CHAT_ID
+import schedule
+from updater import Updater
+from telegram_bot import TelegramBot
+import threading
+import time
+from git import Repo
 
-class TelegramBot:
+bot = TelegramBot()
+updater = Updater()
+update_thread = None
+repo = Repo(".")
+update = False
 
-    def __init__(self, token, chat_id):
-        self.token = token
-        self.chat_id = chat_id
-        self.url = f"https://api.telegram.org/bot{token}/"
-        self.usr_id = chat_id
-        with open("python_scripts/settings.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-        self.offset = data["telegram_offset"]
-
-    def send_message(self, text):
-        data = {
-            "chat_id": self.chat_id,
-            "text": text,
-            "parse_mode": "HTML"
-        }
-        r = requests.post(self.url + "sendMessage", json=data)
-        return r.json()
-    
-    def send_file(self, text):
-        url = f"https://api.telegram.org/bot{self.token}/sendDocument"
-        files = {
-            "document": ("ERROR.txt", text.encode("utf-8"))
-        }
-        data = {"chat_id": self.chat_id}
-        requests.post(url, data=data, files=files)
-
-    def get_messages(self):
-        r = requests.get(self.url + "getUpdates", params={"offset": self.offset})
-        data = r.json()
-        messages = []
-        for result in data["result"]:
-            if "message" in result and str(result["message"]["chat"]["id"]) == self.chat_id and str(result["message"]["from"]["id"]) == self.usr_id:
-                messages.append(result["message"]["text"])
-                self.offset = result["update_id"] + 1
-        self.save_offset()
-        return messages
-    
-    def save_offset(self):
-        with open("python_scripts/settings.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-        data["telegram_offset"] = self.offset
-        with open("python_scripts/settings.json", "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-
-
-class DebugHandler:
-
-    def __init__(self, bot):
-        self.bot = bot
-
-    def pull(self, debug_type, *args):
-        if debug_type == "status":
-            msg = f"Time before next update: {format_monotonic(args[0])}"
-            print(msg)
-            bot.send_message(msg)
-        elif debug_type == "update":
-            msg = "| Update started... |"
-            print(msg)
-            bot.send_message(msg)
-        elif debug_type == "endUpdate":
-            msg = "| Update ended. |"
-            print(msg)
-            bot.send_message(msg)
-        elif debug_type == "nbScripts":
-            msg = f"Found {args[0]} scripts..."
-            print("  "+msg)
-            bot.send_message(msg)
-        elif debug_type == "errorCreator2":
-            msg = f"{args[0]} creator doesn't exist on the Numworks website, so it has been removed."
-            print("  "+msg)
-            bot.send_message(msg)
-        elif debug_type == "errorScript":
-            msg = f"{args[1]} script by {args[0]} creator no longer exists on the Numworks website, so its file has been deleted!"
-            print("  "+msg)
-            bot.send_message(msg)
-        elif debug_type == "errorScript2":
-            msg = f"{args[1]} script by {args[0]} creator can't be scanned, so its was skipped!"
-            print("  "+msg)
-            bot.send_message(msg)
-        elif debug_type == "errorCreator":
-            msg = f"{args[0]} creator no longer exists on the Numworks website, so its file has been deleted!"
-            print("  "+msg)
-            bot.send_message(msg)
-        elif debug_type == "errorDescription":
-            msg = f"{args[1]} script by {args[0]} creator has an unexpected description markup, so it was skipped! Reason: {args[2]}"
-            print("  "+msg)
-            bot.send_message(msg)
-        elif debug_type == "scanScript":
-            t = time.monotonic()
-            if args[2] == 0:
-                msg = [
-                    f"Scanning {args[1]} script by {args[0]} creator...",
-                    f"Scanning in progress: 0 % ; 0 / inf"
-                    ]
-            else:
-                msg = [
-                    f"Scanning {args[1]} script by {args[0]} creator...",
-                    f"Scanning in progress: {str(args[2]/args[3]*100)[:5]} % ; {format_monotonic(t-args[4])} / {format_monotonic((t-args[4])/args[2]*args[3])}"
-                    ]
-            print("  "+msg[0])
-            print("  "+msg[1])
-        
-
-
-def format_monotonic(time):
-    days = int(time // (3600*24))
-    hours = int((time // 3600) % 24)
-    minutes = int((time // 60) % 60)
-    seconds = int(time) % 60
-    if days>0:
-        return f"{days}d {hours}:{minutes}:{seconds}"
-    elif hours>0:
-        return f"{hours}:{minutes}:{seconds}"
-    elif minutes>0:
-        return f"{minutes}:{seconds}"
-    else:
-        return f"{seconds}"
-
-
-bot = TelegramBot(CHAT_TOKEN, CHAT_ID)
-debugHandler = DebugHandler(bot)
+def change_update():
+    global update
+    update = True
+schedule.every().hours.at(":15").do(change_update)
 
 while True:
 
     try:
 
-        time.sleep(10)
-
+        schedule.run_pending()
         msgs = bot.get_messages()
-        with open("python_scripts/settings.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-            last_update = datetime.fromisoformat(data["last_update"])
-            last_update = last_update.replace(tzinfo=timezone.utc)
-            update_interval = data["update_interval"]
-            now = datetime.now(timezone.utc)
+        for msg in msgs+[""]:
 
-        if "/update" in msgs or (now - last_update).total_seconds() > update_interval:
-            update(debugHandler)
-            generate_sitemap()
-            with open("python_scripts/settings.json", "r", encoding="utf-8") as f:
-                data = json.load(f)
-            data["last_update"] = now.isoformat()
-            with open("python_scripts/settings.json", "w", encoding="utf-8") as f:
-                json.dump(data, f)
-        
-        elif "/status" in msgs:
-            debugHandler.pull("status",
-                            (timedelta(seconds=update_interval) - (now - last_update)).total_seconds()
-                            )
+            if msg[:7] == "/update" or update:
+                if update_thread is None or not update_thread.is_alive():
+                    update_thread = threading.Thread(target=updater.update)
+                    update_thread.start()
+                else:
+                    bot.send_message("An update is currently running.")
+                update = False
 
+            elif msg[:12] == "/full_update":
+                if update_thread is None or not update_thread.is_alive():
+                    update_thread = threading.Thread(target=updater.full_update)
+                    update_thread.start()
+                else:
+                    bot.send_message("An update is currently running.")
+            
+            elif msg[:15] == "/creator_update":
+                if update_thread is None or not update_thread.is_alive():
+                    creators_name = msg[16:].split(" ")
+                    if creators_name:
+                        update_thread = threading.Thread(target=updater.creator_update, args=(creators_name,))
+                        update_thread.start()
+                    else:
+                        bot.send_message("Please provide a creator name after the command.")
+                else:
+                    bot.send_message("An update is currently running.")
+
+            elif msg[:7] == "/status":
+                if update_thread is None or not update_thread.is_alive():
+                    bot.send_message("No update is currently running.")
+                else:
+                    bot.send_message("An update is currently running.")
+
+            elif msg[:11] == "/git_status":
+                try:
+                    status = repo.git.status()
+                    if len(status) > 4000:
+                        bot.send_file("git_status.txt", status)
+                    else:
+                        bot.send_message(f"Repository status:\n{status}")
+                except Exception as e:
+                    bot.send_message(f"Failed to get repository status: {e}")
+            
+            elif msg[:4] == "/add":
+                try:
+                    repo.git.add(A=True)
+                    bot.send_message("All changes added to the staging area.")
+                except Exception as e:
+                    bot.send_message(f"Failed to add changes: {e}")
+
+            elif msg[:5] == "/push":
+                try:
+                    repo.git.add(A=True)
+                    repo.git.commit(m=f"{time.strftime('%Y-%m-%d %H:%M:%S')} Update")
+                    repo.git.push()
+                    bot.send_message("Changes pushed to the repository.")
+                except Exception as e:
+                    bot.send_message(f"Failed to push changes: {e}")
+
+            elif msg[:11] == "/reset_soft":
+                try:
+                    repo.git.reset('--soft', 'HEAD~1')
+                    bot.send_message("Soft reset to the previous commit completed.")
+                except Exception as e:
+                    bot.send_message(f"Failed to perform soft reset: {e}")
+
+            elif msg[:11] == "/reset_hard":
+                try:
+                    repo.git.reset('--hard', 'HEAD~1')
+                    bot.send_message("Hard reset to the previous commit completed.")
+                except Exception as e:
+                    bot.send_message(f"Failed to perform hard reset: {e}")
+
+            elif msg[:11] == "/push_force":
+                try:
+                    repo.git.push('--force')
+                    bot.send_message("Force push completed.")
+                except Exception as e:
+                    bot.send_message(f"Failed to perform force push: {e}")
+
+            else:
+                if not msg == "":
+                    bot.send_message("Unknown command.")
+    
     except Exception as e:
-        
-        try:
-            bot.send_message(f"ERROR: {type(e).__name__}: {e}")
-            bot.send_file(traceback.format_exc())
-            print(traceback.format_exc())
-        except requests.ConnectionError as e:
-            print("ConnectionError")
-        except Exception as e:
-            print(traceback.format_exc())
+        bot = TelegramBot()
+        updater = Updater()
+        update_thread = None
+        repo = Repo(".")
+        update = False
+        bot.send_message("An error occurred. The bot has been reset.")
+        bot.send_file("error_log.txt", str(e))
+        print(f"Error: {e}")
+    
+    time.sleep(1)
