@@ -172,6 +172,35 @@ All data is loaded from `data/pynumstore.db` via [sql.js](https://github.com/sql
 
 Script descriptions are rendered as sanitised HTML (processed by `bleach` on the backend). Multi-line `<code>` blocks are automatically styled as code boxes.
 
+## Roadmap
+
+The following features are planned for future releases.
+
+### Legal notices
+
+A legal notices page will be added to the website, covering the terms of use, data sources, disclaimer regarding the relationship with NumWorks, and any other legal information required.
+
+### Creation date parsing
+
+Currently, script creation dates are stored as raw text scraped from NumWorks (e.g. `"October 16, 2021"`). A future update will parse these into a standardised ISO 8601 format (`2021-10-16`), enabling chronological sorting and date range filtering in search.
+
+### Statistics page
+
+A dedicated page will display live statistics computed directly from the SQLite database, including the total number of indexed scripts and creators, the average number of scripts per creator, the most prolific creator, and the proportion of scripts that have a description. The page will feature animated counters.
+
+### Advanced search
+
+The search page will support a prefix-based syntax for fine-grained queries:
+
+| Prefix | Searches in | Example |
+|---|---|---|
+| `@` | Creator name | `@gradient01` |
+| `#` | Tags | `#game` |
+| `%` | Script name | `%maze_generator` |
+| `$` | Description | `$fun` |
+
+Prefixes can be combined in a single query. Without a prefix, the search applies to all fields simultaneously.
+
 ## Contributing
 
 Contributions are welcome. You can help by:
