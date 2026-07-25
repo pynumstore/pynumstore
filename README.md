@@ -102,6 +102,7 @@ pynumstore/
 ├── 404.html
 ├── creator.html
 ├── forcreators.html
+├── legal.html
 ├── index.html
 ├── robots.txt
 ├── script.html
@@ -178,10 +179,6 @@ Script descriptions are rendered as sanitised HTML (processed by `bleach` on the
 ## Roadmap
 
 The following features are planned for future releases.
-
-### Legal notices
-
-A legal notices page will be added to the website, covering the terms of use, data sources, disclaimer regarding the relationship with NumWorks, and any other legal information required.
 
 ### Creation date parsing
 

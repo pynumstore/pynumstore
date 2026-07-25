@@ -14,11 +14,11 @@ def generate_sitemap():
     urlset = Element("urlset")
     urlset.set("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9")
 
-    # ── Pages statiques ───────────────────────────────────────────────────
     for page, freq, priority in [
         ("index.html",       "daily",   "0.9"),
         ("search.html",      "daily",   "0.9"),
         ("forcreators.html", "monthly", "0.6"),
+        ("legal.html",       "yearly",  "0.3"),
     ]:
         url = SubElement(urlset, "url")
         SubElement(url, "loc").text        = f"{BASE_URL}/{page}"
