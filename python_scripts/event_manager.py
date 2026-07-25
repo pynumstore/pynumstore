@@ -67,16 +67,6 @@ while True:
                 except Exception as e:
                     bot.send_message(f"Failed to get repository status: {e}")
                     print(f"Failed to get repository status: {e}")
-            
-            elif msg[:5] == "/push":
-                try:
-                    repo.git.add(A=True)
-                    repo.git.commit(m=f"{time.strftime('%Y-%m-%d %H:%M:%S')} Update")
-                    repo.git.push()
-                    bot.send_message("Changes pushed to the repository.")
-                except Exception as e:
-                    bot.send_message(f"Failed to push changes: {e}")
-                    print(f"Failed to push changes: {e}")
 
             elif msg[:13] == "/pull":
                 try:
@@ -109,6 +99,16 @@ while True:
                 except Exception as e:
                     bot.send_message(f"Failed to perform force push: {e}")
                     print(f"Failed to perform force push: {e}")
+            
+            elif msg[:5] == "/push":
+                try:
+                    repo.git.add(A=True)
+                    repo.git.commit(m=f"{time.strftime('%Y-%m-%d %H:%M:%S')} Update")
+                    repo.git.push()
+                    bot.send_message("Changes pushed to the repository.")
+                except Exception as e:
+                    bot.send_message(f"Failed to push changes: {e}")
+                    print(f"Failed to push changes: {e}")
 
             else:
                 if not msg == "":
