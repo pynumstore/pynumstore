@@ -115,7 +115,7 @@ async function sendCreator() {
           document.getElementById("creatorName").focus();
           break;
         case "numworks_user_not_found":
-          setMsg("This creator doesn't exists the NumWorks website.", "red");
+          setMsg("This creator doesn't exists on the NumWorks website.", "red");
           document.getElementById("creatorName").focus();
           break;
         default:
