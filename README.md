@@ -76,6 +76,7 @@ pynumstore/
 ├── css/                        # Website stylesheets
 ├── data/
 │   ├── pynumstore.db           # SQLite database (scripts + creators)
+│   ├── version.json            # Database version tag (cache busting)
 │   └── thumbnails/             # Script screenshot thumbnails
 ├── js/
 │   ├── db.js                   # sql.js loader and query helpers (shared)
@@ -141,6 +142,8 @@ The backend uses a two-phase approach to minimise Playwright usage:
 1. **Hash check** (fast, `curl_cffi`) — fetches each creator page and compares the SHA-256 hash of the body with the stored value. Only creators whose hash has changed proceed to the next phase.
 2. **Full scan** (slow, `playwright`) — navigates to each changed script page, takes a screenshot, extracts metadata and description.
 
+A full update runs automatically every day at 12:00.
+
 ### Update Modes
 
 | Command | Description |
@@ -158,8 +161,8 @@ The backend uses a two-phase approach to minimise Playwright usage:
 | `/creator_update <names>` | Update specific creators |
 | `/status` | Check if an update is running |
 | `/git_status` | Show `git status` output |
-| `/add` | Stage all changes (`git add -A`) |
-| `/push` | Stage, commit and push all changes |
+| `/push` | Stage all changes, commit and push to remote |
+| `/pull` | Pull latest changes from remote |
 | `/reset_soft` | Soft reset to previous commit |
 | `/reset_hard` | Hard reset to previous commit |
 | `/push_force` | Force push to remote |
@@ -168,7 +171,7 @@ The backend uses a two-phase approach to minimise Playwright usage:
 
 The website is fully static (HTML/CSS/JS) and hosted on GitHub Pages. There is no server-side rendering.
 
-All data is loaded from `data/pynumstore.db` via [sql.js](https://github.com/sql-js/sql.js) — the entire SQLite database is fetched once and queried in-browser using WebAssembly. Search uses SQL `LIKE` queries across name, creator and description.
+All data is loaded from `data/pynumstore.db` via [sql.js](https://github.com/sql-js/sql.js) — the entire SQLite database is fetched once and queried in-browser using WebAssembly. A `version.json` file is used for cache busting, ensuring the browser always loads the latest version of the database after an update. Search uses SQL `LIKE` queries across name, creator and description.
 
 Script descriptions are rendered as sanitised HTML (processed by `bleach` on the backend). Multi-line `<code>` blocks are automatically styled as code boxes.
 
