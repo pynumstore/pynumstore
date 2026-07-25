@@ -1,3 +1,5 @@
+import { getDB, queryAll } from "./db.js";
+
 const API_URL = "https://script.google.com/macros/s/AKfycbyWGbGYqjL-OBgkWvbo2nOF8NO4KL3251WJJD51OzrbgtF-62lfj2_ev4z4I55Sjy1d/exec";
 
 const CREATOR_REGEX = /^[a-z0-9]([a-z0-9-]{0,48}[a-z0-9])?$/;
@@ -50,6 +52,20 @@ async function sendCreator() {
       `"${name}" is not a valid creator name. Only lowercase letters, digits and hyphens are allowed, and it cannot start or end with a hyphen.`,
       "red"
     );
+    document.getElementById("creatorName").focus();
+    return;
+  }
+
+  const db = await getDB()
+  const scripts = queryAll(db, `
+    SELECT name, creator, thumbnail
+    FROM scripts
+    WHERE creator = ?
+    ORDER BY name
+    LIMIT 1
+  `, [name]);
+  if (scripts.length > 0) {
+    setMsg(`"${name}" is already in the database.`, "red");
     document.getElementById("creatorName").focus();
     return;
   }
