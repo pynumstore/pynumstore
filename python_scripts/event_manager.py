@@ -68,7 +68,7 @@ while True:
                     bot.send_message(f"Failed to get repository status: {e}")
                     print(f"Failed to get repository status: {e}")
 
-            elif msg[:13] == "/pull":
+            elif msg[:5] == "/pull":
                 try:
                     repo.remote("origin").pull()
                     bot.send_message("Origin pulled.")
