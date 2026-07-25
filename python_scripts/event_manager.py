@@ -66,14 +66,8 @@ while True:
                         bot.send_message(f"Repository status:\n{status}")
                 except Exception as e:
                     bot.send_message(f"Failed to get repository status: {e}")
+                    print(f"Failed to get repository status: {e}")
             
-            elif msg[:4] == "/add":
-                try:
-                    repo.git.add(A=True)
-                    bot.send_message("All changes added to the staging area.")
-                except Exception as e:
-                    bot.send_message(f"Failed to add changes: {e}")
-
             elif msg[:5] == "/push":
                 try:
                     repo.git.add(A=True)
@@ -82,6 +76,15 @@ while True:
                     bot.send_message("Changes pushed to the repository.")
                 except Exception as e:
                     bot.send_message(f"Failed to push changes: {e}")
+                    print(f"Failed to push changes: {e}")
+
+            elif msg[:13] == "/pull":
+                try:
+                    repo.remote("origin").pull()
+                    bot.send_message("Origin pulled.")
+                except Exception as e:
+                    bot.send_message(f"Failed to pull origin: {e}")
+                    print(f"Failed to pull origin: {e}")
 
             elif msg[:11] == "/reset_soft":
                 try:
@@ -89,6 +92,7 @@ while True:
                     bot.send_message("Soft reset to the previous commit completed.")
                 except Exception as e:
                     bot.send_message(f"Failed to perform soft reset: {e}")
+                    print(f"Failed to perform soft reset: {e}")
 
             elif msg[:11] == "/reset_hard":
                 try:
@@ -96,6 +100,7 @@ while True:
                     bot.send_message("Hard reset to the previous commit completed.")
                 except Exception as e:
                     bot.send_message(f"Failed to perform hard reset: {e}")
+                    print(f"Failed to perform hard reset: {e}")
 
             elif msg[:11] == "/push_force":
                 try:
@@ -103,6 +108,7 @@ while True:
                     bot.send_message("Force push completed.")
                 except Exception as e:
                     bot.send_message(f"Failed to perform force push: {e}")
+                    print(f"Failed to perform force push: {e}")
 
             else:
                 if not msg == "":
