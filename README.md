@@ -85,6 +85,7 @@ pynumstore/
 │   ├── search.js               # Search page logic
 │   ├── creator.js              # Creator page logic
 │   ├── script.js               # Script detail page logic
+│   ├── statistics.js           # Statistics page logic
 │   ├── forcreators.js          # Creator submission form logic
 │   ├── google_apps_script_api.js  # Apps Script API (server-side, not served)
 │   └── analytics.js            # Google Analytics initialisation
@@ -102,6 +103,7 @@ pynumstore/
 ├── 404.html
 ├── creator.html
 ├── forcreators.html
+├── statistics.html
 ├── legal.html
 ├── index.html
 ├── robots.txt
@@ -183,10 +185,6 @@ The following features are planned for future releases.
 ### Creation date parsing
 
 Currently, script creation dates are stored as raw text scraped from NumWorks (e.g. `"October 16, 2021"`). A future update will parse these into a standardised ISO 8601 format (`2021-10-16`), enabling chronological sorting and date range filtering in search.
-
-### Statistics page
-
-A dedicated page will display live statistics computed directly from the SQLite database, including the total number of indexed scripts and creators, the average number of scripts per creator, the most prolific creator, and the proportion of scripts that have a description. The page will feature animated counters.
 
 ### Advanced search
 

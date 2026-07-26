@@ -609,6 +609,126 @@ nav ul li a:hover {
     opacity: 0.75;
 }
 
+#stats {
+    flex: 1;
+    background-color: var(--bg);
+    padding: 60px 24px;
+}
+
+#stats .stats-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#stats .stats-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--text);
+    margin-bottom: 18px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 32px 28px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+}
+
+.stat-eyebrow {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    line-height: 1;
+    color: var(--text);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.stat-number--name {
+    font-size: 2rem;
+    word-break: break-word;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+.stat-card--accent {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.stat-card--accent .stat-eyebrow,
+.stat-card--accent .stat-number,
+.stat-card--accent .stat-label {
+    color: #fff;
+}
+
+.stat-card--accent:hover {
+    box-shadow: 0 10px 28px rgba(192, 57, 43, 0.3);
+}
+
+.stat-card--wide {
+    grid-column: span 2;
+}
+
+@media (max-width: 720px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .stat-card--wide {
+        grid-column: span 2;
+    }
+    .stat-number {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .stat-card--wide {
+        grid-column: span 1;
+    }
+}
+
+.stat-top-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.stat-top-link .stat-number--name {
+    transition: color 0.2s ease;
+}
+
+.stat-top-link:hover .stat-number--name {
+    color: var(--accent);
+}
+
 footer {
     background-color: #111;
     color: #777;

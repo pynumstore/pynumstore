@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none';
+    script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
+    style-src 'self' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self';
+    connect-src 'self'
+                https://www.google-analytics.com
+                https://analytics.google.com
+                https://*.google-analytics.com
+                https://cdn.jsdelivr.net;
+    base-uri 'self';
+    form-action 'none';
+    object-src 'none';
+  ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
+  <script src="js/analytics.js"></script>
+  <title>PyNumStore - Statistics</title>
+  <link rel="icon" href="static/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sql.js@1.10.3/dist/sql-wasm.js"></script>
+  <script type="module" src="js/statistics.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">PyNum<span>Store</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="forcreators.html">For creators</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="stats">
+    <div class="stats-inner">
+
+      <div class="stats-heading">
+        <h2>Statistics</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="stats-grid">
+
+        <div class="stat-card stat-card--accent">
+          <p class="stat-eyebrow">Indexed</p>
+          <p class="stat-number" id="stat-scripts">—</p>
+          <p class="stat-label">Python scripts</p>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-eyebrow">Registered</p>
+          <p class="stat-number" id="stat-creators">—</p>
+          <p class="stat-label">Creators</p>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-eyebrow">Average</p>
+          <p class="stat-number" id="stat-avg">—</p>
+          <p class="stat-label">Scripts per creator</p>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-eyebrow">With description</p>
+          <p class="stat-number" id="stat-desc">—</p>
+          <p class="stat-label">Of all scripts</p>
+        </div>
+
+        <div class="stat-card stat-card--wide">
+          <p class="stat-eyebrow">Most prolific creator</p>
+          <a id="stat-top-link" href="#" class="stat-top-link">
+            <p class="stat-number stat-number--name" id="stat-top-name">—</p>
+          </a>
+          <p class="stat-label"><span id="stat-top-count">—</span> scripts published</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 PyNumStore &nbsp;·&nbsp; By Gradient01 &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html">Legal notices</a></p>
+  </footer>
+
+</body>
+</html>

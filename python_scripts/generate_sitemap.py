@@ -17,6 +17,7 @@ def generate_sitemap():
     for page, freq, priority in [
         ("index.html",       "daily",   "0.9"),
         ("search.html",      "daily",   "0.9"),
+        ("statistics.html",  "daily",   "0.8"),
         ("forcreators.html", "monthly", "0.6"),
         ("legal.html",       "yearly",  "0.3"),
     ]:
