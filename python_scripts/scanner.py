@@ -7,6 +7,7 @@ import re
 import time
 from playwright.sync_api import sync_playwright
 from playwright._impl._errors import TimeoutError
+from datetime import datetime
 
 
 class Scanner:
@@ -126,8 +127,12 @@ class Scanner:
                 canvas.click()
 
                 container = self.page.locator("div.col-description")
-                created_at = container.locator("p").nth(1).inner_text()[11:]
-                size = container.locator("p").nth(2).inner_text()
+                raw_date = container.locator("p").nth(1).inner_text()[11:]
+                try:
+                    created_at = datetime.strptime(raw_date.strip(), "%B %d, %Y").strftime("%Y-%m-%d")
+                except ValueError:
+                    created_at = raw_date
+                size = self.parse_size(container.locator("p").nth(2).inner_text())
 
                 html = self.page.content()
                 description, fail_reason = self.extract_description(html)
@@ -199,3 +204,12 @@ class Scanner:
         fragment = "".join(str(e) for e in elements).strip()
 
         return fragment, None
+
+    def parse_size(self, text):
+        m = re.match(r'^(\d+(?:\.\d+)?)\s*(Bytes|KB|MB)$', text.strip())
+        if not m:
+            return None
+        value, unit = float(m.group(1)), m.group(2)
+        if unit == "Bytes": return int(value)
+        if unit == "KB":    return int(value * 1024)
+        if unit == "MB":    return int(value * 1024 * 1024)

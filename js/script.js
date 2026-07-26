@@ -33,9 +33,12 @@ async function loadScriptPage() {
   creatorLink.href      = `creator.html?name=${encodeURIComponent(creator)}`;
   creatorLink.textContent = creator;
   creatorEl.appendChild(creatorLink);
-
-  document.querySelector(".created-at").textContent = `Created on ${script.created_at}`;
-  document.querySelector(".size").textContent        = `Size: ${script.size}`;
+  const date = new Date(script.created_at + "T00:00:00");
+  document.querySelector(".created-at").textContent =
+    "Created on " + date.toLocaleDateString("en-US", {
+      year: "numeric", month: "long", day: "numeric"
+    });
+  document.querySelector(".size").textContent = formatSize(script.size);
 
   document.getElementById("numworks-link").href =
     `https://my.numworks.com/python/${encodeURIComponent(creator)}/${encodeURIComponent(name)}/`;
@@ -90,6 +93,12 @@ async function loadScriptPage() {
       tagsContainer.appendChild(p);
     }
   }
+}
+
+function formatSize(bytes) {
+    if (!bytes) return "Unknown size";
+    if (bytes < 1024) return `${bytes} Bytes`;
+    return `${(bytes / 1024).toFixed(2)} KB`;
 }
 
 document.addEventListener("DOMContentLoaded", loadScriptPage);
