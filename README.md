@@ -182,10 +182,6 @@ Script descriptions are rendered as sanitised HTML (processed by `bleach` on the
 
 The following features are planned for future releases.
 
-### Creation date parsing
-
-Currently, script creation dates are stored as raw text scraped from NumWorks (e.g. `"October 16, 2021"`). A future update will parse these into a standardised ISO 8601 format (`2021-10-16`), enabling chronological sorting and date range filtering in search.
-
 ### Advanced search
 
 The search page will support a prefix-based syntax for fine-grained queries:
