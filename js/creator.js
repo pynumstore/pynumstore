@@ -32,7 +32,7 @@ async function loadCreatorPage() {
 }
 
 function sortScripts(scripts, order) {
-  const sorted = [...scripts]; // ne pas muter l'original
+  const sorted = [...scripts];
   switch (order) {
     case "name-asc":
       return sorted.sort((a, b) => a.name.localeCompare(b.name));
