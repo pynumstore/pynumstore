@@ -777,6 +777,43 @@ nav ul li a:hover {
     }
 }
 
+.sort-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.sort-bar label {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.sort-bar select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--card-bg);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    padding: 7px 32px 7px 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z' fill='%23777'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    transition: border-color 0.2s ease;
+}
+
+.sort-bar select:hover,
+.sort-bar select:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
 footer {
     background-color: #111;
     color: #777;

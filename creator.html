@@ -18,7 +18,6 @@
   ">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
   <script src="js/analytics.js"></script>
   <title>PyNumStore - Creator Page</title>
@@ -39,20 +38,30 @@
         <li><a href='search.html'>Search</a></li>
         <li><a href="statistics.html">Statistics</a></li>
         <li><a href='forcreators.html'>For creators</a></li>
-        <!--<li><a href='devtools.html'>Dev Tools</a></li>-->
       </ul>
     </div>
   </nav>
-  
+
   <section id="scripts">
     <div class="section-inner">
       <h2>Scripts of <span id="creator-name"></span></h2>
       <div class="divider"></div>
-      <div id="scripts-grid" class="scripts-grid">
+
+      <div class="sort-bar">
+        <label for="sort-select">Sort by</label>
+        <select id="sort-select">
+          <option value="name-asc">A → Z</option>
+          <option value="name-desc">Z → A</option>
+          <option value="date-desc">Newest first</option>
+          <option value="date-asc">Oldest first</option>
+          <option value="size-desc">Largest first</option>
+          <option value="size-asc">Smallest first</option>
+        </select>
       </div>
+
+      <div id="scripts-grid" class="scripts-grid"></div>
     </div>
   </section>
-
 
   <footer>
     <p>© 2026 PyNumStore &nbsp;·&nbsp; By Gradient01 &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html">Legal notices</a></p>
