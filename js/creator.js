@@ -43,6 +43,9 @@ async function loadCreatorPage() {
     FROM scripts
     WHERE creator = ?
   `, [creator]);
+  
+  document.getElementById("script-count").textContent =
+    `${allScripts.length.toLocaleString()} script${allScripts.length !== 1 ? "s" : ""}`;
 
   renderScripts(initialSort);
 }

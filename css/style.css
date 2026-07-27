@@ -515,6 +515,56 @@ nav ul li a:hover {
     box-shadow: 0 8px 20px rgba(192, 57, 43, 0.4);
 }
 
+.script-count {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+
+.sort-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.sort-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.sort-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.sort-btn {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.sort-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.sort-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
 #error-content {
     text-align: center;
     padding: 60px 20px;
@@ -775,50 +825,6 @@ nav ul li a:hover {
     .chart-bar-container {
         height: 26px;
     }
-}
-
-.sort-bar {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 28px;
-    flex-wrap: wrap;
-}
-
-.sort-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--muted);
-    white-space: nowrap;
-}
-
-.sort-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-.sort-btn {
-    background: var(--card-bg);
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
-    padding: 5px 14px;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.85rem;
-    color: var(--muted);
-    cursor: pointer;
-    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
-}
-
-.sort-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
-.sort-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
 }
 
 footer {
