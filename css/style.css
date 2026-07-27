@@ -330,6 +330,22 @@ nav ul li a:hover {
     opacity: 0.75;
 }
 
+#advanced .content code{
+    display: block;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 5px 16px;
+    margin: 10px 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    color: var(--text);
+    white-space: pre;
+    line-height: 1.6;
+}
+
 #script-section {
     flex: 1;
     display: flex;
@@ -583,6 +599,7 @@ nav ul li a:hover {
 
 #turnstile-section {
     flex: 1;
+    margin: 20px auto;
     background-color: var(--bg);
     display: flex;
     justify-content: center;

@@ -135,7 +135,7 @@ class Scanner:
                 size = self.parse_size(container.locator("p").nth(2).inner_text())
 
                 html = self.page.content()
-                description, fail_reason = self.extract_description(html)
+                description, tags, fail_reason = self.extract_tags_and_description(html)
                 if description is None:
                     return None, fail_reason
                 description = bleach.clean(description,
@@ -145,9 +145,6 @@ class Scanner:
                                         strip=True,
                                         strip_comments=True
                                         )
-                
-                stripped_description_for_tags = re.sub(r'<(code|pre)[^>]*>.*?</\1>', '', description, flags=re.DOTALL)
-                tags = re.findall(r'#(\w+)', stripped_description_for_tags)
 
                 time.sleep(0.5)
                 canvas.screenshot(path=f"data/thumbnails/{creator}_{name}.png")
@@ -173,17 +170,26 @@ class Scanner:
         }, ""
 
 
-    def extract_description(self, html):
+    def extract_tags_and_description(self, html):
         
         soup = BeautifulSoup(html, "html.parser")
 
+        div = soup.find("div", class_="pynumstore-tags")
+        if div:
+            try:
+                tags = [tag.strip() for tag in div.get("title", "").split(",") if tag.strip()]
+            except:
+                tags = []
+        else:
+            tags = []
+
         content_div = soup.find("div", class_="content")
         if content_div is None:
-            return None, "content_div_not_found"
+            return None, None, "content_div_not_found"
 
         marker = content_div.find("p", class_="text-justify")
         if marker is None:
-            return None, "marker_not_found"
+            return None, None, "marker_not_found"
 
         elements = []
         for sibling in marker.next_siblings:
@@ -197,13 +203,13 @@ class Scanner:
             elements = []
         else:
             if len(elements) < 2:
-                return None, "unexpected_structure"
+                return None, None, "unexpected_structure"
             elements.pop()
             elements.pop()
 
         fragment = "".join(str(e) for e in elements).strip()
 
-        return fragment, None
+        return fragment, tags, None
 
     def parse_size(self, text):
         m = re.match(r'^(\d+(?:\.\d+)?)\s*(Bytes|KB|MB)$', text.strip())
