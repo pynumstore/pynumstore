@@ -178,23 +178,6 @@ All data is loaded from `data/pynumstore.db` via [sql.js](https://github.com/sql
 
 Script descriptions are rendered as sanitised HTML (processed by `bleach` on the backend). Multi-line `<code>` blocks are automatically styled as code boxes.
 
-## Roadmap
-
-The following features are planned for future releases.
-
-### Advanced search
-
-The search page will support a prefix-based syntax for fine-grained queries:
-
-| Prefix | Searches in | Example |
-|---|---|---|
-| `@` | Creator name | `@gradient01` |
-| `#` | Tags | `#game` |
-| `%` | Script name | `%maze_generator` |
-| `$` | Description | `$fun` |
-
-Prefixes can be combined in a single query. Without a prefix, the search applies to all fields simultaneously.
-
 ## Contributing
 
 Contributions are welcome. You can help by:
