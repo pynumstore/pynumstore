@@ -20,6 +20,7 @@ const SIZE_CATEGORIES = [
 ];
 
 async function initSearch() {
+  document.getElementById("search-syntax").style.display = "none";
   document.getElementById("scripts").style.display = "none";
   db = await getDB();
   buildSortPills();
@@ -133,7 +134,13 @@ function addCondition(conditions, values, strict, fuzzySQL, fuzzyVal, strictSQL,
 }
 
 function buildQuery({ q, field, sort, date_from, date_to, sizes, page }) {
-  const parsed     = parseQuery(q);
+  
+  const isWildcard = q === "*";
+
+  const parsed = isWildcard
+    ? { creator: [], tags: [], name: [], description: [], text: [] }
+    : parseQuery(q);
+  
   const conditions = [];
   const values     = [];
 
@@ -253,7 +260,7 @@ function runSearch(resetPage = false) {
 
   if (!params.q) {
     document.getElementById("scripts").style.display = "none";
-    document.getElementById("advanced").style.display = "block";
+    document.getElementById("search-syntax").style.display = "block";
     return;
   }
 
@@ -292,7 +299,7 @@ function runSearch(resetPage = false) {
   const scripts = queryAll(db, sql, values);
   const total = queryAll(db, countSql, countValues)[0]["COUNT(*)"];
 
-  document.getElementById("advanced").style.display = "none";
+  document.getElementById("search-syntax").style.display = "none";
   document.getElementById("scripts").style.display = "block";
 
   render(scripts, params.q, hasQuery, total);
@@ -309,9 +316,11 @@ function render(scripts, query, hasQuery, total) {
 
   const title = document.getElementById("results-title");
 
-  title.textContent = hasQuery
-    ? `${total} result${total !== 1 ? "s" : ""}`
-    : `${scripts.length} random scripts`;
+  title.textContent = query === "*"
+    ? `${total} scripts`
+    : hasQuery
+      ? `${total} result${total !== 1 ? "s" : ""}`
+      : `${scripts.length} random scripts`;
 
   document.title = query
     ? `PyNumStore - Search for "${query}"`

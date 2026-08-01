@@ -93,22 +93,108 @@
     </div>
   </section>
 
-  <section id="advanced">
-    <div class="section-inner">
+    <section class="search-syntax" id="search-syntax">
       <h2>Prefix syntax</h2>
-      <div class="divider"></div>
-      <div class="content">
-        <p>
-          You can use prefixes directly in the search bar for precise queries.
-          Prefixes can be combined in a single search.
-        </p>
-        <p><code>@gradient01</code> — search by creator name</p>
-        <p><code>#game</code> — search by tag (exact match)</p>
-        <p><code>%maze_generator</code> — search by script name</p>
-        <p><code>$fun</code> — search in descriptions only</p>
-        <p><code>@gradient01 #game</code> — combine multiple prefixes</p>
+      <p>
+          The search system supports special prefixes to target specific fields.
+          Quotes can be used to force an exact match.
+      </p>
+      <table class="syntax-table">
+          <thead>
+              <tr>
+                  <th>Syntax</th>
+                  <th>Search in</th>
+                  <th>Behavior</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><code>word</code></td>
+                  <td>All fields</td>
+                  <td>Fuzzy search in name, creator and description</td>
+              </tr>
+              <tr>
+                  <td><code>"word"</code></td>
+                  <td>All fields</td>
+                  <td>Exact search</td>
+              </tr>
+              <tr>
+                  <td><code>@word</code></td>
+                  <td>Creator</td>
+                  <td>Search only in creators</td>
+              </tr>
+              <tr>
+                  <td><code>@"word"</code></td>
+                  <td>Creator</td>
+                  <td>Exact creator match</td>
+              </tr>
+              <tr>
+                  <td><code>#word</code></td>
+                  <td>Tags</td>
+                  <td>Search only in tags</td>
+              </tr>
+              <tr>
+                  <td><code>#"word"</code></td>
+                  <td>Tags</td>
+                  <td>Exact tag match</td>
+              </tr>
+              <tr>
+                  <td><code>%word</code></td>
+                  <td>Name</td>
+                  <td>Search only in script names</td>
+              </tr>
+              <tr>
+                  <td><code>%"word"</code></td>
+                  <td>Name</td>
+                  <td>Exact script name match</td>
+              </tr>
+              <tr>
+                  <td><code>$word</code></td>
+                  <td>Description</td>
+                  <td>Search only in descriptions</td>
+              </tr>
+              <tr>
+                  <td><code>$"word"</code></td>
+                  <td>Description</td>
+                  <td>Exact description match</td>
+              </tr>
+          </tbody>
+      </table>
+      <h2>Special wildcard</h2>
+      <p>
+          The wildcard <code>*</code> can be used to display all scripts without
+          applying a text filter.
+          This is useful when combined with sorting or advanced filters.
+      </p>
+      <div class="syntax-example">
+          <code>*</code>
+          <p>Displays all scripts.</p>
       </div>
-    </div>
+      <div class="syntax-example">
+          <code>*</code>
+          <p>
+              Combined with <strong>Newest update</strong>, this allows browsing
+              recently updated scripts.
+          </p>
+      </div>
+      <h2>Examples</h2>
+      <div class="syntax-example">
+          <code>@"John"</code>
+          <p>Finds scripts created by the exact creator <strong>John</strong>.</p>
+      </div>
+      <div class="syntax-example">
+          <code>%"My Script"</code>
+          <p>Finds the script with the exact name <strong>My Script</strong>.</p>
+      </div>
+      <div class="syntax-example">
+          <code>#python</code>
+          <p>Finds scripts containing the <strong>python</strong> tag.</p>
+      </div>
+      <div class="syntax-example">
+          <code>$"web scraper"</code>
+          <p>Finds scripts with the exact description phrase.</p>
+      </div>
+
   </section>
 
   <footer>
