@@ -232,6 +232,35 @@ nav ul li a:hover {
     height: auto;
 }
 
+#pagination {
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:40px;
+}
+
+
+#pagination a {
+    padding:6px 12px;
+    border-radius:20px;
+    border:1px solid rgba(0,0,0,0.12);
+    text-decoration:none;
+    color:var(--muted);
+}
+
+
+#pagination a:hover {
+    border-color:var(--accent);
+    color:var(--accent);
+}
+
+
+#pagination a.active {
+    background:var(--accent);
+    color:white;
+    border-color:var(--accent);
+}
+
 #search {
     background-color: var(--nav-bg);
     padding: 80px 80px 80px;

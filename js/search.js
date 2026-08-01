@@ -39,7 +39,7 @@ function buildSortPills() {
     btn.addEventListener("click", () => {
       document.querySelectorAll("#sort-buttons .sort-btn").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      runSearch();
+      runSearch(true);
     });
     bar.appendChild(btn);
   });
@@ -53,7 +53,7 @@ function buildSizeCheckboxes() {
     const cb       = document.createElement("input");
     cb.type        = "checkbox";
     cb.value       = value;
-    cb.addEventListener("change", runSearch);
+    cb.addEventListener("change", () => runSearch(true));
     pill.append(cb, document.createTextNode(label));
     container.appendChild(pill);
   });
@@ -66,11 +66,11 @@ function attachListeners() {
     document.getElementById("advanced-toggle").textContent =
       isOpen ? "▴ Advanced filters" : "▾ Advanced filters";
   });
-  document.getElementById("date-from").addEventListener("change", runSearch);
-  document.getElementById("date-to").addEventListener("change", runSearch);
-  document.getElementById("search-button").addEventListener("click", runSearch);
+  document.getElementById("date-from").addEventListener("change", () => runSearch(true));
+  document.getElementById("date-to").addEventListener("change", () => runSearch(true));
+  document.getElementById("search-button").addEventListener("click", () => runSearch(true));
   document.getElementById("search-input").addEventListener("keypress", e => {
-    if (e.key === "Enter") runSearch();
+    if (e.key === "Enter") runSearch(true);
   });
 }
 
@@ -132,7 +132,7 @@ function addCondition(conditions, values, strict, fuzzySQL, fuzzyVal, strictSQL,
   else        { conditions.push(fuzzySQL);  values.push(fuzzyVal);  }
 }
 
-function buildQuery({ q, field, sort, date_from, date_to, sizes }) {
+function buildQuery({ q, field, sort, date_from, date_to, sizes, page }) {
   const parsed     = parseQuery(q);
   const conditions = [];
   const values     = [];
@@ -205,12 +205,27 @@ function buildQuery({ q, field, sort, date_from, date_to, sizes }) {
     "date-asc":  "updated_at ASC",
     "size-desc": "size DESC",
     "size-asc":  "size ASC",
-    };
+    };  
+  
   const orderBy = sortMap[sort] ?? "name ASC";
 
+  const offset = (page - 1) * 30;
+
   return {
-    sql: `SELECT name, creator, thumbnail FROM scripts ${where} ORDER BY ${orderBy} LIMIT 50`,
-    values,
+    sql: `
+      SELECT name, creator, thumbnail 
+      FROM scripts 
+      ${where}
+      ORDER BY ${orderBy}
+      LIMIT 30 OFFSET ?
+    `,
+    countSql: `
+      SELECT COUNT(*) 
+      FROM scripts 
+      ${where}
+    `,
+    values: [...values, offset],
+    countValues: values,
     hasQuery,
   };
 }
@@ -223,12 +238,18 @@ function getParams() {
     date_from: document.getElementById("date-from").value,
     date_to:   document.getElementById("date-to").value,
     sizes:     [...document.querySelectorAll("#size-filters input:checked")].map(cb => cb.value),
+    page:      Math.max(1, Number(new URLSearchParams(window.location.search).get("page")) || 1),
   };
 }
 
-function runSearch() {
+function runSearch(resetPage = false) {
   const params = getParams();
-  const { sql, values, hasQuery } = buildQuery(params);
+
+  if (resetPage) {
+    params.page = 1;
+  }
+
+  const { sql, countSql, values, countValues, hasQuery } = buildQuery(params);
 
   if (!params.q) {
     document.getElementById("scripts").style.display = "none";
@@ -237,33 +258,118 @@ function runSearch() {
   }
 
   const url = new URL(window.location.href);
-  params.q                 ? url.searchParams.set("q",         params.q)               : url.searchParams.delete("q");
-  params.field !== "all"   ? url.searchParams.set("field",     params.field)           : url.searchParams.delete("field");
-  params.sort !== "name-asc" ? url.searchParams.set("sort",   params.sort)            : url.searchParams.delete("sort");
-  params.date_from         ? url.searchParams.set("date_from", params.date_from)       : url.searchParams.delete("date_from");
-  params.date_to           ? url.searchParams.set("date_to",   params.date_to)         : url.searchParams.delete("date_to");
-  params.sizes.length      ? url.searchParams.set("sizes",     params.sizes.join(",")) : url.searchParams.delete("sizes");
+
+  params.q
+    ? url.searchParams.set("q", params.q)
+    : url.searchParams.delete("q");
+
+  params.field !== "all"
+    ? url.searchParams.set("field", params.field)
+    : url.searchParams.delete("field");
+
+  params.sort !== "name-asc"
+    ? url.searchParams.set("sort", params.sort)
+    : url.searchParams.delete("sort");
+
+  params.date_from
+    ? url.searchParams.set("date_from", params.date_from)
+    : url.searchParams.delete("date_from");
+
+  params.date_to
+    ? url.searchParams.set("date_to", params.date_to)
+    : url.searchParams.delete("date_to");
+
+  params.sizes.length
+    ? url.searchParams.set("sizes", params.sizes.join(","))
+    : url.searchParams.delete("sizes");
+
+  params.page > 1
+    ? url.searchParams.set("page", params.page)
+    : url.searchParams.delete("page");
+
   history.replaceState(null, "", url);
 
   const scripts = queryAll(db, sql, values);
+  const total = queryAll(db, countSql, countValues)[0]["COUNT(*)"];
+
   document.getElementById("advanced").style.display = "none";
   document.getElementById("scripts").style.display = "block";
-  render(scripts, params.q, hasQuery);
+
+  render(scripts, params.q, hasQuery, total);
+  renderPagination(total, params.page);
 }
 
-function render(scripts, query, hasQuery) {
+function render(scripts, query, hasQuery, total) {
   const grid = document.getElementById("results");
   grid.replaceChildren();
-  for (const script of scripts) grid.appendChild(buildScriptCard(script));
+
+  for (const script of scripts) {
+    grid.appendChild(buildScriptCard(script));
+  }
 
   const title = document.getElementById("results-title");
+
   title.textContent = hasQuery
-    ? `${scripts.length} result${scripts.length !== 1 ? "s" : ""}`
+    ? `${total} result${total !== 1 ? "s" : ""}`
     : `${scripts.length} random scripts`;
 
   document.title = query
     ? `PyNumStore - Search for "${query}"`
     : "PyNumStore - Search";
+}
+
+function renderPagination(total, currentPage) {
+
+  const container = document.getElementById("pagination");
+  container.replaceChildren();
+
+  const totalPages = Math.ceil(total / 30);
+
+  if (totalPages <= 1) return;
+
+  function addPage(page) {
+    const link = document.createElement("a");
+
+    const url = new URL(window.location.href);
+    url.searchParams.set("page", page);
+
+    link.href = url.toString();
+    link.textContent = page;
+
+    if (page === currentPage) {
+      link.classList.add("active");
+    }
+
+    container.appendChild(link);
+  }
+
+  function addDots() {
+    const span = document.createElement("span");
+    span.textContent = "...";
+    span.className = "pagination-dots";
+    container.appendChild(span);
+  }
+
+  addPage(1);
+
+  let start = Math.max(2, currentPage - 2);
+  let end   = Math.min(totalPages - 1, currentPage + 2);
+
+  if (start > 2) {
+    addDots();
+  }
+
+  for (let i = start; i <= end; i++) {
+    addPage(i);
+  }
+
+  if (end < totalPages - 1) {
+    addDots();
+  }
+
+  if (totalPages > 1) {
+    addPage(totalPages);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", initSearch);
