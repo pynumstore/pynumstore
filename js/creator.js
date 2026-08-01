@@ -4,12 +4,12 @@ import { buildScriptCard } from "./utils.js";
 const VALID_ID = /^[a-z0-9]([a-z0-9-]{0,48}[a-z0-9])?$/;
 
 const SORT_OPTIONS = [
-  { value: "name-asc",  label: "A → Z"       },
-  { value: "name-desc", label: "Z → A"       },
-  { value: "date-desc", label: "Newest first" },
-  { value: "date-asc",  label: "Oldest first" },
-  { value: "size-desc", label: "Largest first" },
-  { value: "size-asc",  label: "Smallest first" },
+  { value: "name-asc",   label: "A → Z"                },
+  { value: "name-desc",  label: "Z → A"                },
+  { value: "date-desc",  label: "Newest updated first" },
+  { value: "date-asc",   label: "Oldest updated first" },
+  { value: "size-desc",  label: "Largest first"        },
+  { value: "size-asc",   label: "Smallest first"       },
 ];
 
 let allScripts = [];

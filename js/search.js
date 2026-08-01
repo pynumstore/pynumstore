@@ -4,12 +4,12 @@ import { buildScriptCard } from "./utils.js";
 let db;
 
 const SORT_OPTIONS = [
-  { value: "name-asc",   label: "A → Z"     },
-  { value: "name-desc",  label: "Z → A"     },
-  { value: "date-desc",  label: "Newest update"    },
-  { value: "date-asc",   label: "Oldest update"    },
-  { value: "size-desc",  label: "Largest"   },
-  { value: "size-asc",   label: "Smallest"  },
+  { value: "name-asc",   label: "A → Z"                },
+  { value: "name-desc",  label: "Z → A"                },
+  { value: "date-desc",  label: "Newest updated first" },
+  { value: "date-asc",   label: "Oldest updated first" },
+  { value: "size-desc",  label: "Largest first"        },
+  { value: "size-asc",   label: "Smallest first"       },
 ];
 
 const SIZE_CATEGORIES = [
