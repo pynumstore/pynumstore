@@ -354,6 +354,7 @@ nav ul li a:hover {
 .search-syntax {
     max-width: 960px;
     margin: 80px auto;
+    flex: 1;
 }
 
 .search-syntax h2 {
