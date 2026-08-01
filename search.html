@@ -42,48 +42,73 @@
   </nav>
 
   <section id="search">
-    <div id="search-form" action="/results" method="GET" class="search-bar">
-      <input id="search-input" type="text" name="q" placeholder="Search..." required>
-      <button id="search-button">Search</button>
+    <div class="search-inner">
+
+      <div class="search-bar">
+        <input id="search-input" type="text" placeholder="Search scripts..." autocomplete="off">
+        <select id="field-select" class="field-select">
+          <option value="all">All fields</option>
+          <option value="name">Name</option>
+          <option value="creator">Creator</option>
+          <option value="description">Description</option>
+          <option value="tags">Tags</option>
+        </select>
+        <button id="search-button">Search</button>
+      </div>
+
+      <div class="sort-bar">
+        <span class="sort-label">Sort by</span>
+        <div id="sort-buttons" class="sort-buttons"></div>
+      </div>
+
+      <button id="advanced-toggle" class="advanced-toggle">▾ Advanced filters</button>
+
+      <div id="advanced-panel" class="advanced-panel">
+
+        <div class="filter-group">
+          <span class="filter-label">Date</span>
+          <div class="date-range">
+            <input type="date" id="date-from">
+            <span class="date-sep">→</span>
+            <input type="date" id="date-to">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Size</span>
+          <div id="size-filters" class="size-filters"></div>
+        </div>
+
+      </div>
+
     </div>
   </section>
-  
+
   <section id="scripts">
     <div class="section-inner">
       <h2 id="results-title"></h2>
       <div class="divider"></div>
-
-      <div id="results" class="scripts-grid">
-      </div>
+      <div id="results" class="scripts-grid"></div>
     </div>
   </section>
-  
-<!--  
+
   <section id="advanced">
     <div class="section-inner">
-      <h2>Advanced Search</h2>
+      <h2>Prefix syntax</h2>
       <div class="divider"></div>
       <div class="content">
         <p>
-          If you want to search for a creator's name, put @ in front of it. Example: @gradient01
+          You can use prefixes directly in the search bar for precise queries.
+          Prefixes can be combined in a single search.
         </p>
-        <p>
-          If you want to search for a script's tag, put # in front of it. Example: #game
-        </p>
-        <p>
-          If you want to search for a script's name, put % in front of it. Example: %maze_generator_v1
-        </p>
-        <p>
-          If you want to search for a script's description, put $ in front of it. Example: $fun
-        </p>
-        <p>
-          You can also combine those to make more complex searches. Example: @gradient01 #game %maze_generator_v1 $fun
-        </p>
+        <p><code>@gradient01</code> — search by creator name</p>
+        <p><code>#game</code> — search by tag (exact match)</p>
+        <p><code>%maze_generator</code> — search by script name</p>
+        <p><code>$fun</code> — search in descriptions only</p>
+        <p><code>@gradient01 #game</code> — combine multiple prefixes</p>
       </div>
     </div>
   </section>
--->
-
 
   <footer>
     <p>© 2026 PyNumStore &nbsp;·&nbsp; By Gradient01 &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html">Legal notices</a></p>
