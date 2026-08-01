@@ -127,7 +127,7 @@ CREATE TABLE scripts (
     id               INTEGER PRIMARY KEY AUTOINCREMENT,
     name             TEXT NOT NULL,
     creator          TEXT NOT NULL REFERENCES creators(name),
-    created_at       TEXT,
+    updated_at       TEXT,
     size             TEXT,
     thumbnail        TEXT,      -- path to the PNG screenshot
     description      TEXT,      -- sanitised HTML (bleach), for display

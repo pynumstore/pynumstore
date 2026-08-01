@@ -39,7 +39,7 @@ async function loadCreatorPage() {
 
   const db = await getDB();
   allScripts = queryAll(db, `
-    SELECT name, creator, thumbnail, created_at, size
+    SELECT name, creator, thumbnail, updated_at, size
     FROM scripts
     WHERE creator = ?
   `, [creator]);
@@ -67,8 +67,8 @@ function sortScripts(scripts, order) {
   switch (order) {
     case "name-asc":  return sorted.sort((a, b) => a.name.localeCompare(b.name));
     case "name-desc": return sorted.sort((a, b) => b.name.localeCompare(a.name));
-    case "date-desc": return sorted.sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
-    case "date-asc":  return sorted.sort((a, b) => (a.created_at ?? "").localeCompare(b.created_at ?? ""));
+    case "date-desc": return sorted.sort((a, b) => (b.updated_at ?? "").localeCompare(a.updated_at ?? ""));
+    case "date-asc":  return sorted.sort((a, b) => (a.updated_at ?? "").localeCompare(b.updated_at ?? ""));
     case "size-desc": return sorted.sort((a, b) => (b.size ?? 0) - (a.size ?? 0));
     case "size-asc":  return sorted.sort((a, b) => (a.size ?? 0) - (b.size ?? 0));
     default:          return sorted;

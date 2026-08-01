@@ -33,9 +33,9 @@ async function loadScriptPage() {
   creatorLink.href      = `creator.html?name=${encodeURIComponent(creator)}`;
   creatorLink.textContent = creator;
   creatorEl.appendChild(creatorLink);
-  const date = new Date(script.created_at + "T00:00:00");
-  document.querySelector(".created-at").textContent =
-    "Created on " + date.toLocaleDateString("en-US", {
+  const date = new Date(script.updated_at + "T00:00:00");
+  document.querySelector(".updated-at").textContent =
+    "Last updated: " + date.toLocaleDateString("en-US", {
       year: "numeric", month: "long", day: "numeric"
     });
   document.querySelector(".size").textContent = formatSize(script.size);

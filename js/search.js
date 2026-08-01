@@ -6,8 +6,8 @@ let db;
 const SORT_OPTIONS = [
   { value: "name-asc",   label: "A → Z"     },
   { value: "name-desc",  label: "Z → A"     },
-  { value: "date-desc",  label: "Newest"    },
-  { value: "date-asc",   label: "Oldest"    },
+  { value: "date-desc",  label: "Newest update"    },
+  { value: "date-asc",   label: "Oldest update"    },
   { value: "size-desc",  label: "Largest"   },
   { value: "size-asc",   label: "Smallest"  },
 ];
@@ -187,8 +187,8 @@ function buildQuery({ q, field, sort, date_from, date_to, sizes }) {
     }
   });
 
-  if (date_from) { conditions.push("created_at >= ?"); values.push(date_from); }
-  if (date_to)   { conditions.push("created_at <= ?"); values.push(date_to);   }
+  if (date_from) { conditions.push("updated_at >= ?"); values.push(date_from); }
+  if (date_to)   { conditions.push("updated_at <= ?"); values.push(date_to);   }
 
   if (sizes.length > 0 && sizes.length < 4) {
     const sizeConds = SIZE_CATEGORIES.filter(c => sizes.includes(c.value)).map(c => c.sql);
@@ -201,8 +201,8 @@ function buildQuery({ q, field, sort, date_from, date_to, sizes }) {
   const sortMap = {
     "name-asc":  "name ASC",
     "name-desc": "name DESC",
-    "date-desc": "created_at DESC",
-    "date-asc":  "created_at ASC",
+    "date-desc": "updated_at DESC",
+    "date-asc":  "updated_at ASC",
     "size-desc": "size DESC",
     "size-asc":  "size ASC",
     };

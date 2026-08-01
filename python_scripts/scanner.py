@@ -129,9 +129,9 @@ class Scanner:
                 container = self.page.locator("div.col-description")
                 raw_date = container.locator("p").nth(1).inner_text()[11:]
                 try:
-                    created_at = datetime.strptime(raw_date.strip(), "%B %d, %Y").strftime("%Y-%m-%d")
+                    updated_at = datetime.strptime(raw_date.strip(), "%B %d, %Y").strftime("%Y-%m-%d")
                 except ValueError:
-                    created_at = raw_date
+                    updated_at = raw_date
                 size = self.parse_size(container.locator("p").nth(2).inner_text())
 
                 html = self.page.content()
@@ -161,7 +161,7 @@ class Scanner:
         return {
             "name": name,
             "creator": creator,
-            "created_at": created_at,
+            "updated_at": updated_at,
             "size": size,
             "thumbnail": f"data/thumbnails/{creator}_{name}.png",
             "tags": ", ".join([tag.lower() for tag in tags]),
