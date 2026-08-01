@@ -13,10 +13,10 @@ const SORT_OPTIONS = [
 ];
 
 const SIZE_CATEGORIES = [
-  { value: "tiny",   label: "< 1 KB",     sql: "size < 1024"                  },
-  { value: "small",  label: "1 – 10 KB",  sql: "size BETWEEN 1024 AND 10239"  },
-  { value: "medium", label: "10 – 50 KB", sql: "size BETWEEN 10240 AND 51199" },
-  { value: "large",  label: "> 50 KB",    sql: "size >= 51200"                },
+  { value: "tiny",   label: "< 512 B",     sql: "size < 512"                  },
+  { value: "small",  label: "1 – 1.5 KB",  sql: "size BETWEEN 512 AND 1535"  },
+  { value: "medium", label: "1.5 – 4 KB", sql: "size BETWEEN 1536 AND 4095" },
+  { value: "large",  label: "> 4 KB",    sql: "size >= 4096"                },
 ];
 
 async function initSearch() {
