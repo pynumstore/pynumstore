@@ -93,108 +93,99 @@
     </div>
   </section>
 
-    <section class="search-syntax" id="search-syntax">
-      <h2>Prefix syntax</h2>
-      <p>
-          The search system supports special prefixes to target specific fields.
-          Quotes can be used to force an exact match.
+  <section class="search-syntax" id="search-syntax">
+    <div class="syntax-inner">
+
+      <h2>Search syntax</h2>
+      <div class="divider"></div>
+      <p class="syntax-intro">
+        Use prefixes to target specific fields.
+        Add quotes around any term to force an exact match.
+        Prefixes can be combined in a single query.
       </p>
-      <table class="syntax-table">
-          <thead>
-              <tr>
-                  <th>Syntax</th>
-                  <th>Search in</th>
-                  <th>Behavior</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td><code>word</code></td>
-                  <td>All fields</td>
-                  <td>Fuzzy search in name, creator and description</td>
-              </tr>
-              <tr>
-                  <td><code>"word"</code></td>
-                  <td>All fields</td>
-                  <td>Exact search</td>
-              </tr>
-              <tr>
-                  <td><code>@word</code></td>
-                  <td>Creator</td>
-                  <td>Search only in creators</td>
-              </tr>
-              <tr>
-                  <td><code>@"word"</code></td>
-                  <td>Creator</td>
-                  <td>Exact creator match</td>
-              </tr>
-              <tr>
-                  <td><code>#word</code></td>
-                  <td>Tags</td>
-                  <td>Search only in tags</td>
-              </tr>
-              <tr>
-                  <td><code>#"word"</code></td>
-                  <td>Tags</td>
-                  <td>Exact tag match</td>
-              </tr>
-              <tr>
-                  <td><code>%word</code></td>
-                  <td>Name</td>
-                  <td>Search only in script names</td>
-              </tr>
-              <tr>
-                  <td><code>%"word"</code></td>
-                  <td>Name</td>
-                  <td>Exact script name match</td>
-              </tr>
-              <tr>
-                  <td><code>$word</code></td>
-                  <td>Description</td>
-                  <td>Search only in descriptions</td>
-              </tr>
-              <tr>
-                  <td><code>$"word"</code></td>
-                  <td>Description</td>
-                  <td>Exact description match</td>
-              </tr>
-          </tbody>
-      </table>
-      <h2>Special wildcard</h2>
-      <p>
-          The wildcard <code>*</code> can be used to display all scripts without
-          applying a text filter.
-          This is useful when combined with sorting or advanced filters.
-      </p>
-      <div class="syntax-example">
-          <code>*</code>
-          <p>Displays all scripts.</p>
-      </div>
-      <div class="syntax-example">
-          <code>*</code>
-          <p>
-              Combined with <strong>Newest update</strong>, this allows browsing
-              recently updated scripts.
-          </p>
-      </div>
-      <h2>Examples</h2>
-      <div class="syntax-example">
-          <code>@"John"</code>
-          <p>Finds scripts created by the exact creator <strong>John</strong>.</p>
-      </div>
-      <div class="syntax-example">
-          <code>%"My Script"</code>
-          <p>Finds the script with the exact name <strong>My Script</strong>.</p>
-      </div>
-      <div class="syntax-example">
-          <code>#python</code>
-          <p>Finds scripts containing the <strong>python</strong> tag.</p>
-      </div>
-      <div class="syntax-example">
-          <code>$"web scraper"</code>
-          <p>Finds scripts with the exact description phrase.</p>
+
+      <div class="prefix-grid">
+
+        <div class="prefix-card">
+          <span class="prefix-symbol">@</span>
+          <div class="prefix-body">
+            <strong>Creator</strong>
+            <div class="prefix-examples">
+              <div class="prefix-example">
+                <code>@gradient01</code>
+                <span class="prefix-tag">fuzzy</span>
+              </div>
+              <div class="prefix-example">
+                <code>@"gradient01"</code>
+                <span class="prefix-tag prefix-tag--exact">exact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prefix-card">
+          <span class="prefix-symbol">#</span>
+          <div class="prefix-body">
+            <strong>Tags</strong>
+            <div class="prefix-examples">
+              <div class="prefix-example">
+                <code>#game</code>
+                <span class="prefix-tag">fuzzy</span>
+              </div>
+              <div class="prefix-example">
+                <code>#"game"</code>
+                <span class="prefix-tag prefix-tag--exact">exact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prefix-card">
+          <span class="prefix-symbol">%</span>
+          <div class="prefix-body">
+            <strong>Script name</strong>
+            <div class="prefix-examples">
+              <div class="prefix-example">
+                <code>%maze</code>
+                <span class="prefix-tag">fuzzy</span>
+              </div>
+              <div class="prefix-example">
+                <code>%"maze_gen"</code>
+                <span class="prefix-tag prefix-tag--exact">exact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prefix-card">
+          <span class="prefix-symbol">$</span>
+          <div class="prefix-body">
+            <strong>Description</strong>
+            <div class="prefix-examples">
+              <div class="prefix-example">
+                <code>$physics</code>
+                <span class="prefix-tag">fuzzy</span>
+              </div>
+              <div class="prefix-example">
+                <code>$"physics"</code>
+                <span class="prefix-tag prefix-tag--exact">exact word</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
+      <div class="wildcard-card">
+        <span class="prefix-symbol wildcard-symbol">*</span>
+        <div>
+          <strong>Wildcard</strong>
+          <p>Displays all scripts. Combine with sorting or advanced filters for powerful browsing.</p>
+          <p class="wildcard-example">Try: <code>*</code> sorted by <em>Newest updated first</em></p>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <footer>

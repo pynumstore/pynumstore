@@ -352,95 +352,160 @@ nav ul li a:hover {
 }
 
 .search-syntax {
-    max-width: 960px;
-    margin: 80px auto;
     flex: 1;
+    background-color: var(--bg);
+    padding: 60px 24px;
+}
+
+.syntax-inner {
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 .search-syntax h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-top: 40px;
-    margin-bottom: 16px;
+    font-size: 2.2rem;
+    color: var(--text);
+    margin-bottom: 18px;
 }
 
-.search-syntax p {
+.syntax-intro {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.prefix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
     margin-bottom: 20px;
 }
 
-
-.syntax-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0 40px;
+.prefix-card {
     background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.syntax-table th {
-    text-align: left;
-    background: var(--nav-bg);
-    color: var(--nav-text);
-    padding: 12px 16px;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.prefix-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.syntax-table td {
-    padding: 12px 16px;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-
-.syntax-table tr:last-child td {
-    border-bottom: none;
-}
-
-.syntax-table code,
-.syntax-example code {
+.prefix-symbol {
     font-family: 'Courier New', monospace;
-    background: var(--code-bg);
-    border: 1px solid rgba(0,0,0,0.12);
-    border-left: 3px solid var(--accent);
-    border-radius: 4px;
-    padding: 3px 8px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    min-width: 32px;
+    padding-top: 2px;
+}
+
+.prefix-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prefix-body strong {
+    font-size: 0.95rem;
     color: var(--text);
 }
 
+.prefix-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 
-.syntax-example {
+.prefix-example {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.prefix-example code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.82rem;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: var(--text);
+}
+
+.prefix-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.prefix-tag--exact {
+    color: var(--accent);
+}
+
+.wildcard-card {
     background: var(--card-bg);
-    border: 1px solid var(--border);
+    border: 1px solid rgba(0, 0, 0, 0.07);
     border-left: 3px solid var(--accent);
-    border-radius: 0 6px 6px 0;
-    padding: 14px 16px;
-    margin: 12px 0;
+    border-radius: 0 10px 10px 0;
+    padding: 20px 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.syntax-example code {
-    display: inline-block;
-    margin-bottom: 10px;
+.wildcard-symbol {
+    font-size: 2.4rem;
+    min-width: 36px;
+    padding-top: 0;
 }
 
-.syntax-example p {
-    margin: 0;
+.wildcard-card strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: var(--text);
 }
 
+.wildcard-card p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 6px;
+}
+
+.wildcard-card p:last-child {
+    margin-bottom: 0;
+}
+
+.wildcard-example code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.82rem;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 1px 6px;
+    color: var(--text);
+}
 
 @media (max-width: 600px) {
-
-    .syntax-table {
-        display: block;
-        overflow-x: auto;
+    .prefix-grid {
+        grid-template-columns: 1fr;
     }
-
-    .syntax-table th,
-    .syntax-table td {
-        white-space: nowrap;
+    .prefix-symbol {
+        font-size: 1.8rem;
     }
-
 }
 
 .advanced-toggle {
