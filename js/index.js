@@ -1,5 +1,8 @@
 import { getDB, queryAll } from "./db.js";
 import { buildScriptCard } from "./utils.js";
+import { initI18n, t } from "./i18n.js";
+
+await initI18n();
 
 async function loadScripts() {
   const grid = document.getElementById("scripts-grid");
@@ -19,4 +22,4 @@ async function loadScripts() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadScripts);
+loadScripts();

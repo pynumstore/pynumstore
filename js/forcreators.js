@@ -1,4 +1,7 @@
 import { getDB, queryAll } from "./db.js";
+import { initI18n, t } from "./i18n.js";
+
+await initI18n();
 
 const API_URL = "https://script.google.com/macros/s/AKfycbyWGbGYqjL-OBgkWvbo2nOF8NO4KL3251WJJD51OzrbgtF-62lfj2_ev4z4I55Sjy1d/exec";
 
@@ -26,9 +29,9 @@ function startCooldown() {
       clearInterval(cooldownTimer);
       cooldownTimer = null;
       btn.disabled = false;
-      btn.textContent = "Submit";
+      btn.textContent = t("forcreators.button");
     } else {
-      btn.textContent = `Wait ${remaining}s`;
+      btn.textContent = t("forcreators.wait", { seconds: remaining });
     }
   }, 200);
 }
@@ -42,16 +45,13 @@ async function sendCreator() {
   const name = document.getElementById("creatorName").value.trim().toLowerCase();
 
   if (!name) {
-    setMsg("Please enter a creator name.", "red");
+    setMsg(t("forcreators.empty"), "red");
     document.getElementById("creatorName").focus();
     return;
   }
 
   if (!CREATOR_REGEX.test(name)) {
-    setMsg(
-      `"${name}" is not a valid creator name. Only lowercase letters, digits and hyphens are allowed, and it cannot start or end with a hyphen.`,
-      "red"
-    );
+    setMsg(t("forcreators.invalid", { name: name }), "red");
     document.getElementById("creatorName").focus();
     return;
   }
@@ -65,18 +65,18 @@ async function sendCreator() {
     LIMIT 1
   `, [name]);
   if (scripts.length > 0) {
-    setMsg(`"${name}" is already in the database.`, "red");
+    setMsg(t("forcreators.duplicate", { name: name }), "red");
     document.getElementById("creatorName").focus();
     return;
   }
 
   const cfToken = window.turnstile?.getResponse();
   if (!cfToken) {
-    setMsg("Please complete the security check.", "red");
+    setMsg(t("forcreators.captcha"), "red");
     return;
   }
 
-  setMsg("Sending...", "blue");
+  setMsg(t("forcreators.sending"), "blue");
   document.getElementById("submit-button").disabled = true;
 
   try {
@@ -93,7 +93,7 @@ async function sendCreator() {
     document.getElementById("submit-button").disabled = false;
 
     if (data.success) {
-      setMsg(`"${name}" has been added to the database!`, "green");
+      setMsg(t("forcreators.success", { name: name }), "green");
       document.getElementById("creatorName").value = "";
       document.getElementById("creatorName").focus();
     } else {
@@ -101,32 +101,32 @@ async function sendCreator() {
 
       switch (data.reason) {
         case "duplicate":
-          setMsg(`"${name}" is already in the database.`, "red");
+          setMsg(t("forcreators.duplicate", { name: name }), "red");
           document.getElementById("creatorName").focus();
           break;
         case "invalid_name":
-          setMsg(`"${name}" is not a valid creator name.`, "red");
+          setMsg(t("forcreators.invalid", { name: name }), "red");
           break;
         case "captcha_failed":
-          setMsg("Security check failed. Please try again.", "red");
+          setMsg(t("forcreators.captcha"), "red");
           break;
         case "too_many_requests":
-          setMsg("Too many requests. Please try again later.", "red");
+          setMsg(t("forcreators.too_many_requests"), "red");
           document.getElementById("creatorName").focus();
           break;
         case "numworks_user_not_found":
-          setMsg("This creator doesn't exists on the NumWorks website.", "red");
+          setMsg(t("forcreators.not_found", { name: name }), "red");
           document.getElementById("creatorName").focus();
           break;
         default:
-          setMsg(`Error: ${data.reason}`, "red");
+          setMsg(t("forcreators.error", { reason: data.reason }), "red");
       }
     }
 
   } catch (err) {
     window.turnstile?.reset();
     document.getElementById("submit-button").disabled = false;
-    setMsg("Network error. Please check your connection and try again.", "red");
+    setMsg(t("forcreators.network-error"), "red");
     console.error("Unexpected error:", err);
   }
 }

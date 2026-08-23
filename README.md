@@ -77,18 +77,21 @@ pynumstore/
 ├── data/
 │   ├── pynumstore.db           # SQLite database (scripts + creators)
 │   ├── version.json            # Database version tag (cache busting)
+│   ├── i18n/
+│   │   ├── en.json             # English translations
+│   │   └── fr.json             # French translations
 │   └── thumbnails/             # Script screenshot thumbnails
 ├── js/
 │   ├── db.js                   # sql.js loader and query helpers (shared)
 │   ├── utils.js                # Shared UI utilities (card builder)
+│   ├── i18n.js                 # Language detection, switching and translation helpers
 │   ├── index.js                # Home page logic
 │   ├── search.js               # Search page logic
 │   ├── creator.js              # Creator page logic
 │   ├── script.js               # Script detail page logic
 │   ├── statistics.js           # Statistics page logic
 │   ├── forcreators.js          # Creator submission form logic
-│   ├── google_apps_script_api.js  # Apps Script API (server-side, not served)
-│   └── analytics.js            # Google Analytics initialisation
+│   └── google_apps_script_api.js  # Apps Script API (server-side, not served)
 ├── python_scripts/
 │   ├── scanner.py              # Scraping logic (curl_cffi + Playwright)
 │   ├── saver.py                # Database read/write operations
@@ -177,6 +180,8 @@ The website is fully static (HTML/CSS/JS) and hosted on GitHub Pages. There is n
 All data is loaded from `data/pynumstore.db` via [sql.js](https://github.com/sql-js/sql.js) — the entire SQLite database is fetched once and queried in-browser using WebAssembly. A `version.json` file is used for cache busting, ensuring the browser always loads the latest version of the database after an update. Search uses SQL `LIKE` queries across name, creator and description.
 
 Script descriptions are rendered as sanitised HTML (processed by `bleach` on the backend). Multi-line `<code>` blocks are automatically styled as code boxes.
+
+The interface is available in English and French. The language is auto-detected on first visit (from the browser's language, defaulting to English) and can be switched manually; the choice is remembered in a `pns_lang` cookie. Translations live in `data/i18n/en.json` and `data/i18n/fr.json`.
 
 ## Contributing
 

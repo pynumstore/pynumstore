@@ -1,7 +1,13 @@
 import { getDB, queryOne } from "./db.js";
+import { initI18n, t, getCurrentLang } from "./i18n.js";
+
+await initI18n();
 
 const VALID_CREATOR = /^[a-z0-9]([a-z0-9-]{0,48}[a-z0-9])?$/;
 const VALID_NAME    = /^[a-z_][a-z0-9_]{0,49}$/;
+
+let currentScript  = null;
+let currentCreator = null;
 
 async function loadScriptPage() {
   const params  = new URLSearchParams(window.location.search);
@@ -9,7 +15,7 @@ async function loadScriptPage() {
   const name    = params.get("name");
 
   if (!creator || !name || !VALID_CREATOR.test(creator) || !VALID_NAME.test(name)) {
-    document.querySelector(".name").textContent = "Script not found.";
+    showNotFound();
     return;
   }
 
@@ -20,37 +26,53 @@ async function loadScriptPage() {
   `, [creator, name]);
 
   if (!script) {
-    document.querySelector(".name").textContent = "Script not found.";
+    showNotFound();
     return;
   }
 
-  document.title = `PyNumStore - ${script.name}`;
-  document.querySelector(".name").textContent = script.name;
+  currentScript  = script;
+  currentCreator = creator;
 
-  const creatorEl   = document.querySelector(".creator");
-  creatorEl.textContent = "By ";
-  const creatorLink = document.createElement("a");
-  creatorLink.href      = `creator.html?name=${encodeURIComponent(creator)}`;
-  creatorLink.textContent = creator;
-  creatorEl.appendChild(creatorLink);
-  const date = new Date(script.updated_at + "T00:00:00");
-  document.querySelector(".updated-at").textContent =
-    "Last updated: " + date.toLocaleDateString("en-US", {
-      year: "numeric", month: "long", day: "numeric"
-    });
-  document.querySelector(".size").textContent = formatSize(script.size);
+  renderScript();
 
   document.getElementById("numworks-link").href =
     `https://my.numworks.com/python/${encodeURIComponent(creator)}/${encodeURIComponent(name)}/`;
 
   document.getElementById("script-image").src = script.thumbnail;
 
+  document.addEventListener("i18n:changed", renderScript);
+}
+
+function showNotFound() {
+  document.title = t("script.titleDefault");
+  document.querySelector(".name").textContent = t("script.notFound");
+}
+
+function renderScript() {
+  const script = currentScript;
+  document.title = t("script.titleName", { name: script.name });
+  document.querySelector(".name").textContent = script.name;
+
+  const creatorEl = document.querySelector(".creator");
+  creatorEl.replaceChildren(`${t("script.by")} `);
+  const creatorLink = document.createElement("a");
+  creatorLink.href        = `creator.html?name=${encodeURIComponent(currentCreator)}`;
+  creatorLink.textContent = currentCreator;
+  creatorEl.appendChild(creatorLink);
+
+  const locale = getCurrentLang() === "fr" ? "fr-FR" : "en-US";
+  const date   = new Date(script.updated_at + "T00:00:00");
+  document.querySelector(".updated-at").textContent = t("script.lastUpdated", {
+    date: date.toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" })
+  });
+  document.querySelector(".size").textContent = formatSize(script.size, locale);
+
   if (script.description) {
     const descSection = document.querySelector(".description");
     descSection.replaceChildren();
 
     const h2 = document.createElement("h2");
-    h2.textContent = "Description:";
+    h2.textContent = t("script.description");
 
     const divider = document.createElement("div");
     divider.className = "divider";
@@ -70,7 +92,7 @@ async function loadScriptPage() {
 
   let tags = [];
   try {
-    tags = script.tags ? script.tags.split(",").map(t => t.trim()).filter(Boolean) : [];
+    tags = script.tags ? script.tags.split(",").map(tag => tag.trim()).filter(Boolean) : [];
   } catch {
     tags = [];
   }
@@ -80,25 +102,26 @@ async function loadScriptPage() {
     tagsContainer.replaceChildren();
 
     const h2 = document.createElement("h2");
-    h2.textContent = "Tags:";
+    h2.textContent = t("script.tags");
 
     const divider = document.createElement("div");
     divider.className = "divider";
 
     tagsContainer.append(h2, divider);
 
-    for (const t of tags) {
+    for (const tag of tags) {
       const p = document.createElement("p");
-      p.textContent = `#${t}`;
+      p.textContent = `#${tag}`;
       tagsContainer.appendChild(p);
     }
   }
 }
 
-function formatSize(bytes) {
-    if (!bytes) return "Unknown size";
-    if (bytes < 1024) return `${bytes} Bytes`;
-    return `${(bytes / 1024).toFixed(2)} KB`;
+function formatSize(bytes, locale) {
+    if (!bytes) return t("script.unknownSize");
+    if (bytes < 1024) return t("script.bytes", { size: bytes });
+    const kb = (bytes / 1024).toLocaleString(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    return `${kb} ${t("script.kb")}`;
 }
 
-document.addEventListener("DOMContentLoaded", loadScriptPage);
+loadScriptPage();

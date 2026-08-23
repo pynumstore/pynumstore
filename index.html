@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="i18n-pending">
 <head>
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'none';
-    script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
+    script-src 'self' https://static.cloudflareinsights.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
     style-src 'self' https://fonts.googleapis.com;
     font-src https://fonts.gstatic.com;
     img-src 'self';
     connect-src 'self'
-                https://www.google-analytics.com
-                https://analytics.google.com
-                https://*.google-analytics.com
+                https://cloudflareinsights.com
                 https://cdn.jsdelivr.net;
     base-uri 'self';
     form-action 'none';
@@ -18,8 +16,7 @@
   ">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
-  <script src="js/analytics.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6234f75f52bb4679b4e8f427ba6e1953"}'></script>
   <title>PyNumStore</title>
   <link rel="icon" href='static/favicon.ico'>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -33,25 +30,29 @@
     <div class="nav-inner">
       <a href='index.html' class="logo">PyNum<span>Store</span></a>
       <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='search.html'>Search</a></li>
-        <li><a href="statistics.html">Statistics</a></li>
-        <li><a href='forcreators.html'>For creators</a></li>
+        <li><a href='index.html' data-i18n="nav.home">Home</a></li>
+        <li><a href='search.html' data-i18n="nav.search">Search</a></li>
+        <li><a href="statistics.html" data-i18n="nav.statistics">Statistics</a></li>
+        <li><a href='forcreators.html' data-i18n="nav.forCreators">For creators</a></li>
       </ul>
+      <div class="lang-switch">
+        <button data-lang-switch="en">EN</button>
+        <button data-lang-switch="fr">FR</button>
+      </div>
     </div>
   </nav>
 
   <section id="welcome">
     <div class="hero-content">
-      <div class="tag">Welcome</div>
-      <h1>PyNumStore is an alternative platform that indexes and showcases Python scripts published on the official NumWorks website.</h1>
-      <a href='search.html' class="btn">Search a python script</a>
+      <div data-i18n="home.tag" class="tag">Welcome</div>
+      <h1 data-i18n="home.title">PyNumStore is an alternative platform that indexes and showcases Python scripts published on the official NumWorks website.</h1>
+      <a data-i18n="home.cta" href='search.html' class="btn">Search a python script</a>
     </div>
   </section>
   
   <section id="scripts">
     <div class="section-inner">
-      <h2>Highlighted Scripts</h2>
+      <h2 data-i18n="home.highlighted">Highlighted Scripts</h2>
       <div class="divider"></div>
       <div class="scripts-grid" id="scripts-grid">
       </div>
@@ -60,7 +61,7 @@
 
 
   <footer>
-    <p>© 2026 PyNumStore &nbsp;·&nbsp; By Gradient01 &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html">Legal notices</a></p>
+    <p>© 2026 PyNumStore &nbsp;·&nbsp; <by-section data-i18n="footer.by">By Gradient01</by-section> &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html" data-i18n="footer.legal">Legal notices</a></p>
   </footer>
 
 </body>

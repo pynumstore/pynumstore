@@ -1,42 +1,58 @@
 import { getDB, queryAll } from "./db.js";
 import { buildScriptCard } from "./utils.js";
+import { initI18n, t } from "./i18n.js";
+
+document.getElementById("scripts").style.display = "none";
+
+await initI18n();
 
 let db;
 
-const SORT_OPTIONS = [
-  { value: "name-asc",   label: "A → Z"                },
-  { value: "name-desc",  label: "Z → A"                },
-  { value: "date-desc",  label: "Newest updated first" },
-  { value: "date-asc",   label: "Oldest updated first" },
-  { value: "size-desc",  label: "Largest first"        },
-  { value: "size-asc",   label: "Smallest first"       },
-];
+function getSortOptions() {
+  return [
+    { value: "name-asc",   label: t("search.az")       },
+    { value: "name-desc",  label: t("search.za")       },
+    { value: "date-desc",  label: t("search.newest")   },
+    { value: "date-asc",   label: t("search.oldest")   },
+    { value: "size-desc",  label: t("search.largest")  },
+    { value: "size-asc",   label: t("search.smallest") },
+  ];
+}
 
 const SIZE_CATEGORIES = [
-  { value: "tiny",   label: "< 512 B",     sql: "size < 512"                  },
-  { value: "small",  label: "1 – 1.5 KB",  sql: "size BETWEEN 512 AND 1535"  },
+  { value: "tiny",   label: "< 512 B",     sql: "size < 512"                },
+  { value: "small",  label: "1 – 1.5 KB",  sql: "size BETWEEN 512 AND 1535" },
   { value: "medium", label: "1.5 – 4 KB", sql: "size BETWEEN 1536 AND 4095" },
   { value: "large",  label: "> 4 KB",    sql: "size >= 4096"                },
 ];
 
 async function initSearch() {
-  document.getElementById("search-syntax").style.display = "none";
-  document.getElementById("scripts").style.display = "none";
-  db = await getDB();
+
   buildSortPills();
+  db = await getDB();
   buildSizeCheckboxes();
   attachListeners();
   restoreFromURL();
   runSearch();
+  updateTitle(getParams().q);
+
+  document.addEventListener("i18n:changed", () => {
+    const activeSort = document.querySelector("#sort-buttons .sort-btn.active")?.dataset.sort ?? "name-asc";
+    buildSortPills(activeSort);
+    updateAdvancedToggleLabel();
+    updateTitle(getParams().q);
+  });
 }
 
-function buildSortPills() {
+function buildSortPills(activeValue = "name-asc") {
   const bar = document.getElementById("sort-buttons");
-  SORT_OPTIONS.forEach(({ value, label }) => {
+  bar.replaceChildren();
+  getSortOptions().forEach(({ value, label }) => {
     const btn = document.createElement("button");
     btn.className    = "sort-btn";
     btn.dataset.sort = value;
     btn.textContent  = label;
+    if (value === activeValue) btn.classList.add("active");
     btn.addEventListener("click", () => {
       document.querySelectorAll("#sort-buttons .sort-btn").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
@@ -60,12 +76,16 @@ function buildSizeCheckboxes() {
   });
 }
 
+function updateAdvancedToggleLabel() {
+  const btn    = document.getElementById("advanced-toggle");
+  const isOpen = document.getElementById("advanced-panel").classList.contains("open");
+  btn.textContent = isOpen ? t("search.advancedOpen") : t("search.advanced");
+}
+
 function attachListeners() {
   document.getElementById("advanced-toggle").addEventListener("click", () => {
-    const panel  = document.getElementById("advanced-panel");
-    const isOpen = panel.classList.toggle("open");
-    document.getElementById("advanced-toggle").textContent =
-      isOpen ? "▴ Advanced filters" : "▾ Advanced filters";
+    document.getElementById("advanced-panel").classList.toggle("open");
+    updateAdvancedToggleLabel();
   });
   document.getElementById("date-from").addEventListener("change", () => runSearch(true));
   document.getElementById("date-to").addEventListener("change", () => runSearch(true));
@@ -94,16 +114,14 @@ function restoreFromURL() {
 
   if (p.get("date_from") || p.get("date_to") || p.get("sizes")) {
     document.getElementById("advanced-panel").classList.add("open");
-    document.getElementById("advanced-toggle").textContent = "▴ Advanced filters";
+    updateAdvancedToggleLabel();
   }
 }
 
 function parseQuery(raw) {
   const result = { creator: [], tags: [], name: [], description: [], text: [] };
-
   const re = /([@#%$])?"([^"]+)"|([@#%$])(\S+)|(\S+)/g;
   let m;
-
   while ((m = re.exec(raw)) !== null) {
     if (m[2] !== undefined) {
       pushToken(result, m[1] ?? "", m[2], true);
@@ -115,7 +133,6 @@ function parseQuery(raw) {
       else pushToken(result, "", w, false);
     }
   }
-
   return result;
 }
 
@@ -134,55 +151,36 @@ function addCondition(conditions, values, strict, fuzzySQL, fuzzyVal, strictSQL,
 }
 
 function buildQuery({ q, field, sort, date_from, date_to, sizes, page }) {
-  
   const isWildcard = q === "*";
-
   const parsed = isWildcard
     ? { creator: [], tags: [], name: [], description: [], text: [] }
     : parseQuery(q);
-  
+
   const conditions = [];
   const values     = [];
 
   parsed.creator.forEach(({ value, strict }) =>
-    addCondition(conditions, values, strict,
-      "creator LIKE ?", `%${value}%`,
-      "creator = ?",    value)
+    addCondition(conditions, values, strict, "creator LIKE ?", `%${value}%`, "creator = ?", value)
   );
-
   parsed.tags.forEach(({ value, strict }) =>
-    addCondition(conditions, values, strict,
-      "tags LIKE ?",                                   `%${value}%`,
-      "(',' || COALESCE(tags,'') || ',') LIKE ?",     `%,${value},%`)
+    addCondition(conditions, values, strict, "tags LIKE ?", `%${value}%`, "(',' || COALESCE(tags,'') || ',') LIKE ?", `%,${value},%`)
   );
-
   parsed.name.forEach(({ value, strict }) =>
-    addCondition(conditions, values, strict,
-      "name LIKE ?", `%${value}%`,
-      "name = ?",    value)
+    addCondition(conditions, values, strict, "name LIKE ?", `%${value}%`, "name = ?", value)
   );
-
   parsed.description.forEach(({ value, strict }) =>
-    addCondition(conditions, values, strict,
-      "description_text LIKE ?",                              `%${value}%`,
-      "(' ' || COALESCE(description_text,'') || ' ') LIKE ?", `% ${value} %`)
+    addCondition(conditions, values, strict, "description_text LIKE ?", `%${value}%`, "(' ' || COALESCE(description_text,'') || ' ') LIKE ?", `% ${value} %`)
   );
 
   parsed.text.forEach(({ value, strict }) => {
     if (field === "creator") {
-      addCondition(conditions, values, strict,
-        "creator LIKE ?", `%${value}%`, "creator = ?", value);
+      addCondition(conditions, values, strict, "creator LIKE ?", `%${value}%`, "creator = ?", value);
     } else if (field === "name") {
-      addCondition(conditions, values, strict,
-        "name LIKE ?", `%${value}%`, "name = ?", value);
+      addCondition(conditions, values, strict, "name LIKE ?", `%${value}%`, "name = ?", value);
     } else if (field === "description") {
-      addCondition(conditions, values, strict,
-        "description_text LIKE ?",                              `%${value}%`,
-        "(' ' || COALESCE(description_text,'') || ' ') LIKE ?", `% ${value} %`);
+      addCondition(conditions, values, strict, "description_text LIKE ?", `%${value}%`, "(' ' || COALESCE(description_text,'') || ' ') LIKE ?", `% ${value} %`);
     } else if (field === "tags") {
-      addCondition(conditions, values, strict,
-        "tags LIKE ?",                                      `%${value}%`,
-        "(',' || COALESCE(tags,'') || ',') LIKE ?",         `%,${value},%`);
+      addCondition(conditions, values, strict, "tags LIKE ?", `%${value}%`, "(',' || COALESCE(tags,'') || ',') LIKE ?", `%,${value},%`);
     } else {
       if (strict) {
         conditions.push("(name = ? OR creator = ? OR (' ' || COALESCE(description_text,'') || ' ') LIKE ?)");
@@ -212,23 +210,21 @@ function buildQuery({ q, field, sort, date_from, date_to, sizes, page }) {
     "date-asc":  "updated_at ASC",
     "size-desc": "size DESC",
     "size-asc":  "size ASC",
-    };  
-  
+  };
   const orderBy = sortMap[sort] ?? "name ASC";
-
   const offset = (page - 1) * 30;
 
   return {
     sql: `
-      SELECT name, creator, thumbnail 
-      FROM scripts 
+      SELECT name, creator, thumbnail
+      FROM scripts
       ${where}
       ORDER BY ${orderBy}
       LIMIT 30 OFFSET ?
     `,
     countSql: `
-      SELECT COUNT(*) 
-      FROM scripts 
+      SELECT COUNT(*)
+      FROM scripts
       ${where}
     `,
     values: [...values, offset],
@@ -250,11 +246,9 @@ function getParams() {
 }
 
 function runSearch(resetPage = false) {
+  updateTitle(getParams().q);
   const params = getParams();
-
-  if (resetPage) {
-    params.page = 1;
-  }
+  if (resetPage) params.page = 1;
 
   const { sql, countSql, values, countValues, hasQuery } = buildQuery(params);
 
@@ -265,35 +259,13 @@ function runSearch(resetPage = false) {
   }
 
   const url = new URL(window.location.href);
-
-  params.q
-    ? url.searchParams.set("q", params.q)
-    : url.searchParams.delete("q");
-
-  params.field !== "all"
-    ? url.searchParams.set("field", params.field)
-    : url.searchParams.delete("field");
-
-  params.sort !== "name-asc"
-    ? url.searchParams.set("sort", params.sort)
-    : url.searchParams.delete("sort");
-
-  params.date_from
-    ? url.searchParams.set("date_from", params.date_from)
-    : url.searchParams.delete("date_from");
-
-  params.date_to
-    ? url.searchParams.set("date_to", params.date_to)
-    : url.searchParams.delete("date_to");
-
-  params.sizes.length
-    ? url.searchParams.set("sizes", params.sizes.join(","))
-    : url.searchParams.delete("sizes");
-
-  params.page > 1
-    ? url.searchParams.set("page", params.page)
-    : url.searchParams.delete("page");
-
+  params.q ? url.searchParams.set("q", params.q) : url.searchParams.delete("q");
+  params.field !== "all" ? url.searchParams.set("field", params.field) : url.searchParams.delete("field");
+  params.sort !== "name-asc" ? url.searchParams.set("sort", params.sort) : url.searchParams.delete("sort");
+  params.date_from ? url.searchParams.set("date_from", params.date_from) : url.searchParams.delete("date_from");
+  params.date_to ? url.searchParams.set("date_to", params.date_to) : url.searchParams.delete("date_to");
+  params.sizes.length ? url.searchParams.set("sizes", params.sizes.join(",")) : url.searchParams.delete("sizes");
+  params.page > 1 ? url.searchParams.set("page", params.page) : url.searchParams.delete("page");
   history.replaceState(null, "", url);
 
   const scripts = queryAll(db, sql, values);
@@ -306,49 +278,39 @@ function runSearch(resetPage = false) {
   renderPagination(total, params.page);
 }
 
+function updateTitle(query) {
+  document.title = query
+    ? t("search.titleQuery").replace("{query}", query)
+    : t("search.titleDefault");
+}
+
 function render(scripts, query, hasQuery, total) {
   const grid = document.getElementById("results");
   grid.replaceChildren();
-
-  for (const script of scripts) {
-    grid.appendChild(buildScriptCard(script));
-  }
+  for (const script of scripts) grid.appendChild(buildScriptCard(script));
 
   const title = document.getElementById("results-title");
-
   title.textContent = query === "*"
-    ? `${total} scripts`
+    ? `${total} ${t("search.result")}${total !== 1 ? "s" : ""}`
     : hasQuery
-      ? `${total} result${total !== 1 ? "s" : ""}`
-      : `${scripts.length} random scripts`;
-
-  document.title = query
-    ? `PyNumStore - Search for "${query}"`
-    : "PyNumStore - Search";
+      ? `${total} ${t("search.script")}${total !== 1 ? "s" : ""}`
+      : `${scripts.length} ${t("search.random")}`;
 }
 
 function renderPagination(total, currentPage) {
-
   const container = document.getElementById("pagination");
   container.replaceChildren();
 
   const totalPages = Math.ceil(total / 30);
-
   if (totalPages <= 1) return;
 
   function addPage(page) {
     const link = document.createElement("a");
-
     const url = new URL(window.location.href);
     url.searchParams.set("page", page);
-
     link.href = url.toString();
     link.textContent = page;
-
-    if (page === currentPage) {
-      link.classList.add("active");
-    }
-
+    if (page === currentPage) link.classList.add("active");
     container.appendChild(link);
   }
 
@@ -360,25 +322,12 @@ function renderPagination(total, currentPage) {
   }
 
   addPage(1);
-
   let start = Math.max(2, currentPage - 2);
   let end   = Math.min(totalPages - 1, currentPage + 2);
-
-  if (start > 2) {
-    addDots();
-  }
-
-  for (let i = start; i <= end; i++) {
-    addPage(i);
-  }
-
-  if (end < totalPages - 1) {
-    addDots();
-  }
-
-  if (totalPages > 1) {
-    addPage(totalPages);
-  }
+  if (start > 2) addDots();
+  for (let i = start; i <= end; i++) addPage(i);
+  if (end < totalPages - 1) addDots();
+  if (totalPages > 1) addPage(totalPages);
 }
 
-document.addEventListener("DOMContentLoaded", initSearch);
+initSearch();

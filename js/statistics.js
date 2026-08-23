@@ -1,4 +1,7 @@
 import { getDB, queryOne, queryAll } from "./db.js";
+import { initI18n, t } from "./i18n.js";
+
+await initI18n();
 
 async function loadStats() {
   const db = await getDB();
@@ -105,4 +108,4 @@ function animateCounter(el, target, duration, decimals, suffix) {
   requestAnimationFrame(update);
 }
 
-document.addEventListener("DOMContentLoaded", loadStats);
+loadStats();

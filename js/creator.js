@@ -1,41 +1,43 @@
 import { getDB, queryAll } from "./db.js";
 import { buildScriptCard } from "./utils.js";
+import { initI18n, t } from "./i18n.js";
+
+await initI18n();
 
 const VALID_ID = /^[a-z0-9]([a-z0-9-]{0,48}[a-z0-9])?$/;
 
-const SORT_OPTIONS = [
-  { value: "name-asc",   label: "A → Z"                },
-  { value: "name-desc",  label: "Z → A"                },
-  { value: "date-desc",  label: "Newest updated first" },
-  { value: "date-asc",   label: "Oldest updated first" },
-  { value: "size-desc",  label: "Largest first"        },
-  { value: "size-asc",   label: "Smallest first"       },
-];
+function getSortOptions() {
+  return [
+    { value: "name-asc",   label: t("search.az")       },
+    { value: "name-desc",  label: t("search.za")       },
+    { value: "date-desc",  label: t("search.newest")   },
+    { value: "date-asc",   label: t("search.oldest")   },
+    { value: "size-desc",  label: t("search.largest")  },
+    { value: "size-asc",   label: t("search.smallest") },
+  ];
+}
 
 let allScripts = [];
+let currentCreator = null;
+let currentSort = "name-asc";
 
 async function loadCreatorPage() {
   const params  = new URLSearchParams(window.location.search);
   const creator = params.get("name");
   const initialSort = params.get("sort") ?? "name-asc";
+  currentSort = initialSort;
 
   if (!creator || !VALID_ID.test(creator)) {
-    document.getElementById("creator-name").textContent = "Invalid creator";
+    document.title = t("creator.titleDefault");
+    document.getElementById("creator-name").textContent = t("creator.invalid");
     return;
   }
 
-  document.title = `PyNumStore - ${creator}`;
+  currentCreator = creator;
+  document.title = t("creator.titleName", { name: creator });
   document.getElementById("creator-name").textContent = creator;
 
-  const sortBar = document.getElementById("sort-buttons");
-  SORT_OPTIONS.forEach(({ value, label }) => {
-    const btn = document.createElement("button");
-    btn.className   = "sort-btn" + (value === initialSort ? " active" : "");
-    btn.dataset.sort = value;
-    btn.textContent  = label;
-    btn.addEventListener("click", () => setSort(value));
-    sortBar.appendChild(btn);
-  });
+  buildSortButtons(initialSort);
 
   const db = await getDB();
   allScripts = queryAll(db, `
@@ -43,14 +45,38 @@ async function loadCreatorPage() {
     FROM scripts
     WHERE creator = ?
   `, [creator]);
-  
-  document.getElementById("script-count").textContent =
-    `${allScripts.length.toLocaleString()} script${allScripts.length !== 1 ? "s" : ""}`;
 
+  updateScriptCount();
   renderScripts(initialSort);
+
+  document.addEventListener("i18n:changed", () => {
+    document.title = t("creator.titleName", { name: currentCreator });
+    buildSortButtons(currentSort);
+    updateScriptCount();
+  });
+}
+
+function buildSortButtons(activeValue) {
+  const sortBar = document.getElementById("sort-buttons");
+  sortBar.replaceChildren();
+  getSortOptions().forEach(({ value, label }) => {
+    const btn = document.createElement("button");
+    btn.className   = "sort-btn" + (value === activeValue ? " active" : "");
+    btn.dataset.sort = value;
+    btn.textContent  = label;
+    btn.addEventListener("click", () => setSort(value));
+    sortBar.appendChild(btn);
+  });
+}
+
+function updateScriptCount() {
+  const count = allScripts.length;
+  document.getElementById("script-count").textContent =
+    `${count.toLocaleString()} ${t("search.script").toLowerCase()}${count !== 1 ? "s" : ""}`;
 }
 
 function setSort(order) {
+  currentSort = order;
   const url = new URL(window.location.href);
   url.searchParams.set("sort", order);
   history.replaceState(null, "", url);
@@ -83,4 +109,4 @@ function renderScripts(order) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadCreatorPage);
+loadCreatorPage();

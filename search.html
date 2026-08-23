@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="i18n-pending">
 <head>
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'none';
-    script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
+    script-src 'self' https://static.cloudflareinsights.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
     style-src 'self' https://fonts.googleapis.com;
     font-src https://fonts.gstatic.com;
-    img-src 'self';
+    img-src 'self' data:;
     connect-src 'self'
-                https://www.google-analytics.com
-                https://analytics.google.com
-                https://*.google-analytics.com
+                https://cloudflareinsights.com
                 https://cdn.jsdelivr.net;
     base-uri 'self';
     form-action 'none';
@@ -18,8 +16,7 @@
   ">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
-  <script src="js/analytics.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6234f75f52bb4679b4e8f427ba6e1953"}'></script>
   <title>PyNumStore - Search</title>
   <link rel="icon" href='static/favicon.ico'>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -33,11 +30,15 @@
     <div class="nav-inner">
       <a href='index.html' class="logo">PyNum<span>Store</span></a>
       <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='search.html'>Search</a></li>
-        <li><a href="statistics.html">Statistics</a></li>
-        <li><a href='forcreators.html'>For creators</a></li>
+        <li><a href='index.html' data-i18n="nav.home">Home</a></li>
+        <li><a href='search.html' data-i18n="nav.search">Search</a></li>
+        <li><a href="statistics.html" data-i18n="nav.statistics">Statistics</a></li>
+        <li><a href='forcreators.html' data-i18n="nav.forCreators">For creators</a></li>
       </ul>
+      <div class="lang-switch">
+        <button data-lang-switch="en">EN</button>
+        <button data-lang-switch="fr">FR</button>
+      </div>
     </div>
   </nav>
 
@@ -45,28 +46,28 @@
     <div class="search-inner">
 
       <div class="search-bar">
-        <input id="search-input" type="text" placeholder="Search scripts..." autocomplete="off">
+        <input id="search-input" data-i18n-placeholder="search.placeholder" type="text" placeholder="Search scripts..." autocomplete="off">
         <select id="field-select" class="field-select">
-          <option value="all">All fields</option>
-          <option value="name">Name</option>
-          <option value="creator">Creator</option>
-          <option value="description">Description</option>
-          <option value="tags">Tags</option>
+          <option value="all" data-i18n="search.fieldAll">All fields</option>
+          <option value="name" data-i18n="search.fieldName">Name</option>
+          <option value="creator" data-i18n="search.fieldCreator">Creator</option>
+          <option value="description" data-i18n="search.fieldDescription">Description</option>
+          <option value="tags" data-i18n="search.fieldTags">Tags</option>
         </select>
-        <button id="search-button">Search</button>
+        <button id="search-button" data-i18n="search.button">Search</button>
       </div>
 
       <div class="sort-bar">
-        <span class="sort-label">Sort by</span>
+        <span class="sort-label" data-i18n="search.sortBy">Sort by</span>
         <div id="sort-buttons" class="sort-buttons"></div>
       </div>
 
-      <button id="advanced-toggle" class="advanced-toggle">▾ Advanced filters</button>
+      <button id="advanced-toggle" class="advanced-toggle" data-i18n="search.advanced">▾ Advanced filters</button>
 
       <div id="advanced-panel" class="advanced-panel">
 
         <div class="filter-group">
-          <span class="filter-label">Date</span>
+          <span class="filter-label" data-i18n="search.date">Date</span>
           <div class="date-range">
             <input type="date" id="date-from">
             <span class="date-sep">→</span>
@@ -75,7 +76,7 @@
         </div>
 
         <div class="filter-group">
-          <span class="filter-label">Size</span>
+          <span class="filter-label" data-i18n="search.size">Size</span>
           <div id="size-filters" class="size-filters"></div>
         </div>
 
@@ -96,9 +97,9 @@
   <section class="search-syntax" id="search-syntax">
     <div class="syntax-inner">
 
-      <h2>Search syntax</h2>
+      <h2 data-i18n="search.search-syntax">Search syntax</h2>
       <div class="divider"></div>
-      <p class="syntax-intro">
+      <p class="syntax-intro" data-i18n="search.search-syntax-intro">
         Use prefixes to target specific fields.
         Add quotes around any term to force an exact match.
         Prefixes can be combined in a single query.
@@ -109,15 +110,15 @@
         <div class="prefix-card">
           <span class="prefix-symbol">@</span>
           <div class="prefix-body">
-            <strong>Creator</strong>
+            <strong data-i18n="search.creator">Creator</strong>
             <div class="prefix-examples">
               <div class="prefix-example">
                 <code>@gradient01</code>
-                <span class="prefix-tag">fuzzy</span>
+                <span class="prefix-tag" data-i18n="search.fuzzy">fuzzy</span>
               </div>
               <div class="prefix-example">
                 <code>@"gradient01"</code>
-                <span class="prefix-tag prefix-tag--exact">exact</span>
+                <span class="prefix-tag prefix-tag--exact" data-i18n="search.exact">exact</span>
               </div>
             </div>
           </div>
@@ -126,15 +127,15 @@
         <div class="prefix-card">
           <span class="prefix-symbol">#</span>
           <div class="prefix-body">
-            <strong>Tags</strong>
+            <strong data-i18n="search.tags">Tags</strong>
             <div class="prefix-examples">
               <div class="prefix-example">
                 <code>#game</code>
-                <span class="prefix-tag">fuzzy</span>
+                <span class="prefix-tag" data-i18n="search.fuzzy">fuzzy</span>
               </div>
               <div class="prefix-example">
                 <code>#"game"</code>
-                <span class="prefix-tag prefix-tag--exact">exact</span>
+                <span class="prefix-tag prefix-tag--exact" data-i18n="search.exact">exact</span>
               </div>
             </div>
           </div>
@@ -143,15 +144,15 @@
         <div class="prefix-card">
           <span class="prefix-symbol">%</span>
           <div class="prefix-body">
-            <strong>Script name</strong>
+            <strong data-i18n="search.name">Script name</strong>
             <div class="prefix-examples">
               <div class="prefix-example">
                 <code>%maze</code>
-                <span class="prefix-tag">fuzzy</span>
+                <span class="prefix-tag" data-i18n="search.fuzzy">fuzzy</span>
               </div>
               <div class="prefix-example">
                 <code>%"maze_gen"</code>
-                <span class="prefix-tag prefix-tag--exact">exact</span>
+                <span class="prefix-tag prefix-tag--exact" data-i18n="search.exact">exact</span>
               </div>
             </div>
           </div>
@@ -160,15 +161,15 @@
         <div class="prefix-card">
           <span class="prefix-symbol">$</span>
           <div class="prefix-body">
-            <strong>Description</strong>
+            <strong data-i18n="search.description">Description</strong>
             <div class="prefix-examples">
               <div class="prefix-example">
                 <code>$physics</code>
-                <span class="prefix-tag">fuzzy</span>
+                <span class="prefix-tag" data-i18n="search.fuzzy">fuzzy</span>
               </div>
               <div class="prefix-example">
                 <code>$"physics"</code>
-                <span class="prefix-tag prefix-tag--exact">exact word</span>
+                <span class="prefix-tag prefix-tag--exact" data-i18n="search.exact-word">exact word</span>
               </div>
             </div>
           </div>
@@ -179,9 +180,9 @@
       <div class="wildcard-card">
         <span class="prefix-symbol wildcard-symbol">*</span>
         <div>
-          <strong>Wildcard</strong>
-          <p>Displays all scripts. Combine with sorting or advanced filters for powerful browsing.</p>
-          <p class="wildcard-example">Try: <code>*</code> sorted by <em>Newest updated first</em></p>
+          <strong data-i18n="search.wildcard">Wildcard</strong>
+          <p data-i18n="search.wildcard-text1">Displays all scripts. Combine with sorting or advanced filters for powerful browsing.</p>
+          <p class="wildcard-example" data-i18n-html="search.wildcard-text2">Try: <code>*</code> sorted by <em>Newest updated first</em></p>
         </div>
       </div>
 
@@ -189,7 +190,7 @@
   </section>
 
   <footer>
-    <p>© 2026 PyNumStore &nbsp;·&nbsp; By Gradient01 &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html">Legal notices</a></p>
+    <p>© 2026 PyNumStore &nbsp;·&nbsp; <by-section data-i18n="footer.by">By Gradient01</by-section> &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html" data-i18n="footer.legal">Legal notices</a></p>
   </footer>
 
 </body>

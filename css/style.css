@@ -30,6 +30,10 @@ body {
     min-height: 100vh;
 }
 
+html.i18n-pending {
+  visibility: hidden;
+}
+
 nav {
     background-color: var(--nav-bg);
     position: sticky;
@@ -83,6 +87,37 @@ nav ul li a:hover {
     color: #fff;
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+    border-left: 1px solid rgba(248, 245, 240, 0.18);
+}
+
+.lang-switch button {
+    background: none;
+    border: 1px solid rgba(248, 245, 240, 0.35);
+    color: var(--nav-text);
+    border-radius: 20px;
+    padding: 4px 11px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.65;
+    transition: background-color 0.2s, border-color 0.2s, opacity 0.2s;
+}
+
+.lang-switch button:hover { opacity: 1; border-color: var(--nav-text); }
+.lang-switch button.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    opacity: 1;
+}
+
 #welcome {
     background-color: var(--nav-bg);
     color: var(--nav-text);
@@ -101,7 +136,7 @@ nav ul li a:hover {
 }
 
 #welcome .hero-content {
-    position: relative; /* passe au-dessus du ::before */
+    position: relative;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -689,6 +724,14 @@ nav ul li a:hover {
     margin-top: 10px;
     color: var(--muted);
     font-size: 0.9rem;
+}
+
+#msg {
+    display: block;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 #advanced {

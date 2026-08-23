@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="i18n-pending">
 <head>
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'none';
-    script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
+    script-src 'self' https://static.cloudflareinsights.com https://challenges.cloudflare.com https://cdn.jsdelivr.net 'wasm-unsafe-eval';
     style-src 'self' https://fonts.googleapis.com;
     font-src https://fonts.gstatic.com;
     img-src 'self';
-    connect-src 'self' https://www.google-analytics.com
-                https://analytics.google.com
+    connect-src 'self' https://cloudflareinsights.com
                 https://script.google.com
                 https://script.googleusercontent.com
                 https://challenges.cloudflare.com
-                https://*.google-analytics.com
                 https://cdn.jsdelivr.net;
     base-uri 'self';
     form-action 'none';
@@ -22,10 +20,9 @@
   ">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
-  <script src="js/analytics.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6234f75f52bb4679b4e8f427ba6e1953"}'></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-  <title>PyNumStore - For Creators</title>
+  <title data-i18n="forcreators.title">PyNumStore - For Creators</title>
   <link rel="icon" href='static/favicon.ico'>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -38,46 +35,49 @@
     <div class="nav-inner">
       <a href='index.html' class="logo">PyNum<span>Store</span></a>
       <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='search.html'>Search</a></li>
-        <li><a href="statistics.html">Statistics</a></li>
-        <li><a href='forcreators.html'>For creators</a></li>
+        <li><a href='index.html' data-i18n="nav.home">Home</a></li>
+        <li><a href='search.html' data-i18n="nav.search">Search</a></li>
+        <li><a href="statistics.html" data-i18n="nav.statistics">Statistics</a></li>
+        <li><a href='forcreators.html' data-i18n="nav.forCreators">For creators</a></li>
       </ul>
+      <div class="lang-switch">
+        <button data-lang-switch="en">EN</button>
+        <button data-lang-switch="fr">FR</button>
+      </div>
     </div>
   </nav>
 
   <section id="creator-section">
     <div class="creator-bar">
-      <input type="text" id="creatorName" placeholder="A creator name...">
-      <button id="submit-button">Submit</button>
+      <input type="text" id="creatorName" placeholder="A creator name..." data-i18n-placeholder="forcreators.placeholder">
+      <button id="submit-button" data-i18n="forcreators.button">Submit</button>
     </div>
     <p id="msg"></p>
   </section>
 
   <section id="advanced">
     <div class="section-inner">
-      <h2>For Creators</h2>
+      <h2 data-i18n="forcreators.title-1">For Creators</h2>
       <div class="divider"></div>
       <div class="content">
-        <p>
+        <p data-i18n="forcreators.text-1">
           Scripts are listed only if the name of their creator is registered. To add your name to the database, enter it above.
         </p>
-        <p>
+        <p data-i18n="forcreators.text-2">
           The scripts are updated automatically every 24 hours. Changes you make will not be immediately visible.
         </p>
-        <p>
-          To add tags to your scripts, insert the following element anywhere
-          in the script's description on NumWorks:</p>
-        <code>&lt;div class="pynumstore-tags" title="tag1,tag2,tag3"&gt;&lt;/div&gt;</code>
-        <p>
-          PyNumStore will automatically detect and index the tags. You can see
-          a live example on
+        <p data-i18n="forcreators.text-3">
+          To add tags to your scripts, insert the following element anywherein the script's description on NumWorks:
+        </p>
+        <code data-i18n="forcreators.code">&lt;div class="pynumstore-tags" title="tag1,tag2,tag3"&gt;&lt;/div&gt;</code>
+        <p data-i18n-html="forcreators.text-4">
+          PyNumStore will automatically detect and index the tags. You can see a live example on
           <a href="https://my.numworks.com/python/gradient01/maze_generator_v1"
             target="_blank" rel="noopener noreferrer">NumWorks</a>
           and on
-          <a href="https://pynumstore.github.io/pynumstore/script.html?creator=gradient01&amp;name=maze_generator_v1">PyNumStore</a>.
+          <a href="https://pynumstore.github.io/pynumstore/script.html?creator=gradient01&amp;name=maze_generator_v1" target="_blank" rel="noopener noreferrer">PyNumStore</a>.
         </p>
-        <p>
+        <p data-i18n="forcreators.text-5">
           For any complaints or requests, please contact me at my email address: gradient01.dev@gmail.com
         </p>
       </div>
@@ -93,7 +93,7 @@
   </section>
 
   <footer>
-    <p>© 2026 PyNumStore &nbsp;·&nbsp; By Gradient01 &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html">Legal notices</a></p>
+    <p>© 2026 PyNumStore &nbsp;·&nbsp; <by-section data-i18n="footer.by">By Gradient01</by-section> &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html" data-i18n="footer.legal">Legal notices</a></p>
   </footer>
 
 </body>

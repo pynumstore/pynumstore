@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="i18n-pending">
 <head>
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'none';
-    script-src 'self' https://www.googletagmanager.com;
+    script-src 'self' https://static.cloudflareinsights.com;
     style-src 'self' https://fonts.googleapis.com;
     font-src https://fonts.gstatic.com;
     img-src 'self';
     connect-src 'self'
-                https://www.google-analytics.com
-                https://analytics.google.com
-                https://*.google-analytics.com;
+                https://cloudflareinsights.com;
     base-uri 'self';
     form-action 'none';
     object-src 'none';
   ">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1280">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FY6CRZ97G"></script>
-  <script src="js/analytics.js"></script>
-  <title>PyNumStore - Page Not Found</title>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6234f75f52bb4679b4e8f427ba6e1953"}'></script>
+  <title data-i18n="error.title">PyNumStore - Page Not Found</title>
   <link rel="icon" href='static/favicon.ico'>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/404.js"></script>
 </head>
 <body>
 
@@ -30,21 +28,25 @@
     <div class="nav-inner">
       <a href='index.html' class="logo">PyNum<span>Store</span></a>
       <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='search.html'>Search</a></li>
-        <li><a href="statistics.html">Statistics</a></li>
-        <li><a href='forcreators.html'>For creators</a></li>
+        <li><a href='index.html' data-i18n="nav.home">Home</a></li>
+        <li><a href='search.html' data-i18n="nav.search">Search</a></li>
+        <li><a href="statistics.html" data-i18n="nav.statistics">Statistics</a></li>
+        <li><a href='forcreators.html' data-i18n="nav.forCreators">For creators</a></li>
       </ul>
+      <div class="lang-switch">
+        <button data-lang-switch="en">EN</button>
+        <button data-lang-switch="fr">FR</button>
+      </div>
     </div>
   </nav>
 
   <section id="error-content">
     <h1>404</h1>
-    <p>The page you are looking for does not exist.</p>
+    <p data-i18n="error.text">The page you are looking for does not exist.</p>
   </section>
 
   <footer>
-    <p>© 2026 PyNumStore &nbsp;·&nbsp; By Gradient01 &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html">Legal notices</a></p>
+    <p>© 2026 PyNumStore &nbsp;·&nbsp; <by-section data-i18n="footer.by">By Gradient01</by-section> &nbsp;·&nbsp; <a href="mailto:gradient01.dev@gmail.com">gradient01.dev@gmail.com</a> &nbsp;·&nbsp; <a href="legal.html" data-i18n="footer.legal">Legal notices</a></p>
   </footer>
 
 </body>
