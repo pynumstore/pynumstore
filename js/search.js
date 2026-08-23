@@ -2,7 +2,12 @@ import { getDB, queryAll } from "./db.js";
 import { buildScriptCard } from "./utils.js";
 import { initI18n, t } from "./i18n.js";
 
-document.getElementById("scripts").style.display = "none";
+const hasInitialQuery = new URLSearchParams(window.location.search).get("q");
+if (hasInitialQuery) {
+  document.getElementById("search-syntax").style.display = "none";
+} else {
+  document.getElementById("scripts").style.display = "none";
+}
 
 await initI18n();
 

@@ -5,7 +5,7 @@
     --accent:   #C0392B;
     --nav-bg:   #1C1C1C;
     --nav-text: #F8F5F0;
-    --border:   ##1f1f1f;
+    --border:   #1f1f1f;
     --card-bg:  #FFFFFF;
 }
 
@@ -227,7 +227,6 @@ nav ul li a:hover {
 
 #scripts .card {
     background-color: var(--card-bg);
-    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 28px;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -256,7 +255,8 @@ nav ul li a:hover {
 
 #scripts .img-wrapper {
     display: inline-block;
-    border: 2px solid var(--border);
+    aspect-ratio: 320 / 241;
+    overflow: hidden;
     border-radius: 4px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.08);
 }
@@ -265,6 +265,47 @@ nav ul li a:hover {
     display: block;
     width: 100%;
     height: auto;
+}
+
+#scripts .card.skeleton {
+    cursor: default;
+}
+#scripts .card.skeleton:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+#scripts .skeleton-line {
+    border-radius: 4px;
+    background: linear-gradient(90deg, #ECE7DD 25%, #F7F4EE 50%, #ECE7DD 75%);
+    background-size: 200% 100%;
+    animation: pns-skeleton 1.6s ease-in-out infinite;
+}
+
+#scripts .skeleton-creator   { width: 70px;  height: 0.8rem; margin-bottom: 6px; }
+#scripts .skeleton-title { width: 110px; height: 1.4rem; margin-bottom: 4px; }
+
+#scripts .img-wrapper.skeleton-img {
+    width: 220px;
+    border: none;
+    box-shadow: none;
+    margin-top: 12px;
+    background: linear-gradient(90deg, #ECE7DD 25%, #F7F4EE 50%, #ECE7DD 75%);
+    background-size: 200% 100%;
+    animation: pns-skeleton 1.6s ease-in-out infinite;
+}
+
+@keyframes pns-skeleton {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #scripts .skeleton-line,
+    #scripts .img-wrapper.skeleton-img {
+        animation: none;
+        background: #ECE7DD;
+    }
 }
 
 #pagination {
@@ -778,7 +819,6 @@ nav ul li a:hover {
 #advanced .content code{
     display: block;
     background-color: var(--card-bg);
-    border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     border-radius: 0 6px 6px 0;
     padding: 5px 16px;
@@ -882,7 +922,6 @@ nav ul li a:hover {
 #script-section .description pre {
     display: block;
     background-color: var(--card-bg);
-    border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     border-radius: 0 6px 6px 0;
     padding: 14px 16px;
@@ -914,7 +953,6 @@ nav ul li a:hover {
 
 #script-section .img-wrapper {
     display: inline-block;
-    border: 2px solid var(--border);
     height: 100%;
     border-radius: 4px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.08);

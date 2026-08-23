@@ -5,9 +5,6 @@ import { initI18n, t } from "./i18n.js";
 await initI18n();
 
 async function loadScripts() {
-  const grid = document.getElementById("scripts-grid");
-  grid.replaceChildren();
-
   const db = await getDB();
 
   const scripts = queryAll(db, `
@@ -17,6 +14,8 @@ async function loadScripts() {
     LIMIT 30
   `);
 
+  const grid = document.getElementById("scripts-grid");
+  grid.replaceChildren();
   for (const script of scripts) {
     grid.appendChild(buildScriptCard(script));
   }
