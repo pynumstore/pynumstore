@@ -1,5 +1,6 @@
 import { getDB, queryOne } from "./db.js";
 import { initI18n, t, getCurrentLang } from "./i18n.js";
+import { DEFAULT_THUMBNAIL } from "./utils.js";
 
 await initI18n();
 
@@ -38,7 +39,12 @@ async function loadScriptPage() {
   document.getElementById("numworks-link").href =
     `https://my.numworks.com/python/${encodeURIComponent(creator)}/${encodeURIComponent(name)}/`;
 
-  document.getElementById("script-image").src = script.thumbnail;
+  const scriptImage = document.getElementById("script-image");
+  scriptImage.onerror = () => {
+    scriptImage.onerror = null;
+    scriptImage.src = DEFAULT_THUMBNAIL;
+  };
+  scriptImage.src = script.thumbnail;
 
   document.addEventListener("i18n:changed", renderScript);
 }

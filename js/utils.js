@@ -1,3 +1,5 @@
+export const DEFAULT_THUMBNAIL = "static/default-thumbnail.svg";
+
 export function buildScriptCard(script) {
   const card = document.createElement("a");
   card.href = `script.html?creator=${encodeURIComponent(script.creator)}&name=${encodeURIComponent(script.name)}`;
@@ -15,6 +17,10 @@ export function buildScriptCard(script) {
   const imgWrapper = document.createElement("div");
   imgWrapper.className = "img-wrapper";
   const img = document.createElement("img");
+  img.onerror = () => {
+    img.onerror = null;
+    img.src = DEFAULT_THUMBNAIL;
+  };
   img.src = script.thumbnail;
   img.alt = script.name;
   imgWrapper.appendChild(img);
