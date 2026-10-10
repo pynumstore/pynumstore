@@ -217,4 +217,4 @@ class Updater:
 
 if __name__ == "__main__":
     updater = Updater()
-    updater.update()
+    updater.creator_update(["gradient01","skue"])
