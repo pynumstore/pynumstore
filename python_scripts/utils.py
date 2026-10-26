@@ -15,6 +15,7 @@ import os
 import json
 from tokens import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, SHEET_ID
 from typing import Any
+import logging
 
 class NetworkError(Exception):
     """
@@ -232,9 +233,9 @@ class Page:
         except Exception as e:
             raise NetworkError("Failed to initialize browser: " + str(e))
         try:
-            self.page.locator("#pi_tracking_opt_in_no").click()
-        except Exception as e:
-            raise NetworkError("Failed to click cookie consent button: " + str(e))
+            self.page.locator("#pi_tracking_opt_in_no").click(timeout=5000)
+        except Exception:
+            logging.warning("Cookie banner not found, continuing")
 
     def close(self) -> None:
         """
