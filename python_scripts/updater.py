@@ -299,7 +299,7 @@ def update_scripts() -> bool:
         nb_of_try = 0
         while nb_of_try < 3:
             try:
-                hash = htmlParser.get_script_hash(html, script[0], script[1]) # pyright: ignore[reportPossiblyUnboundVariable]
+                script_hash = htmlParser.get_script_hash(html, script[0], script[1]) # pyright: ignore[reportPossiblyUnboundVariable]
                 break
             except Exception as e:
                 if nb_of_try < 2:
@@ -311,7 +311,7 @@ def update_scripts() -> bool:
         if error_occurred:
             continue
 
-        data["body_hash"] = hash # pyright: ignore[reportPossiblyUnboundVariable]
+        data["body_hash"] = script_hash # pyright: ignore[reportPossiblyUnboundVariable]
         sqlDatabase.update_script(script[0], script[1], data) # pyright: ignore[reportPossiblyUnboundVariable]
         sqlDatabase.commit()
 
