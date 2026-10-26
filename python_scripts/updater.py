@@ -146,21 +146,6 @@ def get_scripts_to_update() -> None:
             nb_of_try = 0
             while nb_of_try < 3:
                 try:
-                    html = curlRequest.get_creator_html(creator)
-                    break
-                except NetworkError as e:
-                    if nb_of_try < 2:
-                        logging.warning("Network error while fetching script %s/%s (%d): %s", creator, script, nb_of_try + 1, e)
-                    else:
-                        logging.error("Network error while fetching script %s/%s after 3 attempts: %s", creator, script, e)
-                        error_occurred = True
-                nb_of_try += 1
-            if error_occurred:
-                continue
-
-            nb_of_try = 0
-            while nb_of_try < 3:
-                try:
                     hash_current = htmlParser.get_script_hash(html, creator, script) # pyright: ignore[reportPossiblyUnboundVariable]
                     break
                 except Exception as e:
