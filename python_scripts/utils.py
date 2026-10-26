@@ -120,7 +120,7 @@ class SQLDatabase:
         scripts = self.creator_scripts(creator)
         for script in scripts:
             try:
-                os.remove(f"data/thumbnails/{script[0]}_{script[1]}.png")
+                os.remove(f"data/thumbnails/{creator}_{script}.png")
             except FileNotFoundError:
                 pass
         self.conn.execute(

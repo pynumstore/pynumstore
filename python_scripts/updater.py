@@ -127,7 +127,7 @@ def get_scripts_to_update() -> None:
         for script in scripts_to_delete:
             sqlDatabase.delete_script(creator, script)
             try:
-                os.remove(f"data/thumbnails/{script[0]}_{script[1]}.png")
+                os.remove(f"data/thumbnails/{creator}_{script}.png")
             except FileNotFoundError:
                 pass
         sqlDatabase.commit()
