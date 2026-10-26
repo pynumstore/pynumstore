@@ -82,13 +82,17 @@ def get_scripts_to_update() -> None:
             try:
                 html = curlRequest.get_creator_html(creator)
                 break
+            except NotFoundError:
+                logging.warning("Creator %s not found, deleting it", creator)
+                sqlDatabase.delete_creator(creator)
+                sqlDatabase.commit()
+                error_occurred = True
+                break
             except NetworkError as e:
                 if nb_of_try < 2:
                     logging.warning("Network error while fetching creator %s (%d): %s", creator, nb_of_try + 1, e)
                 else:
                     logging.error("Network error while fetching creator %s after 3 attempts: %s", creator, e)
-                    sqlDatabase.delete_creator(creator)
-                    sqlDatabase.commit()
                     error_occurred = True
             nb_of_try += 1
         if error_occurred:
@@ -104,8 +108,6 @@ def get_scripts_to_update() -> None:
                     logging.warning("Error while getting %s creator's scripts (%d): %s", creator, nb_of_try + 1, e)
                 else:
                     logging.error("Error while getting %s creator's scripts after 3 attempts: %s", creator, e)
-                    sqlDatabase.delete_creator(creator)
-                    sqlDatabase.commit()
                     error_occurred = True
             nb_of_try += 1
         if error_occurred:

@@ -434,6 +434,8 @@ class CurlRequest:
             r = self.session.get(f"https://my.numworks.com/python/{creator}", timeout=120)
         except Exception as e:
             raise NetworkError("Failed to fetch creator HTML: " + str(e))
+        if r.status_code == 404:
+            raise NotFoundError(f"Creator {creator} not found")
         if r.status_code != 200:
             raise NetworkError(f"Failed to fetch creator HTML, status code: {r.status_code}")
         self.current_url = f"https://my.numworks.com/python/{creator}"
@@ -498,8 +500,8 @@ class HTMLParser:
         soup = self.beautifulsoup
         names = []
         names_td = soup.find_all("td", class_="name")
-        if names_td is None:
-            raise NotFoundError("No scripts found in the HTML")
+        if not names_td and soup.find("th", class_="name") is None:
+            raise NotFoundError("Unexpected page structure")
         for name_td in names_td:
             a = name_td.find("a")
             if a is None:
