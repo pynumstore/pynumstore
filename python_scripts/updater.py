@@ -9,6 +9,7 @@ from generate_sitemap import generate_sitemap
 
 
 os.makedirs("logs", exist_ok=True)
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -209,10 +210,12 @@ def set_all_scripts_of_some_creators_to_update(creators: list) -> None:
     sqlDatabase.close()
 
 
-def update_scripts() -> None:
+def update_scripts() -> bool:
     """
     This function retrieves the list of scripts that need to be updated from the local SQL database,
     fetches their content from the NumWorks website, and updates the local database with the new information.
+    Returns True if the process went through to the end, False if it was interrupted
+    (initialization failure or network error): remaining scripts keep to_update=1.
     """
 
     logging.info("Starting script update process...")
@@ -223,7 +226,7 @@ def update_scripts() -> None:
     except NetworkError as e:
         logging.error("Failed to initialize browser: %s", e)
         sqlDatabase.close()
-        return
+        return False
     pageParser = PageParser()
     try:
         curlRequest = CurlRequest()
@@ -231,7 +234,7 @@ def update_scripts() -> None:
         logging.error("Failed to initialize curl session: %s", e)
         page.close()
         sqlDatabase.close()
-        return
+        return False
     htmlParser = HTMLParser()
 
     scripts_to_update = sqlDatabase.get_scripts_to_update()
@@ -333,8 +336,9 @@ def update_scripts() -> None:
     curlRequest.close()
     if aborted:
         logging.warning("Script update process aborted because of a network error.")
-    else:
-        logging.info("Script update process completed.")
+        return False
+    logging.info("Script update process completed.")
+    return True
 
 
 if __name__ == "__main__":
@@ -377,8 +381,10 @@ if __name__ == "__main__":
             logging.info("Daily protocol: %s scripts to update found...", len(scripts_to_update))
             telegramBot.send_message(f"Daily protocol: {len(scripts_to_update)} scripts to update found...")
             telegramBot.send_message("Starting script update process...")
-            update_scripts()
-            telegramBot.send_message("Script update process completed, please check the logs and push the changes to the repository if everything is fine.")
+            if update_scripts():
+                telegramBot.send_message("Script update process completed, please check the logs and push the changes to the repository if everything is fine.")
+            else:
+                telegramBot.send_message("Script update process interrupted (initialization or network error). Some scripts may have been updated, the others will be retried at the next run. Please check the logs before pushing anything.")
         else:
             logging.info("Daily protocol: No script to update found...")
         logging.info("Daily protocol completed.")
