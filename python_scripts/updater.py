@@ -159,7 +159,7 @@ def get_scripts_to_update() -> None:
                 continue
 
             hash_db = sqlDatabase.get_script_hash(creator, script)
-            if hash_db is not None and hash_db != hash_current: # pyright: ignore[reportPossiblyUnboundVariable]
+            if hash_db is None or hash_db != hash_current: # pyright: ignore[reportPossiblyUnboundVariable]
                 sqlDatabase.set_to_update(creator, script, True)
                 sqlDatabase.commit()
                 
