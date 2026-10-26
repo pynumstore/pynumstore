@@ -168,7 +168,7 @@ function buildQuery({ q, field, sort, date_from, date_to, sizes, page }) {
     addCondition(conditions, values, strict, "creator LIKE ?", `%${value}%`, "creator = ?", value)
   );
   parsed.tags.forEach(({ value, strict }) =>
-    addCondition(conditions, values, strict, "tags LIKE ?", `%${value}%`, "(',' || COALESCE(tags,'') || ',') LIKE ?", `%,${value},%`)
+    addCondition(conditions, values, strict, "tags LIKE ?", `%${value}%`, "(',' || REPLACE(COALESCE(tags,''), ', ', ',') || ',') LIKE ?", `%,${value},%`)
   );
   parsed.name.forEach(({ value, strict }) =>
     addCondition(conditions, values, strict, "name LIKE ?", `%${value}%`, "name = ?", value)
@@ -185,7 +185,7 @@ function buildQuery({ q, field, sort, date_from, date_to, sizes, page }) {
     } else if (field === "description") {
       addCondition(conditions, values, strict, "description_text LIKE ?", `%${value}%`, "(' ' || COALESCE(description_text,'') || ' ') LIKE ?", `% ${value} %`);
     } else if (field === "tags") {
-      addCondition(conditions, values, strict, "tags LIKE ?", `%${value}%`, "(',' || COALESCE(tags,'') || ',') LIKE ?", `%,${value},%`);
+      addCondition(conditions, values, strict, "tags LIKE ?", `%${value}%`, "(',' || REPLACE(COALESCE(tags,''), ', ', ',') || ',') LIKE ?", `%,${value},%`);
     } else {
       if (strict) {
         conditions.push("(name = ? OR creator = ? OR (' ' || COALESCE(description_text,'') || ' ') LIKE ?)");
