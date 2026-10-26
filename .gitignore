@@ -165,3 +165,6 @@ credentials.json
 
 # Settings files
 settings.json
+
+# Logs
+logs/
