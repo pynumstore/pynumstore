@@ -7,6 +7,7 @@ import os
 import sys
 from generate_sitemap import generate_sitemap
 
+
 os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
@@ -32,6 +33,7 @@ def get_scripts_to_update() -> None:
         curlRequest = CurlRequest()
     except Exception as e:
         logging.error("Failed to initialize curl session: %s", e)
+        sqlDatabase.close()
         return
     htmlParser = HTMLParser()
 
@@ -39,6 +41,8 @@ def get_scripts_to_update() -> None:
         creators_gs = googleSheetsDatabase.get_creators()
     except NetworkError as e:
         logging.error("Failed to load creators list from Google Sheets: %s", e)
+        sqlDatabase.close()
+        curlRequest.close()
         return
     creators_db = sqlDatabase.get_creators()
 
@@ -135,7 +139,9 @@ def get_scripts_to_update() -> None:
             logging.info("%s script not found and deleted: %s", len(scripts_to_delete), [(creator, s) for s in scripts_to_delete])
 
         for script in scripts_to_scan:
-                    
+
+            error_occurred = False
+
             nb_of_try = 0
             while nb_of_try < 3:
                 try:
@@ -216,12 +222,15 @@ def update_scripts() -> None:
         page = Page()
     except NetworkError as e:
         logging.error("Failed to initialize browser: %s", e)
+        sqlDatabase.close()
         return
     pageParser = PageParser()
     try:
         curlRequest = CurlRequest()
     except Exception as e:
         logging.error("Failed to initialize curl session: %s", e)
+        page.close()
+        sqlDatabase.close()
         return
     htmlParser = HTMLParser()
 
@@ -232,6 +241,8 @@ def update_scripts() -> None:
         logging.info("%s script to update found...", len(scripts_to_update))
     elif len(scripts_to_update) == 0:
         logging.info("No scripts to update found...")
+
+    aborted = False
 
     for script in tqdm.tqdm(scripts_to_update):
 
@@ -244,7 +255,9 @@ def update_scripts() -> None:
                 break
             except NetworkError as e:
                 logging.error("Network error while accessing script %s/%s: %s", script[0], script[1], e)
-                return
+                logging.error("Aborting the update: the remaining scripts keep to_update=1 and will be retried next time.")
+                aborted = True
+                break
             except NotFoundError:
                 if nb_of_try < 2:
                     logging.warning("Script %s/%s not found (%d)", script[0], script[1], nb_of_try + 1)
@@ -258,6 +271,8 @@ def update_scripts() -> None:
                     logging.warning("Script %s/%s not found after 3 attempts, so it has been deleted", script[0], script[1])
                     error_occurred = True
             nb_of_try += 1
+        if aborted:
+            break
         if error_occurred:
             continue
 
@@ -316,7 +331,10 @@ def update_scripts() -> None:
     page.close()
     sqlDatabase.close()
     curlRequest.close()
-    logging.info("Script update process completed.")
+    if aborted:
+        logging.warning("Script update process aborted because of a network error.")
+    else:
+        logging.info("Script update process completed.")
 
 
 if __name__ == "__main__":
