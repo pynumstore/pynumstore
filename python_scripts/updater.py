@@ -7,7 +7,7 @@ import os
 import sys
 from generate_sitemap import generate_sitemap
 
-
+os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",

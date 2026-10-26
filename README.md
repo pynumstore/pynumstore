@@ -68,8 +68,6 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 playwright install chromium
-
-mkdir logs
 ```
 
 > All Python commands must be run **from the repository root** (paths such as `data/pynumstore.db` and `python_scripts/credentials.json` are relative to it).
