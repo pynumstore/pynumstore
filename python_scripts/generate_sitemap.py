@@ -8,7 +8,10 @@ BASE_URL = "https://pynumstore.github.io/pynumstore"
 DB_PATH  = "data/pynumstore.db"
 
 
-def generate_sitemap():
+def generate_sitemap() -> None:
+    """
+    Generate sitemap of the website
+    """
 
     today  = date.today().isoformat()
     urlset = Element("urlset")

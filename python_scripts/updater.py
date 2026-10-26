@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 import json
 import os
 import sys
+from generate_sitemap import generate_sitemap
 
 
 logging.basicConfig(
@@ -311,6 +312,7 @@ def update_scripts() -> None:
 
     with open("data/version.json", "w") as f:
         json.dump({"v": datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")}, f)
+    generate_sitemap()
     page.close()
     sqlDatabase.close()
     curlRequest.close()
