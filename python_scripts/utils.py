@@ -367,7 +367,7 @@ class PageParser:
         descr = content_div.find("div", class_="text-justify")
         if descr is None:
             raise NotFoundError("Marker not found in content div")
-        fragment = descr.text
+        fragment = descr.decode_contents()
         fragment = bleach.clean(fragment,
                                 tags=ALLOWED_TAGS,
                                 attributes=ALLOWED_ATTRIBUTES,
