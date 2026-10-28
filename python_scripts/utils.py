@@ -364,24 +364,10 @@ class PageParser:
         content_div = soup.find("div", class_="content")
         if content_div is None:
             raise NotFoundError("Content div not found")
-        marker = content_div.find("div", class_="text-justify")
-        if marker is None:
+        descr = content_div.find("div", class_="text-justify")
+        if descr is None:
             raise NotFoundError("Marker not found in content div")
-        elements = []
-        for sibling in marker.next_siblings:
-            if isinstance(sibling, str) and not sibling.strip():
-                continue
-            if isinstance(sibling, Tag) and sibling.name == "pre" and sibling.get("id") == "script":
-                break
-            elements.append(sibling)
-        if len(elements) == 1 and isinstance(elements[0], Tag) and elements[0].name == "hr":
-            elements = []
-        else:
-            if len(elements) < 2:
-                raise NotFoundError("Unexpected structure in content div")
-            elements.pop()
-            elements.pop()
-        fragment = "".join(str(e) for e in elements).strip()
+        fragment = descr.text
         fragment = bleach.clean(fragment,
                                 tags=ALLOWED_TAGS,
                                 attributes=ALLOWED_ATTRIBUTES,
