@@ -298,7 +298,6 @@ def update_scripts() -> bool:
                 data["tags"] += generated_tags
                 data["tags"] = list(set(data["tags"]))  # Remove duplicates
                 data["tags"] = ", ".join([tag.lower() for tag in data["tags"]])  # Convert to lowercase and join into a string
-                print(f"Generated tags for {script[0]}/{script[1]}: {generated_tags}")
                 break
             except Exception as e:
                 if nb_of_try < 2:

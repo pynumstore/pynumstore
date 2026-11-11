@@ -521,6 +521,10 @@ class HTMLParser:
                 break
         if "ion" in tags and "kandinsky" in tags:
             tags.insert(0, "game")
+        if "ion" in tags and "kandinsky" in tags and "time" in tags:
+            tags.insert(0, "game-with-timer")
+        if "ion" in tags and "kandinsky" in tags and "time" in tags and "numpy" in tags:
+            tags.insert(0, "good-optimisation")
         if "kandinsky" in tags:
             tags.insert(0, "graphics")
         if "kandinsky" in tags and "ion" not in tags and "time" in tags:
@@ -529,6 +533,8 @@ class HTMLParser:
             tags.insert(0, "plot")
         if "cmath" in tags and "kandinsky" in tags:
             tags.insert(0, "complex-graphics")
+        if "cmath" in tags:
+            tags.insert(0, "complex-math")
         if "cmath" in tags:
             if "math" not in tags:
                 tags.pop(tags.index("cmath"))
