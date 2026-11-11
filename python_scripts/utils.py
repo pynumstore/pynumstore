@@ -514,7 +514,26 @@ class HTMLParser:
             pattern = r'^\s*(import|from)\s+([a-zA-Z_][a-zA-Z0-9_\.]*)'
             imports = re.findall(pattern, code, re.MULTILINE)
             for imp in imports:
-                tags.append(imp[1].lower())
+                tags.append(imp[1].lower().strip())
+        for tag in tags:
+            if tag not in ["math", "cmath", "mathplotlib.pyplot", "numpy", "turtle", "random", "kandinsky", "ion", "time"]:
+                tags.insert(0, "external-library")
+                break
+        if "ion" in tags and "kandinsky" in tags:
+            tags.insert(0, "game")
+        if "kandinsky" in tags:
+            tags.insert(0, "graphics")
+        if "kandinsky" in tags and "ion" not in tags and "time" in tags:
+            tags.insert(0, "animation")
+        if "mathplotlib.pyplot" in tags:
+            tags.insert(0, "plot")
+        if "cmath" in tags and "kandinsky" in tags:
+            tags.insert(0, "complex-graphics")
+        if "cmath" in tags:
+            if "math" not in tags:
+                tags.pop(tags.index("cmath"))
+            else:
+                tags[tags.index("cmath")] = "math"
         return tags
 
 
