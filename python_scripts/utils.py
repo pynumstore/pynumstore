@@ -1,3 +1,4 @@
+from ast import pattern
 from datetime import datetime
 import time
 import hashlib
@@ -305,7 +306,7 @@ class PageParser:
             raise NotFoundError("Failed to parse description: " + str(e))
 
         try:
-            tags = self.parse_tags(soup)
+            tags = self.parse_pynumstore_tags(soup)
         except NotFoundError as e:
             raise NotFoundError("Failed to parse tags: " + str(e))
 
@@ -327,7 +328,7 @@ class PageParser:
             "updated_at": updated_at,
             "size": size,
             "thumbnail": thumbnail,
-            "tags": ", ".join([tag.lower() for tag in tags]),
+            "tags":tags,
             "description": description,
             "description_text": re.sub(r'<[^>]+>', '', description).strip(),
             "to_update": 0
@@ -376,7 +377,7 @@ class PageParser:
                                 )
         return fragment
 
-    def parse_tags(self, soup: BeautifulSoup) -> list:
+    def parse_pynumstore_tags(self, soup: BeautifulSoup) -> list:
         """
         Parses the tags of a script from the BeautifulSoup object.
         """
@@ -495,6 +496,26 @@ class HTMLParser:
             name = a.get_text()
             names.append(name[:-3])
         return names
+
+    def generate_tags(self, html: str, creator: str, name: str) -> list[str]:
+        """
+        Parses the HTML content of a creator's page and generates a list of tags based on the script imports.
+        """
+        if self.current_creator != creator or self.beautifulsoup is None:
+            self.current_creator = creator
+            self.beautifulsoup = BeautifulSoup(html, "html.parser")
+        soup = self.beautifulsoup
+        tags = []
+        scripts = soup.find_all("send-to-calculator")
+        for script in scripts:
+            if script.get("script-name") != name + ".py":
+                continue
+            code = str(script["script-content"]).strip()
+            pattern = r'^\s*(import|from)\s+([a-zA-Z_][a-zA-Z0-9_\.]*)'
+            imports = re.findall(pattern, code, re.MULTILINE)
+            for imp in imports:
+                tags.append(imp[1].lower())
+        return tags
 
 
 class TelegramBot:

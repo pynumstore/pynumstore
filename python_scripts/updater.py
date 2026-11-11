@@ -278,13 +278,13 @@ def update_scripts() -> bool:
         nb_of_try = 0
         while nb_of_try < 3:
             try:
-                data = pageParser.parse_page(page, script[0], script[1])
+                html = curlRequest.get_creator_html(script[0])
                 break
-            except Exception as e:
+            except NetworkError as e:
                 if nb_of_try < 2:
-                    logging.warning("Error while parsing script %s/%s (%d): %s", script[0], script[1], nb_of_try + 1, e)
+                    logging.warning("Network error while fetching script %s/%s (%d): %s", script[0], script[1], nb_of_try + 1, e)
                 else:
-                    logging.error("Error while parsing script %s/%s after 3 attempts: %s", script[0], script[1], e)
+                    logging.error("Network error while fetching script %s/%s after 3 attempts: %s", script[0], script[1], e)
                     error_occurred = True
             nb_of_try += 1
         if error_occurred:
@@ -293,13 +293,18 @@ def update_scripts() -> bool:
         nb_of_try = 0
         while nb_of_try < 3:
             try:
-                html = curlRequest.get_creator_html(script[0])
+                data = pageParser.parse_page(page, script[0], script[1])
+                generated_tags = htmlParser.generate_tags(html, script[0], script[1])
+                data["tags"] += generated_tags
+                data["tags"] = list(set(data["tags"]))  # Remove duplicates
+                data["tags"] = ", ".join([tag.lower() for tag in data["tags"]])  # Convert to lowercase and join into a string
+                print(f"Generated tags for {script[0]}/{script[1]}: {generated_tags}")
                 break
-            except NetworkError as e:
+            except Exception as e:
                 if nb_of_try < 2:
-                    logging.warning("Network error while fetching script %s/%s (%d): %s", script[0], script[1], nb_of_try + 1, e)
+                    logging.warning("Error while parsing script %s/%s (%d): %s", script[0], script[1], nb_of_try + 1, e)
                 else:
-                    logging.error("Network error while fetching script %s/%s after 3 attempts: %s", script[0], script[1], e)
+                    logging.error("Error while parsing script %s/%s after 3 attempts: %s", script[0], script[1], e)
                     error_occurred = True
             nb_of_try += 1
         if error_occurred:
