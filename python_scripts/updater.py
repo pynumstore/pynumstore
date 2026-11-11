@@ -20,7 +20,7 @@ logging.basicConfig(
 )
 
 
-def get_scripts_to_update() -> None:
+def get_scripts_to_update() -> dict:
     """
     This function retrieves the list of creators from Google Sheets and the local SQL database,
     compares them, and updates the local database accordingly. It also checks for scripts that need to be updated based on their hash values.
@@ -35,7 +35,7 @@ def get_scripts_to_update() -> None:
     except Exception as e:
         logging.error("Failed to initialize curl session: %s", e)
         sqlDatabase.close()
-        return
+        return {"error": True}
     htmlParser = HTMLParser()
 
     try:
@@ -44,7 +44,7 @@ def get_scripts_to_update() -> None:
         logging.error("Failed to load creators list from Google Sheets: %s", e)
         sqlDatabase.close()
         curlRequest.close()
-        return
+        return {"error": True}
     creators_db = sqlDatabase.get_creators()
 
     creators_gs_set = set(creators_gs)
@@ -53,6 +53,7 @@ def get_scripts_to_update() -> None:
     creators_to_insert = list(creators_gs_set - creators_db_set)
     creators_to_delete = list(creators_db_set - creators_gs_set)
     creators_to_scan = creators_in_both + creators_to_insert
+    scripts_to_update = []
 
     for creator in creators_to_insert:
         sqlDatabase.insert_creator(creator)
@@ -163,11 +164,19 @@ def get_scripts_to_update() -> None:
             hash_db = sqlDatabase.get_script_hash(creator, script)
             if hash_db is None or hash_db != hash_current: # pyright: ignore[reportPossiblyUnboundVariable]
                 sqlDatabase.set_to_update(creator, script, True)
+                scripts_to_update.append((creator, script))
                 sqlDatabase.commit()
-                
+
     sqlDatabase.close()
     curlRequest.close()
     logging.info("Get scripts to update process completed.")
+    return {"error": False,
+            "creators_to_insert": creators_to_insert,
+            "creators_to_delete": creators_to_delete,
+            "scripts_to_insert": scripts_to_insert,
+            "scripts_to_delete": scripts_to_delete,
+            "scripts_to_update": scripts_to_update
+            }
 
 
 def set_all_scripts_to_update() -> None:
@@ -280,7 +289,7 @@ def update_scripts() -> bool:
             nb_of_try += 1
         if error_occurred:
             continue
-                    
+
         nb_of_try = 0
         while nb_of_try < 3:
             try:
@@ -331,9 +340,10 @@ def update_scripts() -> bool:
 if __name__ == "__main__":
 
     args = sys.argv[1:]
-    
+
     if len(args) == 0:
-        get_scripts_to_update()
+        res = get_scripts_to_update()
+        print(res)
         update_scripts()
 
     elif args[0] == "--full-update":
@@ -349,7 +359,8 @@ if __name__ == "__main__":
         update_scripts()
 
     elif args[0] == "--get-scripts-to-update":
-        get_scripts_to_update()
+        res = get_scripts_to_update()
+        print(res)
 
     elif args[0] == "--update-scripts":
         update_scripts()
@@ -359,21 +370,29 @@ if __name__ == "__main__":
         Daily protocol is launched every day by an external program: "daily-protocol.sh"
         """
         logging.info("Starting daily protocol...")
-        get_scripts_to_update()
-        sqlDatabase = SQLDatabase()
         telegramBot = TelegramBot()
-        scripts_to_update = sqlDatabase.get_scripts_to_update()
-        sqlDatabase.close()
-        if len(scripts_to_update) > 0:
-            logging.info("Daily protocol: %s scripts to update found...", len(scripts_to_update))
-            telegramBot.send_message(f"Daily protocol: {len(scripts_to_update)} scripts to update found...")
-            telegramBot.send_message("Starting script update process...")
-            if update_scripts():
-                telegramBot.send_message("Script update process completed, please check the logs and push the changes to the repository if everything is fine.")
-            else:
-                telegramBot.send_message("Script update process interrupted (initialization or network error). Some scripts may have been updated, the others will be retried at the next run. Please check the logs before pushing anything.")
-        else:
-            logging.info("Daily protocol: No script to update found...")
+        res = get_scripts_to_update()
+        if res["error"]:
+            telegramBot.send_message("Daily protocol: Error while getting scripts to update. Please check the logs.")
+            logging.error("Daily protocol: Error while getting scripts to update. Please check the logs.")
+            sys.exit(1)
+        if len(res["creators_to_insert"]) > 0:
+            telegramBot.send_message(f"Daily protocol: {len(res['creators_to_insert'])} new creators found and inserted: {res['creators_to_insert']}")
+        if len(res["creators_to_delete"]) > 0:
+            telegramBot.send_message(f"Daily protocol: {len(res['creators_to_delete'])} creators not found and deleted: {res['creators_to_delete']}")
+        if len(res["scripts_to_insert"]) > 0:
+            telegramBot.send_message(f"Daily protocol: {len(res['scripts_to_insert'])} new scripts found and inserted: {res['scripts_to_insert']}")
+        if len(res["scripts_to_delete"]) > 0:
+            telegramBot.send_message(f"Daily protocol: {len(res['scripts_to_delete'])} scripts not found and deleted: {res['scripts_to_delete']}")
+        if len(res["scripts_to_update"]) > 0:
+            telegramBot.send_message(f"Daily protocol: {len(res['scripts_to_update'])} scripts to update found: {res['scripts_to_update']}")
+            update_success = update_scripts()
+            if not update_success:
+                telegramBot.send_message("Daily protocol: Error while updating scripts. Please check the logs.")
+                logging.error("Daily protocol: Error while updating scripts. Please check the logs.")
+                sys.exit(1)
+        if len(res["scripts_to_update"]) > 0 or len(res["creators_to_delete"]) > 0 or len(res["scripts_to_delete"]) > 0:
+            telegramBot.send_message("Some thing has been updated. Please check logs for more details and push the changes to the repository if everything is fine.")
         logging.info("Daily protocol completed.")
 
     elif args[0] == "--help":

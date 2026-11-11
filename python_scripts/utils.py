@@ -256,7 +256,6 @@ class Page:
             raise NotFoundError("Script not found")
 
 
-
 class PageParser:
     """
     A class to parse the content of a script page and extract relevant information.
@@ -525,7 +524,7 @@ class TelegramBot:
         }
         r = requests.post(self.url + "sendMessage", json=data)
         return r.json()
-    
+
     def send_file(self, name: str, text: str) -> None:
         """
         Send a file to the telegram bot, useful for too long message.
@@ -551,7 +550,7 @@ class TelegramBot:
                 self.offset = result["update_id"] + 1
         self.save_offset()
         return messages
-    
+
     def save_offset(self) -> None:
         """
         Save the new offset.
