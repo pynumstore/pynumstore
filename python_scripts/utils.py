@@ -516,14 +516,14 @@ class HTMLParser:
             for imp in imports:
                 tags.append(imp[1].lower().strip())
         for tag in tags:
-            if tag not in ["math", "cmath", "mathplotlib.pyplot", "numpy", "turtle", "random", "kandinsky", "ion", "time"]:
+            if tag not in ["math", "cmath", "mathplotlib.pyplot", "numpy", "turtle", "random", "kandinsky", "ion", "time", "micropython"]:
                 tags.insert(0, "external-library")
                 break
         if "ion" in tags and "kandinsky" in tags:
             tags.insert(0, "game")
         if "ion" in tags and "kandinsky" in tags and "time" in tags:
             tags.insert(0, "game-with-timer")
-        if "ion" in tags and "kandinsky" in tags and "time" in tags and "numpy" in tags:
+        if ("ion" in tags and "kandinsky" in tags and "time" in tags and "numpy" in tags) or "micropython" in tags:
             tags.insert(0, "good-optimisation")
         if "kandinsky" in tags:
             tags.insert(0, "graphics")
